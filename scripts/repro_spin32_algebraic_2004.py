@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -294,7 +294,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "max_abs_fid_error": metrics["hilbert_vs_liouville"]["max_abs_fid_error"],
             "single_quantum_weight_after_first_pulse": single_quantum_weight,
@@ -307,26 +306,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Algebraic Description Of Spin 3/2 Dynamics In NMR Experiments",
-                "",
-                "This run validates the project-level algebraic representation for",
-                "spin-3/2 NMR dynamics using Liouville-space superoperators.",
-                "",
-                f"Max Hilbert-vs-Liouville FID error: `{metrics['hilbert_vs_liouville']['max_abs_fid_error']:.6e}`.",
-                f"Single-quantum weight after first pi/2 pulse: `{single_quantum_weight:.6f}`.",
-                f"Max B0/B1 relative FID-energy bias: `{metrics['b0_b1_sensitivity']['max_relative_bias_from_nominal']:.6f}`.",
-                f"Max factorization error: `{metrics['superoperator_factorization']['max_state_vector_error']:.6e}`.",
-                "",
-                "The result is an algebraic consistency benchmark, not a digitized",
-                "reproduction of a specific paper figure.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -341,3 +320,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

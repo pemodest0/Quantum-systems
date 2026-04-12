@@ -4,6 +4,10 @@ Paper/workflow ID: `grape_nmr_control_2005`
 
 Category: `Optimal control`
 
+## Primary Reference
+
+Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+
 ## Article Summary
 
 The GRAPE paper introduces gradient-based optimal control for NMR pulse design. It is the natural response to finite-pulse failures because it optimizes the full pulse shape under a modeled Hamiltonian rather than relying on ideal rectangular rotations.
@@ -37,12 +41,40 @@ Optimization is synthetic and does not yet include measured hardware transfer fu
 - `optimization.final_training_mean_fidelity`: `0.991512`
 - `robustness_grid.grape.mean`: `0.96249`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/grape_nmr_control_2005/grape_fidelity_convergence.png`
-- `generated/figures/grape_nmr_control_2005/optimized_controls.png`
-- `generated/figures/grape_nmr_control_2005/rectangular_vs_grape_state_fidelity.png`
-- `generated/figures/grape_nmr_control_2005/robustness_map.png`
+### Figure 1. Grape Fidelity Convergence
+
+![Grape Fidelity Convergence](../../outputs/repro/grape_nmr_control_2005/latest/figures/grape_fidelity_convergence.png)
+
+- Summary: The optimization trace records how the target fidelity improves across GRAPE iterations.
+- Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+
+### Figure 2. Optimized Controls
+
+![Optimized Controls](../../outputs/repro/grape_nmr_control_2005/latest/figures/optimized_controls.png)
+
+- Summary: The time-dependent control amplitudes are shown for the pulse that maximizes the spin-3/2 target fidelity.
+- Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+
+### Figure 3. Rectangular Vs Grape State Fidelity
+
+![Rectangular Vs Grape State Fidelity](../../outputs/repro/grape_nmr_control_2005/latest/figures/rectangular_vs_grape_state_fidelity.png)
+
+- Summary: A direct comparison is made between a simple rectangular pulse and the optimized GRAPE pulse on the same control task.
+- Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+
+### Figure 4. Robustness Map
+
+![Robustness Map](../../outputs/repro/grape_nmr_control_2005/latest/figures/robustness_map.png)
+
+- Summary: The optimized pulse is evaluated over a grid of detuning and RF-scale errors to show where high fidelity survives.
+- Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+
 
 ## Canonical Artifacts
 

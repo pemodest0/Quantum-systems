@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -287,7 +287,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "figures": {name: str(path) for name, path in figures.items()},
         "summary": {
             "best_tau_c_s": fit.tau_c_s,
@@ -299,28 +298,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                f"# {PAPER['title']}",
-                "",
-                "This run implements the project-level Paper A reproduction target.",
-                "",
-                "It compares the current MATLAB-derived phenomenological biexponential",
-                "transition envelopes with a minimal Redfield-inspired quadrupolar",
-                "relaxation closure based on reduced spectral densities J0, J1, and J2.",
-                "",
-                f"Best tau_c: `{fit.tau_c_s:.6e} s`.",
-                f"Best effective coupling: `{fit.quadrupolar_coupling_hz:.6g} Hz`.",
-                f"Global envelope RMSE: `{fit.rmse:.6e}`.",
-                "",
-                "The result is a model-selection benchmark. It is not a full microscopic",
-                "Redfield tensor extraction from experimental relaxometry data.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -335,3 +312,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

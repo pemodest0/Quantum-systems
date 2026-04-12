@@ -4,6 +4,10 @@ Paper/workflow ID: `spin32_algebraic_2004`
 
 Category: `Spin-3/2 algebra`
 
+## Primary Reference
+
+Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.
+
 ## Article Summary
 
 The algebraic spin-3/2 paper gives an operator-level description of quadrupolar NMR dynamics. It is directly aligned with this project because our platform is a four-level spin-3/2 system, and the paper's formalism maps naturally into Hilbert-space and Liouville-space propagation.
@@ -36,12 +40,40 @@ Synthetic dynamics only; experiment-specific pulse calibration is not inferred.
 
 - `hilbert_vs_liouville.max_abs_fid_error`: `2.5455e-17`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/spin32_algebraic_2004/b0_b1_energy_map.png`
-- `generated/figures/spin32_algebraic_2004/coherence_order_pathways.png`
-- `generated/figures/spin32_algebraic_2004/hilbert_vs_liouville_fid.png`
-- `generated/figures/spin32_algebraic_2004/superoperator_factorization_error.png`
+### Figure 1. B0 B1 Energy Map
+
+![B0 B1 Energy Map](../../outputs/repro/spin32_algebraic_2004/latest/figures/b0_b1_energy_map.png)
+
+- Summary: Transition energies or effective response are mapped as static-field and RF-control scales are varied in the spin-3/2 model.
+- Interpretation: In this laboratory, the figure is used to bridge operator algebra, Hilbert propagation, and Liouville superoperators. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.
+
+### Figure 2. Coherence Order Pathways
+
+![Coherence Order Pathways](../../outputs/repro/spin32_algebraic_2004/latest/figures/coherence_order_pathways.png)
+
+- Summary: The panel resolves which coherence orders are created and mixed by the modeled pulse/evolution sequence in the algebraic representation.
+- Interpretation: In this laboratory, the figure is used to bridge operator algebra, Hilbert propagation, and Liouville superoperators. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.
+
+### Figure 3. Hilbert Vs Liouville Fid
+
+![Hilbert Vs Liouville Fid](../../outputs/repro/spin32_algebraic_2004/latest/figures/hilbert_vs_liouville_fid.png)
+
+- Summary: The synthetic FID from direct Hilbert-space evolution is compared with the FID produced by the Liouville-space superoperator implementation.
+- Interpretation: In this laboratory, the figure is used to bridge operator algebra, Hilbert propagation, and Liouville superoperators. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.
+
+### Figure 4. Superoperator Factorization Error
+
+![Superoperator Factorization Error](../../outputs/repro/spin32_algebraic_2004/latest/figures/superoperator_factorization_error.png)
+
+- Summary: Residual error is quantified when the full Liouville propagator is replaced by the chosen factorized superoperator construction.
+- Interpretation: In this laboratory, the figure is used to bridge operator algebra, Hilbert propagation, and Liouville superoperators. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.
+
 
 ## Canonical Artifacts
 

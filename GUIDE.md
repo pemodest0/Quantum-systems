@@ -125,6 +125,9 @@ Rebuild the report:
 python scripts\build_review_article.py
 ```
 
+This build also refreshes the detailed figure annotations and reference-aware
+paper notes before compiling the PDF.
+
 ## 7. Research Memory
 
 Update the local memory index:

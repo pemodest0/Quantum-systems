@@ -4,6 +4,10 @@ Paper/workflow ID: `multipass_qpt_2024`
 
 Category: `Hardware QPT`
 
+## Primary Reference
+
+Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.
+
 ## Article Summary
 
 The multipass QPT paper studies process tomography where the same process is applied repeatedly. This can amplify process signatures relative to SPAM and sampling noise, improving characterization in some regimes.
@@ -41,12 +45,40 @@ One-qubit synthetic prototype; not yet tied to a real backend.
 - `monte_carlo.single_pass_error.std`: `0.0386803`
 - `monte_carlo.single_pass_error.median`: `0.210698`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/multipass_qpt_2024/error_vs_passes.png`
-- `generated/figures/multipass_qpt_2024/ptm_comparison.png`
-- `generated/figures/multipass_qpt_2024/shot_noise_sweep.png`
-- `generated/figures/multipass_qpt_2024/single_vs_multipass_error_distribution.png`
+### Figure 1. Error Vs Passes
+
+![Error Vs Passes](../../outputs/repro/multipass_qpt_2024/latest/figures/error_vs_passes.png)
+
+- Summary: The mean process-tomography reconstruction error is plotted as the same process is repeated more times before readout.
+- Interpretation: In this laboratory, the figure is used to measure whether repeated process blocks improve tomography under SPAM and shot noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.
+
+### Figure 2. Ptm Comparison
+
+![Ptm Comparison](../../outputs/repro/multipass_qpt_2024/latest/figures/ptm_comparison.png)
+
+- Summary: Estimated process matrices are compared with the target process in the Pauli transfer matrix representation.
+- Interpretation: In this laboratory, the figure is used to measure whether repeated process blocks improve tomography under SPAM and shot noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.
+
+### Figure 3. Shot Noise Sweep
+
+![Shot Noise Sweep](../../outputs/repro/multipass_qpt_2024/latest/figures/shot_noise_sweep.png)
+
+- Summary: Reconstruction performance is swept across different shot counts to measure when multipass QPT becomes worthwhile.
+- Interpretation: In this laboratory, the figure is used to measure whether repeated process blocks improve tomography under SPAM and shot noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.
+
+### Figure 4. Single Vs Multipass Error Distribution
+
+![Single Vs Multipass Error Distribution](../../outputs/repro/multipass_qpt_2024/latest/figures/single_vs_multipass_error_distribution.png)
+
+- Summary: Repeated synthetic trials are summarized as an error distribution for the single-pass and multipass tomography protocols.
+- Interpretation: In this laboratory, the figure is used to measure whether repeated process blocks improve tomography under SPAM and shot noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.
+
 
 ## Canonical Artifacts
 

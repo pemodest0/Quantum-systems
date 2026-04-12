@@ -2,7 +2,6 @@
   "paper_id": "spin32_algebraic_2004",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\reproduction_note.md",
   "summary": {
     "max_abs_fid_error": 2.5454687016331574e-17,
     "single_quantum_weight_after_first_pulse": 0.9906935067561968,

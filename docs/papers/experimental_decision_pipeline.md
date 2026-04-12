@@ -4,6 +4,10 @@ Paper/workflow ID: `experimental_decision_pipeline`
 
 Category: `Lab operations`
 
+## Primary Reference
+
+Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.
+
 ## Article Summary
 
 The pipeline is not a paper; it is the operational synthesis of the papers. It prepares a state, validates QST, simulates or ingests DD coherences, reconstructs an effective spectrum, chooses a control sequence, and prepares comparison templates for real data.
@@ -37,12 +41,40 @@ Waiting for real lab data; current decision is synthetic.
 - `state_preparation_summary.qst_fidelity`: `0.985594`
 - `decision_summary.selected_predicted_coherence`: `0.989469`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/experimental_decision_pipeline/control_sequence_decision.png`
-- `generated/figures/experimental_decision_pipeline/dd_spectroscopy_fit.png`
-- `generated/figures/experimental_decision_pipeline/reconstructed_noise_spectrum.png`
-- `generated/figures/experimental_decision_pipeline/state_preparation_qst.png`
+### Figure 1. Control Sequence Decision
+
+![Control Sequence Decision](../../outputs/workflows/experimental_decision_pipeline/latest/figures/control_sequence_decision.png)
+
+- Summary: Candidate control sequences are ranked by the coherence predicted from the reconstructed spectrum, and the selected sequence is highlighted.
+- Interpretation: In this laboratory, the figure is used to turn preparation, QST, spectroscopy, and control scoring into one operational loop. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.
+
+### Figure 2. Dd Spectroscopy Fit
+
+![Dd Spectroscopy Fit](../../outputs/workflows/experimental_decision_pipeline/latest/figures/dd_spectroscopy_fit.png)
+
+- Summary: Measured workflow coherences are compared with the coherences predicted by the spectrum reconstructed from those same measurements.
+- Interpretation: In this laboratory, the figure is used to turn preparation, QST, spectroscopy, and control scoring into one operational loop. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.
+
+### Figure 3. Reconstructed Noise Spectrum
+
+![Reconstructed Noise Spectrum](../../outputs/workflows/experimental_decision_pipeline/latest/figures/reconstructed_noise_spectrum.png)
+
+- Summary: The workflow-level inversion returns an effective noise spectrum that is then used to evaluate candidate control sequences.
+- Interpretation: In this laboratory, the figure is used to turn preparation, QST, spectroscopy, and control scoring into one operational loop. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.
+
+### Figure 4. State Preparation Qst
+
+![State Preparation Qst](../../outputs/workflows/experimental_decision_pipeline/latest/figures/state_preparation_qst.png)
+
+- Summary: The target spin-3/2 state and its tomography reconstruction are compared before the spectroscopy step begins.
+- Interpretation: In this laboratory, the figure is used to turn preparation, QST, spectroscopy, and control scoring into one operational loop. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.
+
 
 ## Canonical Artifacts
 

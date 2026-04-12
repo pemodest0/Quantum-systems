@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -371,7 +371,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "initial_training_mean_fidelity": result.initial_fidelity,
             "final_training_mean_fidelity": result.final_fidelity,
@@ -386,27 +385,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# GRAPE NMR Control Reproduction",
-                "",
-                "This run implements the core GRAPE idea for the project's Na-23",
-                "spin-3/2 model: a piecewise-constant RF pulse is optimized to",
-                "realize a selective central-transition pi rotation.",
-                "",
-                f"Initial training fidelity: `{result.initial_fidelity:.8f}`.",
-                f"Final training fidelity: `{result.final_fidelity:.8f}`.",
-                f"Rectangular grid mean fidelity: `{rect_summary['mean']:.8f}`.",
-                f"GRAPE grid mean fidelity: `{opt_summary['mean']:.8f}`.",
-                "",
-                "This is the first control-optimization layer after the earlier",
-                "selective-pulse benchmark exposed strong coherent errors.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -421,3 +399,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

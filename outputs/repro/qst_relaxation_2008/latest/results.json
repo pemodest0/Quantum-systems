@@ -2,7 +2,6 @@
   "paper_id": "qst_relaxation_2008",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\reproduction_note.md",
   "summary": {
     "noiseless_mean_fidelity": 0.9999999999999996,
     "noiseless_gamma_population_estimate": 52.000000000000014,

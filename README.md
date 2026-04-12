@@ -38,7 +38,7 @@ src/oqs_control/                         validated Python package
 scripts/                                 one-command runs and build utilities
 tests/                                   physics and numerical regression tests
 docs/LAB_MANUAL.md                       compact lab manual
-docs/papers/                             one Markdown file per paper/workflow
+docs/papers/                             one Markdown file per paper/workflow with figure guide
 outputs/repro/                           reproducible JSON/PNG paper artifacts
 outputs/workflows/                       experimental-decision workflow artifacts
 reports/review_article/                  LaTeX/PDF review-style report

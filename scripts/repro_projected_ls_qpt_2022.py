@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -321,7 +321,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "raw_choi_error_mean": metrics["error_summary"]["raw_choi_error"]["mean"],
             "cptp_choi_error_mean": metrics["error_summary"]["cptp_choi_error"]["mean"],
@@ -335,26 +334,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Projected Least-Squares Quantum Process Tomography",
-                "",
-                "This run compares raw least-squares QPT with projected least",
-                "squares in Choi space.",
-                "",
-                f"Raw mean Choi error: `{metrics['error_summary']['raw_choi_error']['mean']:.8f}`.",
-                f"CPTP PLS mean Choi error: `{metrics['error_summary']['cptp_choi_error']['mean']:.8f}`.",
-                f"Raw non-CP fraction: `{metrics['physicality_summary']['raw_negative_fraction']:.3f}`.",
-                f"CPTP non-CP fraction: `{metrics['physicality_summary']['cptp_negative_fraction']:.3f}`.",
-                "",
-                "This is a physical reconstruction benchmark for future process",
-                "tomography outputs, not a full proof-level reproduction.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -369,3 +348,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

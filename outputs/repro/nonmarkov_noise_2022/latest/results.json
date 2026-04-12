@@ -2,7 +2,6 @@
   "paper_id": "nonmarkov_noise_2022",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\reproduction_note.md",
   "summary": {
     "blp_measure": 5.457057385212584,
     "negative_rate_fraction": 0.4828571428571429,

@@ -13,6 +13,15 @@ from datetime import datetime, timezone
 ROOT = Path(__file__).resolve().parents[1]
 REGISTRY = ROOT / "repro" / "paper_registry.yaml"
 MANIFEST = ROOT / "repro" / "repro_manifest.yaml"
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+from oqs_control.figure_annotations import (  # noqa: E402
+    annotate_output_directory,
+    clean_results_payload,
+    remove_redundant_markdown,
+)
 
 
 def sha256_file(path: Path) -> str:
@@ -110,6 +119,9 @@ def main(argv: list[str] | None = None) -> int:
     completed = subprocess.run(command, cwd=ROOT, env=env, check=False)
     if completed.returncode != 0:
         return int(completed.returncode)
+    clean_results_payload(output_dir / "results.json")
+    remove_redundant_markdown(output_dir)
+    annotate_output_directory(args.paper_id, output_dir)
     write_runner_metadata(args.paper_id, script, output_dir, command)
     print(f"Reproduction target completed: {args.paper_id}")
     print(f"Output directory: {output_dir}")

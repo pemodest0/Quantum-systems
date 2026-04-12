@@ -2,7 +2,6 @@
   "paper_id": "gate_set_tomography_2021",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\reproduction_note.md",
   "summary": {
     "train_rmse_gate_only_ideal_spam": 0.022490127455816633,
     "train_rmse_gst": 0.006374112060887871,

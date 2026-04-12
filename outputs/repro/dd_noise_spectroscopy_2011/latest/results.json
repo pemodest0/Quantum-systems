@@ -2,7 +2,6 @@
   "paper_id": "dd_noise_spectroscopy_2011",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\reproduction_note.md",
   "summary": {
     "relative_spectrum_error": 0.3114565811320002,
     "spectrum_correlation": 0.9228952587413072,

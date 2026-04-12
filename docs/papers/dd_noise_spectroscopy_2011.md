@@ -4,6 +4,10 @@ Paper/workflow ID: `dd_noise_spectroscopy_2011`
 
 Category: `DD spectroscopy`
 
+## Primary Reference
+
+Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.
+
 ## Article Summary
 
 This paper uses dynamical decoupling not only to suppress noise but to measure its spectrum. Different pulse sequences sample different spectral bands, allowing reconstruction of colored noise from coherence measurements.
@@ -37,12 +41,40 @@ The inverse problem is ill-conditioned and depends on sequence coverage and puls
 - `reconstruction_summary.spectrum_correlation`: `0.922895`
 - `reconstruction_summary.relative_spectrum_error`: `0.311457`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/dd_noise_spectroscopy_2011/dd_coherence_fit.png`
-- `generated/figures/dd_noise_spectroscopy_2011/dd_reconstructed_spectrum.png`
-- `generated/figures/dd_noise_spectroscopy_2011/dd_sequence_sensitivity.png`
-- `generated/figures/dd_noise_spectroscopy_2011/dd_spectrum_residual.png`
+### Figure 1. Dd Coherence Fit
+
+![Dd Coherence Fit](../../outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_coherence_fit.png)
+
+- Summary: Measured synthetic coherences are compared with the coherences predicted after reconstructing the noise spectrum by non-negative least squares.
+- Interpretation: In this laboratory, the figure is used to invert DD coherence measurements into an effective colored-noise spectrum. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.
+
+### Figure 2. Dd Reconstructed Spectrum
+
+![Dd Reconstructed Spectrum](../../outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_reconstructed_spectrum.png)
+
+- Summary: The colored dephasing spectrum inferred from CPMG and UDD data is overlaid with the synthetic ground-truth spectrum.
+- Interpretation: In this laboratory, the figure is used to invert DD coherence measurements into an effective colored-noise spectrum. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.
+
+### Figure 3. Dd Sequence Sensitivity
+
+![Dd Sequence Sensitivity](../../outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_sequence_sensitivity.png)
+
+- Summary: The figure shows which frequency regions are emphasized by the DD sequences used in the inversion.
+- Interpretation: In this laboratory, the figure is used to invert DD coherence measurements into an effective colored-noise spectrum. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.
+
+### Figure 4. Dd Spectrum Residual
+
+![Dd Spectrum Residual](../../outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_spectrum_residual.png)
+
+- Summary: The difference between the reconstructed spectrum and the synthetic target spectrum is shown across frequency.
+- Interpretation: In this laboratory, the figure is used to invert DD coherence measurements into an effective colored-noise spectrum. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.
+
 
 ## Canonical Artifacts
 

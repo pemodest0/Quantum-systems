@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -371,7 +371,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "target_transition": transition_label,
             "min_operator_fidelity_no_internal": no_internal_min,
@@ -387,26 +386,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Quantum Logical Operations For Spin 3/2 Quadrupolar Nuclei Monitored By QST",
-                "",
-                "This run implements a minimal selective-pulse control benchmark for",
-                "a spin-3/2 quadrupolar nucleus.",
-                "",
-                f"Target transition: `{transition_label}` with pair `{transition_pair}`.",
-                f"No-internal minimum operator fidelity: `{no_internal_min:.8f}`.",
-                f"With-quadrupolar minimum operator fidelity: `{with_internal_min:.8f}`.",
-                f"QST-duration target-vs-actual state fidelity: `{target_vs_actual_fidelity:.8f}`.",
-                "",
-                "The result is a control benchmark, not a full reproduction of every",
-                "logical gate from the paper.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -421,3 +400,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

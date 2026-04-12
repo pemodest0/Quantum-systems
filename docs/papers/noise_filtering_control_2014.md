@@ -4,6 +4,10 @@ Paper/workflow ID: `noise_filtering_control_2014`
 
 Category: `DD filtering`
 
+## Primary Reference
+
+Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.
+
 ## Article Summary
 
 This paper treats quantum control as noise filtering. Pulse sequences such as Ramsey, Hahn, CPMG, and UDD shape the spectral response of the qubit or spin to environmental noise.
@@ -41,12 +45,40 @@ Ideal instantaneous pulses; finite-pulse errors must be added before lab claims.
 - `summary.ramsey_coherence`: `0.609315`
 - `summary.best_coherence`: `0.998123`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/noise_filtering_control_2014/coherence_vs_control_sequence.png`
-- `generated/figures/noise_filtering_control_2014/filter_peak_tracking.png`
-- `generated/figures/noise_filtering_control_2014/noise_spectrum_and_filters.png`
-- `generated/figures/noise_filtering_control_2014/time_domain_switching_functions.png`
+### Figure 1. Coherence Vs Control Sequence
+
+![Coherence Vs Control Sequence](../../outputs/repro/noise_filtering_control_2014/latest/figures/coherence_vs_control_sequence.png)
+
+- Summary: Ramsey, Hahn, CPMG, and UDD-type sequences are compared through the coherence they preserve under the same synthetic noise spectrum.
+- Interpretation: In this laboratory, the figure is used to treat pulse sequences as spectral filters over the environmental noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.
+
+### Figure 2. Filter Peak Tracking
+
+![Filter Peak Tracking](../../outputs/repro/noise_filtering_control_2014/latest/figures/filter_peak_tracking.png)
+
+- Summary: The characteristic filter peak is tracked as the control sequence changes, indicating which spectral band each sequence probes most strongly.
+- Interpretation: In this laboratory, the figure is used to treat pulse sequences as spectral filters over the environmental noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.
+
+### Figure 3. Noise Spectrum And Filters
+
+![Noise Spectrum And Filters](../../outputs/repro/noise_filtering_control_2014/latest/figures/noise_spectrum_and_filters.png)
+
+- Summary: The synthetic noise spectral density is plotted together with the filter functions of the candidate control sequences.
+- Interpretation: In this laboratory, the figure is used to treat pulse sequences as spectral filters over the environmental noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.
+
+### Figure 4. Time Domain Switching Functions
+
+![Time Domain Switching Functions](../../outputs/repro/noise_filtering_control_2014/latest/figures/time_domain_switching_functions.png)
+
+- Summary: The sign-changing switching functions associated with the control sequences are plotted in the time domain.
+- Interpretation: In this laboratory, the figure is used to treat pulse sequences as spectral filters over the environmental noise. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.
+
 
 ## Canonical Artifacts
 

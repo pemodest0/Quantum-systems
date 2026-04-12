@@ -2,7 +2,6 @@
   "paper_id": "quadrupolar_qip_2012",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\reproduction_note.md",
   "summary": {
     "iz_decomposition": {
       "IZ": 0.4999999999999998,

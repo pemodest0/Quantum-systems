@@ -4,6 +4,10 @@ Paper/workflow ID: `nonmarkov_noise_2022`
 
 Category: `Memory diagnostics`
 
+## Primary Reference
+
+Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.
+
 ## Article Summary
 
 The non-Markovian noise review frames the difference between memoryless effective dynamics and history-dependent dynamics. It motivates diagnostics such as trace-distance revivals, information backflow, negative time-local rates, and process-tensor approaches.
@@ -37,12 +41,40 @@ Benchmark is synthetic and minimal, not a reproduction of the full review.
 - `failure_metrics.blp_measure`: `5.45706`
 - `failure_metrics.markovian_fit_rmse`: `0.273341`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/nonmarkov_noise_2022/lindblad_failure_signatures.png`
-- `generated/figures/nonmarkov_noise_2022/markovian_vs_memory_ramsey_echo.png`
-- `generated/figures/nonmarkov_noise_2022/time_local_rate_negative_intervals.png`
-- `generated/figures/nonmarkov_noise_2022/trace_distance_revival.png`
+### Figure 1. Lindblad Failure Signatures
+
+![Lindblad Failure Signatures](../../outputs/repro/nonmarkov_noise_2022/latest/figures/lindblad_failure_signatures.png)
+
+- Summary: Residuals and witnesses are combined to show where the Markovian fit fails to reproduce memory-bearing synthetic data.
+- Interpretation: In this laboratory, the figure is used to decide when a simple Lindblad model stops being defensible. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.
+
+### Figure 2. Markovian Vs Memory Ramsey Echo
+
+![Markovian Vs Memory Ramsey Echo](../../outputs/repro/nonmarkov_noise_2022/latest/figures/markovian_vs_memory_ramsey_echo.png)
+
+- Summary: Synthetic Ramsey and echo decays are contrasted under a memoryless model and a model with effective temporal correlations.
+- Interpretation: In this laboratory, the figure is used to decide when a simple Lindblad model stops being defensible. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.
+
+### Figure 3. Time Local Rate Negative Intervals
+
+![Time Local Rate Negative Intervals](../../outputs/repro/nonmarkov_noise_2022/latest/figures/time_local_rate_negative_intervals.png)
+
+- Summary: The time-local decay rate is plotted to highlight intervals where it becomes negative.
+- Interpretation: In this laboratory, the figure is used to decide when a simple Lindblad model stops being defensible. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.
+
+### Figure 4. Trace Distance Revival
+
+![Trace Distance Revival](../../outputs/repro/nonmarkov_noise_2022/latest/figures/trace_distance_revival.png)
+
+- Summary: State distinguishability is tracked to reveal revival after an initial loss of information.
+- Interpretation: In this laboratory, the figure is used to decide when a simple Lindblad model stops being defensible. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.
+
 
 ## Canonical Artifacts
 

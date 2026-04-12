@@ -29,6 +29,7 @@ from oqs_control.workflows.experimental_decision_pipeline import (  # noqa: E402
     lab_manifest_template,
     run_pipeline,
 )
+from oqs_control.figure_annotations import annotate_output_directory  # noqa: E402
 
 
 def sha256_file(path: Path) -> str:
@@ -222,6 +223,7 @@ def run(output_dir: Path, lab_manifest: Path | None = None) -> dict[str, object]
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
     write_json(output_dir / "lab_manifest_template.json", lab_manifest_template())
+    annotate_output_directory(WORKFLOW_ID, output_dir)
 
     run_metadata = {
         "workflow_id": WORKFLOW_ID,

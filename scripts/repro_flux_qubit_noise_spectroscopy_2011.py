@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -193,7 +193,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": metrics["spectroscopy_summary"],
         "figures": {name: str(path) for name, path in figures.items()},
     }
@@ -201,23 +200,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Flux-Qubit Noise Spectroscopy Through Dynamical Decoupling",
-                "",
-                "This run reconstructs a synthetic power-law dephasing spectrum",
-                "from CPMG coherence data using the filter-peak approximation.",
-                "",
-                f"True alpha: `{true_alpha:.6f}`.",
-                f"Estimated alpha: `{fit['alpha']:.6f}`.",
-                f"Alpha absolute error: `{abs(fit['alpha'] - true_alpha):.6f}`.",
-                f"Minimum coherence: `{float(np.min(coherence)):.8f}`.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -232,3 +214,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

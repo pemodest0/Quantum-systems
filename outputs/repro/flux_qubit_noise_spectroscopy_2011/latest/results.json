@@ -2,7 +2,6 @@
   "paper_id": "flux_qubit_noise_spectroscopy_2011",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\reproduction_note.md",
   "summary": {
     "estimated_alpha": 0.7399178508993347,
     "alpha_abs_error": 0.04008214910066532,

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -270,7 +270,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "process_tensor_validation_rmse": process_rmse,
             "markovian_validation_rmse": markov_rmse,
@@ -285,26 +284,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Non-Markovian Process Tensor Characterisation And Control",
-                "",
-                "This run implements an operational process-tensor benchmark for",
-                "correlated dephasing memory.",
-                "",
-                f"Process tensor validation RMSE: `{process_rmse:.8f}`.",
-                f"Markovian validation RMSE: `{markov_rmse:.8f}`.",
-                f"Prediction improvement factor: `{metrics['prediction_summary']['improvement_factor']:.8f}`.",
-                f"Process-tensor selected sequence: `{metrics['control_summary']['process_tensor_best_sequence']}`.",
-                "",
-                "This is a synthetic control-memory benchmark, not a real hardware",
-                "implementation of the full process tensor protocol.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -319,3 +298,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

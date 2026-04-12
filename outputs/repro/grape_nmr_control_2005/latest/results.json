@@ -2,7 +2,6 @@
   "paper_id": "grape_nmr_control_2005",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\reproduction_note.md",
   "summary": {
     "initial_training_mean_fidelity": 0.5371903431021541,
     "final_training_mean_fidelity": 0.9915121503333876,

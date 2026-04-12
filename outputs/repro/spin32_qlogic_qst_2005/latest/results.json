@@ -2,7 +2,6 @@
   "paper_id": "spin32_qlogic_qst_2005",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\reproduction_note.md",
   "summary": {
     "target_transition": "CT",
     "min_operator_fidelity_no_internal": 1.0,

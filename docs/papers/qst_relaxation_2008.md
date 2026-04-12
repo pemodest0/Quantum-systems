@@ -4,6 +4,10 @@ Paper/workflow ID: `qst_relaxation_2008`
 
 Category: `QST relaxation`
 
+## Primary Reference
+
+Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.
+
 ## Article Summary
 
 This paper studies relaxation dynamics in a quadrupolar NMR system using quantum state tomography. Instead of inferring relaxation only from spectra or envelopes, it reconstructs density matrices over time and extracts rates from the evolution of populations and coherences.
@@ -37,12 +41,40 @@ Uses synthetic tomography signals; real extraction requires experimental amplitu
 - `noiseless_reconstruction.mean_fidelity`: `1`
 - `noiseless_reconstruction.gamma_population_estimate`: `52`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/qst_relaxation_2008/density_element_decay.png`
-- `generated/figures/qst_relaxation_2008/extracted_rate_vs_true.png`
-- `generated/figures/qst_relaxation_2008/phase_error_sensitivity.png`
-- `generated/figures/qst_relaxation_2008/tomography_fidelity_vs_noise.png`
+### Figure 1. Density Element Decay
+
+![Density Element Decay](../../outputs/repro/qst_relaxation_2008/latest/figures/density_element_decay.png)
+
+- Summary: Selected density-matrix elements are followed over time after QST reconstruction to separate population relaxation from coherence decay.
+- Interpretation: In this laboratory, the figure is used to identify population and coherence decay rates with tomography instead of spectrum-only fitting. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.
+
+### Figure 2. Extracted Rate Vs True
+
+![Extracted Rate Vs True](../../outputs/repro/qst_relaxation_2008/latest/figures/extracted_rate_vs_true.png)
+
+- Summary: Rates extracted from reconstructed density matrices are compared against the ground-truth synthetic rates used to generate the trajectories.
+- Interpretation: In this laboratory, the figure is used to identify population and coherence decay rates with tomography instead of spectrum-only fitting. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.
+
+### Figure 3. Phase Error Sensitivity
+
+![Phase Error Sensitivity](../../outputs/repro/qst_relaxation_2008/latest/figures/phase_error_sensitivity.png)
+
+- Summary: The tomography and fitted-rate output is swept against phase mismatch to reveal how phase calibration biases relaxation identification.
+- Interpretation: In this laboratory, the figure is used to identify population and coherence decay rates with tomography instead of spectrum-only fitting. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.
+
+### Figure 4. Tomography Fidelity Vs Noise
+
+![Tomography Fidelity Vs Noise](../../outputs/repro/qst_relaxation_2008/latest/figures/tomography_fidelity_vs_noise.png)
+
+- Summary: The QST reconstruction fidelity is plotted against increasing synthetic measurement noise.
+- Interpretation: In this laboratory, the figure is used to identify population and coherence decay rates with tomography instead of spectrum-only fitting. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.
+
 
 ## Canonical Artifacts
 

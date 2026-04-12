@@ -4,6 +4,10 @@ Paper/workflow ID: `na23_relaxometry_2023`
 
 Category: `Na-23 relaxation`
 
+## Primary Reference
+
+Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.
+
 ## Article Summary
 
 The review organizes Na-23 relaxometry around the fact that Na-23 is a spin-3/2 quadrupolar nucleus whose relaxation is strongly shaped by electric-field-gradient fluctuations, correlation times, and spectral densities. It is mainly a conceptual and modeling foundation rather than a single-figure reproduction target.
@@ -36,12 +40,40 @@ Qualitative effective-model reproduction of a review paper, not a full clinical 
 
 - `best_fit.global_envelope_rmse`: `0.0445693`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/na23_relaxometry_2023/envelope_residuals.png`
-- `generated/figures/na23_relaxometry_2023/phenomenological_vs_redfield_decay.png`
-- `generated/figures/na23_relaxometry_2023/rates_vs_tau_c.png`
-- `generated/figures/na23_relaxometry_2023/spectral_density_regimes.png`
+### Figure 1. Envelope Residuals
+
+![Envelope Residuals](../../outputs/repro/na23_relaxometry_2023/latest/figures/envelope_residuals.png)
+
+- Summary: Residual curves compare the empirical biexponential envelopes with the reduced spectral-density model over the same relaxation window.
+- Interpretation: In this laboratory, the figure is used to replace envelope-only fitting by an interpretable quadrupolar spectral-density picture. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.
+
+### Figure 2. Phenomenological Vs Redfield Decay
+
+![Phenomenological Vs Redfield Decay](../../outputs/repro/na23_relaxometry_2023/latest/figures/phenomenological_vs_redfield_decay.png)
+
+- Summary: The MATLAB-derived biexponential decay envelopes are overlaid with the reduced Redfield-inspired curves for the three quadrupolar transitions.
+- Interpretation: In this laboratory, the figure is used to replace envelope-only fitting by an interpretable quadrupolar spectral-density picture. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.
+
+### Figure 3. Rates Vs Tau C
+
+![Rates Vs Tau C](../../outputs/repro/na23_relaxometry_2023/latest/figures/rates_vs_tau_c.png)
+
+- Summary: The effective relaxation rates are tracked versus correlation time to show the crossover between fast-motion and slow-motion quadrupolar regimes.
+- Interpretation: In this laboratory, the figure is used to replace envelope-only fitting by an interpretable quadrupolar spectral-density picture. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.
+
+### Figure 4. Spectral Density Regimes
+
+![Spectral Density Regimes](../../outputs/repro/na23_relaxometry_2023/latest/figures/spectral_density_regimes.png)
+
+- Summary: Reduced spectral densities are plotted across the relevant correlation-time regime to show how motion shapes quadrupolar relaxation.
+- Interpretation: In this laboratory, the figure is used to replace envelope-only fitting by an interpretable quadrupolar spectral-density picture. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.
+
 
 ## Canonical Artifacts
 

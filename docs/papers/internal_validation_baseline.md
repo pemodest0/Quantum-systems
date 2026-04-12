@@ -4,6 +4,10 @@ Paper/workflow ID: `internal_validation_baseline`
 
 Category: `Internal validation`
 
+## Primary Reference
+
+Internal baseline for spin-3/2 Na-23 operators, Hamiltonians, Liouvillian consistency, and synthetic spectra.
+
 ## Article Summary
 
 This is the laboratory's internal control experiment rather than an external article. It defines the minimum physical consistency conditions required before any paper reproduction or experimental interpretation is trusted.
@@ -36,9 +40,16 @@ This is an internal benchmark, not an external paper reproduction.
 
 - No numeric metrics are currently available.
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/internal_validation_baseline/internal_validation_baseline.png`
+### Figure 1. Internal Validation Baseline
+
+![Internal Validation Baseline](../../outputs/repro/internal_validation_baseline/latest/internal_validation_baseline.png)
+
+- Summary: The baseline panel consolidates commutator checks, Hermiticity checks, transition positions, and physical-state diagnostics for the Na-23 spin-3/2 model.
+- Interpretation: In this laboratory, the figure is used to certify the physical consistency of the spin-3/2 platform before any later claim. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Internal baseline for spin-3/2 Na-23 operators, Hamiltonians, Liouvillian consistency, and synthetic spectra.
+
 
 ## Canonical Artifacts
 

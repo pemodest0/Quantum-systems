@@ -2,7 +2,6 @@
   "paper_id": "pps_optimal_control_2012",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\reproduction_note.md",
   "summary": {
     "analytical_preparation_error": 1.850371707708596e-15,
     "grape_final_preparation_error": 3.069798401686972e-09,

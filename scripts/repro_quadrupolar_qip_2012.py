@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -311,7 +311,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "iz_decomposition": nonzero_coefficients(iz_coeffs),
             "quadrupolar_decomposition": nonzero_coefficients(q_coeffs),
@@ -330,33 +329,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Quantum Information Processing By NMR On Quadrupolar Nuclei",
-                "",
-                "This run implements the minimal logical-processor structure of a",
-                "spin-3/2 quadrupolar nucleus: four spin levels are treated as two",
-                "logical qubits.",
-                "",
-                "Key reproduced identities:",
-                "",
-                "- `Iz = ZI + 0.5 IZ` in the logical product-operator basis.",
-                "- `3 Iz^2 - I(I+1) I = 3 ZZ` for `I=3/2`.",
-                "- One two-qubit Grover iteration maps the uniform state to the",
-                "  marked pseudo-pure deviation density.",
-                "",
-                f"Minimum ideal Grover marked-state population: `{metrics['grover_ideal']['min_marked_population']:.12g}`.",
-                f"Minimum ideal Grover deviation fidelity: `{metrics['grover_ideal']['min_deviation_fidelity']:.12g}`.",
-                f"Synthetic pseudo-pure marked population at epsilon={synthetic_epsilon}: `{synthetic_pps_result.marked_population:.12g}`.",
-                "",
-                "This is a platform-structure reproduction, not a full experimental",
-                "pulse-sequence reproduction.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -371,3 +343,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

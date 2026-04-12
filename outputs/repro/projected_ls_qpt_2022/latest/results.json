@@ -2,7 +2,6 @@
   "paper_id": "projected_ls_qpt_2022",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\reproduction_note.md",
   "summary": {
     "raw_choi_error_mean": 0.2451836158163519,
     "cptp_choi_error_mean": 0.17672630876135342,

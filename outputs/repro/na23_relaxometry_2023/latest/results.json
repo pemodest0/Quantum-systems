@@ -2,7 +2,6 @@
   "paper_id": "na23_relaxometry_2023",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\reproduction_note.md",
   "figures": {
     "spectral_density_regimes": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\spectral_density_regimes.png",
     "rates_vs_tau_c": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\rates_vs_tau_c.png",

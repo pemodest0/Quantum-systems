@@ -2,7 +2,6 @@
   "paper_id": "multipass_qpt_2024",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\reproduction_note.md",
   "summary": {
     "best_passes": 7,
     "single_pass_mean_error": 0.21574425366275551,

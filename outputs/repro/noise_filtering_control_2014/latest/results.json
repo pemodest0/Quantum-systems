@@ -2,7 +2,6 @@
   "paper_id": "noise_filtering_control_2014",
   "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\metrics.json",
   "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\config_used.json",
-  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\reproduction_note.md",
   "summary": {
     "ramsey_coherence": 0.6093154078395264,
     "best_sequence": "CPMG-8",

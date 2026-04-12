@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import json
 import hashlib
+import os
 import shutil
 from pathlib import Path
+import sys
 from typing import Any
 
 import matplotlib
@@ -15,12 +17,31 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
 REPORT_DIR = ROOT / "reports" / "review_article"
 GENERATED_DIR = REPORT_DIR / "generated"
 FIGURE_DIR = GENERATED_DIR / "figures"
 ARTIFACT_DIR = GENERATED_DIR / "artifact_snapshots"
 CLEAN_DOCS_DIR = ROOT / "docs"
 CLEAN_PAPERS_DIR = CLEAN_DOCS_DIR / "papers"
+
+from oqs_control.figure_annotations import (  # noqa: E402
+    annotate_base_figures,
+    annotate_output_directory,
+    annotate_untracked_png,
+    base_figure_note,
+    clean_results_payload,
+    comparison_figure_note,
+    latex_caption_from_note,
+    markdown_figure_block,
+    output_figure_note,
+    reference_for_source,
+    remove_redundant_markdown,
+    summary_for_output_figure,
+)
 
 
 PAPER_ORDER = [
@@ -506,6 +527,7 @@ def plot_figure_count(copied: dict[str, list[Path]]) -> Path:
     ax.grid(axis="y", alpha=0.25)
     fig.savefig(path, dpi=170)
     plt.close(fig)
+    annotate_untracked_png(path, comparison_figure_note(path.name))
     return path
 
 
@@ -548,6 +570,7 @@ def plot_quality_metrics() -> Path:
     ax.grid(axis="y", alpha=0.25)
     fig.savefig(path, dpi=170)
     plt.close(fig)
+    annotate_untracked_png(path, comparison_figure_note(path.name))
     return path
 
 
@@ -583,6 +606,7 @@ def plot_improvement_factors() -> Path:
     ax.grid(axis="y", alpha=0.25)
     fig.savefig(path, dpi=170)
     plt.close(fig)
+    annotate_untracked_png(path, comparison_figure_note(path.name))
     return path
 
 
@@ -614,6 +638,7 @@ def plot_error_metrics() -> Path:
     ax.grid(axis="y", alpha=0.25, which="both")
     fig.savefig(path, dpi=170)
     plt.close(fig)
+    annotate_untracked_png(path, comparison_figure_note(path.name))
     return path
 
 
@@ -630,19 +655,14 @@ def write_comparison_sections(copied: dict[str, list[Path]], comparison_figures:
         "scientifically.",
         "",
     ]
-    captions = {
-        "comparison_figure_count.png": "Number of plot artifacts available for each reproduction or workflow. This is a reproducibility-coverage diagnostic.",
-        "comparison_quality_scores.png": "Normalized quality-style scores. Fidelity and correlation metrics are already in [0,1]; selected improvement metrics are rescaled only for visual comparison.",
-        "comparison_improvement_factors.png": "Direct comparison of reported improvement factors: optimized control, constrained tomography, GST, process tensors, and DD filtering improve different failure modes.",
-        "comparison_error_metrics.png": "Heterogeneous reported errors on a logarithmic scale. These errors are not interchangeable but reveal where each benchmark measures residual model mismatch.",
-    }
     for fig_path in comparison_figures:
+        note = comparison_figure_note(fig_path.name)
         lines.extend(
             [
                 r"\begin{figure}[p]",
                 r"  \centering",
                 rf"  \includegraphics[width=0.92\textwidth]{{{latex_path(fig_path)}}}",
-                rf"  \caption{{{latex_escape(captions.get(fig_path.name, fig_path.stem))}}}",
+                rf"  \caption{{{latex_escape(latex_caption_from_note(note))}}}",
                 r"\end{figure}",
                 "",
             ]
@@ -687,6 +707,8 @@ def write_expanded_sections(copied: dict[str, list[Path]]) -> None:
             [
                 rf"\subsection{{{latex_escape(meta['label'])}: {latex_escape(meta['title'])}}}",
                 rf"\textbf{{Category.}} {latex_escape(meta['category'])}.",
+                "",
+                rf"\textbf{{Primary reference.}} {latex_escape(reference_for_source(source_id))}",
                 "",
                 rf"\textbf{{Article summary.}} {latex_escape(commentary['article_summary'])}",
                 "",
@@ -749,13 +771,13 @@ def write_figure_atlas(copied: dict[str, list[Path]]) -> None:
             ]
         )
         for fig_path in figs:
-            caption_name = fig_path.stem.replace("_", " ")
+            note = output_figure_note(source_id, fig_path.name, summary_for_output_figure(source_id, fig_path.name))
             lines.extend(
                 [
                     r"\begin{figure}[p]",
                     r"  \centering",
                     rf"  \includegraphics[width=0.93\textwidth]{{{latex_path(fig_path)}}}",
-                    rf"  \caption{{{latex_escape(meta['label'])}: {latex_escape(caption_name)}.}}",
+                    rf"  \caption{{{latex_escape(latex_caption_from_note(note))}}}",
                     r"\end{figure}",
                     "",
                 ]
@@ -921,12 +943,13 @@ def write_experimental_simulation_sections(base_records: list[dict[str, Any]]) -
         ]
     )
     for record in png_records:
+        note = base_figure_note(Path(str(record["source"])).name)
         lines.extend(
             [
                 r"\begin{figure}[p]",
                 r"  \centering",
                 rf"  \includegraphics[width=0.92\textwidth]{{{record['snapshot']}}}",
-                rf"  \caption{{{latex_escape(record['label'])}. {latex_escape(record['role'])}}}",
+                rf"  \caption{{{latex_escape(latex_caption_from_note(note))}}}",
                 r"\end{figure}",
                 "",
             ]
@@ -966,10 +989,12 @@ def write_clean_paper_docs(copied: dict[str, list[Path]]) -> None:
     for source_id in PAPER_ORDER:
         meta = PAPER_META[source_id]
         commentary = PAPER_COMMENTARY[source_id]
+        source_figures = figures_for(source_id)
         metrics = metrics_for(source_id)
         flat = flatten_metrics(metrics)
         key_metrics = choose_key_metrics(source_id, flat)
         filename = f"{source_id}.md"
+        doc_path = CLEAN_PAPERS_DIR / filename
 
         lines = [
             f"# {meta['label']}: {meta['title']}",
@@ -977,6 +1002,10 @@ def write_clean_paper_docs(copied: dict[str, list[Path]]) -> None:
             f"Paper/workflow ID: `{source_id}`",
             "",
             f"Category: `{meta['category']}`",
+            "",
+            "## Primary Reference",
+            "",
+            reference_for_source(source_id),
             "",
             "## Article Summary",
             "",
@@ -1014,11 +1043,14 @@ def write_clean_paper_docs(copied: dict[str, list[Path]]) -> None:
                 lines.append(f"- `{name}`: `{pretty_metric_value(value)}`")
         else:
             lines.append("- No numeric metrics are currently available.")
-        lines.extend(["", "## Generated Figures", ""])
-        if copied.get(source_id):
-            for fig_path in copied[source_id]:
-                source_relative = fig_path.relative_to(REPORT_DIR)
-                lines.append(f"- `{source_relative.as_posix()}`")
+        lines.extend(["", "## Figure Guide", ""])
+        if source_figures:
+            for index, fig_path in enumerate(source_figures, start=1):
+                relative_image = Path(
+                    os.path.relpath(fig_path, start=doc_path.parent)
+                ).as_posix()
+                note = output_figure_note(source_id, fig_path.name, summary_for_output_figure(source_id, fig_path.name))
+                lines.extend(markdown_figure_block(relative_image, note, index))
         else:
             lines.append("- No generated figures are currently available.")
         lines.extend(
@@ -1051,7 +1083,7 @@ def write_lab_manual(base_records: list[dict[str, Any]]) -> None:
         "",
         "1. `README.md` for quick start.",
         "2. `docs/LAB_MANUAL.md` for the lab structure and validation rules.",
-        "3. `docs/papers/` for one Markdown file per reproduced paper/workflow.",
+        "3. `docs/papers/` for one Markdown file per reproduced paper/workflow, each with figure-by-figure commentary and references.",
         "4. `reports/review_article/open_quantum_control_review.pdf` for the full review-style report with plots.",
         "",
         "## Repository Roles",
@@ -1060,7 +1092,7 @@ def write_lab_manual(base_records: list[dict[str, Any]]) -> None:
         "- `scripts/`: one-command runs and build utilities.",
         "- `outputs/repro/`: JSON/PNG artifacts from paper reproductions.",
         "- `outputs/workflows/`: JSON/PNG artifacts from operational workflows.",
-        "- `docs/papers/`: one Markdown file per paper/workflow.",
+        "- `docs/papers/`: one Markdown file per paper/workflow with a detailed figure guide.",
         "- `reports/review_article/`: publication-style LaTeX/PDF report.",
         "- `lab/research_memory/`: generated research memory.",
         "",
@@ -1122,6 +1154,11 @@ def write_lab_manual(base_records: list[dict[str, Any]]) -> None:
 def main() -> int:
     GENERATED_DIR.mkdir(parents=True, exist_ok=True)
     FIGURE_DIR.mkdir(parents=True, exist_ok=True)
+    annotate_base_figures()
+    for source_id in PAPER_ORDER:
+        clean_results_payload(source_dir_for(source_id) / "results.json")
+        remove_redundant_markdown(source_dir_for(source_id))
+        annotate_output_directory(source_id, source_dir_for(source_id))
     base_records = copy_base_artifacts()
     copied = copy_figures_to_report()
     comparison_figures = [

@@ -4,6 +4,10 @@ Paper/workflow ID: `nonmarkov_process_tensor_2020`
 
 Category: `Multi-time memory`
 
+## Primary Reference
+
+Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+
 ## Article Summary
 
 The process-tensor paper demonstrates multi-time characterization and control in non-Markovian settings. Rather than describing a process by one fixed channel, it models how interventions at different times interact with memory.
@@ -37,12 +41,40 @@ Synthetic correlated dephasing only; real process-tensor tomography is experimen
 - `prediction_summary.improvement_factor`: `14.7084`
 - `control_summary.true_control_advantage`: `0.365222`
 
-## Generated Figures
+## Figure Guide
 
-- `generated/figures/nonmarkov_process_tensor_2020/process_tensor_control_landscape.png`
-- `generated/figures/nonmarkov_process_tensor_2020/process_tensor_echo_witness.png`
-- `generated/figures/nonmarkov_process_tensor_2020/process_tensor_prediction_scatter.png`
-- `generated/figures/nonmarkov_process_tensor_2020/process_tensor_rmse_by_length.png`
+### Figure 1. Process Tensor Control Landscape
+
+![Process Tensor Control Landscape](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_control_landscape.png)
+
+- Summary: Candidate controls are scored using a multi-time process-tensor description instead of a memoryless channel.
+- Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+
+### Figure 2. Process Tensor Echo Witness
+
+![Process Tensor Echo Witness](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_echo_witness.png)
+
+- Summary: Multi-time echo observables are compared for the Markovian approximation and the process-tensor model.
+- Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+
+### Figure 3. Process Tensor Prediction Scatter
+
+![Process Tensor Prediction Scatter](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_prediction_scatter.png)
+
+- Summary: Predicted versus true observables are scattered for the competing models across the synthetic validation dataset.
+- Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+
+### Figure 4. Process Tensor Rmse By Length
+
+![Process Tensor Rmse By Length](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_rmse_by_length.png)
+
+- Summary: The root-mean-square prediction error is plotted against the temporal depth of the control/measurement sequence.
+- Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
+- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+
 
 ## Canonical Artifacts
 

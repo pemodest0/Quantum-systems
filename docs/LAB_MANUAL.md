@@ -11,7 +11,7 @@ Build a reproducible laboratory for control and identification of dissipative dy
 
 1. `README.md` for quick start.
 2. `docs/LAB_MANUAL.md` for the lab structure and validation rules.
-3. `docs/papers/` for one Markdown file per reproduced paper/workflow.
+3. `docs/papers/` for one Markdown file per reproduced paper/workflow, each with figure-by-figure commentary and references.
 4. `reports/review_article/open_quantum_control_review.pdf` for the full review-style report with plots.
 
 ## Repository Roles
@@ -20,7 +20,7 @@ Build a reproducible laboratory for control and identification of dissipative dy
 - `scripts/`: one-command runs and build utilities.
 - `outputs/repro/`: JSON/PNG artifacts from paper reproductions.
 - `outputs/workflows/`: JSON/PNG artifacts from operational workflows.
-- `docs/papers/`: one Markdown file per paper/workflow.
+- `docs/papers/`: one Markdown file per paper/workflow with a detailed figure guide.
 - `reports/review_article/`: publication-style LaTeX/PDF report.
 - `lab/research_memory/`: generated research memory.
 
@@ -52,18 +52,18 @@ Build a reproducible laboratory for control and identification of dissipative dy
 ## Base Artifact Inventory
 
 - `outputs/nmr_open_simulation.json` [present, sha256 prefix `98d6eea7e342f312`] - Physical trace/Hermiticity/positivity checks for dense Liouvillian propagation.
-- `outputs/nmr_open_simulation.png` [present, sha256 prefix `547653acb45ed1ba`] - Visual artifact for the open-system Na-23 simulation.
+- `outputs/nmr_open_simulation.png` [present, sha256 prefix `eb31283653dbba90`] - Visual artifact for the open-system Na-23 simulation.
 - `outputs/nmr_synthetic_dissipation_fit.json` [present, sha256 prefix `1933b813b07e2a7e`] - Synthetic parameter-recovery validation for gamma_phi and gamma_relax.
-- `outputs/nmr_synthetic_dissipation_fit.png` [present, sha256 prefix `3a36f640392e246e`] - Visual comparison for the synthetic dissipation fit.
+- `outputs/nmr_synthetic_dissipation_fit.png` [present, sha256 prefix `4d459efdd80c9433`] - Visual comparison for the synthetic dissipation fit.
 - `outputs/nmr_validation_suite.json` [present, sha256 prefix `ba7e65f29b1ded08`] - Noise robustness sweep for dissipation-rate recovery.
-- `outputs/nmr_validation_suite.png` [present, sha256 prefix `8f19e30a93c7358e`] - Visual summary of robustness versus synthetic noise.
+- `outputs/nmr_validation_suite.png` [present, sha256 prefix `6fce8aef351c4c9a`] - Visual summary of robustness versus synthetic noise.
 - `outputs/nmr_reference_dissipation_fit.json` [present, sha256 prefix `7c2180e4bc4e9dff`] - Diagnostic fit against the current real reference TNT FID.
-- `outputs/nmr_reference_dissipation_fit.png` [present, sha256 prefix `873b6b1724d41141`] - Visual comparison for the diagnostic reference-data fit.
+- `outputs/nmr_reference_dissipation_fit.png` [present, sha256 prefix `0bac4d436549f56d`] - Visual comparison for the diagnostic reference-data fit.
 - `outputs/nmr_tomography_pipeline.json` [present, sha256 prefix `12d79fdfd39e1009`] - Synthetic tomography extraction and reconstruction validation.
-- `outputs/nmr_tomography_pipeline.png` [present, sha256 prefix `84693318526ddd9c`] - Visual tomography-pipeline artifact.
+- `outputs/nmr_tomography_pipeline.png` [present, sha256 prefix `e5719b759c279b94`] - Visual tomography-pipeline artifact.
 - `outputs/open_qubit_demo.json` [present, sha256 prefix `3307acb991d748cf`] - Generic open-system qubit thermodynamic/dissipative demonstration.
-- `outputs/open_qubit_demo.png` [present, sha256 prefix `ea6d12e568f36d4c`] - Visual open-qubit demo artifact.
-- `docs/LAB_MANUAL.md` [present, sha256 prefix `86b46f7b0c708f8d`] - Canonical human-readable description of the laboratory, validation policy, and experimental workflow.
+- `outputs/open_qubit_demo.png` [present, sha256 prefix `4735bd5f80714209`] - Visual open-qubit demo artifact.
+- `docs/LAB_MANUAL.md` [present, sha256 prefix `d14db8a54e36903d`] - Canonical human-readable description of the laboratory, validation policy, and experimental workflow.
 - `repro/paper_registry.yaml` [present, sha256 prefix `5ef49d02c19d3f54`] - Canonical list of reproduced papers and internal baselines.
 - `repro/repro_manifest.yaml` [present, sha256 prefix `fefe51555c21959b`] - Machine-readable reproduction manifest.
 - `lab/research_memory/SUMMARY.md` [present, sha256 prefix `ba5f0dfaa1cbcefb`] - Generated memory of completed paper/workflow artifacts.

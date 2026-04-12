@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -290,7 +290,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "best_passes": int(best_passes),
             "single_pass_mean_error": single_summary["mean"],
@@ -303,27 +302,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Multipass Quantum Process Tomography",
-                "",
-                "This run implements a one-qubit PTM prototype of multipass QPT.",
-                "It compares single-pass SQPT with repeated-process tomography under",
-                "synthetic SPAM, readout, and shot noise.",
-                "",
-                f"Best pass count: `{best_passes}`.",
-                f"Single-pass mean PTM error: `{single_summary['mean']:.6g}`.",
-                f"Best multipass mean PTM error: `{best_summary['error']['mean']:.6g}`.",
-                f"Improvement factor: `{mc.improvement_factors[best_passes]:.6g}`.",
-                "",
-                "This is a synthetic prototype for future hardware characterization,",
-                "not a real-device IBM execution.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -338,3 +316,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

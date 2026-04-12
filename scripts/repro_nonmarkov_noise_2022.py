@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -281,7 +281,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "blp_measure": witness.blp_measure,
             "negative_rate_fraction": witness.negative_rate_fraction,
@@ -294,27 +293,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Characterization And Control Of Non-Markovian Quantum Noise",
-                "",
-                "This run implements an operational Markovian-vs-memory benchmark:",
-                "a semigroup pure-dephasing model, a quasi-static memory model revealed",
-                "by Hahn echo, and a trace-distance revival witness.",
-                "",
-                f"BLP backflow proxy: `{witness.blp_measure:.6g}`.",
-                f"Negative-rate fraction: `{witness.negative_rate_fraction:.6g}`.",
-                f"Max echo boost over Markovian prediction: `{witness.max_echo_boost:.6g}`.",
-                f"Markovian fit RMSE to memory Ramsey: `{markov_fit.rmse:.6g}`.",
-                "",
-                "This is a scope-and-limits benchmark, not a full process-tensor",
-                "tomography implementation.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -329,3 +307,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

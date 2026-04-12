@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -196,7 +196,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": metrics["reconstruction_summary"],
         "figures": {name: str(path) for name, path in figures.items()},
     }
@@ -204,23 +203,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Measuring Colored Noise By Dynamical Decoupling",
-                "",
-                "This run reconstructs a synthetic colored dephasing spectrum from",
-                "dynamical-decoupling coherence measurements.",
-                "",
-                f"Spectrum correlation: `{reconstruction.correlation:.8f}`.",
-                f"Relative spectrum error: `{reconstruction.relative_error:.8f}`.",
-                f"True peak frequency: `{metrics['reconstruction_summary']['true_peak_frequency_hz']:.3f} Hz`.",
-                f"Reconstructed peak frequency: `{metrics['reconstruction_summary']['reconstructed_peak_frequency_hz']:.3f} Hz`.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -235,3 +217,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

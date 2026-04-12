@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -440,7 +440,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "noiseless_mean_fidelity": noiseless_mean_fidelity,
             "noiseless_gamma_population_estimate": noiseless_estimate.gamma_population,
@@ -458,28 +457,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# QST Relaxation Dynamics In A Quadrupolar NMR System",
-                "",
-                "This run reproduces the workflow logic of the 2008 QST relaxation paper",
-                "with synthetic data: generate relaxation trajectories, reconstruct density",
-                "matrices by QST, estimate rates, and stress test noise/phase errors.",
-                "",
-                f"Noiseless mean fidelity: `{noiseless_mean_fidelity:.8f}`.",
-                f"True gamma_population: `{true_rates.gamma_population:.6g} s^-1`.",
-                f"Estimated gamma_population: `{noiseless_estimate.gamma_population:.6g} s^-1`.",
-                f"True gamma_dephasing: `{true_rates.gamma_dephasing:.6g} s^-1`.",
-                f"Estimated gamma_dephasing: `{noiseless_estimate.gamma_dephasing:.6g} s^-1`.",
-                "",
-                "This is not yet an experimental reproduction because no time-resolved",
-                "QST phase-series raw data are present in the repository.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -494,3 +471,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

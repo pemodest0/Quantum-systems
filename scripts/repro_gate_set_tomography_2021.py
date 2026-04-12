@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -269,7 +269,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "train_rmse_gate_only_ideal_spam": train_rmse_gate_only,
             "train_rmse_gst": train_rmse_gst,
@@ -283,27 +282,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Gate Set Tomography",
-                "",
-                "This run implements a minimal single-qubit GST-like benchmark.",
-                "It compares a gate-only model that assumes ideal SPAM with a",
-                "self-consistent model that fits state preparation, measurement,",
-                "and gates together.",
-                "",
-                f"Heldout RMSE, gate-only ideal-SPAM fit: `{test_rmse_gate_only:.8f}`.",
-                f"Heldout RMSE, GST fit: `{test_rmse_gst:.8f}`.",
-                f"Heldout improvement factor: `{metrics['prediction_summary']['heldout_improvement_factor']:.8f}`.",
-                "",
-                "Direct parameter comparison is gauge-dependent; predictive",
-                "probabilities are the main physical comparison in this benchmark.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -318,3 +296,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+

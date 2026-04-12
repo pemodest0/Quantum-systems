@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import json
@@ -329,7 +329,6 @@ def run(output_dir: Path) -> dict[str, object]:
         "paper_id": PAPER_ID,
         "metrics_file": str(output_dir / "metrics.json"),
         "config_file": str(output_dir / "config_used.json"),
-        "markdown_note": str(output_dir / "reproduction_note.md"),
         "summary": {
             "analytical_preparation_error": metrics["analytical_population_averaging"]["preparation_error"],
             "grape_final_preparation_error": metrics["grape_preparation"]["final_preparation_error"],
@@ -347,26 +346,6 @@ def run(output_dir: Path) -> dict[str, object]:
     write_json(output_dir / "metrics.json", metrics)
     write_json(output_dir / "config_used.json", config_used)
     write_json(output_dir / "results.json", results)
-    (output_dir / "reproduction_note.md").write_text(
-        "\n".join(
-            [
-                "# Pseudo-Pure State Preparation By Optimal Control",
-                "",
-                "This run prepares a synthetic |00> pseudo-pure state in the",
-                "spin-3/2 quadrupolar manifold using optimized RF mixing followed",
-                "by a gradient/dephasing step.",
-                "",
-                f"Analytical population-averaging error: `{metrics['analytical_population_averaging']['preparation_error']:.8g}`.",
-                f"GRAPE final preparation error: `{metrics['grape_preparation']['final_preparation_error']:.8g}`.",
-                f"GRAPE final deviation fidelity: `{result.final_deviation_fidelity:.8f}`.",
-                "",
-                "This is a synthetic PPS-preparation benchmark designed for the",
-                "current project pipeline, not a full spectrometer calibration.",
-            ]
-        )
-        + "\n",
-        encoding="utf-8",
-    )
     return results
 
 
@@ -381,3 +360,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
