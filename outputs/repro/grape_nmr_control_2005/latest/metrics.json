@@ -1,0 +1,108 @@
+{
+  "paper_id": "grape_nmr_control_2005",
+  "status": "completed",
+  "benchmark_type": "grape_unitary_control",
+  "target_operation": {
+    "platform": "Na-23 spin-3/2 encoded manifold",
+    "transition": "CT",
+    "transition_pair": [
+      1,
+      2
+    ],
+    "operation": "selective pi rotation on the central transition"
+  },
+  "optimization": {
+    "duration_s": 0.0005,
+    "n_segments": 24,
+    "dt_s": 2.0833333333333333e-05,
+    "max_amplitude_hz": 14000.0,
+    "training_detunings_hz": [
+      -200.0,
+      0.0,
+      200.0
+    ],
+    "training_rf_scales": [
+      0.95,
+      1.0,
+      1.05
+    ],
+    "initial_training_mean_fidelity": 0.5371903431021541,
+    "final_training_mean_fidelity": 0.9915121503333876,
+    "iterations": 70,
+    "success": false,
+    "optimizer_message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+  },
+  "robustness_grid": {
+    "detuning_hz_min": -500.0,
+    "detuning_hz_max": 500.0,
+    "rf_scale_min": 0.85,
+    "rf_scale_max": 1.15,
+    "rectangular": {
+      "min": 0.1490570330154543,
+      "mean": 0.387192461932415,
+      "median": 0.3457774347282544,
+      "max": 0.7256771904837799,
+      "p10": 0.16522777008407302
+    },
+    "grape": {
+      "min": 0.8089207465356645,
+      "mean": 0.9624896066569781,
+      "median": 0.968755482533116,
+      "max": 0.9997578589016302,
+      "p10": 0.9227945840889963
+    },
+    "mean_improvement": 0.5752971447245632,
+    "min_improvement": 0.6598637135202101
+  },
+  "probe_state_fidelities": [
+    {
+      "state": "basis_0",
+      "rectangular_fidelity": 0.9983755356387579,
+      "grape_fidelity": 0.9998017073777764
+    },
+    {
+      "state": "basis_1",
+      "rectangular_fidelity": 0.9983753820064564,
+      "grape_fidelity": 0.9996317546072642
+    },
+    {
+      "state": "basis_2",
+      "rectangular_fidelity": 0.9983753820064574,
+      "grape_fidelity": 0.9998416616626257
+    },
+    {
+      "state": "basis_3",
+      "rectangular_fidelity": 0.9983752283769141,
+      "grape_fidelity": 0.9997928367704789
+    },
+    {
+      "state": "coherent",
+      "rectangular_fidelity": 0.7244651950465784,
+      "grape_fidelity": 0.9998791127799856
+    },
+    {
+      "state": "balanced_ct",
+      "rectangular_fidelity": 0.9983772025508,
+      "grape_fidelity": 0.9997575083933025
+    }
+  ],
+  "scientific_interpretation": {
+    "captures": [
+      "piecewise-constant RF controls are optimized by gradient ascent",
+      "the objective is a unitary gate fidelity averaged over B0 detuning and B1 scale",
+      "the optimized pulse suppresses leakage and coherent phase errors relative to a rectangular pulse",
+      "the benchmark directly addresses the selective-pulse failure mode observed in Paper D"
+    ],
+    "does_not_capture": [
+      "no relaxation-optimized Liouville-space GRAPE is implemented here",
+      "no experimental RF transfer function or amplifier bandwidth is modeled",
+      "the benchmark targets one spin-3/2 selective operation rather than a coupled multi-spin molecule"
+    ]
+  },
+  "figures": {
+    "grape_fidelity_convergence": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\grape_fidelity_convergence.png",
+    "optimized_controls": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\optimized_controls.png",
+    "robustness_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\robustness_map.png",
+    "rectangular_vs_grape_state_fidelity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\rectangular_vs_grape_state_fidelity.png"
+  }
+}

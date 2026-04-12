@@ -1,0 +1,19 @@
+{
+  "paper_id": "grape_nmr_control_2005",
+  "generated_at_utc": "2026-04-12T05:27:41.029145+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_grape_nmr_control_2005.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "ab5675eaf4788b71e8b5838b5e7c2c108c0ea8f4d7c6e472046b5d23cdc80699",
+  "results_sha256": "b4d9df0322e8a6220ea9cfd5374c3e8dabac37ea32dc9ef1b519087b151a453f",
+  "metrics_sha256": "f9262a9fda1400e00de393fbaf6fcb1188f242f862d7dd02bdd3054c4b6e4963",
+  "config_used_sha256": "b79a736a3158b9c39f73c9df26b7b7106d4ccaec146035e1b6d88666f6f8c149",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest"
+}

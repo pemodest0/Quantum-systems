@@ -1,0 +1,20 @@
+{
+  "paper_id": "grape_nmr_control_2005",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\reproduction_note.md",
+  "summary": {
+    "initial_training_mean_fidelity": 0.5371903431021541,
+    "final_training_mean_fidelity": 0.9915121503333876,
+    "rectangular_grid_mean_fidelity": 0.387192461932415,
+    "grape_grid_mean_fidelity": 0.9624896066569781,
+    "rectangular_grid_min_fidelity": 0.1490570330154543,
+    "grape_grid_min_fidelity": 0.8089207465356645
+  },
+  "figures": {
+    "grape_fidelity_convergence": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\grape_fidelity_convergence.png",
+    "optimized_controls": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\optimized_controls.png",
+    "robustness_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\robustness_map.png",
+    "rectangular_vs_grape_state_fidelity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\grape_nmr_control_2005\\latest\\figures\\rectangular_vs_grape_state_fidelity.png"
+  }
+}

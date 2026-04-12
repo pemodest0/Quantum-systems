@@ -1,0 +1,121 @@
+{
+  "paper_id": "projected_ls_qpt_2022",
+  "status": "completed",
+  "benchmark_type": "projected_least_squares_qpt",
+  "simulation": {
+    "process": "single-qubit sqrt-X-like PTM from the multipass QPT benchmark",
+    "shots": 128,
+    "seed_count": 100,
+    "projection_iterations": 100,
+    "noise_model": "shot noise only; no SPAM bias in the primary benchmark"
+  },
+  "error_summary": {
+    "raw_choi_error": {
+      "mean": 0.2451836158163519,
+      "std": 0.07596619746746744,
+      "median": 0.24008904006657317,
+      "p90": 0.34583001704895244
+    },
+    "psd_choi_error": {
+      "mean": 0.20724548871975898,
+      "std": 0.06790081721961014,
+      "median": 0.20498230445717852,
+      "p90": 0.2931720804589034
+    },
+    "cptp_choi_error": {
+      "mean": 0.17672630876135342,
+      "std": 0.06788043833745086,
+      "median": 0.17163308787383036,
+      "p90": 0.25906803915079896
+    },
+    "mean_error_improvement_raw_to_cptp": 1.3873634182414878
+  },
+  "physicality_summary": {
+    "raw_negative_fraction": 1.0,
+    "cptp_negative_fraction": 0.0,
+    "raw_negative_eigenvalue_sum": {
+      "mean": 0.12819005633084374,
+      "std": 0.048920802919556396,
+      "median": 0.12066698306878956,
+      "p90": 0.19602822713384155
+    },
+    "cptp_negative_eigenvalue_sum": {
+      "mean": 2.0072282224971918e-16,
+      "std": 2.331384214414503e-16,
+      "median": 1.2732087612356656e-16,
+      "p90": 5.973520289526173e-16
+    },
+    "raw_tp_residual_mean": 0.0,
+    "cptp_tp_residual_mean": 4.172956084523418e-17
+  },
+  "shot_sweep": [
+    {
+      "shots": 64,
+      "raw_choi_error_mean": 0.3242915609385994,
+      "cptp_choi_error_mean": 0.22353128212898996,
+      "raw_negative_sum_mean": 0.1774507142378518,
+      "cptp_negative_sum_mean": 1.7213467804305852e-16,
+      "improvement_factor": 1.4507658966115766
+    },
+    {
+      "shots": 128,
+      "raw_choi_error_mean": 0.2294109372755088,
+      "cptp_choi_error_mean": 0.15994296828195415,
+      "raw_negative_sum_mean": 0.12329069831149524,
+      "cptp_negative_sum_mean": 2.884620989337045e-16,
+      "improvement_factor": 1.4343296222381818
+    },
+    {
+      "shots": 256,
+      "raw_choi_error_mean": 0.16234999668238012,
+      "cptp_choi_error_mean": 0.11403674630603722,
+      "raw_negative_sum_mean": 0.08553801187202141,
+      "cptp_negative_sum_mean": 1.562974132537489e-16,
+      "improvement_factor": 1.4236638797698242
+    },
+    {
+      "shots": 512,
+      "raw_choi_error_mean": 0.11496987383896337,
+      "cptp_choi_error_mean": 0.08121410258857405,
+      "raw_negative_sum_mean": 0.05909251210082452,
+      "cptp_negative_sum_mean": 2.3703836938136177e-16,
+      "improvement_factor": 1.4156392815345644
+    },
+    {
+      "shots": 1024,
+      "raw_choi_error_mean": 0.0813760508142108,
+      "cptp_choi_error_mean": 0.05784968811401077,
+      "raw_negative_sum_mean": 0.040422690102647506,
+      "cptp_negative_sum_mean": 1.9645150209319263e-16,
+      "improvement_factor": 1.406680890894935
+    },
+    {
+      "shots": 2048,
+      "raw_choi_error_mean": 0.05757439418281816,
+      "cptp_choi_error_mean": 0.041295837302027585,
+      "raw_negative_sum_mean": 0.027233750805860008,
+      "cptp_negative_sum_mean": 1.4416941052812393e-16,
+      "improvement_factor": 1.3941936510872321
+    }
+  ],
+  "representative_seed": 100,
+  "scientific_interpretation": {
+    "captures": [
+      "least-squares QPT can produce a non-CP Choi matrix under finite sampling",
+      "PSD projection removes negative Choi eigenvalues but does not enforce TP by itself",
+      "CPTP projection yields a physically valid process estimate",
+      "the benchmark is directly useful before using QPT estimates in hardware or control loops"
+    ],
+    "does_not_capture": [
+      "the full theorem-level finite-sample analysis of the paper is not reproduced",
+      "large-dimensional tensor-network or many-qubit scaling is not implemented",
+      "SPAM bias is not the primary target here; Paper F already isolates SPAM/readout effects"
+    ]
+  },
+  "figures": {
+    "qpt_error_distribution": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\qpt_error_distribution.png",
+    "choi_eigenvalues_raw_vs_pls": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\choi_eigenvalues_raw_vs_pls.png",
+    "physicality_violations_vs_shots": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\physicality_violations_vs_shots.png",
+    "ptm_reconstruction_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\ptm_reconstruction_comparison.png"
+  }
+}

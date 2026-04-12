@@ -1,0 +1,20 @@
+{
+  "paper": {
+    "paper_id": "dd_noise_spectroscopy_2011",
+    "title": "Measuring the spectrum of colored noise by dynamical decoupling",
+    "venue": "Physical Review Letters",
+    "year": 2011,
+    "doi": "10.1103/PhysRevLett.107.230501",
+    "role": "dd_noise_spectrum_reconstruction"
+  },
+  "implemented_equations": {
+    "coherence": "C_i = exp[- integral S(omega) F_i(omega) d omega / pi]",
+    "inversion": "chi_i = -log(C_i) = sum_j A_ij S_j",
+    "physical_constraint": "S_j >= 0 solved by NNLS"
+  },
+  "assumptions": [
+    "The benchmark uses synthetic colored dephasing noise.",
+    "The DD filter functions are generated from ideal instantaneous pi pulses.",
+    "The frequency-domain spectrum is reconstructed on a fixed grid."
+  ]
+}

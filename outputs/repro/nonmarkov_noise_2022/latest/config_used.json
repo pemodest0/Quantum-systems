@@ -1,0 +1,33 @@
+{
+  "paper": {
+    "paper_id": "nonmarkov_noise_2022",
+    "title": "Characterization and control of non-Markovian quantum noise",
+    "venue": "Nature Reviews Physics",
+    "year": 2022,
+    "doi": "10.1038/s42254-022-00446-2",
+    "role": "scope_and_limits"
+  },
+  "implemented_equations": {
+    "markovian_dephasing": "C_M(t) = exp(-gamma t)",
+    "quasi_static_ramsey": "C_R(t) = exp[-0.5 sigma^2 t^2]",
+    "quasi_static_echo": "C_E(t) = exp[-0.5 ((1-eff) sigma)^2 t^2]",
+    "revival_trace_distance": "D(t) = |exp(-gamma t) cos(omega t)|",
+    "blp_proxy": "N = sum_{Delta D > 0} Delta D",
+    "time_local_rate": "gamma_eff(t) = -d log(D(t)) / dt"
+  },
+  "parameters": {
+    "time_min_s": 0.0,
+    "time_max_s": 0.012,
+    "time_points": 700,
+    "markovian_gamma_s^-1": 220.0,
+    "quasi_static_sigma_rad_s": 360.0,
+    "echo_refocusing_efficiency": 0.94,
+    "revival_gamma_s^-1": 80.0,
+    "revival_omega_rad_s": 2387.610416728243
+  },
+  "assumptions": [
+    "The paper is a review/tools article; this is an operational benchmark, not a figure digitization.",
+    "The memory model is deliberately minimal: correlated quasi-static dephasing and an explicit revival envelope.",
+    "The benchmark defines when a simple Lindblad model is sufficient for this project and when it is not."
+  ]
+}

@@ -1,0 +1,252 @@
+{
+  "paper_id": "qst_relaxation_2008",
+  "status": "completed",
+  "true_rates_s^-1": {
+    "gamma_population": 52.0,
+    "gamma_dephasing": 24.0
+  },
+  "noiseless_reconstruction": {
+    "mean_fidelity": 0.9999999999999996,
+    "min_fidelity": 0.9999999999999973,
+    "max_frobenius_error": 2.4548132374331184e-15,
+    "gamma_population_estimate": 52.000000000000014,
+    "gamma_dephasing_estimate": 23.999999999999996,
+    "relative_error_gamma_population": 2.7328566760003855e-16,
+    "relative_error_gamma_dephasing": 1.4802973661668753e-16,
+    "coherence_order_rates": {
+      "1": 75.99999999999989,
+      "2": 148.0,
+      "3": 268.00000000000165
+    },
+    "population_fit_rmse": 4.108001693366415e-16,
+    "coherence_fit_rmse": 5.439910814355681e-15
+  },
+  "noise_stress_cases": [
+    {
+      "noise_std": 0.0,
+      "seed": 11,
+      "mean_fidelity": 0.9999999999999996,
+      "min_fidelity": 0.9999999999999973,
+      "gamma_population": 52.000000000000014,
+      "gamma_dephasing": 23.999999999999996,
+      "relative_error_gamma_population": 2.7328566760003855e-16,
+      "relative_error_gamma_dephasing": 1.4802973661668753e-16
+    },
+    {
+      "noise_std": 0.0,
+      "seed": 23,
+      "mean_fidelity": 0.9999999999999996,
+      "min_fidelity": 0.9999999999999973,
+      "gamma_population": 52.000000000000014,
+      "gamma_dephasing": 23.999999999999996,
+      "relative_error_gamma_population": 2.7328566760003855e-16,
+      "relative_error_gamma_dephasing": 1.4802973661668753e-16
+    },
+    {
+      "noise_std": 0.0,
+      "seed": 37,
+      "mean_fidelity": 0.9999999999999996,
+      "min_fidelity": 0.9999999999999973,
+      "gamma_population": 52.000000000000014,
+      "gamma_dephasing": 23.999999999999996,
+      "relative_error_gamma_population": 2.7328566760003855e-16,
+      "relative_error_gamma_dephasing": 1.4802973661668753e-16
+    },
+    {
+      "noise_std": 0.002,
+      "seed": 11,
+      "mean_fidelity": 0.9999858790359348,
+      "min_fidelity": 0.9998543688828322,
+      "gamma_population": 52.07734490594449,
+      "gamma_dephasing": 23.943472398415707,
+      "relative_error_gamma_population": 0.0014874020373940931,
+      "relative_error_gamma_dephasing": 0.002355316732678858
+    },
+    {
+      "noise_std": 0.002,
+      "seed": 23,
+      "mean_fidelity": 0.9999888981389502,
+      "min_fidelity": 0.999896496844721,
+      "gamma_population": 52.00757999831801,
+      "gamma_dephasing": 23.992885995041483,
+      "relative_error_gamma_population": 0.00014576919842322302,
+      "relative_error_gamma_dephasing": 0.0002964168732715322
+    },
+    {
+      "noise_std": 0.002,
+      "seed": 37,
+      "mean_fidelity": 0.9999892586712892,
+      "min_fidelity": 0.9999035313180683,
+      "gamma_population": 51.99891513040303,
+      "gamma_dephasing": 23.997554769238953,
+      "relative_error_gamma_population": 2.0862876864860332e-05,
+      "relative_error_gamma_dephasing": 0.00010188461504364217
+    },
+    {
+      "noise_std": 0.01,
+      "seed": 11,
+      "mean_fidelity": 0.9996384704267132,
+      "min_fidelity": 0.996154509227056,
+      "gamma_population": 52.387900124762425,
+      "gamma_dephasing": 23.726419548125094,
+      "relative_error_gamma_population": 0.00745961778389278,
+      "relative_error_gamma_dephasing": 0.011399185494787764
+    },
+    {
+      "noise_std": 0.01,
+      "seed": 23,
+      "mean_fidelity": 0.999710456610986,
+      "min_fidelity": 0.9967134394378038,
+      "gamma_population": 52.03748995752248,
+      "gamma_dephasing": 23.96244483295627,
+      "relative_error_gamma_population": 0.0007209607215861852,
+      "relative_error_gamma_dephasing": 0.0015647986268221281
+    },
+    {
+      "noise_std": 0.01,
+      "seed": 37,
+      "mean_fidelity": 0.9997147604888276,
+      "min_fidelity": 0.9973382902532109,
+      "gamma_population": 51.995423490180485,
+      "gamma_dephasing": 23.991582059952577,
+      "relative_error_gamma_population": 8.80098042214373e-05,
+      "relative_error_gamma_dephasing": 0.0003507475019759454
+    },
+    {
+      "noise_std": 0.03,
+      "seed": 11,
+      "mean_fidelity": 0.9970070964228375,
+      "min_fidelity": 0.9762923392281714,
+      "gamma_population": 52.82420815143308,
+      "gamma_dephasing": 23.27471844429758,
+      "relative_error_gamma_population": 0.01585015675832853,
+      "relative_error_gamma_dephasing": 0.030220064820934162
+    },
+    {
+      "noise_std": 0.03,
+      "seed": 23,
+      "mean_fidelity": 0.9976566325840595,
+      "min_fidelity": 0.9844646652180499,
+      "gamma_population": 52.109359744197384,
+      "gamma_dephasing": 23.872486633704668,
+      "relative_error_gamma_population": 0.002103072003795849,
+      "relative_error_gamma_dephasing": 0.005313056928972178
+    },
+    {
+      "noise_std": 0.03,
+      "seed": 37,
+      "mean_fidelity": 0.9971952642623376,
+      "min_fidelity": 0.9788923795809077,
+      "gamma_population": 51.80886074100169,
+      "gamma_dephasing": 24.101574429636887,
+      "relative_error_gamma_population": 0.003675754980736775,
+      "relative_error_gamma_dephasing": 0.004232267901536968
+    }
+  ],
+  "noise_summary": [
+    {
+      "noise_std": 0.0,
+      "mean_fidelity": 0.9999999999999996,
+      "std_fidelity": 0.0,
+      "mean_gamma_population": 52.00000000000002,
+      "std_gamma_population": 7.105427357601002e-15,
+      "mean_gamma_dephasing": 23.999999999999996,
+      "std_gamma_dephasing": 0.0,
+      "mean_rel_error_gamma_population": 2.7328566760003855e-16,
+      "mean_rel_error_gamma_dephasing": 1.4802973661668753e-16
+    },
+    {
+      "noise_std": 0.002,
+      "mean_fidelity": 0.9999880119487248,
+      "std_fidelity": 1.5153621390877396e-06,
+      "mean_gamma_population": 52.02794667822184,
+      "std_gamma_population": 0.03510848577955786,
+      "mean_gamma_dephasing": 23.977971054232047,
+      "std_gamma_dephasing": 0.024468582617681714,
+      "mean_rel_error_gamma_population": 0.0005513447042273922,
+      "mean_rel_error_gamma_dephasing": 0.0009178727403313442
+    },
+    {
+      "noise_std": 0.01,
+      "mean_fidelity": 0.9996878958421757,
+      "std_fidelity": 3.4993186111423265e-05,
+      "mean_gamma_population": 52.1402711908218,
+      "std_gamma_population": 0.17594026185439102,
+      "mean_gamma_dephasing": 23.893482147011312,
+      "std_gamma_dephasing": 0.11872848144463072,
+      "mean_rel_error_gamma_population": 0.0027561961032334676,
+      "mean_rel_error_gamma_dephasing": 0.004438243874528612
+    },
+    {
+      "noise_std": 0.03,
+      "mean_fidelity": 0.9972863310897448,
+      "std_fidelity": 0.0002728787050128827,
+      "mean_gamma_population": 52.24747621221072,
+      "std_gamma_population": 0.42586360102721005,
+      "mean_gamma_dephasing": 23.749593169213043,
+      "std_gamma_dephasing": 0.3485683173917029,
+      "mean_rel_error_gamma_population": 0.007209661247620385,
+      "mean_rel_error_gamma_dephasing": 0.013255129883814436
+    }
+  ],
+  "phase_error_sensitivity": [
+    {
+      "phase_error_deg": 0.0,
+      "mean_fidelity": 0.9999999999999996,
+      "gamma_population": 52.000000000000014,
+      "gamma_dephasing": 23.999999999999996,
+      "relative_error_gamma_population": 2.7328566760003855e-16,
+      "relative_error_gamma_dephasing": 1.4802973661668753e-16
+    },
+    {
+      "phase_error_deg": 0.5,
+      "mean_fidelity": 0.9995071606863052,
+      "gamma_population": 52.000000000000014,
+      "gamma_dephasing": 24.20826802376423,
+      "relative_error_gamma_population": 2.7328566760003855e-16,
+      "relative_error_gamma_dephasing": 0.008677834323509584
+    },
+    {
+      "phase_error_deg": 1.0,
+      "mean_fidelity": 0.9981098608912828,
+      "gamma_population": 52.00000000000007,
+      "gamma_dephasing": 24.411675217266467,
+      "relative_error_gamma_population": 1.3664283380001927e-15,
+      "relative_error_gamma_dephasing": 0.017153134052769452
+    },
+    {
+      "phase_error_deg": 2.0,
+      "mean_fidelity": 0.9939350531548298,
+      "gamma_population": 51.14571990346286,
+      "gamma_dephasing": 25.022151253037478,
+      "relative_error_gamma_population": 0.01642846339494497,
+      "relative_error_gamma_dephasing": 0.042589635543228255
+    },
+    {
+      "phase_error_deg": 4.0,
+      "mean_fidelity": 0.9814081186657094,
+      "gamma_population": 47.213709178016266,
+      "gamma_dephasing": 26.70356897890845,
+      "relative_error_gamma_population": 0.09204405426891796,
+      "relative_error_gamma_dephasing": 0.11264870745451876
+    }
+  ],
+  "scientific_interpretation": {
+    "captures": [
+      "density-matrix elements are reconstructed at each relaxation time",
+      "population and coherence decay rates are estimated from reconstructed states",
+      "noise and tomography phase errors are propagated into rate-estimation error"
+    ],
+    "does_not_capture": [
+      "no full experimental pulse calibration is used",
+      "no real QST phase-series raw data are available yet",
+      "the synthetic relaxation channel is an effective Redfield-like benchmark, not a full microscopic Redfield tensor"
+    ]
+  },
+  "figures": {
+    "density_element_decay": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\density_element_decay.png",
+    "tomography_fidelity_vs_noise": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\tomography_fidelity_vs_noise.png",
+    "extracted_rate_vs_true": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\extracted_rate_vs_true.png",
+    "phase_error_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\phase_error_sensitivity.png"
+  }
+}

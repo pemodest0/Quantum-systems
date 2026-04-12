@@ -1,0 +1,128 @@
+{
+  "paper_id": "noise_filtering_control_2014",
+  "status": "completed",
+  "benchmark_type": "quantum_control_noise_filtering",
+  "simulation": {
+    "total_time_s": 0.0012,
+    "frequency_min_hz": 10.0,
+    "frequency_max_hz": 30000.0,
+    "sequence_count": 7,
+    "noise_model": "low-frequency Lorentzian plus narrow spectral peak near 4 kHz"
+  },
+  "sequence_table": [
+    {
+      "sequence": "Ramsey",
+      "pulse_count": 0,
+      "coherence": 0.6093154078395264,
+      "chi": 0.49541923427534185,
+      "coherence_gain_vs_ramsey": 1.0,
+      "filter_peak_hz": 10.0
+    },
+    {
+      "sequence": "Hahn echo",
+      "pulse_count": 1,
+      "coherence": 0.9195624354722941,
+      "chi": 0.08385733569615444,
+      "coherence_gain_vs_ramsey": 1.5091731205892573,
+      "filter_peak_hz": 610.2287348105789
+    },
+    {
+      "sequence": "CPMG-2",
+      "pulse_count": 2,
+      "coherence": 0.9719492635160184,
+      "chi": 0.028451673912850143,
+      "coherence_gain_vs_ramsey": 1.595149656501051,
+      "filter_peak_hz": 953.2165832737669
+    },
+    {
+      "sequence": "CPMG-4",
+      "pulse_count": 4,
+      "coherence": 0.992620332323418,
+      "chi": 0.007407032134279079,
+      "coherence_gain_vs_ramsey": 1.62907472805093,
+      "filter_peak_hz": 1724.9392423159397
+    },
+    {
+      "sequence": "CPMG-8",
+      "pulse_count": 8,
+      "coherence": 0.9981226021342567,
+      "chi": 0.0018791623859332268,
+      "coherence_gain_vs_ramsey": 1.6381049769828393,
+      "filter_peak_hz": 3375.568263045032
+    },
+    {
+      "sequence": "UDD-4",
+      "pulse_count": 4,
+      "coherence": 0.9913775105665155,
+      "chi": 0.00865987817332079,
+      "coherence_gain_vs_ramsey": 1.627035026213569,
+      "filter_peak_hz": 1574.882058613295
+    },
+    {
+      "sequence": "UDD-8",
+      "pulse_count": 8,
+      "coherence": 0.9974918120721832,
+      "chi": 0.0025113387007471982,
+      "coherence_gain_vs_ramsey": 1.6370697330780277,
+      "filter_peak_hz": 2753.9027877055037
+    }
+  ],
+  "filter_peak_tracking": [
+    {
+      "pulse_count": 1,
+      "cpmg_peak_hz": 610.2287348105789,
+      "udd_peak_hz": 610.2287348105789
+    },
+    {
+      "pulse_count": 2,
+      "cpmg_peak_hz": 953.2165832737669,
+      "udd_peak_hz": 953.2165832737669
+    },
+    {
+      "pulse_count": 4,
+      "cpmg_peak_hz": 1724.9392423159397,
+      "udd_peak_hz": 1574.882058613295
+    },
+    {
+      "pulse_count": 8,
+      "cpmg_peak_hz": 3375.568263045032,
+      "udd_peak_hz": 2753.9027877055037
+    },
+    {
+      "pulse_count": 12,
+      "cpmg_peak_hz": 5026.197283774124,
+      "udd_peak_hz": 3890.0500357398137
+    },
+    {
+      "pulse_count": 16,
+      "cpmg_peak_hz": 6676.826304503216,
+      "udd_peak_hz": 5004.760543245175
+    }
+  ],
+  "summary": {
+    "ramsey_coherence": 0.6093154078395264,
+    "best_sequence": "CPMG-8",
+    "best_coherence": 0.9981226021342567,
+    "best_gain_vs_ramsey": 1.6381049769828393,
+    "best_filter_peak_hz": 3375.568263045032
+  },
+  "scientific_interpretation": {
+    "captures": [
+      "control pulses define a modulation function y(t)",
+      "the filter function |Y(omega)|^2 selects which spectral noise components cause dephasing",
+      "changing pulse number moves filter peaks and changes coherence",
+      "dynamical decoupling can act as both noise suppression and noise spectroscopy"
+    ],
+    "does_not_capture": [
+      "no real qubit experimental data are used",
+      "finite pulse width and pulse errors are neglected",
+      "the filter function is computed numerically rather than using every analytic expression from the paper"
+    ]
+  },
+  "figures": {
+    "noise_spectrum_and_filters": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\noise_spectrum_and_filters.png",
+    "coherence_vs_control_sequence": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\coherence_vs_control_sequence.png",
+    "time_domain_switching_functions": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\time_domain_switching_functions.png",
+    "filter_peak_tracking": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\filter_peak_tracking.png"
+  }
+}

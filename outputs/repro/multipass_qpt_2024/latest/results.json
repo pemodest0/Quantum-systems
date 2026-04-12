@@ -1,0 +1,18 @@
+{
+  "paper_id": "multipass_qpt_2024",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\reproduction_note.md",
+  "summary": {
+    "best_passes": 7,
+    "single_pass_mean_error": 0.21574425366275551,
+    "best_multipass_mean_error": 0.034238295288147716,
+    "best_improvement_factor": 6.301255709347182
+  },
+  "figures": {
+    "error_vs_passes": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\error_vs_passes.png",
+    "single_vs_multipass_error_distribution": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\single_vs_multipass_error_distribution.png",
+    "ptm_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\ptm_comparison.png",
+    "shot_noise_sweep": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\shot_noise_sweep.png"
+  }
+}

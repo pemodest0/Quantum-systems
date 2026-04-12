@@ -1,0 +1,49 @@
+{
+  "paper": {
+    "paper_id": "spin32_qlogic_qst_2005",
+    "title": "Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum state tomography",
+    "venue": "Journal of Magnetic Resonance",
+    "year": 2005,
+    "doi": "10.1016/j.jmr.2005.04.009",
+    "role": "control_bridge"
+  },
+  "nmr_reference_config": {
+    "i_spin": 1.5,
+    "dim": 4,
+    "larmor_hz": 105750733.1,
+    "nu_q_hz": 15625.0,
+    "transition_labels": [
+      "SAT-",
+      "CT",
+      "SAT+"
+    ],
+    "transition_pairs": [
+      [
+        2,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "implemented_equations": {
+    "ideal_selective_rotation": "U_ideal = exp[-i theta/2 (cos phi X_ij + sin phi Y_ij)]",
+    "finite_pulse_without_internal": "U = exp[-i H_control tau]",
+    "finite_pulse_with_internal": "U = exp[-i (H_control + H_free_in_selected_carrier_frame) tau]",
+    "operator_fidelity": "F_op = |Tr(U_target^dagger U_actual)|^2 / d^2",
+    "qst_monitor": "signals = tomography_pulses(U rho U^dagger), then A vec(rho)=b"
+  },
+  "assumptions": [
+    "The central transition is used as the minimal logical-operation benchmark.",
+    "The ideal target is a perfect embedded two-level pi rotation.",
+    "The no-internal-evolution case represents the approximation often made for control pulses.",
+    "The with-internal-evolution case keeps quadrupolar evolution during the pulse in the selected carrier frame.",
+    "Long-duration high-fidelity points are treated as sampled phase revivals, not as a monotonic safe operating window."
+  ]
+}

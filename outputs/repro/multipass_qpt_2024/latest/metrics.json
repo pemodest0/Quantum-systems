@@ -1,0 +1,140 @@
+{
+  "paper_id": "multipass_qpt_2024",
+  "status": "completed",
+  "process": {
+    "target": "sqrt-X-like rotation",
+    "actual_error_model": "coherent X overrotation plus isotropic depolarizing shrink",
+    "ptm_frobenius_error_target_to_actual": 0.05042867643126705
+  },
+  "monte_carlo": {
+    "shots": 512,
+    "seed_count": 60,
+    "passes": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "single_pass_error": {
+      "mean": 0.21574425366275551,
+      "std": 0.03868029584696249,
+      "median": 0.21069798815249652,
+      "p90": 0.26858414690150684
+    },
+    "multipass": {
+      "2": {
+        "error": {
+          "mean": 0.11239687904054436,
+          "std": 0.01826973826710801,
+          "median": 0.11014614395859758,
+          "p90": 0.1387747893878506
+        },
+        "improvement_factor": 1.9194861592636496
+      },
+      "3": {
+        "error": {
+          "mean": 0.07548093864331748,
+          "std": 0.011438248456078642,
+          "median": 0.07350019315155862,
+          "p90": 0.09137933436060049
+        },
+        "improvement_factor": 2.8582614040115133
+      },
+      "5": {
+        "error": {
+          "mean": 0.04719602444773543,
+          "std": 0.008583489166135605,
+          "median": 0.045334929178996765,
+          "p90": 0.058768651887109724
+        },
+        "improvement_factor": 4.571237857156153
+      },
+      "7": {
+        "error": {
+          "mean": 0.034238295288147716,
+          "std": 0.005869335433566619,
+          "median": 0.033423052294276445,
+          "p90": 0.0419022061225682
+        },
+        "improvement_factor": 6.301255709347182
+      }
+    },
+    "best_passes": 7,
+    "best_improvement_factor": 6.301255709347182
+  },
+  "representative_estimates": {
+    "single_pass_error": 0.23622100838295604,
+    "multipass_error": 0.03209357390038003,
+    "single_pass_average_probe_fidelity": 0.969110945229634,
+    "multipass_average_probe_fidelity": 0.9986061116709679,
+    "best_passes": 7
+  },
+  "shot_sweep": [
+    {
+      "shots": 128,
+      "single_mean_error": 0.3232979905893882,
+      "single_std_error": 0.07239068727330099,
+      "multipass_mean_error": 0.055187020018946285,
+      "multipass_std_error": 0.011233615108187347,
+      "improvement_factor": 5.858225185530883
+    },
+    {
+      "shots": 256,
+      "single_mean_error": 0.26240809904021517,
+      "single_std_error": 0.05374851147926707,
+      "multipass_mean_error": 0.043664314963199204,
+      "multipass_std_error": 0.0076685546598260134,
+      "improvement_factor": 6.0096694351297115
+    },
+    {
+      "shots": 512,
+      "single_mean_error": 0.2255633921849445,
+      "single_std_error": 0.03965198579374088,
+      "multipass_mean_error": 0.03653322086117704,
+      "multipass_std_error": 0.005263317841823174,
+      "improvement_factor": 6.174199451016519
+    },
+    {
+      "shots": 1024,
+      "single_mean_error": 0.20435375792914237,
+      "single_std_error": 0.02896465815618547,
+      "multipass_mean_error": 0.03230678114357305,
+      "multipass_std_error": 0.003655181351623053,
+      "improvement_factor": 6.325413758213282
+    },
+    {
+      "shots": 2048,
+      "single_mean_error": 0.1925902336611523,
+      "single_std_error": 0.02093877947256199,
+      "multipass_mean_error": 0.029902110009189173,
+      "multipass_std_error": 0.002575112206616788,
+      "improvement_factor": 6.440690426259809
+    },
+    {
+      "shots": 4096,
+      "single_mean_error": 0.186192043734201,
+      "single_std_error": 0.015001801884359183,
+      "multipass_mean_error": 0.028572586263856146,
+      "multipass_std_error": 0.0018318107946666048,
+      "improvement_factor": 6.516457488824906
+    }
+  ],
+  "transferability_note": {
+    "useful_for_hardware": [
+      "gate repetitions amplify coherent process errors while SPAM/readout errors remain at circuit boundaries",
+      "post-processing can estimate the single-process PTM from the measured multipass PTM",
+      "the method is compatible with qubit hardware characterization workflows"
+    ],
+    "limits_for_na23_nmr": [
+      "Na-23 spin-3/2 NMR is a four-level system, not a physical qubit unless an encoded subspace is selected",
+      "selective-pulse leakage and quadrupolar evolution during pulses must be modeled before applying MQPT directly",
+      "process repetitions must be experimentally repeatable with stable phase and RF calibration"
+    ]
+  },
+  "figures": {
+    "error_vs_passes": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\error_vs_passes.png",
+    "single_vs_multipass_error_distribution": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\single_vs_multipass_error_distribution.png",
+    "ptm_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\ptm_comparison.png",
+    "shot_noise_sweep": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest\\figures\\shot_noise_sweep.png"
+  }
+}

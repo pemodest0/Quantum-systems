@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+reports/review_article/build.log
+reports/review_article/asset_generation.log
+reports/review_article/generated/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/tasks.json
+
+# Large temporary/scratch folders
+tmp/
+scratch/
+
+# Generated Markdown noise that should not be tracked.
+outputs/**/reproduction_note.md
+outputs/**/workflow_report.md
+outputs/**/comparison_report_template.md
+
+# Keep reproducible outputs and the compiled article committed intentionally.
+!outputs/
+!reports/review_article/open_quantum_control_review.pdf

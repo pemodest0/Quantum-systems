@@ -1,0 +1,22 @@
+{
+  "paper_id": "dd_noise_spectroscopy_2011",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\reproduction_note.md",
+  "summary": {
+    "relative_spectrum_error": 0.3114565811320002,
+    "spectrum_correlation": 0.9228952587413072,
+    "residual_norm": 0.008927666657050326,
+    "true_peak_frequency_hz": 200.0,
+    "reconstructed_peak_frequency_hz": 200.0,
+    "true_narrow_feature_frequency_hz": 5937.430167597765,
+    "reconstructed_narrow_feature_frequency_hz": 6113.966480446928,
+    "mean_abs_coherence_error": 0.0010282842810258486
+  },
+  "figures": {
+    "dd_reconstructed_spectrum": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_reconstructed_spectrum.png",
+    "dd_coherence_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_coherence_fit.png",
+    "dd_spectrum_residual": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_spectrum_residual.png",
+    "dd_sequence_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_sequence_sensitivity.png"
+  }
+}

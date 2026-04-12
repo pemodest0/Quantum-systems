@@ -1,0 +1,41 @@
+{
+  "paper_id": "dd_noise_spectroscopy_2011",
+  "status": "completed",
+  "benchmark_type": "dd_noise_spectrum_reconstruction",
+  "simulation": {
+    "total_time_s": 0.0012,
+    "frequency_min_hz": 200.0,
+    "frequency_max_hz": 15999.999999999998,
+    "sequence_count": 30,
+    "coherence_noise_std": 0.003
+  },
+  "reconstruction_summary": {
+    "relative_spectrum_error": 0.3114565811320002,
+    "spectrum_correlation": 0.9228952587413072,
+    "residual_norm": 0.008927666657050326,
+    "true_peak_frequency_hz": 200.0,
+    "reconstructed_peak_frequency_hz": 200.0,
+    "true_narrow_feature_frequency_hz": 5937.430167597765,
+    "reconstructed_narrow_feature_frequency_hz": 6113.966480446928,
+    "mean_abs_coherence_error": 0.0010282842810258486
+  },
+  "scientific_interpretation": {
+    "captures": [
+      "DD coherences can be inverted into a colored noise spectrum",
+      "different pulse counts and sequence families probe different spectral bands",
+      "non-negative least squares imposes a physical non-negative spectrum",
+      "a narrow spectral feature can be localized by DD data"
+    ],
+    "does_not_capture": [
+      "the experiment-specific nuclear-spin implementation is not reproduced",
+      "finite pulse errors and relaxation channels beyond pure dephasing are neglected",
+      "the inversion is a transparent NNLS benchmark, not the full paper-specific estimator"
+    ]
+  },
+  "figures": {
+    "dd_reconstructed_spectrum": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_reconstructed_spectrum.png",
+    "dd_coherence_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_coherence_fit.png",
+    "dd_spectrum_residual": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_spectrum_residual.png",
+    "dd_sequence_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest\\figures\\dd_sequence_sensitivity.png"
+  }
+}

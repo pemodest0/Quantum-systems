@@ -1,0 +1,19 @@
+{
+  "paper_id": "noise_filtering_control_2014",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\reproduction_note.md",
+  "summary": {
+    "ramsey_coherence": 0.6093154078395264,
+    "best_sequence": "CPMG-8",
+    "best_coherence": 0.9981226021342567,
+    "best_gain_vs_ramsey": 1.6381049769828393,
+    "best_filter_peak_hz": 3375.568263045032
+  },
+  "figures": {
+    "noise_spectrum_and_filters": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\noise_spectrum_and_filters.png",
+    "coherence_vs_control_sequence": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\coherence_vs_control_sequence.png",
+    "time_domain_switching_functions": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\time_domain_switching_functions.png",
+    "filter_peak_tracking": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest\\figures\\filter_peak_tracking.png"
+  }
+}

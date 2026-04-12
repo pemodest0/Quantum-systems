@@ -1,0 +1,40 @@
+{
+  "paper": {
+    "paper_id": "qst_relaxation_2008",
+    "title": "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography",
+    "venue": "Journal of Magnetic Resonance",
+    "year": 2008,
+    "doi": "10.1016/j.jmr.2008.01.009",
+    "role": "tomography_and_identification"
+  },
+  "nmr_reference_config": {
+    "i_spin": 1.5,
+    "dim": 4,
+    "larmor_hz": 105750733.1,
+    "nu_q_hz": 15625.0,
+    "t_tomo_s": 4.6e-06,
+    "tomography_phases": 7,
+    "transition_labels": [
+      "SAT-",
+      "CT",
+      "SAT+"
+    ]
+  },
+  "implemented_equations": {
+    "synthetic_channel": "rho(t) = dephase_q[ exp(-gamma_pop t) rho0 + (1-exp(-gamma_pop t)) I/d ]",
+    "coherence_decay": "|rho_ij(t)| ~ exp[-(gamma_pop + gamma_phi q^2)t], q = m_i - m_j",
+    "tomography": "A vec(rho) = b solved by least squares with trace constraint",
+    "rate_fit": "log norm(t) = intercept - rate t"
+  },
+  "assumptions": [
+    "Two synthetic initial states are used: population-biased and coherent-superposition.",
+    "Initial states are slightly mixed to avoid singular fidelity artifacts.",
+    "The reproduction uses synthetic QST data because no time-resolved experimental QST dataset is present yet.",
+    "The paper result is reproduced as a workflow: QST time series -> density-matrix elements -> fitted relaxation rates."
+  ],
+  "time_grid_s": {
+    "min": 0.0,
+    "max": 0.012,
+    "points": 18
+  }
+}

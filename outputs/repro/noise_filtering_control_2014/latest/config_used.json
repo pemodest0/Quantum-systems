@@ -1,0 +1,22 @@
+{
+  "paper": {
+    "paper_id": "noise_filtering_control_2014",
+    "title": "Experimental noise filtering by quantum control",
+    "venue": "Nature Physics",
+    "year": 2014,
+    "doi": "10.1038/nphys3115",
+    "role": "dynamical_decoupling_noise_filtering"
+  },
+  "implemented_equations": {
+    "modulation": "y(t) = +/- 1 with sign flips at pi pulses",
+    "filter": "Y(omega) = integral_0^T y(t) exp(i omega t) dt",
+    "dephasing": "chi(T) = integral S(omega) |Y(omega)|^2 d omega / pi",
+    "coherence": "C(T) = exp[-chi(T)]"
+  },
+  "assumptions": [
+    "The benchmark treats pure dephasing noise only.",
+    "Pi pulses are instantaneous and ideal.",
+    "The synthetic spectrum is chosen to show both low-frequency filtering and narrow-band sensitivity.",
+    "This is a model reproduction, not a digitized experimental figure."
+  ]
+}

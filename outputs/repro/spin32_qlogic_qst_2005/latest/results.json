@@ -1,0 +1,19 @@
+{
+  "paper_id": "spin32_qlogic_qst_2005",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\reproduction_note.md",
+  "summary": {
+    "target_transition": "CT",
+    "min_operator_fidelity_no_internal": 1.0,
+    "min_operator_fidelity_with_quadrupolar": 2.2413576457089168e-15,
+    "initial_contiguous_safe_duration_us_at_operator_fidelity_0p99": null,
+    "qst_target_vs_actual_state_fidelity": 0.0470790862414392
+  },
+  "figures": {
+    "selective_pulse_fidelity_vs_duration": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\selective_pulse_fidelity_vs_duration.png",
+    "population_transfer_vs_duration": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\population_transfer_vs_duration.png",
+    "all_transition_fidelity_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\all_transition_fidelity_comparison.png",
+    "qst_density_monitor": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\qst_density_monitor.png"
+  }
+}

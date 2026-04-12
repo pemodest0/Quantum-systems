@@ -1,0 +1,81 @@
+{
+  "paper": {
+    "paper_id": "na23_relaxometry_2023",
+    "title": "23Na relaxometry: An overview of theory and applications",
+    "venue": "Magnetic Resonance Letters",
+    "year": 2023,
+    "doi": "10.1016/j.mrl.2023.04.001",
+    "source_urls": [
+      "https://doi.org/10.1016/j.mrl.2023.04.001",
+      "https://www.sciencedirect.com/science/article/pii/S2772516223000232",
+      "https://pubmed.ncbi.nlm.nih.gov/40918001/"
+    ]
+  },
+  "nmr_reference_config": {
+    "i_spin": 1.5,
+    "larmor_hz": 105750733.1,
+    "nu_q_hz": 15625.0,
+    "temperature_k": 301.15,
+    "transition_labels": [
+      "SAT-",
+      "CT",
+      "SAT+"
+    ],
+    "current_decay_params": [
+      [
+        0.999896221029647,
+        -312.541270167342,
+        0.000103778970353297,
+        0.0
+      ],
+      [
+        1.0,
+        -165.166898029245,
+        0.0,
+        -0.0739022476417014
+      ],
+      [
+        1.0,
+        -335.932241593772,
+        0.0,
+        -0.0739951014816252
+      ]
+    ]
+  },
+  "implemented_equations": {
+    "spectral_density": "J_n(tau_c) = tau_c / (1 + (n omega0 tau_c)^2), n = 0, 1, 2",
+    "effective_r1_slow": "R1_slow = C (J1 + 4 J2)",
+    "effective_r1_fast": "R1_fast = C (J0 + J1 + 4 J2)",
+    "effective_r2_central": "R2_CT = C (3 J0 + 0.5 J1 + J2)",
+    "effective_r2_satellite": "R2_SAT = C (3 J0 + 1.5 J1 + J2)",
+    "current_biexponential": "D_k(t) = A1 exp(rate1 t) + A2 exp(rate2 t)"
+  },
+  "assumptions": [
+    "Single correlation time tau_c.",
+    "Axially symmetric effective quadrupolar coupling by default.",
+    "Rates are effective benchmarks for model selection, not tissue-specific parameters.",
+    "The review paper is reproduced as a physically grounded modeling target, not as a digitized figure copy."
+  ],
+  "grids": {
+    "time_s": {
+      "min": 0.0,
+      "max": 0.025,
+      "points": 800
+    },
+    "tau_grid_s": {
+      "min": 1e-12,
+      "max": 0.0001,
+      "points": 160
+    },
+    "fit_tau_grid_s": {
+      "min": 1e-11,
+      "max": 1e-05,
+      "points": 72
+    },
+    "fit_coupling_grid_hz": {
+      "min": 100.0,
+      "max": 50118.72336272725,
+      "points": 72
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "paper": {
+    "paper_id": "flux_qubit_noise_spectroscopy_2011",
+    "title": "Noise spectroscopy through dynamical decoupling with a superconducting flux qubit",
+    "venue": "Nature Physics",
+    "year": 2011,
+    "doi": "10.1038/nphys1994",
+    "role": "flux_qubit_dd_noise_spectroscopy"
+  },
+  "implemented_equations": {
+    "coherence": "C_N(T) = exp[- integral S(omega) F_N(omega) d omega / pi]",
+    "peak_approximation": "S(omega_peak) approx chi_N / area(F_N)",
+    "power_law": "S(f) = A (1 MHz / f)^alpha"
+  },
+  "assumptions": [
+    "The benchmark uses a synthetic flux-qubit-like 1/f^alpha spectrum.",
+    "CPMG pulses are instantaneous and ideal.",
+    "The result is a noise-spectroscopy workflow reproduction, not a hardware-data reproduction."
+  ]
+}

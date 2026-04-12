@@ -1,0 +1,37 @@
+{
+  "paper": {
+    "paper_id": "spin32_algebraic_2004",
+    "title": "Algebraic description of spin 3/2 dynamics in NMR experiments",
+    "authors": "C. Tanase and F. E. Boada",
+    "venue": "Journal of Magnetic Resonance",
+    "volume": "173",
+    "issue": "2",
+    "pages": "236-253",
+    "year": 2005,
+    "doi": "10.1016/j.jmr.2004.12.009",
+    "note": "The project keeps the original requested paper_id spin32_algebraic_2004 because the DOI and accepted manuscript timeline use 2004, while the journal issue is 2005."
+  },
+  "nmr_reference_config": {
+    "i_spin": 1.5,
+    "dim": 4,
+    "larmor_hz": 105750733.1,
+    "nu_q_hz": 15625.0,
+    "t_pi2_s": 4e-06,
+    "dwell_time_s": 8e-06,
+    "n_acq": 512
+  },
+  "implemented_equations": {
+    "vectorization": "vec(rho) uses column-major order",
+    "unitary_superoperator": "vec(U rho U^dagger) = (U* kron U) vec(rho)",
+    "liouville_dynamics": "d vec(rho) / dt = L vec(rho)",
+    "detector": "s(t) = Tr(rho(t) D) = d vec(rho(t))",
+    "factorization": "vec(rho(t)) = F(t) P vec(rho0) for pulse P followed by free evolution F(t)",
+    "coherence_order": "q = m_bra - m_ket"
+  },
+  "assumptions": [
+    "Relaxation is disabled for the Hilbert-vs-Liouville equivalence check.",
+    "B0/B1 sensitivity is synthetic and intended as an algebraic bias benchmark.",
+    "The reproduction targets an equivalent observable rather than a digitized paper figure.",
+    "The paper_id keeps the requested 2004 label although the journal issue is 2005."
+  ]
+}

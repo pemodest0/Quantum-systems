@@ -1,0 +1,19 @@
+{
+  "paper_id": "projected_ls_qpt_2022",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\reproduction_note.md",
+  "summary": {
+    "raw_choi_error_mean": 0.2451836158163519,
+    "cptp_choi_error_mean": 0.17672630876135342,
+    "mean_error_improvement_raw_to_cptp": 1.3873634182414878,
+    "raw_negative_fraction": 1.0,
+    "cptp_negative_fraction": 0.0
+  },
+  "figures": {
+    "qpt_error_distribution": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\qpt_error_distribution.png",
+    "choi_eigenvalues_raw_vs_pls": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\choi_eigenvalues_raw_vs_pls.png",
+    "physicality_violations_vs_shots": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\physicality_violations_vs_shots.png",
+    "ptm_reconstruction_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\projected_ls_qpt_2022\\latest\\figures\\ptm_reconstruction_comparison.png"
+  }
+}

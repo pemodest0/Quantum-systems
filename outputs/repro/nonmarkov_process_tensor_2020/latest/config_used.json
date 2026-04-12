@@ -1,0 +1,22 @@
+{
+  "paper": {
+    "paper_id": "nonmarkov_process_tensor_2020",
+    "title": "Demonstration of non-Markovian process characterisation and control on a quantum processor",
+    "venue": "Nature Communications",
+    "year": 2020,
+    "doi": "10.1038/s41467-020-20113-3",
+    "role": "process_tensor_memory_characterization"
+  },
+  "implemented_equations": {
+    "process_tensor_action": "rho_k(A_{k-1:0}) = T^{k:0}[A_{k-1:0}]",
+    "operational_table": "p(sequence) measured for a basis of multi-time interventions",
+    "markovian_baseline": "single fitted channel M(lambda) repeated between controls",
+    "control_selection": "argmax_sequence p_process_tensor(sequence)"
+  },
+  "assumptions": [
+    "The process tensor is represented as an operational table over a finite control alphabet.",
+    "The environment is a classical hidden two-state detuning with temporal persistence.",
+    "The benchmark measures +X survival after control sequences.",
+    "This is a synthetic memory/control benchmark, not a real-device reconstruction."
+  ]
+}

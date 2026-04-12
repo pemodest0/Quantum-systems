@@ -1,0 +1,133 @@
+{
+  "paper_id": "pps_optimal_control_2012",
+  "status": "completed",
+  "benchmark_type": "pps_optimal_control",
+  "target_state": {
+    "marked_label": "00",
+    "marked_index": 0,
+    "thermal_scale": 0.03,
+    "initial_populations": [
+      0.295,
+      0.265,
+      0.235,
+      0.20500000000000002
+    ],
+    "target_populations": [
+      0.2725,
+      0.24250000000000005,
+      0.24250000000000005,
+      0.24250000000000005
+    ]
+  },
+  "analytical_population_averaging": {
+    "populations": [
+      0.27249999999999996,
+      0.24250000000000002,
+      0.24250000000000002,
+      0.24250000000000002
+    ],
+    "deviation_fidelity": 1.0,
+    "preparation_error": 1.850371707708596e-15,
+    "signal_efficiency": 0.999999999999999
+  },
+  "grape_preparation": {
+    "duration_s": 0.0009,
+    "n_segments": 14,
+    "dt_s": 6.428571428571429e-05,
+    "max_amplitude_hz": 15999.999999999998,
+    "initial_deviation_fidelity": -0.09671295628285143,
+    "final_deviation_fidelity": 1.0,
+    "initial_signal_efficiency": -0.40355256763393066,
+    "final_signal_efficiency": 0.9999999969302016,
+    "initial_preparation_error": 1.4035525676339307,
+    "final_preparation_error": 3.069798401686972e-09,
+    "coherence_norm_before_gradient": 0.061846584368685974,
+    "coherence_norm_after_gradient": 0.0,
+    "iterations": 23,
+    "success": true,
+    "optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "prepared_populations": [
+      0.27250000003211594,
+      0.24250000003909386,
+      0.24249999998955232,
+      0.24249999993923774
+    ]
+  },
+  "qst_noise_sensitivity": [
+    {
+      "noise_std": 0.0,
+      "prepared_state_fidelity_mean": 0.9999999999999996,
+      "prepared_state_fidelity_std": 2.220446049250313e-16,
+      "target_deviation_fidelity_mean": 1.0,
+      "target_deviation_fidelity_std": 0.0,
+      "target_preparation_error_mean": 3.0697900604110586e-09
+    },
+    {
+      "noise_std": 0.002,
+      "prepared_state_fidelity_mean": 0.9999999954124154,
+      "prepared_state_fidelity_std": 2.162245759600219e-09,
+      "target_deviation_fidelity_mean": 0.9999967047346273,
+      "target_deviation_fidelity_std": 1.5771610689782529e-06,
+      "target_preparation_error_mean": 0.002532071133309641
+    },
+    {
+      "noise_std": 0.005,
+      "prepared_state_fidelity_mean": 0.9999999713275614,
+      "prepared_state_fidelity_std": 1.3513897425867731e-08,
+      "target_deviation_fidelity_mean": 0.9999794056678168,
+      "target_deviation_fidelity_std": 9.859652742020903e-06,
+      "target_preparation_error_mean": 0.006330177981694694
+    },
+    {
+      "noise_std": 0.01,
+      "prepared_state_fidelity_mean": 0.9999998853100096,
+      "prepared_state_fidelity_std": 5.405466794969903e-08,
+      "target_deviation_fidelity_mean": 0.999917634458633,
+      "target_deviation_fidelity_std": 3.945064983927343e-05,
+      "target_preparation_error_mean": 0.012660356062333145
+    },
+    {
+      "noise_std": 0.02,
+      "prepared_state_fidelity_mean": 0.9999995412379754,
+      "prepared_state_fidelity_std": 2.16211494919949e-07,
+      "target_deviation_fidelity_mean": 0.9996707011855605,
+      "target_deviation_fidelity_std": 0.0001578395397743688,
+      "target_preparation_error_mean": 0.025320712223609605
+    },
+    {
+      "noise_std": 0.04,
+      "prepared_state_fidelity_mean": 0.9999981649324695,
+      "prepared_state_fidelity_std": 8.647916024314757e-07,
+      "target_deviation_fidelity_mean": 0.9986852124893396,
+      "target_deviation_fidelity_std": 0.0006306947225507256,
+      "target_preparation_error_mean": 0.05064142454616852
+    },
+    {
+      "noise_std": 0.08,
+      "prepared_state_fidelity_mean": 0.9999926595276734,
+      "prepared_state_fidelity_std": 3.458780062945338e-06,
+      "target_deviation_fidelity_mean": 0.9947774445545031,
+      "target_deviation_fidelity_std": 0.002502052635030996,
+      "target_preparation_error_mean": 0.1012828491912812
+    }
+  ],
+  "scientific_interpretation": {
+    "captures": [
+      "pseudo-pure-state preparation is treated as a density-matrix target, not only a unitary gate",
+      "the identity component is retained but the deviation density is the NMR-relevant object",
+      "a dephasing/gradient step removes coherences after optimized RF mixing",
+      "synthetic QST checks whether the prepared PPS can be reconstructed under measurement noise"
+    ],
+    "does_not_capture": [
+      "no shaped-pulse calibration from a real spectrometer is used",
+      "no relaxation during the PPS pulse is included",
+      "the optimized objective is a minimal density-matrix benchmark rather than the full experimental protocol"
+    ]
+  },
+  "figures": {
+    "pps_population_profiles": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\figures\\pps_population_profiles.png",
+    "pps_grape_convergence": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\figures\\pps_grape_convergence.png",
+    "pps_optimized_controls": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\figures\\pps_optimized_controls.png",
+    "pps_qst_noise_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest\\figures\\pps_qst_noise_sensitivity.png"
+  }
+}

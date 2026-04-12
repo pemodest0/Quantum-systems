@@ -1,0 +1,22 @@
+{
+  "paper": {
+    "paper_id": "gate_set_tomography_2021",
+    "title": "Gate Set Tomography",
+    "venue": "Quantum",
+    "year": 2021,
+    "doi": "10.22331/q-2021-10-05-557",
+    "role": "spam_aware_hardware_characterization"
+  },
+  "implemented_equations": {
+    "sequence_probability": "p_s = e dot G_s rho",
+    "gate_only_fit": "min sum_s (p_s(Gx,Gy; ideal rho,e) - f_s)^2",
+    "gst_fit": "min sum_s (p_s(Gx,Gy,rho,e) - f_s)^2",
+    "long_sequence_amplification": "sequences include repeated germs up to length 80"
+  },
+  "assumptions": [
+    "The reproduction implements a minimal single-qubit GST-like estimator, not pyGSTi.",
+    "Gates are represented by unital 3x3 Bloch matrices.",
+    "State preparation and measurement are represented by a Bloch vector and measurement effect vector.",
+    "No explicit gauge fixing is applied; prediction error is the primary comparison."
+  ]
+}

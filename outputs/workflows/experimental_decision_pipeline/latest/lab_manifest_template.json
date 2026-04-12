@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "experiment_id": "replace_with_lab_run_id",
+  "platform": "23Na quadrupolar NMR or gate-model hardware",
+  "sample_or_device": "replace_with_sample_or_device_id",
+  "acquired_at_utc": null,
+  "operator": null,
+  "notes": "Populate coherence_measurements after the lab run.",
+  "coherence_measurements": [
+    {
+      "sequence": "CPMG-8",
+      "coherence": null,
+      "std": null,
+      "shots_or_scans": null
+    },
+    {
+      "sequence": "CPMG-16",
+      "coherence": null,
+      "std": null,
+      "shots_or_scans": null
+    },
+    {
+      "sequence": "UDD-8",
+      "coherence": null,
+      "std": null,
+      "shots_or_scans": null
+    }
+  ],
+  "qst_summary": {
+    "state_label": null,
+    "density_matrix_file": null,
+    "reconstruction_fidelity": null,
+    "tomography_residual_norm": null
+  }
+}

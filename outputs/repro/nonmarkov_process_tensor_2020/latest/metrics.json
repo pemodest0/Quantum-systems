@@ -1,0 +1,153 @@
+{
+  "paper_id": "nonmarkov_process_tensor_2020",
+  "status": "completed",
+  "benchmark_type": "process_tensor_nonmarkovian_control",
+  "model": {
+    "phase_rad_per_interval": 0.72,
+    "p_stay": 0.92,
+    "shots": 4096,
+    "sequence_count": 155,
+    "controls": [
+      "i",
+      "x",
+      "y",
+      "x2",
+      "y2"
+    ],
+    "max_sequence_length": 3
+  },
+  "prediction_summary": {
+    "process_tensor_validation_rmse": 0.009938575307225682,
+    "markovian_validation_rmse": 0.14618050597855792,
+    "improvement_factor": 14.708396471301045,
+    "markovian_lambda_xy": 0.8338946291674371,
+    "markovian_train_rmse": 0.14766006199288215
+  },
+  "memory_witness": {
+    "single_echo_minus_free": 0.37060546875,
+    "two_pulse_xx_minus_ii": 0.550048828125,
+    "probability_range": 0.924560546875
+  },
+  "control_summary": {
+    "process_tensor_best_sequence": "x",
+    "process_tensor_predicted_probability": 0.964111328125,
+    "process_tensor_true_probability": 0.9652169483495259,
+    "markovian_best_sequence": "i",
+    "markovian_predicted_probability": 0.8476901262771487,
+    "markovian_true_probability": 0.599994906019547,
+    "true_control_advantage": 0.3652220423299789
+  },
+  "rmse_by_length": [
+    {
+      "length": 1,
+      "count": 5,
+      "process_tensor_rmse": 0.00929788023058087,
+      "markovian_rmse": 0.163951380769635
+    },
+    {
+      "length": 2,
+      "count": 25,
+      "process_tensor_rmse": 0.009030563381189982,
+      "markovian_rmse": 0.14500159700094303
+    },
+    {
+      "length": 3,
+      "count": 125,
+      "process_tensor_rmse": 0.010134747557918952,
+      "markovian_rmse": 0.14566036925013942
+    }
+  ],
+  "top_process_tensor_sequences": [
+    {
+      "sequence": "x",
+      "length": 1,
+      "characterized_probability": 0.964111328125,
+      "true_probability": 0.9652169483495259
+    },
+    {
+      "sequence": "x-x-x",
+      "length": 3,
+      "characterized_probability": 0.94091796875,
+      "true_probability": 0.9354958942591536
+    },
+    {
+      "sequence": "x-y-y",
+      "length": 3,
+      "characterized_probability": 0.94091796875,
+      "true_probability": 0.9354958942591536
+    },
+    {
+      "sequence": "y-x-y",
+      "length": 3,
+      "characterized_probability": 0.93603515625,
+      "true_probability": 0.9354958942591536
+    },
+    {
+      "sequence": "y-x2-y",
+      "length": 3,
+      "characterized_probability": 0.9345703125,
+      "true_probability": 0.9328536180632907
+    },
+    {
+      "sequence": "y-y-x",
+      "length": 3,
+      "characterized_probability": 0.932861328125,
+      "true_probability": 0.9354958942591536
+    },
+    {
+      "sequence": "y-i-y",
+      "length": 3,
+      "characterized_probability": 0.929443359375,
+      "true_probability": 0.9302113418674278
+    },
+    {
+      "sequence": "x-x2-x",
+      "length": 3,
+      "characterized_probability": 0.92919921875,
+      "true_probability": 0.9328536180632907
+    },
+    {
+      "sequence": "x-i-x",
+      "length": 3,
+      "characterized_probability": 0.927001953125,
+      "true_probability": 0.9302113418674278
+    },
+    {
+      "sequence": "y2-x-y2",
+      "length": 3,
+      "characterized_probability": 0.916259765625,
+      "true_probability": 0.9221272349348475
+    },
+    {
+      "sequence": "x2-x2-x2",
+      "length": 3,
+      "characterized_probability": 0.888427734375,
+      "true_probability": 0.890376080178725
+    },
+    {
+      "sequence": "i-x-i",
+      "length": 3,
+      "characterized_probability": 0.87255859375,
+      "true_probability": 0.8694389893625817
+    }
+  ],
+  "scientific_interpretation": {
+    "captures": [
+      "a multi-time process tensor predicts control-sequence outcomes better than a fixed Markovian channel",
+      "correlated phase noise creates history-dependent echo-like control benefits",
+      "control can be selected from characterized multi-time data instead of a one-step channel",
+      "the benchmark separates memory characterization from ordinary QPT"
+    ],
+    "does_not_capture": [
+      "no IBM hardware run is reproduced",
+      "the Choi-state process tensor reconstruction is represented operationally as a sequence table",
+      "no over-complete dual-set reconstruction or maximum-likelihood estimator is implemented"
+    ]
+  },
+  "figures": {
+    "process_tensor_prediction_scatter": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_prediction_scatter.png",
+    "process_tensor_rmse_by_length": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_rmse_by_length.png",
+    "process_tensor_echo_witness": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_echo_witness.png",
+    "process_tensor_control_landscape": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_control_landscape.png"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "qst_relaxation_2008",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\reproduction_note.md",
+  "summary": {
+    "noiseless_mean_fidelity": 0.9999999999999996,
+    "noiseless_gamma_population_estimate": 52.000000000000014,
+    "noiseless_gamma_dephasing_estimate": 23.999999999999996,
+    "relative_error_gamma_population": 2.7328566760003855e-16,
+    "relative_error_gamma_dephasing": 1.4802973661668753e-16
+  },
+  "figures": {
+    "density_element_decay": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\density_element_decay.png",
+    "tomography_fidelity_vs_noise": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\tomography_fidelity_vs_noise.png",
+    "extracted_rate_vs_true": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\extracted_rate_vs_true.png",
+    "phase_error_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\qst_relaxation_2008\\latest\\figures\\phase_error_sensitivity.png"
+  }
+}

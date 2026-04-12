@@ -1,0 +1,11 @@
+{
+  "fidelity": 0.9999999996531335,
+  "frobenius_error": 1.8624401282631046e-05,
+  "residual_norm": 7.471974741299972e-13,
+  "settings": {
+    "zero_fill_factor": 4,
+    "line_broadening_hz": 20.0,
+    "integration_window_hz": 1000.0,
+    "diagnostic_search_hz": 1800.0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "workflow_id": "experimental_decision_pipeline",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\config_used.json",
+  "selected_sequence": {
+    "sequence": "CPMG-24",
+    "pulse_count": 24,
+    "filter_peak_hz": 9997.765363128492,
+    "predicted_coherence": 0.9894689385625381,
+    "synthetic_true_coherence": 0.9917192833000059,
+    "prediction_error": -0.0022503447374677688
+  },
+  "summary": {
+    "qst_fidelity": 0.9855936816430856,
+    "spectrum_correlation": 0.9326087769424004,
+    "selected_sequence": "CPMG-24",
+    "selected_predicted_coherence": 0.9894689385625381,
+    "lab_comparison_status": "waiting_for_lab_data"
+  },
+  "figures": {
+    "state_preparation": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\state_preparation_qst.png",
+    "noise_spectrum": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\reconstructed_noise_spectrum.png",
+    "spectroscopy_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\dd_spectroscopy_fit.png",
+    "control_decision": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\control_sequence_decision.png"
+  }
+}

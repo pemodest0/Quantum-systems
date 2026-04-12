@@ -1,0 +1,181 @@
+{
+  "project": "Control and identification of dissipative dynamics in open quantum systems",
+  "status": "seed bibliography",
+  "notes": [
+    "This file is a local citation seed, not a complete bibliography.",
+    "Do not cite a reference in a manuscript until metadata has been checked against DOI, publisher, arXiv, or official documentation.",
+    "The deep-research PDF was used as a planning input, not as a primary source."
+  ],
+  "references": [
+    {
+      "id": "Lindblad1976",
+      "category": "foundational_open_quantum_systems",
+      "citation": "G. Lindblad, On the generators of quantum dynamical semigroups, Communications in Mathematical Physics 48, 119-130 (1976).",
+      "doi": "10.1007/BF01608499",
+      "url": "https://doi.org/10.1007/BF01608499",
+      "priority": "essential",
+      "use_in_paper": ["introduction", "theory", "methods"],
+      "why_it_matters": "Foundational GKSL generator result for Markovian quantum dynamical semigroups."
+    },
+    {
+      "id": "GoriniKossakowskiSudarshan1976",
+      "category": "foundational_open_quantum_systems",
+      "citation": "V. Gorini, A. Kossakowski, and E. C. G. Sudarshan, Completely positive dynamical semigroups of N-level systems, Journal of Mathematical Physics 17, 821-825 (1976).",
+      "doi": "10.1063/1.522979",
+      "url": "https://doi.org/10.1063/1.522979",
+      "priority": "essential",
+      "use_in_paper": ["theory"],
+      "why_it_matters": "Companion mathematical structure for completely positive semigroups."
+    },
+    {
+      "id": "BreuerPetruccione2002",
+      "category": "foundational_open_quantum_systems",
+      "citation": "H.-P. Breuer and F. Petruccione, The Theory of Open Quantum Systems, Oxford University Press (2002).",
+      "doi": "10.1093/acprof:oso/9780199213900.001.0001",
+      "url": "https://doi.org/10.1093/acprof:oso/9780199213900.001.0001",
+      "priority": "essential",
+      "use_in_paper": ["theory", "discussion"],
+      "why_it_matters": "Standard reference for derivations, approximations, and validity limits of master equations."
+    },
+    {
+      "id": "Spohn1978",
+      "category": "statistical_physics_quantum_thermodynamics",
+      "citation": "H. Spohn, Entropy production for quantum dynamical semigroups, Journal of Mathematical Physics 19, 1227-1230 (1978).",
+      "doi": "10.1063/1.523789",
+      "url": "https://doi.org/10.1063/1.523789",
+      "priority": "strong",
+      "use_in_paper": ["theory", "results", "discussion"],
+      "why_it_matters": "Foundational entropy-production result for quantum dynamical semigroups with stationary states."
+    },
+    {
+      "id": "GooldEtAl2016",
+      "category": "statistical_physics_quantum_thermodynamics",
+      "citation": "J. Goold, M. Huber, A. Riera, L. del Rio, and P. Skrzypczyk, The role of quantum information in thermodynamics - a topical review, Journal of Physics A 49, 143001 (2016).",
+      "doi": "10.1088/1751-8113/49/14/143001",
+      "url": "https://doi.org/10.1088/1751-8113/49/14/143001",
+      "priority": "strong",
+      "use_in_paper": ["introduction", "discussion"],
+      "why_it_matters": "Connects quantum information concepts such as entropy and relative entropy with thermodynamics."
+    },
+    {
+      "id": "BonkEtAl2004",
+      "category": "nmr_quadrupolar_platform",
+      "citation": "F. A. Bonk et al., Quantum-state tomography for quadrupole nuclei and its applications on a two-qubit system, Physical Review A 69, 042322 (2004).",
+      "doi": "10.1103/PhysRevA.69.042322",
+      "url": "https://doi.org/10.1103/PhysRevA.69.042322",
+      "priority": "essential",
+      "use_in_paper": ["methods", "results"],
+      "why_it_matters": "Platform-specific tomography reference for quadrupolar spin systems."
+    },
+    {
+      "id": "BonkEtAl2005",
+      "category": "nmr_quadrupolar_platform",
+      "citation": "F. A. Bonk et al., Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum state tomography, Journal of Magnetic Resonance 175, 226-234 (2005).",
+      "doi": "10.1016/j.jmr.2005.04.009",
+      "url": "https://doi.org/10.1016/j.jmr.2005.04.009",
+      "priority": "essential",
+      "use_in_paper": ["introduction", "theory", "methods"],
+      "why_it_matters": "Directly relevant spin-3/2 quadrupolar NMR reference for Hamiltonian, tomography, and logical operations."
+    },
+    {
+      "id": "TelesEtAl2007",
+      "category": "nmr_quadrupolar_platform",
+      "citation": "J. Teles et al., Quantum state tomography for quadrupolar nuclei using global rotations of the spin system, Journal of Chemical Physics 126, 154506 (2007).",
+      "doi": "10.1063/1.2717179",
+      "url": "https://doi.org/10.1063/1.2717179",
+      "priority": "strong",
+      "use_in_paper": ["methods"],
+      "why_it_matters": "Alternative tomography protocol for quadrupolar nuclei."
+    },
+    {
+      "id": "Hradil1997",
+      "category": "tomography",
+      "citation": "Z. Hradil, Quantum-state estimation, Physical Review A 55, R1561 (1997).",
+      "doi": "10.1103/PhysRevA.55.R1561",
+      "url": "https://doi.org/10.1103/PhysRevA.55.R1561",
+      "priority": "strong",
+      "use_in_paper": ["methods"],
+      "why_it_matters": "Foundational reference for maximum-likelihood quantum-state estimation."
+    },
+    {
+      "id": "JamesEtAl2001",
+      "category": "tomography",
+      "citation": "D. F. V. James, P. G. Kwiat, W. J. Munro, and A. G. White, Measurement of qubits, Physical Review A 64, 052312 (2001).",
+      "doi": "10.1103/PhysRevA.64.052312",
+      "url": "https://doi.org/10.1103/PhysRevA.64.052312",
+      "priority": "strong",
+      "use_in_paper": ["methods"],
+      "why_it_matters": "Practical tomography and error-analysis reference."
+    },
+    {
+      "id": "ZhangSarovar2015",
+      "category": "open_system_identification",
+      "citation": "J. Zhang and M. Sarovar, Identification of open quantum systems from observable time traces, Physical Review A 91, 052121 (2015).",
+      "doi": "10.1103/PhysRevA.91.052121",
+      "url": "https://doi.org/10.1103/PhysRevA.91.052121",
+      "priority": "strong",
+      "use_in_paper": ["methods", "discussion"],
+      "why_it_matters": "Directly relevant to parameter identification from observable time traces."
+    },
+    {
+      "id": "KhanejaEtAl2005",
+      "category": "quantum_control",
+      "citation": "N. Khaneja et al., Design of NMR pulse sequences by gradient ascent algorithms, Journal of Magnetic Resonance 172, 296-305 (2005).",
+      "doi": "10.1016/j.jmr.2004.11.004",
+      "url": "https://doi.org/10.1016/j.jmr.2004.11.004",
+      "priority": "essential",
+      "use_in_paper": ["methods", "results"],
+      "why_it_matters": "Standard GRAPE reference for NMR pulse-sequence optimization."
+    },
+    {
+      "id": "BrifEtAl2010",
+      "category": "quantum_control",
+      "citation": "C. Brif, R. Chakrabarti, and H. Rabitz, Control of quantum phenomena: past, present and future, New Journal of Physics 12, 075008 (2010).",
+      "doi": "10.1088/1367-2630/12/7/075008",
+      "url": "https://doi.org/10.1088/1367-2630/12/7/075008",
+      "priority": "strong",
+      "use_in_paper": ["introduction", "discussion"],
+      "why_it_matters": "Broad review of quantum control concepts and applications."
+    },
+    {
+      "id": "MagesanEtAl2011",
+      "category": "hardware_benchmarking",
+      "citation": "E. Magesan, J. M. Gambetta, and J. Emerson, Scalable and robust randomized benchmarking of quantum processes, Physical Review Letters 106, 180504 (2011).",
+      "doi": "10.1103/PhysRevLett.106.180504",
+      "url": "https://doi.org/10.1103/PhysRevLett.106.180504",
+      "priority": "strong",
+      "use_in_paper": ["discussion"],
+      "why_it_matters": "Standard randomized benchmarking reference for hardware-facing validation."
+    },
+    {
+      "id": "NielsenEtAl2021GST",
+      "category": "hardware_benchmarking",
+      "citation": "E. Nielsen et al., Gate Set Tomography, Quantum 5, 557 (2021).",
+      "doi": "10.22331/q-2021-10-05-557",
+      "url": "https://doi.org/10.22331/q-2021-10-05-557",
+      "priority": "strong",
+      "use_in_paper": ["discussion", "future_work"],
+      "why_it_matters": "Self-consistent hardware characterization framework."
+    },
+    {
+      "id": "QuTiP2",
+      "category": "software",
+      "citation": "J. R. Johansson, P. D. Nation, and F. Nori, QuTiP 2: A Python framework for the dynamics of open quantum systems, Computer Physics Communications 184, 1234-1240 (2013).",
+      "doi": "10.1016/j.cpc.2012.11.019",
+      "url": "https://doi.org/10.1016/j.cpc.2012.11.019",
+      "priority": "optional",
+      "use_in_paper": ["methods"],
+      "why_it_matters": "External reference implementation for open-system dynamics."
+    },
+    {
+      "id": "NumPy2020",
+      "category": "software",
+      "citation": "C. R. Harris et al., Array programming with NumPy, Nature 585, 357-362 (2020).",
+      "doi": "10.1038/s41586-020-2649-2",
+      "url": "https://doi.org/10.1038/s41586-020-2649-2",
+      "priority": "optional",
+      "use_in_paper": ["methods"],
+      "why_it_matters": "Standard citation for NumPy-based scientific computing."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "paper_id": "flux_qubit_noise_spectroscopy_2011",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\reproduction_note.md",
+  "summary": {
+    "estimated_alpha": 0.7399178508993347,
+    "alpha_abs_error": 0.04008214910066532,
+    "amplitude_at_1mhz": 26937.923859994295,
+    "rmse_log": 0.02500752213317144,
+    "min_coherence": 0.7560870894489914,
+    "max_coherence": 0.9806881253323074
+  },
+  "figures": {
+    "flux_spectrum_peak_estimates": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_spectrum_peak_estimates.png",
+    "flux_coherence_vs_pulse_count": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_coherence_vs_pulse_count.png",
+    "flux_filter_peak_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_filter_peak_map.png",
+    "flux_power_law_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_power_law_fit.png"
+  }
+}

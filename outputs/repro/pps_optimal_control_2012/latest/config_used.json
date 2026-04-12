@@ -1,0 +1,23 @@
+{
+  "paper": {
+    "paper_id": "pps_optimal_control_2012",
+    "title": "Preparing Pseudo-Pure States in a Quadrupolar Spin System Using Optimal Control",
+    "venue": "Chinese Physics Letters",
+    "year": 2012,
+    "doi": "10.1088/0256-307X/29/12/127601",
+    "role": "state_preparation_bridge"
+  },
+  "implemented_equations": {
+    "thermal_input": "rho = I/4 + scale Iz",
+    "pps_target": "rho_pps = I/4 + scale (0.75 |00><00| - 0.25 sum_other |j><j|)",
+    "control_then_gradient": "rho_out = dephase[U(u) rho_in U(u)^dagger]",
+    "preparation_error": "||dev(rho_out)-dev(rho_target)|| / ||dev(rho_target)||",
+    "qst": "signals from seven tomography rotations, then A vec(rho)=b"
+  },
+  "assumptions": [
+    "The benchmark prepares the |00> pseudo-pure state in the four-level spin-3/2 manifold.",
+    "The gradient pulse is represented as perfect dephasing in the measurement basis.",
+    "The target signal scale follows the population-averaging PPS amplitude reachable from thermal Iz.",
+    "Tomography noise is synthetic and relative to simulated complex tomography amplitudes."
+  ]
+}

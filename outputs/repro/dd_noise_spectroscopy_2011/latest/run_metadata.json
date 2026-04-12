@@ -1,0 +1,19 @@
+{
+  "paper_id": "dd_noise_spectroscopy_2011",
+  "generated_at_utc": "2026-04-12T05:28:51.044917+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_dd_noise_spectroscopy_2011.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "43eb8ce722adc3b056101b9fcfc960330e49a12def1332e17da9c5dd53bc471b",
+  "results_sha256": "519f527d6e3fb9f70d0d67cb5f93e736e3cf92e5a242d6894804b6f782f37289",
+  "metrics_sha256": "c4a10634742ec1d1eae5e0f1d76d73f6caa77bcdc8840c097986196262a73e37",
+  "config_used_sha256": "bee73cade343cc4e5a9916b8a588fb77d9e27620767c36c05fbe48a09be79d7b",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\dd_noise_spectroscopy_2011\\latest"
+}

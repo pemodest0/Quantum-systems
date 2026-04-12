@@ -1,0 +1,18 @@
+{
+  "rates": {
+    "gamma_phi_s^-1": 160.0,
+    "gamma_relax_s^-1": 35.0
+  },
+  "checks": {
+    "max_trace_error": 3.552713861193821e-15,
+    "max_hermiticity_error": 1.0120858304887922e-17,
+    "min_eigenvalue": 0.24999369449809364
+  },
+  "final_metrics": {
+    "purity": 0.25000000002576317,
+    "entropy": 1.3862943610683676,
+    "relative_entropy_to_mixed": 5.152611300958785e-11,
+    "entropy_production_proxy": 1.0298677889904368e-08,
+    "free_energy_like": -417.4825572921685
+  }
+}

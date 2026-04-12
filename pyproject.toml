@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quantum-systems"
+version = "0.1.0"
+description = "Python-first laboratory for open quantum systems, Na-23 NMR, quantum control, tomography, and noise spectroscopy"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Pedro Henrique"},
+]
+keywords = [
+  "open-quantum-systems",
+  "quantum-control",
+  "nmr",
+  "quantum-tomography",
+  "noise-spectroscopy",
+]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+urls = {Repository = "https://github.com/pemodest0/Quantum-systems"}
+dependencies = [
+  "numpy==2.4.2",
+  "scipy==1.17.0",
+  "matplotlib==3.10.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.0.3",
+]
+
+[project.scripts]
+oqs-control = "oqs_control.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,269 @@
+schema_version: 1
+description: "Manifest of reproduction targets and their scientific status."
+targets:
+  - paper_id: internal_validation_baseline
+    target_figures:
+      - internal_spin32_operator_spectrum
+      - internal_reference_spectrum_basics
+      - internal_open_system_diagnostics
+    equations_used:
+      - "[Ix, Iy] = i Iz"
+      - "I^2 = I(I+1) identity"
+      - "d rho / dt = -i[H, rho] + dissipator"
+      - "FID(t) = Tr(D rho(t))"
+      - "S(nu) = FFT[FID(t)]"
+    script: scripts/run_internal_validation_baseline.py
+    command: "python scripts/run_repro.py --paper-id internal_validation_baseline"
+    output_dir: outputs/repro/internal_validation_baseline/latest
+    status: active
+    differences_from_original: "Internal validation target; no external original paper."
+  - paper_id: na23_relaxometry_2023
+    target_figures:
+      - spectral_density_regimes
+      - rates_vs_tau_c
+      - phenomenological_vs_redfield_decay
+      - envelope_residuals
+    equations_used:
+      - "J_n(tau_c) = tau_c / (1 + (n omega0 tau_c)^2), n = 0, 1, 2"
+      - "R1_slow = C (J1 + 4 J2)"
+      - "R1_fast = C (J0 + J1 + 4 J2)"
+      - "R2_CT = C (3 J0 + 0.5 J1 + J2)"
+      - "R2_SAT = C (3 J0 + 1.5 J1 + J2)"
+      - "D_k(t) = A1 exp(rate1 t) + A2 exp(rate2 t)"
+    script: scripts/repro_na23_relaxometry_2023.py
+    command: "python scripts/run_repro.py --paper-id na23_relaxometry_2023"
+    output_dir: outputs/repro/na23_relaxometry_2023/latest
+    status: active
+    differences_from_original: "The source is a review paper, so the target is a minimal physically interpretable model reproduction rather than a digitized figure. The Redfield-inspired rate closure is explicitly marked as an effective project benchmark."
+  - paper_id: spin32_algebraic_2004
+    target_figures:
+      - hilbert_vs_liouville_fid
+      - coherence_order_pathways
+      - b0_b1_energy_map
+      - superoperator_factorization_error
+    equations_used:
+      - "vec(U rho U^dagger) = (U* kron U) vec(rho)"
+      - "d vec(rho) / dt = L vec(rho)"
+      - "s(t) = Tr(rho(t) D) = d vec(rho(t))"
+      - "vec(rho(t)) = F(t) P vec(rho0)"
+      - "q = m_bra - m_ket"
+    script: scripts/repro_spin32_algebraic_2004.py
+    command: "python scripts/run_repro.py --paper-id spin32_algebraic_2004"
+    output_dir: outputs/repro/spin32_algebraic_2004/latest
+    status: active
+    differences_from_original: "This reproduces an equivalent algebraic benchmark rather than digitizing a paper figure. The paper_id keeps the requested 2004 label, while the journal issue is 2005."
+  - paper_id: qst_relaxation_2008
+    target_figures:
+      - density_element_decay
+      - tomography_fidelity_vs_noise
+      - extracted_rate_vs_true
+      - phase_error_sensitivity
+    equations_used:
+      - "rho(t) = dephase_q[ exp(-gamma_pop t) rho0 + (1-exp(-gamma_pop t)) I/d ]"
+      - "|rho_ij(t)| ~ exp[-(gamma_pop + gamma_phi q^2)t], q = m_i - m_j"
+      - "A vec(rho) = b"
+      - "log norm(t) = intercept - rate t"
+    script: scripts/repro_qst_relaxation_2008.py
+    command: "python scripts/run_repro.py --paper-id qst_relaxation_2008"
+    output_dir: outputs/repro/qst_relaxation_2008/latest
+    status: active
+    differences_from_original: "This is a synthetic workflow reproduction because no time-resolved experimental QST phase-series data are currently available in the repository."
+  - paper_id: spin32_qlogic_qst_2005
+    target_figures:
+      - selective_pulse_fidelity_vs_duration
+      - population_transfer_vs_duration
+      - all_transition_fidelity_comparison
+      - qst_density_monitor
+    equations_used:
+      - "U_ideal = exp[-i theta/2 (cos phi X_ij + sin phi Y_ij)]"
+      - "U = exp[-i H_control tau]"
+      - "U = exp[-i (H_control + H_free_in_selected_carrier_frame) tau]"
+      - "F_op = |Tr(U_target^dagger U_actual)|^2 / d^2"
+      - "A vec(rho) = b"
+    script: scripts/repro_spin32_qlogic_qst_2005.py
+    command: "python scripts/run_repro.py --paper-id spin32_qlogic_qst_2005"
+    output_dir: outputs/repro/spin32_qlogic_qst_2005/latest
+    status: active
+    differences_from_original: "This is a minimal selective-pulse/QST benchmark, not a full reproduction of every logical gate or experimental pulse calibration from the paper."
+  - paper_id: nonmarkov_noise_2022
+    target_figures:
+      - markovian_vs_memory_ramsey_echo
+      - trace_distance_revival
+      - time_local_rate_negative_intervals
+      - lindblad_failure_signatures
+    equations_used:
+      - "C_M(t) = exp(-gamma t)"
+      - "C_R(t) = exp[-0.5 sigma^2 t^2]"
+      - "C_E(t) = exp[-0.5 ((1-eff) sigma)^2 t^2]"
+      - "D(t) = |exp(-gamma t) cos(omega t)|"
+      - "N = sum_{Delta D > 0} Delta D"
+      - "gamma_eff(t) = -d log(D(t)) / dt"
+    script: scripts/repro_nonmarkov_noise_2022.py
+    command: "python scripts/run_repro.py --paper-id nonmarkov_noise_2022"
+    output_dir: outputs/repro/nonmarkov_noise_2022/latest
+    status: active
+    differences_from_original: "The source is a review/tools article. This reproduction implements an operational Markovian-vs-memory benchmark rather than full process tensor tomography."
+  - paper_id: multipass_qpt_2024
+    target_figures:
+      - error_vs_passes
+      - single_vs_multipass_error_distribution
+      - ptm_comparison
+      - shot_noise_sweep
+    equations_used:
+      - "R_ij = Tr(P_i E(P_j)) / 2"
+      - "R_est = S_out S_in^{-1}"
+      - "R_N = R^N"
+      - "E_N = R_N T_N^{-1}"
+      - "R_est = E_N^(1/N) T"
+    script: scripts/repro_multipass_qpt_2024.py
+    command: "python scripts/run_repro.py --paper-id multipass_qpt_2024"
+    output_dir: outputs/repro/multipass_qpt_2024/latest
+    status: active
+    differences_from_original: "This is a one-qubit synthetic PTM prototype. It does not run a real IBM backend and does not implement the paper's two-qubit CNOT example."
+  - paper_id: quadrupolar_qip_2012
+    target_figures:
+      - product_operator_decomposition
+      - grover_marked_state_populations
+      - pseudopure_visibility
+      - qst_noise_sensitivity
+    equations_used:
+      - "|3/2>, |1/2>, |-1/2>, |-3/2> -> |00>, |01>, |10>, |11>"
+      - "rho_pps = (1-epsilon) I/4 + epsilon |psi><psi|"
+      - "Iz = ZI + 0.5 IZ"
+      - "3 Iz^2 - I(I+1) I = 3 ZZ"
+      - "O_m = I - 2 |m><m|"
+      - "D = 2 |s><s| - I"
+      - "rho_f = (D O_m HxH) rho_00 (D O_m HxH)^dagger"
+      - "A vec(rho) = b"
+    script: scripts/repro_quadrupolar_qip_2012.py
+    command: "python scripts/run_repro.py --paper-id quadrupolar_qip_2012"
+    output_dir: outputs/repro/quadrupolar_qip_2012/latest
+    status: active
+    differences_from_original: "This reproduces the encoded spin-3/2 two-qubit processor structure and a minimal Grover/QST benchmark. It does not reproduce the full experimental pulse compilation, strongly modulating pulses, or relaxation/Kraus analysis from the review."
+  - paper_id: grape_nmr_control_2005
+    target_figures:
+      - grape_fidelity_convergence
+      - optimized_controls
+      - robustness_map
+      - rectangular_vs_grape_state_fidelity
+    equations_used:
+      - "U = product_k exp[-i (H0 + ux_k Hx + uy_k Hy) dt]"
+      - "F = |Tr(U_target^dagger U)|^2 / d^2"
+      - "Phi = mean_{B0,B1} F(B0, B1)"
+      - "dF/du_k from Frechet derivative of exp[-i H_k dt]"
+    script: scripts/repro_grape_nmr_control_2005.py
+    command: "python scripts/run_repro.py --paper-id grape_nmr_control_2005"
+    output_dir: outputs/repro/grape_nmr_control_2005/latest
+    status: active
+    differences_from_original: "This implements the GRAPE algorithmic core on the current Na-23 spin-3/2 model. It does not reproduce the original paper's coupled-spin molecular examples or relaxation-optimized variants."
+  - paper_id: pps_optimal_control_2012
+    target_figures:
+      - pps_population_profiles
+      - pps_grape_convergence
+      - pps_optimized_controls
+      - pps_qst_noise_sensitivity
+    equations_used:
+      - "rho_in = I/4 + scale Iz"
+      - "rho_pps = I/4 + scale (0.75 |00><00| - 0.25 sum_other |j><j|)"
+      - "rho_out = dephase[U(u) rho_in U(u)^dagger]"
+      - "error = ||dev(rho_out)-dev(rho_target)|| / ||dev(rho_target)||"
+      - "A vec(rho) = b"
+    script: scripts/repro_pps_optimal_control_2012.py
+    command: "python scripts/run_repro.py --paper-id pps_optimal_control_2012"
+    output_dir: outputs/repro/pps_optimal_control_2012/latest
+    status: active
+    differences_from_original: "This implements a minimal synthetic PPS-preparation benchmark for the current Na-23 model. It does not reproduce a real spectrometer pulse calibration or the full experimental sequence from the paper."
+  - paper_id: projected_ls_qpt_2022
+    target_figures:
+      - qpt_error_distribution
+      - choi_eigenvalues_raw_vs_pls
+      - physicality_violations_vs_shots
+      - ptm_reconstruction_comparison
+    equations_used:
+      - "J(E) = sum_mn |m><n| tensor E(|m><n|)"
+      - "J >= 0"
+      - "Tr_output J = I"
+      - "min ||J - J_LS||_F over J >= 0 and Tr_output J = I"
+    script: scripts/repro_projected_ls_qpt_2022.py
+    command: "python scripts/run_repro.py --paper-id projected_ls_qpt_2022"
+    output_dir: outputs/repro/projected_ls_qpt_2022/latest
+    status: active
+    differences_from_original: "This implements a single-qubit projected least-squares QPT benchmark. It does not reproduce the paper's theorem-level finite-sample analysis or high-dimensional scaling results."
+  - paper_id: gate_set_tomography_2021
+    target_figures:
+      - gst_prediction_by_sequence_length
+      - gst_heldout_predictions
+      - gst_gauge_dependent_spam
+      - gst_gate_matrix_residuals
+    equations_used:
+      - "p_s = e dot G_s rho"
+      - "gate-only: min sum_s (p_s(Gx,Gy; ideal rho,e) - f_s)^2"
+      - "GST: min sum_s (p_s(Gx,Gy,rho,e) - f_s)^2"
+      - "long sequences repeat short germs to amplify coherent errors"
+    script: scripts/repro_gate_set_tomography_2021.py
+    command: "python scripts/run_repro.py --paper-id gate_set_tomography_2021"
+    output_dir: outputs/repro/gate_set_tomography_2021/latest
+    status: active
+    differences_from_original: "This implements a minimal single-qubit GST-like estimator, not pyGSTi. It does not include full gauge optimization, confidence regions, or the paper's complete long-sequence GST machinery."
+  - paper_id: nonmarkov_process_tensor_2020
+    target_figures:
+      - process_tensor_prediction_scatter
+      - process_tensor_rmse_by_length
+      - process_tensor_echo_witness
+      - process_tensor_control_landscape
+    equations_used:
+      - "rho_k(A_{k-1:0}) = T^{k:0}[A_{k-1:0}]"
+      - "p(sequence) measured for a basis of multi-time interventions"
+      - "single fitted channel M(lambda) repeated between controls"
+      - "argmax_sequence p_process_tensor(sequence)"
+    script: scripts/repro_nonmarkov_process_tensor_2020.py
+    command: "python scripts/run_repro.py --paper-id nonmarkov_process_tensor_2020"
+    output_dir: outputs/repro/nonmarkov_process_tensor_2020/latest
+    status: active
+    differences_from_original: "This is an operational finite-sequence process-tensor benchmark. It does not reproduce the full hardware experiment, Choi tensor contraction workflow, or over-complete dual-set reconstruction."
+  - paper_id: noise_filtering_control_2014
+    target_figures:
+      - noise_spectrum_and_filters
+      - coherence_vs_control_sequence
+      - time_domain_switching_functions
+      - filter_peak_tracking
+    equations_used:
+      - "y(t) = +/- 1 with sign flips at pi pulses"
+      - "Y(omega) = integral_0^T y(t) exp(i omega t) dt"
+      - "chi(T) = integral S(omega) |Y(omega)|^2 d omega / pi"
+      - "C(T) = exp[-chi(T)]"
+    script: scripts/repro_noise_filtering_control_2014.py
+    command: "python scripts/run_repro.py --paper-id noise_filtering_control_2014"
+    output_dir: outputs/repro/noise_filtering_control_2014/latest
+    status: active
+    differences_from_original: "This is a synthetic pure-dephasing filter-function benchmark. It does not reproduce experimental data, finite pulse widths, or hardware pulse calibration."
+  - paper_id: dd_noise_spectroscopy_2011
+    target_figures:
+      - dd_reconstructed_spectrum
+      - dd_coherence_fit
+      - dd_spectrum_residual
+      - dd_sequence_sensitivity
+    equations_used:
+      - "C_i = exp[- integral S(omega) F_i(omega) d omega / pi]"
+      - "chi_i = -log(C_i) = sum_j A_ij S_j"
+      - "S_j >= 0 solved by NNLS"
+    script: scripts/repro_dd_noise_spectroscopy_2011.py
+    command: "python scripts/run_repro.py --paper-id dd_noise_spectroscopy_2011"
+    output_dir: outputs/repro/dd_noise_spectroscopy_2011/latest
+    status: active
+    differences_from_original: "This reconstructs a synthetic colored spectrum with an NNLS inversion. It does not reproduce the original experimental nuclear-spin data or pulse imperfections."
+  - paper_id: flux_qubit_noise_spectroscopy_2011
+    target_figures:
+      - flux_spectrum_peak_estimates
+      - flux_coherence_vs_pulse_count
+      - flux_filter_peak_map
+      - flux_power_law_fit
+    equations_used:
+      - "C_N(T) = exp[- integral S(omega) F_N(omega) d omega / pi]"
+      - "S(omega_peak) approx chi_N / area(F_N)"
+      - "S(f) = A (1 MHz / f)^alpha"
+    script: scripts/repro_flux_qubit_noise_spectroscopy_2011.py
+    command: "python scripts/run_repro.py --paper-id flux_qubit_noise_spectroscopy_2011"
+    output_dir: outputs/repro/flux_qubit_noise_spectroscopy_2011/latest
+    status: active
+    differences_from_original: "This is a synthetic CPMG peak-filter spectroscopy benchmark. It does not reproduce superconducting flux-qubit hardware data or finite-pulse corrections."

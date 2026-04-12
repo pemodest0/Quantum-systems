@@ -1,0 +1,18 @@
+{
+  "paper_id": "spin32_algebraic_2004",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\reproduction_note.md",
+  "summary": {
+    "max_abs_fid_error": 2.5454687016331574e-17,
+    "single_quantum_weight_after_first_pulse": 0.9906935067561968,
+    "max_b0_b1_relative_bias": 0.24166570304413104,
+    "max_factorization_error": 1.0500534051965354e-19
+  },
+  "figures": {
+    "hilbert_vs_liouville_fid": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\hilbert_vs_liouville_fid.png",
+    "coherence_order_pathways": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\coherence_order_pathways.png",
+    "b0_b1_energy_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\b0_b1_energy_map.png",
+    "superoperator_factorization_error": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\superoperator_factorization_error.png"
+  }
+}

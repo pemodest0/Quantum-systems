@@ -1,0 +1,146 @@
+{
+  "workflow_id": "experimental_decision_pipeline",
+  "status": "completed",
+  "benchmark_type": "experimental_decision_pipeline",
+  "state_preparation_summary": {
+    "qst_fidelity": 0.9855936816430856,
+    "frobenius_error": 0.025945068030443236,
+    "tomography_residual_norm": 0.030719519570505106,
+    "prepared_coherence_norm": 0.8273079047488856
+  },
+  "spectroscopy_summary": {
+    "sequence_count": 30,
+    "spectrum_correlation": 0.9326087769424004,
+    "relative_spectrum_error": 0.2923622034038588,
+    "residual_norm": 0.010135654099822113,
+    "mean_abs_coherence_fit_error": 0.0012090198333952196
+  },
+  "decision_summary": {
+    "candidate_count": 13,
+    "selected_sequence": "CPMG-24",
+    "selected_pulse_count": 24,
+    "selected_filter_peak_hz": 9997.765363128492,
+    "selected_predicted_coherence": 0.9894689385625381,
+    "selected_synthetic_true_coherence": 0.9917192833000059,
+    "selected_prediction_error": -0.0022503447374677688
+  },
+  "candidate_decisions": [
+    {
+      "sequence": "Ramsey",
+      "pulse_count": 0,
+      "filter_peak_hz": 200.0,
+      "predicted_coherence": 0.9333360884487543,
+      "synthetic_true_coherence": 0.9131392867989102,
+      "prediction_error": 0.020196801649844054
+    },
+    {
+      "sequence": "Hahn echo",
+      "pulse_count": 1,
+      "filter_peak_hz": 641.340782122905,
+      "predicted_coherence": 0.9109790562633178,
+      "synthetic_true_coherence": 0.9052937330875308,
+      "prediction_error": 0.0056853231757869604
+    },
+    {
+      "sequence": "CPMG-2",
+      "pulse_count": 2,
+      "filter_peak_hz": 994.413407821229,
+      "predicted_coherence": 0.9328507753815467,
+      "synthetic_true_coherence": 0.9342727363734431,
+      "prediction_error": -0.0014219609918963982
+    },
+    {
+      "sequence": "CPMG-4",
+      "pulse_count": 4,
+      "filter_peak_hz": 1700.5586592178768,
+      "predicted_coherence": 0.9595417454334205,
+      "synthetic_true_coherence": 0.960524141959822,
+      "prediction_error": -0.00098239652640153
+    },
+    {
+      "sequence": "CPMG-8",
+      "pulse_count": 8,
+      "filter_peak_hz": 3377.653631284916,
+      "predicted_coherence": 0.9726981708624781,
+      "synthetic_true_coherence": 0.9773159311755111,
+      "prediction_error": -0.004617760313032959
+    },
+    {
+      "sequence": "CPMG-12",
+      "pulse_count": 12,
+      "filter_peak_hz": 5054.748603351954,
+      "predicted_coherence": 0.9662648449438425,
+      "synthetic_true_coherence": 0.9661979437537749,
+      "prediction_error": 6.690119006758088e-05
+    },
+    {
+      "sequence": "CPMG-16",
+      "pulse_count": 16,
+      "filter_peak_hz": 6643.575418994413,
+      "predicted_coherence": 0.9616742169881162,
+      "synthetic_true_coherence": 0.963019052241391,
+      "prediction_error": -0.0013448352532747787
+    },
+    {
+      "sequence": "CPMG-24",
+      "pulse_count": 24,
+      "filter_peak_hz": 9997.765363128492,
+      "predicted_coherence": 0.9894689385625381,
+      "synthetic_true_coherence": 0.9917192833000059,
+      "prediction_error": -0.0022503447374677688
+    },
+    {
+      "sequence": "CPMG-32",
+      "pulse_count": 32,
+      "filter_peak_hz": 13351.95530726257,
+      "predicted_coherence": 0.9761577099541844,
+      "synthetic_true_coherence": 0.9936434293319543,
+      "prediction_error": -0.01748571937776988
+    },
+    {
+      "sequence": "UDD-4",
+      "pulse_count": 4,
+      "filter_peak_hz": 1612.290502793296,
+      "predicted_coherence": 0.9555204876409501,
+      "synthetic_true_coherence": 0.9576399365426604,
+      "prediction_error": -0.0021194489017103413
+    },
+    {
+      "sequence": "UDD-8",
+      "pulse_count": 8,
+      "filter_peak_hz": 2759.776536312849,
+      "predicted_coherence": 0.9710885953171087,
+      "synthetic_true_coherence": 0.9733326895389025,
+      "prediction_error": -0.0022440942217938353
+    },
+    {
+      "sequence": "UDD-12",
+      "pulse_count": 12,
+      "filter_peak_hz": 3907.262569832402,
+      "predicted_coherence": 0.9746308765555507,
+      "synthetic_true_coherence": 0.9765439063874475,
+      "prediction_error": -0.0019130298318967842
+    },
+    {
+      "sequence": "UDD-16",
+      "pulse_count": 16,
+      "filter_peak_hz": 4966.480446927374,
+      "predicted_coherence": 0.9700347679059277,
+      "synthetic_true_coherence": 0.9711612651650474,
+      "prediction_error": -0.0011264972591197298
+    }
+  ],
+  "lab_comparison": {
+    "status": "waiting_for_lab_data",
+    "matched_measurement_count": 0,
+    "rmse": null,
+    "normalized_rmse": null,
+    "residuals": []
+  },
+  "figures": {
+    "state_preparation": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\state_preparation_qst.png",
+    "noise_spectrum": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\reconstructed_noise_spectrum.png",
+    "spectroscopy_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\dd_spectroscopy_fit.png",
+    "control_decision": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\workflows\\experimental_decision_pipeline\\latest\\figures\\control_sequence_decision.png"
+  }
+}

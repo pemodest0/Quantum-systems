@@ -1,0 +1,19 @@
+{
+  "paper_id": "quadrupolar_qip_2012",
+  "generated_at_utc": "2026-04-12T05:27:10.154320+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_quadrupolar_qip_2012.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "dce3c6c5add811d0257a72617100e5c8640c2b5a483a7ee7e702ee16ed6806b8",
+  "results_sha256": "4a5bd5e75494003409f30676c0b3cc6bbf553e04cdab1edf5d74759d5e6d16ec",
+  "metrics_sha256": "f71f3e1a341bc3943fb64c1596471d435e86b2d12c9345503c50088694e5c05d",
+  "config_used_sha256": "955eb2d42dcb66b40281dcd094b9b4d5e6bb8ac0f43e4187e38589b38c0d511b",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest"
+}

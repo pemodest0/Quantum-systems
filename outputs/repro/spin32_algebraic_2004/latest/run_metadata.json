@@ -1,0 +1,19 @@
+{
+  "paper_id": "spin32_algebraic_2004",
+  "generated_at_utc": "2026-04-12T05:26:45.863691+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_spin32_algebraic_2004.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "9c0d37e6d7c621ea08b9877fbddcb36e9e6a5b3fdd6eac49d968bb4dba06506f",
+  "results_sha256": "f982127ff23b28cc0d4a889b0d437faabb2ad18ff6bdeb46ab7c963f807e3892",
+  "metrics_sha256": "c5e5718e4ec597a5db308136e234eee469002f55fc2b3a640292a677f01c88b1",
+  "config_used_sha256": "adfbbf1a49a7fabd3d0a138e246768b0561a70c6541dd8709e10140f5f8cc33c",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest"
+}

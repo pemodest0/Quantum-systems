@@ -1,0 +1,19 @@
+{
+  "paper_id": "pps_optimal_control_2012",
+  "generated_at_utc": "2026-04-12T05:27:50.892329+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_pps_optimal_control_2012.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "67f53ce6074ea7184b1f673121bc31df11644550d019fc23ce4a349ee29f8265",
+  "results_sha256": "b5b6ecc02dc951fcfa5a1aa3812113ded0de3a762587903ae4ea57c49c8d3f07",
+  "metrics_sha256": "2564e35eb9cdeed91a7bb60f507384f7e3e123c9aef3d24f352affda544080f3",
+  "config_used_sha256": "7d30afa3a91cf5049fbb062fdf22acca4ad8b9a313e06c948b076fd3c85345a9",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\pps_optimal_control_2012\\latest"
+}

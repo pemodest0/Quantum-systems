@@ -1,0 +1,32 @@
+{
+  "phase_files": [
+    {
+      "phase_index": 0,
+      "path": "C:\\path\\to\\phase_0.tnt"
+    },
+    {
+      "phase_index": 1,
+      "path": "C:\\path\\to\\phase_1.tnt"
+    },
+    {
+      "phase_index": 2,
+      "path": "C:\\path\\to\\phase_2.tnt"
+    },
+    {
+      "phase_index": 3,
+      "path": "C:\\path\\to\\phase_3.tnt"
+    },
+    {
+      "phase_index": 4,
+      "path": "C:\\path\\to\\phase_4.tnt"
+    },
+    {
+      "phase_index": 5,
+      "path": "C:\\path\\to\\phase_5.tnt"
+    },
+    {
+      "phase_index": 6,
+      "path": "C:\\path\\to\\phase_6.tnt"
+    }
+  ]
+}

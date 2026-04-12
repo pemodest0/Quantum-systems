@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-04-12T05:45:38.704707+00:00",
+  "record_count": 17,
+  "records": [
+    {
+      "record_id": "486fc22537ef2760",
+      "kind": "reproduction",
+      "source_id": "dd_noise_spectroscopy_2011",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\dd_noise_spectroscopy_2011\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "17760979c6d78743",
+      "kind": "reproduction",
+      "source_id": "flux_qubit_noise_spectroscopy_2011",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "9ae8dd34caf57c8b",
+      "kind": "reproduction",
+      "source_id": "gate_set_tomography_2021",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\gate_set_tomography_2021\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "a8a1f4c78dd8cd55",
+      "kind": "reproduction",
+      "source_id": "grape_nmr_control_2005",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\grape_nmr_control_2005\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "92418194be476892",
+      "kind": "reproduction",
+      "source_id": "internal_validation_baseline",
+      "status": "unknown",
+      "source_dir": "outputs\\repro\\internal_validation_baseline\\latest",
+      "artifact_count": 3
+    },
+    {
+      "record_id": "13034570d9ec8cd4",
+      "kind": "reproduction",
+      "source_id": "multipass_qpt_2024",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\multipass_qpt_2024\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "a9b1b65f2f19c0ed",
+      "kind": "reproduction",
+      "source_id": "na23_relaxometry_2023",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\na23_relaxometry_2023\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "1cb74c2f39d3d3ae",
+      "kind": "reproduction",
+      "source_id": "noise_filtering_control_2014",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\noise_filtering_control_2014\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "cf8fae69a2f24180",
+      "kind": "reproduction",
+      "source_id": "nonmarkov_noise_2022",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\nonmarkov_noise_2022\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "1b2c1441e5f53569",
+      "kind": "reproduction",
+      "source_id": "nonmarkov_process_tensor_2020",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\nonmarkov_process_tensor_2020\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "df8d0dbc0c591186",
+      "kind": "reproduction",
+      "source_id": "pps_optimal_control_2012",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\pps_optimal_control_2012\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "8675c6746c82a4f3",
+      "kind": "reproduction",
+      "source_id": "projected_ls_qpt_2022",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\projected_ls_qpt_2022\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "6f683a705feb90e7",
+      "kind": "reproduction",
+      "source_id": "qst_relaxation_2008",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\qst_relaxation_2008\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "4e6f8c04b9c5f192",
+      "kind": "reproduction",
+      "source_id": "quadrupolar_qip_2012",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\quadrupolar_qip_2012\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "7d6ace5932b2ee4d",
+      "kind": "reproduction",
+      "source_id": "spin32_algebraic_2004",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\spin32_algebraic_2004\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "71422264b4477391",
+      "kind": "reproduction",
+      "source_id": "spin32_qlogic_qst_2005",
+      "status": "completed",
+      "source_dir": "outputs\\repro\\spin32_qlogic_qst_2005\\latest",
+      "artifact_count": 8
+    },
+    {
+      "record_id": "e51c47062f0bb940",
+      "kind": "workflow",
+      "source_id": "experimental_decision_pipeline",
+      "status": "completed",
+      "source_dir": "outputs\\workflows\\experimental_decision_pipeline\\latest",
+      "artifact_count": 9
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "paper_id": "multipass_qpt_2024",
+  "generated_at_utc": "2026-04-12T05:27:05.704115+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_multipass_qpt_2024.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "fa4afefbc2e88a462a4c08b092d49bffb83645618dd45d976a4dd6a1a3cf2348",
+  "results_sha256": "77976c3b1c3e48e79c0fcc046ee99b4ad308f3262175bddb2c49c7c56afb1ca5",
+  "metrics_sha256": "57195798c02acac54fb4fadd3557579f48511261f74d57442d481075c11d2154",
+  "config_used_sha256": "a0795222c6862039e0a684a18a67fbe1f10b929000f0419ea66a01bdc061bc17",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\multipass_qpt_2024\\latest"
+}

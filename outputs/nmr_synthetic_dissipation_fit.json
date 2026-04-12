@@ -1,0 +1,30 @@
+{
+  "success": true,
+  "message": "`gtol` termination condition is satisfied.",
+  "cost": 1.1500464805044111e-24,
+  "nfev": 6,
+  "true_rates": {
+    "gamma_phi_s^-1": 210.0,
+    "gamma_relax_s^-1": 55.0
+  },
+  "initial_rates": {
+    "gamma_phi_s^-1": 90.0,
+    "gamma_relax_s^-1": 18.0
+  },
+  "fitted_rates": {
+    "gamma_phi_s^-1": 209.99999999940104,
+    "gamma_relax_s^-1": 55.00000000035017
+  },
+  "relative_errors": {
+    "gamma_phi": 2.8521862120777813e-12,
+    "gamma_relax": 6.3667212915871375e-12
+  },
+  "physical_checks": {
+    "target_max_trace_error": 1.0214051889992597e-14,
+    "target_max_hermiticity_error": 1.0096374689398124e-17,
+    "target_min_eigenvalue": 0.24999369969411436,
+    "fitted_max_trace_error": 6.217249042125632e-15,
+    "fitted_max_hermiticity_error": 1.0096375622081937e-17,
+    "fitted_min_eigenvalue": 0.24999369969411442
+  }
+}

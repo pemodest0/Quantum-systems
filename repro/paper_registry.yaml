@@ -1,0 +1,131 @@
+schema_version: 1
+description: "Registry of papers, internal baselines, and reproduction targets."
+papers:
+  - paper_id: internal_validation_baseline
+    type: internal_baseline
+    title: "Internal spin-3/2 Na-23 validation baseline"
+    citation: "Internal project validation target, not an external paper."
+    status: active
+    script: scripts/run_internal_validation_baseline.py
+    output_dir: outputs/repro/internal_validation_baseline/latest
+    purpose: "Validate spin operators, Hamiltonian scales, synthetic spectrum basics, and Liouvillian physical checks before reproducing external papers."
+  - paper_id: na23_relaxometry_2023
+    type: paper_reproduction
+    title: "23Na relaxometry: An overview of theory and applications"
+    citation: "Magnetic Resonance Letters, 2023, doi:10.1016/j.mrl.2023.04.001."
+    status: active
+    script: scripts/repro_na23_relaxometry_2023.py
+    output_dir: outputs/repro/na23_relaxometry_2023/latest
+    purpose: "Implement a minimal quadrupolar-relaxation benchmark for Na-23 and compare it against the current phenomenological biexponential envelope model."
+  - paper_id: spin32_algebraic_2004
+    type: paper_reproduction
+    title: "Algebraic description of spin 3/2 dynamics in NMR experiments"
+    citation: "Journal of Magnetic Resonance 173(2), 236-253, 2005, doi:10.1016/j.jmr.2004.12.009."
+    status: active
+    script: scripts/repro_spin32_algebraic_2004.py
+    output_dir: outputs/repro/spin32_algebraic_2004/latest
+    purpose: "Validate the spin-3/2 algebraic Liouville-space representation for RF pulses, free evolution, detection, coherence pathways, and B0/B1 sensitivity."
+  - paper_id: qst_relaxation_2008
+    type: paper_reproduction
+    title: "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography"
+    citation: "Journal of Magnetic Resonance, 2008, doi:10.1016/j.jmr.2008.01.009."
+    status: active
+    script: scripts/repro_qst_relaxation_2008.py
+    output_dir: outputs/repro/qst_relaxation_2008/latest
+    purpose: "Reproduce the QST relaxation-identification workflow with synthetic spin-3/2 trajectories, reconstructed density matrices, rate extraction, and noise/phase stress tests."
+  - paper_id: spin32_qlogic_qst_2005
+    type: paper_reproduction
+    title: "Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum state tomography"
+    citation: "Journal of Magnetic Resonance, 2005, doi:10.1016/j.jmr.2005.04.009."
+    status: active
+    script: scripts/repro_spin32_qlogic_qst_2005.py
+    output_dir: outputs/repro/spin32_qlogic_qst_2005/latest
+    purpose: "Benchmark selective spin-3/2 logical pulses with and without quadrupolar evolution during the pulse and monitor the resulting state by QST."
+  - paper_id: nonmarkov_noise_2022
+    type: paper_reproduction
+    title: "Characterization and control of non-Markovian quantum noise"
+    citation: "Nature Reviews Physics, 2022, doi:10.1038/s42254-022-00446-2."
+    status: active
+    script: scripts/repro_nonmarkov_noise_2022.py
+    output_dir: outputs/repro/nonmarkov_noise_2022/latest
+    purpose: "Define operational Markovian-vs-memory failure signatures for the project using dephasing, echo recovery, trace-distance revivals, and time-local negative-rate diagnostics."
+  - paper_id: multipass_qpt_2024
+    type: paper_reproduction
+    title: "Multipass quantum process tomography"
+    citation: "Scientific Reports 14, 18185, 2024, doi:10.1038/s41598-024-68353-3."
+    status: active
+    script: scripts/repro_multipass_qpt_2024.py
+    output_dir: outputs/repro/multipass_qpt_2024/latest
+    purpose: "Prototype one-qubit multipass QPT and compare single-pass vs repeated-process PTM reconstruction under synthetic SPAM, readout, and shot noise."
+  - paper_id: quadrupolar_qip_2012
+    type: paper_reproduction
+    title: "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei"
+    citation: "Philosophical Transactions of the Royal Society A 370, 4770-4793, 2012, doi:10.1098/rsta.2011.0365."
+    status: active
+    script: scripts/repro_quadrupolar_qip_2012.py
+    output_dir: outputs/repro/quadrupolar_qip_2012/latest
+    purpose: "Validate the encoded two-qubit interpretation of a spin-3/2 quadrupolar nucleus using product-operator decompositions, pseudo-pure states, a two-qubit Grover benchmark, and synthetic QST."
+  - paper_id: grape_nmr_control_2005
+    type: paper_reproduction
+    title: "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms"
+    citation: "Journal of Magnetic Resonance 172(2), 296-305, 2005, doi:10.1016/j.jmr.2004.11.004."
+    status: active
+    script: scripts/repro_grape_nmr_control_2005.py
+    output_dir: outputs/repro/grape_nmr_control_2005/latest
+    purpose: "Implement a minimal GRAPE pulse-design benchmark for the Na-23 spin-3/2 platform and compare a robust optimized selective central-transition gate against a rectangular pulse."
+  - paper_id: pps_optimal_control_2012
+    type: paper_reproduction
+    title: "Preparing Pseudo-Pure States in a Quadrupolar Spin System Using Optimal Control"
+    citation: "Chinese Physics Letters 29(12), 127601, 2012, doi:10.1088/0256-307X/29/12/127601."
+    status: active
+    script: scripts/repro_pps_optimal_control_2012.py
+    output_dir: outputs/repro/pps_optimal_control_2012/latest
+    purpose: "Implement a minimal optimal-control pseudo-pure-state preparation benchmark for a quadrupolar spin-3/2 system with a dephasing/gradient step and synthetic QST validation."
+  - paper_id: projected_ls_qpt_2022
+    type: paper_reproduction
+    title: "Projected Least-Squares Quantum Process Tomography"
+    citation: "Quantum 6, 844, 2022, doi:10.22331/q-2022-10-20-844."
+    status: active
+    script: scripts/repro_projected_ls_qpt_2022.py
+    output_dir: outputs/repro/projected_ls_qpt_2022/latest
+    purpose: "Implement a projected least-squares QPT benchmark by projecting raw Choi least-squares estimates onto the CPTP set and comparing physicality and reconstruction error."
+  - paper_id: gate_set_tomography_2021
+    type: paper_reproduction
+    title: "Gate Set Tomography"
+    citation: "Quantum 5, 557, 2021, doi:10.22331/q-2021-10-05-557."
+    status: active
+    script: scripts/repro_gate_set_tomography_2021.py
+    output_dir: outputs/repro/gate_set_tomography_2021/latest
+    purpose: "Implement a minimal GST-like benchmark that fits state preparation, measurement, and gates self-consistently and compares prediction quality against a gate-only ideal-SPAM model."
+  - paper_id: nonmarkov_process_tensor_2020
+    type: paper_reproduction
+    title: "Demonstration of non-Markovian process characterisation and control on a quantum processor"
+    citation: "Nature Communications 11, 5301, 2020, doi:10.1038/s41467-020-20113-3."
+    status: active
+    script: scripts/repro_nonmarkov_process_tensor_2020.py
+    output_dir: outputs/repro/nonmarkov_process_tensor_2020/latest
+    purpose: "Implement an operational process-tensor benchmark for correlated dephasing memory and compare multi-time predictions/control selection against a fixed Markovian channel."
+  - paper_id: noise_filtering_control_2014
+    type: paper_reproduction
+    title: "Experimental noise filtering by quantum control"
+    citation: "Nature Physics 10, 644-648, 2014, doi:10.1038/nphys3115."
+    status: active
+    script: scripts/repro_noise_filtering_control_2014.py
+    output_dir: outputs/repro/noise_filtering_control_2014/latest
+    purpose: "Implement a filter-function benchmark for Ramsey, Hahn echo, CPMG, and UDD control under a synthetic dephasing-noise spectrum."
+  - paper_id: dd_noise_spectroscopy_2011
+    type: paper_reproduction
+    title: "Measuring the spectrum of colored noise by dynamical decoupling"
+    citation: "Physical Review Letters 107, 230501, 2011, doi:10.1103/PhysRevLett.107.230501."
+    status: active
+    script: scripts/repro_dd_noise_spectroscopy_2011.py
+    output_dir: outputs/repro/dd_noise_spectroscopy_2011/latest
+    purpose: "Reconstruct a synthetic colored dephasing-noise spectrum from DD coherence data using non-negative least-squares inversion."
+  - paper_id: flux_qubit_noise_spectroscopy_2011
+    type: paper_reproduction
+    title: "Noise spectroscopy through dynamical decoupling with a superconducting flux qubit"
+    citation: "Nature Physics 7, 565-570, 2011, doi:10.1038/nphys1994."
+    status: active
+    script: scripts/repro_flux_qubit_noise_spectroscopy_2011.py
+    output_dir: outputs/repro/flux_qubit_noise_spectroscopy_2011/latest
+    purpose: "Estimate a synthetic flux-qubit-like 1/f^alpha dephasing spectrum from CPMG peak-filter samples and fit the noise exponent."

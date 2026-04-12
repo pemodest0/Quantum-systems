@@ -1,0 +1,19 @@
+{
+  "paper_id": "noise_filtering_control_2014",
+  "generated_at_utc": "2026-04-12T05:28:45.178384+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_noise_filtering_control_2014.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "6cd7c1a6913661f30f082be69dcb085bcb7d50d3287788a64ed9a31a6e875151",
+  "results_sha256": "755f61cef4b8a31badb47d7e7e39ca5a3a152dcd13703eef31c9e62da54b1f54",
+  "metrics_sha256": "783ae186e0b573efa661b547cee1cd9334f46d1e87d6ba9f5e346e578610f014",
+  "config_used_sha256": "80f65df8c8b8ef6061f492d0f33d9bbe506180af9ed13e58da2ccfc449b4f6d9",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\noise_filtering_control_2014\\latest"
+}

@@ -1,0 +1,23 @@
+{
+  "paper": {
+    "paper_id": "projected_ls_qpt_2022",
+    "title": "Projected Least-Squares Quantum Process Tomography",
+    "venue": "Quantum",
+    "year": 2022,
+    "doi": "10.22331/q-2022-10-20-844",
+    "role": "physical_qpt_reconstruction"
+  },
+  "implemented_equations": {
+    "least_squares": "raw PTM estimate from linear inversion QPT",
+    "choi_conversion": "J(E) = sum_mn |m><n| tensor E(|m><n|)",
+    "cp_constraint": "J >= 0",
+    "tp_constraint": "Tr_output J = I",
+    "pls_projection": "min ||J - J_LS||_F over J >= 0 and Tr_output J = I"
+  },
+  "assumptions": [
+    "The reproduction uses a single-qubit process so the projection is transparent and fast.",
+    "The primary benchmark uses finite-shot noise without SPAM bias.",
+    "CPTP projection is implemented by Dykstra alternating projections.",
+    "The purpose is physical reconstruction, not proving the statistical rates from the paper."
+  ]
+}

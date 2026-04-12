@@ -1,0 +1,59 @@
+{
+  "paper_id": "na23_relaxometry_2023",
+  "status": "completed",
+  "comparison_type": "qualitative effective-model reproduction of a review paper",
+  "best_fit": {
+    "tau_c_s": 4.033051825545549e-10,
+    "quadrupolar_coupling_hz": 50118.72336272725,
+    "global_envelope_rmse": 0.04456930149397636
+  },
+  "selected_redfield_inspired_rates_s^-1": {
+    "r1_slow": 161.59162585674142,
+    "r1_fast": 201.5855058884772,
+    "r2_central": 169.70811769972346,
+    "r2_satellite": 207.02240226104658,
+    "r2_fast": 358.8814305450076
+  },
+  "phenomenological_initial_rates_s^-1": {
+    "SAT-": 312.4882816423689,
+    "CT": 165.166898029245,
+    "SAT+": 335.932241593772
+  },
+  "redfield_effective_initial_rates_s^-1": {
+    "SAT-": 266.958455302364,
+    "CT": 215.988301000133,
+    "SAT+": 266.958455302364
+  },
+  "rmse_by_transition": {
+    "SAT-": 0.034320472058425554,
+    "CT": 0.051014053328608436,
+    "SAT+": 0.046679111684517036
+  },
+  "max_abs_residual_by_transition": {
+    "SAT-": 0.06109356671196475,
+    "CT": 0.09009364893047617,
+    "SAT+": 0.0865371404548656
+  },
+  "regime_markers": {
+    "omega0_tau_c_equals_1_s": 1.50500084894348e-09,
+    "two_omega0_tau_c_equals_1_s": 7.5250042447174e-10
+  },
+  "scientific_interpretation": {
+    "captures": [
+      "Na-23 is treated as a spin-3/2 quadrupolar nucleus.",
+      "Relaxation is controlled by reduced spectral densities J0, J1, and J2.",
+      "The current biexponential envelope can be compared against a Redfield-inspired effective closure."
+    ],
+    "does_not_capture": [
+      "No sample-specific electric-field-gradient distribution is inferred.",
+      "No full Redfield tensor is derived from microscopic bath coordinates.",
+      "Satellite asymmetry in the current data is only represented phenomenologically."
+    ]
+  },
+  "figures": {
+    "spectral_density_regimes": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\spectral_density_regimes.png",
+    "rates_vs_tau_c": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\rates_vs_tau_c.png",
+    "phenomenological_vs_redfield_decay": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\phenomenological_vs_redfield_decay.png",
+    "envelope_residuals": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest\\figures\\envelope_residuals.png"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "paper_id": "spin32_qlogic_qst_2005",
+  "status": "completed",
+  "target_transition": {
+    "label": "CT",
+    "pair": [
+      1,
+      2
+    ],
+    "pulse_angle_rad": 3.141592653589793,
+    "logical_interpretation": "selective pi pulse swaps the two addressed spin-3/2 levels"
+  },
+  "fidelity_summary": {
+    "min_operator_fidelity_no_internal": 1.0,
+    "min_operator_fidelity_with_quadrupolar": 2.2413576457089168e-15,
+    "initial_contiguous_safe_duration_us_at_operator_fidelity_0p999": null,
+    "initial_contiguous_safe_duration_us_at_operator_fidelity_0p99": null,
+    "initial_contiguous_safe_duration_us_at_operator_fidelity_0p95": 4.0,
+    "max_sampled_revival_duration_us_at_operator_fidelity_0p999": 640.0,
+    "max_sampled_revival_duration_us_at_operator_fidelity_0p99": 640.0,
+    "operator_fidelity_with_quadrupolar_at_qst_duration": 2.2413576457089168e-15
+  },
+  "ct_duration_table": [
+    {
+      "transition": "CT",
+      "duration_s": 4e-06,
+      "duration_us": 4.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.961939766198717,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.993656627699786,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 0.9999999999999996
+    },
+    {
+      "transition": "CT",
+      "duration_s": 8e-06,
+      "duration_us": 8.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.8535533903912252,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.9755922317318708,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 0.9999999999999998
+    },
+    {
+      "transition": "CT",
+      "duration_s": 1.2e-05,
+      "duration_us": 12.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.6913417158143308,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.9485569526357217,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 0.9999999999999998
+    },
+    {
+      "transition": "CT",
+      "duration_s": 1.9999999999999998e-05,
+      "duration_us": 20.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.30865828336080553,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.8847763805601341,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 1.0
+    },
+    {
+      "transition": "CT",
+      "duration_s": 3.9999999999999996e-05,
+      "duration_us": 40.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.14644660854007308,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.8577411014233451,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 1.0000000000000004
+    },
+    {
+      "transition": "CT",
+      "duration_s": 7.999999999999999e-05,
+      "duration_us": 80.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.4999999881642574,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.9166666646940428,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 1.0000000000000004
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.00015999999999999999,
+      "duration_us": 160.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 2.2413576457089168e-15,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.833333333333333,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 0.9999999999999996
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.00031999999999999997,
+      "duration_us": 320.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.9999996212562249,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.9999999368760365,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 1.0000000000000022
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.0006399999999999999,
+      "duration_us": 640.0,
+      "operator_fidelity_no_internal": 1.0,
+      "operator_fidelity_with_quadrupolar": 0.9999984850256163,
+      "mean_state_fidelity_no_internal": 1.0,
+      "mean_state_fidelity_with_quadrupolar": 0.9999997475042686,
+      "population_transfer_no_internal": 1.0,
+      "population_transfer_with_quadrupolar": 1.0000000000000009
+    }
+  ],
+  "all_transition_duration_table": [
+    {
+      "transition": "SAT-",
+      "duration_s": 4e-06,
+      "duration_us": 4.0,
+      "operator_fidelity_with_quadrupolar": 0.7900326424448773,
+      "mean_state_fidelity_with_quadrupolar": 0.958662415053665
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 8e-06,
+      "duration_us": 8.0,
+      "operator_fidelity_with_quadrupolar": 0.37500769277090695,
+      "mean_state_fidelity_with_quadrupolar": 0.8714281293418992
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 1.2e-05,
+      "duration_us": 12.0,
+      "operator_fidelity_with_quadrupolar": 0.15131704323115566,
+      "mean_state_fidelity_with_quadrupolar": 0.8071123059910225
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 1.9999999999999998e-05,
+      "duration_us": 20.0,
+      "operator_fidelity_with_quadrupolar": 0.4219180369279939,
+      "mean_state_fidelity_with_quadrupolar": 0.788433574792072
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 3.9999999999999996e-05,
+      "duration_us": 40.0,
+      "operator_fidelity_with_quadrupolar": 0.3749615361455397,
+      "mean_state_fidelity_with_quadrupolar": 0.7535616139650149
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 7.999999999999999e-05,
+      "duration_us": 80.0,
+      "operator_fidelity_with_quadrupolar": 0.2499999999999966,
+      "mean_state_fidelity_with_quadrupolar": 0.7916847987014378
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 0.00015999999999999999,
+      "duration_us": 160.0,
+      "operator_fidelity_with_quadrupolar": 4.734297863990839e-08,
+      "mean_state_fidelity_with_quadrupolar": 0.6666666824476595
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 0.00031999999999999997,
+      "duration_us": 320.0,
+      "operator_fidelity_with_quadrupolar": 0.9999998106280971,
+      "mean_state_fidelity_with_quadrupolar": 0.9999999368760322
+    },
+    {
+      "transition": "SAT-",
+      "duration_s": 0.0006399999999999999,
+      "duration_us": 640.0,
+      "operator_fidelity_with_quadrupolar": 0.9999992425125195,
+      "mean_state_fidelity_with_quadrupolar": 0.9999997475041708
+    },
+    {
+      "transition": "CT",
+      "duration_s": 4e-06,
+      "duration_us": 4.0,
+      "operator_fidelity_with_quadrupolar": 0.961939766198717,
+      "mean_state_fidelity_with_quadrupolar": 0.993656627699786
+    },
+    {
+      "transition": "CT",
+      "duration_s": 8e-06,
+      "duration_us": 8.0,
+      "operator_fidelity_with_quadrupolar": 0.8535533903912252,
+      "mean_state_fidelity_with_quadrupolar": 0.9755922317318708
+    },
+    {
+      "transition": "CT",
+      "duration_s": 1.2e-05,
+      "duration_us": 12.0,
+      "operator_fidelity_with_quadrupolar": 0.6913417158143308,
+      "mean_state_fidelity_with_quadrupolar": 0.9485569526357217
+    },
+    {
+      "transition": "CT",
+      "duration_s": 1.9999999999999998e-05,
+      "duration_us": 20.0,
+      "operator_fidelity_with_quadrupolar": 0.30865828336080553,
+      "mean_state_fidelity_with_quadrupolar": 0.8847763805601341
+    },
+    {
+      "transition": "CT",
+      "duration_s": 3.9999999999999996e-05,
+      "duration_us": 40.0,
+      "operator_fidelity_with_quadrupolar": 0.14644660854007308,
+      "mean_state_fidelity_with_quadrupolar": 0.8577411014233451
+    },
+    {
+      "transition": "CT",
+      "duration_s": 7.999999999999999e-05,
+      "duration_us": 80.0,
+      "operator_fidelity_with_quadrupolar": 0.4999999881642574,
+      "mean_state_fidelity_with_quadrupolar": 0.9166666646940428
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.00015999999999999999,
+      "duration_us": 160.0,
+      "operator_fidelity_with_quadrupolar": 2.2413576457089168e-15,
+      "mean_state_fidelity_with_quadrupolar": 0.833333333333333
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.00031999999999999997,
+      "duration_us": 320.0,
+      "operator_fidelity_with_quadrupolar": 0.9999996212562249,
+      "mean_state_fidelity_with_quadrupolar": 0.9999999368760365
+    },
+    {
+      "transition": "CT",
+      "duration_s": 0.0006399999999999999,
+      "duration_us": 640.0,
+      "operator_fidelity_with_quadrupolar": 0.9999984850256163,
+      "mean_state_fidelity_with_quadrupolar": 0.9999997475042686
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 4e-06,
+      "duration_us": 4.0,
+      "operator_fidelity_with_quadrupolar": 0.7900255352512878,
+      "mean_state_fidelity_with_quadrupolar": 0.9586605366384644
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 8e-06,
+      "duration_us": 8.0,
+      "operator_fidelity_with_quadrupolar": 0.37499230722909394,
+      "mean_state_fidelity_with_quadrupolar": 0.8714230008279614
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 1.2e-05,
+      "duration_us": 12.0,
+      "operator_fidelity_with_quadrupolar": 0.15130821154323182,
+      "mean_state_fidelity_with_quadrupolar": 0.8071058084982538
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 1.9999999999999998e-05,
+      "duration_us": 20.0,
+      "operator_fidelity_with_quadrupolar": 0.4219033174481254,
+      "mean_state_fidelity_with_quadrupolar": 0.7884227456374608
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 3.9999999999999996e-05,
+      "duration_us": 40.0,
+      "operator_fidelity_with_quadrupolar": 0.3750384638544586,
+      "mean_state_fidelity_with_quadrupolar": 0.7535872565346543
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 7.999999999999999e-05,
+      "duration_us": 80.0,
+      "operator_fidelity_with_quadrupolar": 0.24999999999999684,
+      "mean_state_fidelity_with_quadrupolar": 0.7916485346318937
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 0.00015999999999999999,
+      "duration_us": 160.0,
+      "operator_fidelity_with_quadrupolar": 4.7342978632278995e-08,
+      "mean_state_fidelity_with_quadrupolar": 0.6666666824476583
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 0.00031999999999999997,
+      "duration_us": 320.0,
+      "operator_fidelity_with_quadrupolar": 0.9999998106280864,
+      "mean_state_fidelity_with_quadrupolar": 0.9999999368760237
+    },
+    {
+      "transition": "SAT+",
+      "duration_s": 0.0006399999999999999,
+      "duration_us": 640.0,
+      "operator_fidelity_with_quadrupolar": 0.9999992425125133,
+      "mean_state_fidelity_with_quadrupolar": 0.9999997475041672
+    }
+  ],
+  "qst_monitor": {
+    "pulse_duration_s": 0.00016,
+    "target_vs_actual_state_fidelity": 0.0470790862414392,
+    "actual_vs_qst_reconstructed_fidelity": 0.9999999999999982,
+    "target_vs_qst_reconstructed_fidelity": 0.04707908624143871,
+    "operator_fidelity_target_vs_actual": 2.241357637824717e-15
+  },
+  "scientific_interpretation": {
+    "captures": [
+      "a selective transition pulse is represented as a two-level rotation embedded in the spin-3/2 manifold",
+      "finite pulse duration exposes the operation to quadrupolar evolution during the control window",
+      "QST can monitor the resulting state after the imperfect selective operation"
+    ],
+    "does_not_capture": [
+      "no shaped pulse optimization is included yet",
+      "no experimental RF calibration or amplifier response is modeled",
+      "the logical gate library of the paper is not fully reproduced; this is the minimal selective-pulse control benchmark"
+    ]
+  },
+  "figures": {
+    "selective_pulse_fidelity_vs_duration": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\selective_pulse_fidelity_vs_duration.png",
+    "population_transfer_vs_duration": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\population_transfer_vs_duration.png",
+    "all_transition_fidelity_comparison": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\all_transition_fidelity_comparison.png",
+    "qst_density_monitor": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_qlogic_qst_2005\\latest\\figures\\qst_density_monitor.png"
+  }
+}

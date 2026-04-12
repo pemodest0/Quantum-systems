@@ -1,0 +1,19 @@
+{
+  "paper_id": "gate_set_tomography_2021",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\reproduction_note.md",
+  "summary": {
+    "train_rmse_gate_only_ideal_spam": 0.022490127455816633,
+    "train_rmse_gst": 0.006374112060887871,
+    "heldout_rmse_gate_only_ideal_spam": 0.06551547192921947,
+    "heldout_rmse_gst": 0.007618470858792037,
+    "heldout_improvement_factor": 8.599556675288959
+  },
+  "figures": {
+    "gst_prediction_by_sequence_length": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\figures\\gst_prediction_by_sequence_length.png",
+    "gst_heldout_predictions": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\figures\\gst_heldout_predictions.png",
+    "gst_gauge_dependent_spam": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\figures\\gst_gauge_dependent_spam.png",
+    "gst_gate_matrix_residuals": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\gate_set_tomography_2021\\latest\\figures\\gst_gate_matrix_residuals.png"
+  }
+}

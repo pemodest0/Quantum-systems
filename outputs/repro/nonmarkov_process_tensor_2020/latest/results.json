@@ -1,0 +1,20 @@
+{
+  "paper_id": "nonmarkov_process_tensor_2020",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\reproduction_note.md",
+  "summary": {
+    "process_tensor_validation_rmse": 0.009938575307225682,
+    "markovian_validation_rmse": 0.14618050597855792,
+    "improvement_factor": 14.708396471301045,
+    "process_tensor_best_sequence": "x",
+    "markovian_best_sequence": "i",
+    "true_control_advantage": 0.3652220423299789
+  },
+  "figures": {
+    "process_tensor_prediction_scatter": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_prediction_scatter.png",
+    "process_tensor_rmse_by_length": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_rmse_by_length.png",
+    "process_tensor_echo_witness": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_echo_witness.png",
+    "process_tensor_control_landscape": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_process_tensor_2020\\latest\\figures\\process_tensor_control_landscape.png"
+  }
+}

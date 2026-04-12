@@ -1,0 +1,19 @@
+{
+  "paper_id": "na23_relaxometry_2023",
+  "generated_at_utc": "2026-04-12T05:26:40.169419+00:00",
+  "python_executable": "C:\\Python314\\python.exe",
+  "python_version": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "command": [
+    "C:\\Python314\\python.exe",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\scripts\\repro_na23_relaxometry_2023.py",
+    "--output-dir",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest"
+  ],
+  "registry_sha256": "5ef49d02c19d3f540b036b634e3e38a26d9e6057c48a651c561e756b97051e1d",
+  "manifest_sha256": "fefe51555c21959b9ed69adc8f223f6b8ecb4415f232875a1841f326cea1fa01",
+  "script_sha256": "aa88a024d7868b3b5a99c55dd87f937d3c1aa3d69fd24bfca024c28864ab25ba",
+  "results_sha256": "3e28470cd755f87329d9ce4457a3e9ae4ee65de57563e579b0b6d6572024e1d6",
+  "metrics_sha256": "c86383d4286e5678fbc82ee6ee2a82d866c62f06418674b7dc95d3f09df6d716",
+  "config_used_sha256": "56841d1c7dd357ad270464429f8909cd47a13925b973fcc6893bc7e0e959fbdd",
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\na23_relaxometry_2023\\latest"
+}

@@ -1,0 +1,49 @@
+{
+  "paper_id": "nonmarkov_noise_2022",
+  "status": "completed",
+  "benchmark_type": "operational Markovian-vs-memory effective benchmark",
+  "failure_metrics": {
+    "blp_measure": 5.457057385212584,
+    "negative_rate_fraction": 0.4828571428571429,
+    "min_time_local_rate_s^-1": -119994.98265896607,
+    "echo_boost_area_s": 0.010582896049200397,
+    "max_echo_boost": 0.9843444216949431,
+    "markovian_fit_gamma_s^-1": 778.7124463519316,
+    "markovian_fit_rmse": 0.2733410696741751,
+    "final_memory_echo": 0.9669656368429671,
+    "final_markovian_echo_prediction": 8.744073081545266e-05
+  },
+  "operational_definition": {
+    "model_effective_sufficient": [
+      "trace-distance proxy is monotonic within experimental tolerance",
+      "time-local rates inferred from observables remain non-negative",
+      "echo/control sequences do not outperform a Markovian fit beyond uncertainty",
+      "one fitted semigroup rate predicts Ramsey and controlled sequences simultaneously"
+    ],
+    "failure_signatures": [
+      "trace-distance revivals / positive BLP increments",
+      "negative time-local dephasing rates",
+      "Hahn echo or control recovery larger than Markovian prediction",
+      "rate estimates depend strongly on the intervention sequence"
+    ]
+  },
+  "nmr_project_relevance": {
+    "use_simple_lindblad_when": [
+      "single-FID fits are only used as diagnostic envelopes",
+      "tomography trajectories show monotonic decay with stable fitted rates",
+      "pulse interventions do not reveal recovery of lost coherence"
+    ],
+    "escalate_to_memory_model_when": [
+      "QST shows coherence revivals",
+      "echo/control sequences recover coherence beyond Lindblad predictions",
+      "rates fitted from FID, spectrum, and QST disagree systematically",
+      "state evolution after a pulse depends on earlier waiting/intervention history"
+    ]
+  },
+  "figures": {
+    "markovian_vs_memory_ramsey_echo": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\figures\\markovian_vs_memory_ramsey_echo.png",
+    "trace_distance_revival": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\figures\\trace_distance_revival.png",
+    "time_local_rate_negative_intervals": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\figures\\time_local_rate_negative_intervals.png",
+    "lindblad_failure_signatures": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\nonmarkov_noise_2022\\latest\\figures\\lindblad_failure_signatures.png"
+  }
+}

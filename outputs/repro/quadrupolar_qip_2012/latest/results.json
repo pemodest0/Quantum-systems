@@ -1,0 +1,25 @@
+{
+  "paper_id": "quadrupolar_qip_2012",
+  "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\metrics.json",
+  "config_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\config_used.json",
+  "markdown_note": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\reproduction_note.md",
+  "summary": {
+    "iz_decomposition": {
+      "IZ": 0.4999999999999998,
+      "ZI": 1.0
+    },
+    "quadrupolar_decomposition": {
+      "ZZ": 2.9999999999999987
+    },
+    "min_grover_marked_population": 1.0,
+    "min_grover_deviation_fidelity": 1.0,
+    "synthetic_pps_marked_population": 0.31,
+    "qst_noise_0p02_deviation_fidelity_mean": 0.9997836925260024
+  },
+  "figures": {
+    "product_operator_decomposition": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\figures\\product_operator_decomposition.png",
+    "grover_marked_state_populations": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\figures\\grover_marked_state_populations.png",
+    "pseudopure_visibility": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\figures\\pseudopure_visibility.png",
+    "qst_noise_sensitivity": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\quadrupolar_qip_2012\\latest\\figures\\qst_noise_sensitivity.png"
+  }
+}

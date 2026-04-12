@@ -1,0 +1,22 @@
+{
+  "paper": {
+    "paper_id": "grape_nmr_control_2005",
+    "title": "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms",
+    "venue": "Journal of Magnetic Resonance",
+    "year": 2005,
+    "doi": "10.1016/j.jmr.2004.11.004",
+    "role": "optimal_control_bridge"
+  },
+  "implemented_equations": {
+    "piecewise_constant_unitary": "U = product_k exp[-i (H0 + ux_k Hx + uy_k Hy) dt]",
+    "unitary_fidelity": "F = |Tr(U_target^dagger U)|^2 / d^2",
+    "ensemble_objective": "Phi = mean_{B0,B1} F(B0, B1)",
+    "grape_gradient": "dF/du_k from Frechet derivative of exp[-i H_k dt]"
+  },
+  "assumptions": [
+    "The reproduction implements the core GRAPE algorithmic idea, not a digitized figure.",
+    "The target system is the current Na-23 spin-3/2 model, not the original paper's coupled-spin examples.",
+    "Controls are global RF fields along Ix and Iy in the selected central-transition frame.",
+    "Robustness is trained over a small synthetic B0/B1 ensemble."
+  ]
+}

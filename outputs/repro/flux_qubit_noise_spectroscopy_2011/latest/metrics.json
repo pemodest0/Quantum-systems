@@ -1,0 +1,132 @@
+{
+  "paper_id": "flux_qubit_noise_spectroscopy_2011",
+  "status": "completed",
+  "benchmark_type": "flux_qubit_dd_noise_spectroscopy",
+  "simulation": {
+    "total_time_s": 4e-06,
+    "true_alpha": 0.78,
+    "frequency_min_hz": 100000.0,
+    "frequency_max_hz": 18000000.0,
+    "pulse_counts": [
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ]
+  },
+  "spectroscopy_summary": {
+    "estimated_alpha": 0.7399178508993347,
+    "alpha_abs_error": 0.04008214910066532,
+    "amplitude_at_1mhz": 26937.923859994295,
+    "rmse_log": 0.02500752213317144,
+    "min_coherence": 0.7560870894489914,
+    "max_coherence": 0.9806881253323074
+  },
+  "peak_points": [
+    {
+      "sequence": "CPMG-2",
+      "pulse_count": 2,
+      "frequency_hz": 291060.707138092,
+      "spectrum_estimate": 70681.41923391576,
+      "coherence": 0.7560870894489914,
+      "chi": 0.2795987117534966
+    },
+    {
+      "sequence": "CPMG-4",
+      "pulse_count": 4,
+      "frequency_hz": 517945.29686457646,
+      "spectrum_estimate": 43550.8652130309,
+      "coherence": 0.8420038004834968,
+      "chi": 0.1719707511116395
+    },
+    {
+      "sequence": "CPMG-6",
+      "pulse_count": 6,
+      "frequency_hz": 768712.4749833222,
+      "spectrum_estimate": 32381.457969150626,
+      "coherence": 0.8805871330684794,
+      "chi": 0.12716639731790402
+    },
+    {
+      "sequence": "CPMG-8",
+      "pulse_count": 8,
+      "frequency_hz": 1007538.3589059373,
+      "spectrum_estimate": 26200.533672602545,
+      "coherence": 0.9027538575207296,
+      "chi": 0.10230534575618133
+    },
+    {
+      "sequence": "CPMG-12",
+      "pulse_count": 12,
+      "frequency_hz": 1509072.7151434289,
+      "spectrum_estimate": 19438.070390467594,
+      "coherence": 0.9277038749623305,
+      "chi": 0.07504269737536592
+    },
+    {
+      "sequence": "CPMG-16",
+      "pulse_count": 16,
+      "frequency_hz": 1998665.7771847898,
+      "spectrum_estimate": 15757.878313093828,
+      "coherence": 0.9416803522271541,
+      "chi": 0.06008939083674271
+    },
+    {
+      "sequence": "CPMG-24",
+      "pulse_count": 24,
+      "frequency_hz": 3001734.489659773,
+      "spectrum_estimate": 11752.570645670763,
+      "coherence": 0.9571376300105631,
+      "chi": 0.04380808385629906
+    },
+    {
+      "sequence": "CPMG-32",
+      "pulse_count": 32,
+      "frequency_hz": 4004803.2021347564,
+      "spectrum_estimate": 9655.447525263702,
+      "coherence": 0.9658437658778326,
+      "chi": 0.0347531908955404
+    },
+    {
+      "sequence": "CPMG-48",
+      "pulse_count": 48,
+      "frequency_hz": 5998999.332888593,
+      "spectrum_estimate": 7222.161098511292,
+      "coherence": 0.9753120346681777,
+      "chi": 0.02499782362763978
+    },
+    {
+      "sequence": "CPMG-64",
+      "pulse_count": 64,
+      "frequency_hz": 7993195.463642429,
+      "spectrum_estimate": 6020.766349542096,
+      "coherence": 0.9806881253323074,
+      "chi": 0.01950078501619086
+    }
+  ],
+  "scientific_interpretation": {
+    "captures": [
+      "CPMG pulse count maps coherence decay to spectral samples",
+      "peak-filter approximation gives a direct frequency-domain noise estimate",
+      "a power-law noise exponent can be extracted from DD data",
+      "the method is directly relevant for hardware noise diagnosis"
+    ],
+    "does_not_capture": [
+      "no superconducting flux-qubit hardware data are reproduced",
+      "finite pulse width and pulse imperfections are neglected",
+      "the spectral estimator uses the simple peak approximation rather than full experimental calibration"
+    ]
+  },
+  "figures": {
+    "flux_spectrum_peak_estimates": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_spectrum_peak_estimates.png",
+    "flux_coherence_vs_pulse_count": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_coherence_vs_pulse_count.png",
+    "flux_filter_peak_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_filter_peak_map.png",
+    "flux_power_law_fit": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\flux_qubit_noise_spectroscopy_2011\\latest\\figures\\flux_power_law_fit.png"
+  }
+}

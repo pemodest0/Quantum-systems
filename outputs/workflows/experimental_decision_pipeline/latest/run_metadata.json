@@ -1,0 +1,7 @@
+{
+  "workflow_id": "experimental_decision_pipeline",
+  "generated_at_utc": "2026-04-12T05:45:36.572081+00:00",
+  "metrics_sha256": "93fa63f94c07cfbe74b1906b293f12d982304920d928b92e7ef9fb1c1fa917bf",
+  "config_used_sha256": "dbaf6d375f9e6057d8f2e01bccd7065c2b4a469292775aa65dd3e2cdd956bea6",
+  "results_sha256": "78d46dbe5616c33c59b08384b20e6a8851c0446b893e7af20940fd63dca231b8"
+}

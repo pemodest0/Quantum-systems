@@ -1,0 +1,98 @@
+{
+  "paper_id": "spin32_algebraic_2004",
+  "status": "completed",
+  "hilbert_vs_liouville": {
+    "max_abs_fid_error": 2.5454687016331574e-17,
+    "rms_abs_fid_error": 1.8328215929626445e-17
+  },
+  "physical_checks": {
+    "max_trace_error": 2.2206409806638227e-16,
+    "max_hermiticity_error": 6.947201194793245e-18,
+    "trace_row_invariance_error": 4.100353232715086e-17
+  },
+  "coherence_pathways": {
+    "labels": [
+      "thermal deviation",
+      "after x pi/2",
+      "after free evolution",
+      "after y pi/2",
+      "after second free"
+    ],
+    "orders": [
+      "-3",
+      "-2",
+      "-1",
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "weights": [
+      {
+        "-3": 0.0,
+        "-2": 0.0,
+        "-1": 0.0,
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0
+      },
+      {
+        "-3": 1.5892665672025134e-05,
+        "-2": 0.004595340703346234,
+        "-1": 0.49534675337809836,
+        "0": 8.402650576661436e-05,
+        "1": 0.49534675337809847,
+        "2": 0.004595340703346236,
+        "3": 1.589266567202508e-05
+      },
+      {
+        "-3": 1.5892665672025134e-05,
+        "-2": 0.004595340703346234,
+        "-1": 0.4953467533780984,
+        "0": 8.402650576661435e-05,
+        "1": 0.49534675337809847,
+        "2": 0.004595340703346236,
+        "3": 1.5892665672025077e-05
+      },
+      {
+        "-3": 0.42131291054205905,
+        "-2": 0.017591741763239806,
+        "-1": 0.06090341308285616,
+        "0": 0.00038386922368995296,
+        "1": 0.06090341308285618,
+        "2": 0.0175917417632398,
+        "3": 0.42131291054205905
+      },
+      {
+        "-3": 0.42131291054205905,
+        "-2": 0.01759174176323981,
+        "-1": 0.06090341308285618,
+        "0": 0.00038386922368995296,
+        "1": 0.06090341308285618,
+        "2": 0.0175917417632398,
+        "3": 0.42131291054205905
+      }
+    ],
+    "single_quantum_weight_after_first_pulse": 0.9906935067561968
+  },
+  "b0_b1_sensitivity": {
+    "b0_offset_min_hz": -2500.0,
+    "b0_offset_max_hz": 2500.0,
+    "b1_scale_min": 0.55,
+    "b1_scale_max": 1.45,
+    "normalized_energy_min": 0.758334296955869,
+    "normalized_energy_max": 1.0,
+    "max_relative_bias_from_nominal": 0.24166570304413104
+  },
+  "superoperator_factorization": {
+    "max_state_vector_error": 1.0500534051965354e-19,
+    "rms_state_vector_error": 3.718348088660417e-20
+  },
+  "figures": {
+    "hilbert_vs_liouville_fid": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\hilbert_vs_liouville_fid.png",
+    "coherence_order_pathways": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\coherence_order_pathways.png",
+    "b0_b1_energy_map": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\b0_b1_energy_map.png",
+    "superoperator_factorization_error": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\repro\\spin32_algebraic_2004\\latest\\figures\\superoperator_factorization_error.png"
+  }
+}

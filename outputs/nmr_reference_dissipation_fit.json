@@ -1,0 +1,31 @@
+{
+  "status": "diagnostic_not_final_identification",
+  "success": true,
+  "message": "Both `ftol` and `xtol` termination conditions are satisfied.",
+  "cost": 0.7296259610220173,
+  "nfev": 21,
+  "reference": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\data\\reference\\Referential2.tnt",
+  "n_points": 512,
+  "initial_rates": {
+    "gamma_phi_s^-1": 160.0,
+    "gamma_relax_s^-1": 35.0
+  },
+  "fitted_rates": {
+    "gamma_phi_s^-1": 467.88400690122705,
+    "gamma_relax_s^-1": 2.0655813345797276e-05
+  },
+  "complex_scale": {
+    "real": 0.9931805335993331,
+    "imag": -0.01127284621652119
+  },
+  "normalized_rmse": {
+    "fid": 0.1360102934448519,
+    "spectrum": 0.136010293444852
+  },
+  "physical_checks": {
+    "max_trace_error": 2.2204752319905533e-16,
+    "max_hermiticity_error": 9.988445679991402e-18,
+    "min_eigenvalue": 0.24999371372620088
+  },
+  "identifiability_warning": "Diagnostic only: one FID with analytic complex scaling cannot identify a microscopic dissipative mechanism. Use T1/T2, offset sweeps, repeated runs, and tomography before making experimental-identification claims."
+}
