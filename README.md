@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/schrodinger_cat.svg" alt="Quantum Systems Schrodinger cat banner" width="100%">
+ 
 </p>
 
 # Quantum Systems
