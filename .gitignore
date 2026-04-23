@@ -41,6 +41,7 @@ Thumbs.db
 # Large temporary/scratch folders
 tmp/
 scratch/
+tests/_tmp*/
 
 # Generated Markdown noise that should not be tracked.
 outputs/**/reproduction_note.md
