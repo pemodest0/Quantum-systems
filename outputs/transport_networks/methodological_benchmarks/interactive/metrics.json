@@ -1,0 +1,49 @@
+{
+  "profile": "interactive",
+  "closed_record_count": 12,
+  "open_signature_count": 1656,
+  "target_position_record_count": 88,
+  "families": [
+    "barabasi_albert_scale_free",
+    "bottleneck",
+    "chain",
+    "clustered",
+    "complete",
+    "erdos_renyi",
+    "modular_two_community",
+    "random_geometric",
+    "ring",
+    "square_lattice_2d",
+    "star",
+    "watts_strogatz_small_world"
+  ],
+  "edge_models": [
+    "degree_normalized",
+    "exponential_distance",
+    "power_law_distance",
+    "unweighted"
+  ],
+  "largest_dephasing_gain": 0.3251916648711844,
+  "largest_dephasing_gain_family": "random_geometric",
+  "largest_dephasing_gain_target_style": "near",
+  "largest_dephasing_gain_edge_model": "exponential_distance",
+  "useful_dephasing_candidate_count": 730,
+  "max_target_position_spread": 0.7372360437329218,
+  "dynamic_only_family_accuracy": 0.540084388185654,
+  "topology_only_family_accuracy": 0.5527426160337553,
+  "combined_family_accuracy": 0.6329113924050633,
+  "family_baseline_accuracy": 0.1350210970464135,
+  "validation": {
+    "max_trace_deviation": 1.532107773982716e-14,
+    "max_population_closure_error": 1.554312234475219e-14,
+    "min_state_eigenvalue": -3.5561610427205e-15
+  },
+  "acceptance": {
+    "numerics_pass": true,
+    "target_position_matters_candidate": true,
+    "dephasing_assistance_candidate": true,
+    "dynamic_classification_above_baseline": true,
+    "combined_classification_above_baseline": true,
+    "dynamics_adds_beyond_topology_candidate": true
+  }
+}

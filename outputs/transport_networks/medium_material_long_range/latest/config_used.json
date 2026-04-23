@@ -1,0 +1,196 @@
+{
+  "study_name": "Material long-range winner campaign",
+  "output_subdir": "medium_material_long_range",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 160
+  },
+  "thresholds": {
+    "sink_hit_threshold": 0.1,
+    "transfer_threshold": 0.5
+  },
+  "sweep": {
+    "disorder_strength_over_coupling": [
+      0.0,
+      0.4,
+      0.8,
+      1.2
+    ],
+    "dephasing_over_coupling": [
+      0.0,
+      0.1,
+      0.4,
+      0.8
+    ]
+  },
+  "ensemble_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17
+  ],
+  "scenarios": [
+    {
+      "name": "Material baseline ring aggregate",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 10,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Long-range coupling should only be kept if it changes useful arrival in a material way.",
+        "expected_role_of_disorder": "Disorder can either blunt or amplify the effect of a longer coupling range.",
+        "expected_role_of_phase_scrambling": "If long-range coupling already bypasses bottlenecks, the environment may matter less.",
+        "expected_failure_mode": "If the long-range variant does not improve useful arrival, the added complexity is not earned."
+      }
+    },
+    {
+      "name": "Material long-range ring aggregate",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "exponential_decay",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 10,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": 2.6,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Long-range coupling should only be kept if it changes useful arrival in a material way.",
+        "expected_role_of_disorder": "Disorder can either blunt or amplify the effect of a longer coupling range.",
+        "expected_role_of_phase_scrambling": "If long-range coupling already bypasses bottlenecks, the environment may matter less.",
+        "expected_failure_mode": "If the long-range variant does not improve useful arrival, the added complexity is not earned."
+      }
+    },
+    {
+      "name": "Material baseline disordered 2D sheet",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 15,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "square_lattice_2d",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": 4,
+        "n_cols": 4,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 1.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Long-range coupling should only be kept if it changes useful arrival in a material way.",
+        "expected_role_of_disorder": "Disorder can either blunt or amplify the effect of a longer coupling range.",
+        "expected_role_of_phase_scrambling": "If long-range coupling already bypasses bottlenecks, the environment may matter less.",
+        "expected_failure_mode": "If the long-range variant does not improve useful arrival, the added complexity is not earned."
+      }
+    },
+    {
+      "name": "Material long-range disordered 2D sheet",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 15,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "square_lattice_2d",
+        "length_scale": 1.0,
+        "coupling_law": "exponential_decay",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": 4,
+        "n_cols": 4,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": 2.6,
+        "interface_axis": "x",
+        "interface_position": 1.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Long-range coupling should only be kept if it changes useful arrival in a material way.",
+        "expected_role_of_disorder": "Disorder can either blunt or amplify the effect of a longer coupling range.",
+        "expected_role_of_phase_scrambling": "If long-range coupling already bypasses bottlenecks, the environment may matter less.",
+        "expected_failure_mode": "If the long-range variant does not improve useful arrival, the added complexity is not earned."
+      }
+    }
+  ]
+}

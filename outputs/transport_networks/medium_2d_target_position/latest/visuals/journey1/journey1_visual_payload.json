@@ -1,0 +1,68 @@
+{
+  "2D target corner trap 0": [
+    {
+      "scenario_name": "2D target corner trap 0",
+      "label": "best",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 13,
+      "representative_efficiency": 0.6086085521792391,
+      "ensemble_mean_efficiency": 0.6034277702256022,
+      "ensemble_std_efficiency": 0.014658781565218186
+    },
+    {
+      "scenario_name": "2D target corner trap 0",
+      "label": "worst",
+      "disorder_over_coupling": 1.0,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 3,
+      "representative_efficiency": 0.3501609296327477,
+      "ensemble_mean_efficiency": 0.3447996594531746,
+      "ensemble_std_efficiency": 0.008309111456389576
+    }
+  ],
+  "2D target edge trap 3": [
+    {
+      "scenario_name": "2D target edge trap 3",
+      "label": "best",
+      "disorder_over_coupling": 1.0,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 17,
+      "representative_efficiency": 0.2884746306049713,
+      "ensemble_mean_efficiency": 0.2875015824722429,
+      "ensemble_std_efficiency": 0.007668271995687196
+    },
+    {
+      "scenario_name": "2D target edge trap 3",
+      "label": "worst",
+      "disorder_over_coupling": 1.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 7,
+      "representative_efficiency": 0.20582201159725574,
+      "ensemble_mean_efficiency": 0.2149543512842468,
+      "ensemble_std_efficiency": 0.0560117058336853
+    }
+  ],
+  "2D target far interior trap 10": [
+    {
+      "scenario_name": "2D target far interior trap 10",
+      "label": "best",
+      "disorder_over_coupling": 1.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 5,
+      "representative_efficiency": 0.42717812936496324,
+      "ensemble_mean_efficiency": 0.4187476698641123,
+      "ensemble_std_efficiency": 0.02945750895833964
+    },
+    {
+      "scenario_name": "2D target far interior trap 10",
+      "label": "worst",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 11,
+      "representative_efficiency": 0.3940265024733069,
+      "ensemble_mean_efficiency": 0.39372302780484314,
+      "ensemble_std_efficiency": 0.0008990220927119373
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\newcommand{\ket}[1]{\left|#1\right\rangle}
+\newcommand{\bra}[1]{\left\langle#1\right|}
+\newcommand{\abs}[1]{\left|#1\right|}
+
+\geometry{margin=1in}
+\setlength{\headheight}{14pt}
+\hypersetup{
+  hidelinks,
+  pdftitle={Detailed Graph-Family Study for Open Quantum Transport},
+  pdfauthor={Pedro Henrique}
+}
+\setlist[itemize]{leftmargin=1.4em}
+\setlist[enumerate]{leftmargin=1.6em}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Graph-Family Transport Study}
+\lhead{Open Quantum Transport}
+\cfoot{\thepage}
+
+\title{\textbf{Detailed Graph-Family Study}\\
+\large Coherent and Dissipative Transport on Small Quantum Graphs}
+\author{Pedro Henrique}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Scope}
+
+This document studies the three graph families currently implemented in the
+laboratory: chain, ring, and complete graph. The goal is not only to plot
+curves, but to assign a precise physical meaning to every quantity that appears
+in the simulation:
+\begin{itemize}
+  \item each node is a basis state $\ket{i}$, meaning ``the excitation is on site $i$'';
+  \item each solid graph edge represents a coherent hopping term with amplitude $J$;
+  \item the sink channel represents successful transport to the target;
+  \item the loss channel represents parasitic dissipation;
+  \item the population on any node is a diagonal density-matrix element;
+  \item uncertainty bands come from disorder ensembles, not from measurement noise.
+\end{itemize}
+
+The guiding references are the seminal ENAQT papers
+\citep{mohseni_2008, plenio_huelga_2008, rebentrost_2009, caruso_2009}, the
+open-systems background texts \citep{breuer_petruccione_2007, rivas_huelga_2012},
+the graph-transport review of \citet{mulken_blumen_2011}, the many-qubit
+experimental benchmark \citep{maier_2019}, and the recent analytical work on
+the fully connected network \citep{alterman_2024}. We also use
+\citet{chin_2010,hoyer_2010,scholak_2011,novo_2016} as guardrails when
+interpreting disorder, coherence, and candidate crossover lines.
+
+\section{Model and observables}
+
+\subsection{Hamiltonian}
+
+The coherent transport model is a tight-binding Hamiltonian
+\begin{equation}
+H = \sum_i \epsilon_i \ket{i}\bra{i} + \sum_{i\neq j} J_{ij}\ket{i}\bra{j},
+\end{equation}
+where:
+\begin{itemize}
+  \item $\epsilon_i$ is the site energy of node $i$;
+  \item $J_{ij}$ is the coherent coupling carried by an edge;
+  \item in the present simulations the nonzero couplings have common magnitude $J$.
+\end{itemize}
+
+\subsection{Open-system dynamics}
+
+The density matrix evolves according to the Lindblad master equation
+\begin{equation}
+\frac{d\rho}{dt}
+= -i[H,\rho]
++ \sum_k \left(L_k\rho L_k^\dagger - \frac12\{L_k^\dagger L_k,\rho\}\right).
+\end{equation}
+
+The dissipative channels are:
+\begin{itemize}
+  \item local dephasing:
+  \begin{equation}
+  L_i^{(\phi)}=\sqrt{\gamma_\phi}\ket{i}\bra{i};
+  \end{equation}
+  \item sink capture from the trap site $\ket{t}$:
+  \begin{equation}
+  L^{(\mathrm{sink})}=\sqrt{\kappa}\ket{s}\bra{t};
+  \end{equation}
+  \item loss from physical nodes:
+  \begin{equation}
+  L_i^{(\mathrm{loss})}=\sqrt{\Gamma}\ket{\ell}\bra{i}.
+  \end{equation}
+\end{itemize}
+
+\subsection{Population quantification}
+
+The graph populations are
+\begin{equation}
+P_i(t)=\rho_{ii}(t),
+\end{equation}
+the sink population is
+\begin{equation}
+P_s(t)=\rho_{ss}(t),
+\end{equation}
+and the loss population is
+\begin{equation}
+P_\ell(t)=\rho_{\ell\ell}(t).
+\end{equation}
+
+The main transport observable is the sink efficiency at the final simulation time:
+\begin{equation}
+\eta(T)=P_s(T)=\rho_{ss}(T).
+\end{equation}
+
+This quantity is the right success metric because it distinguishes useful arrival
+from generic spreading over the graph.
+
+\subsection{Coherence and uncertainty}
+
+The coherence measure used throughout the study is the $\ell_1$ norm of coherence,
+\begin{equation}
+C_{\ell_1}(\rho)=\sum_{i\neq j}\abs{\rho_{ij}}.
+\end{equation}
+
+For clean graphs, the model is deterministic, so there is no ensemble uncertainty.
+For disordered graphs, the reported uncertainty bands are sample standard deviations
+across static-disorder realizations generated from different seeds.
+
+\subsection{Conditional statistical-mechanics observables}
+
+In addition to transport efficiency and coherence, the updated collection tracks
+four conditional observables evaluated on the normalized state restricted to the
+physical graph nodes. This avoids confusing internal mixing with mere leakage
+into the sink or the loss channel.
+
+The conditional network purity is
+\begin{equation}
+\gamma(t)=\mathrm{Tr}\left[\rho_{\mathrm{net}}(t)^2\right].
+\end{equation}
+
+The conditional von Neumann entropy is
+\begin{equation}
+S(t)=-\mathrm{Tr}\left[\rho_{\mathrm{net}}(t)\log\rho_{\mathrm{net}}(t)\right].
+\end{equation}
+
+If $p_i(t)$ are the normalized node populations inside the graph, the Shannon
+entropy of the population profile is
+\begin{equation}
+H_{\mathrm{pop}}(t)=-\sum_i p_i(t)\log p_i(t).
+\end{equation}
+
+The inverse participation ratio and participation ratio are
+\begin{equation}
+\mathrm{IPR}(t)=\sum_i p_i(t)^2,
+\qquad
+PR(t)=\frac{1}{\sum_i p_i(t)^2}.
+\end{equation}
+
+These observables distinguish delocalization from true mixing. Two cases can
+have similar sink efficiency but reach it through very different internal
+redistribution dynamics.
+
+\subsection{Numerical correctness}
+
+Three diagnostics are reported for every case:
+\begin{enumerate}
+  \item trace deviation:
+  \begin{equation}
+  \delta_{\mathrm{tr}}=\max_t\abs{\mathrm{Tr}\rho(t)-1};
+  \end{equation}
+  \item population-closure error:
+  \begin{equation}
+  \delta_{\mathrm{pop}}=\max_t\abs{\sum_i P_i(t)+P_s(t)+P_\ell(t)-1};
+  \end{equation}
+  \item minimum state eigenvalue:
+  \begin{equation}
+  \lambda_{\min}=\min_t \lambda_{\min}[\rho(t)].
+  \end{equation}
+\end{enumerate}
+
+When these numbers stay near machine precision, the populations can be treated
+as numerically reliable.
+
+\section{Collection design}
+
+The collection is split into two groups:
+\begin{itemize}
+  \item \textbf{clean cases}: zero disorder, one deterministic realization per topology;
+  \item \textbf{disordered cases}: finite static disorder and an ensemble of seeds per topology.
+\end{itemize}
+
+All cases use the same dephasing scan, the same evolution time window, and the
+same physical interpretation of sink and loss. This makes the comparison
+meaningful across topologies.
+
+\input{generated/summary_table.tex}
+
+\section{Graph schematics}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_chain_topology.png}
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_ring_topology.png}
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_complete_topology.png}
+  \caption{Representative clean graph layouts. Every solid edge carries the coherent hopping amplitude $J$. The blue node is the initial site, the red node is the trap site, the square $S$ is the sink, and the diamond $L$ is the loss channel. Numbers under nodes are site energies $\epsilon_i$.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_chain_topology.png}
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_ring_topology.png}
+  \includegraphics[width=0.32\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_complete_topology.png}
+  \caption{Representative disordered graph layouts. The graph topology is unchanged, but the on-site energies $\epsilon_i$ now vary from node to node. The uncertainty analysis below quantifies how this disorder spread affects transport.}
+\end{figure}
+
+\section{Clean cases: pairwise analysis}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_sink_efficiency.png}
+  \caption{Mean sink efficiency versus dephasing rate for the clean graph family. The horizontal axis is the dephasing rate $\gamma_\phi$ in the same units as $J$, and the vertical axis is the final sink population $\eta(T)=\rho_{ss}(T)$. No uncertainty band is shown because these cases are deterministic.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_coherence.png}
+  \caption{Mean coherence versus dephasing rate for the clean graph family. The vertical axis is $C_{\ell_1}$, the sum of the absolute values of off-diagonal density-matrix elements in the node basis. Larger values mean more phase coherence survives.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.62\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_pairwise_eta_best.png}
+  \caption{Pairwise differences in the best sink efficiency for the clean cases. Entry $(i,j)$ equals $\eta_{\mathrm{best},i}-\eta_{\mathrm{best},j}$, so positive values mean row $i$ outperforms column $j$.}
+\end{figure}
+
+The clean collection shows three distinct behaviors:
+\begin{itemize}
+  \item the chain performs best in the coherent limit;
+  \item the ring benefits from a moderate amount of dephasing;
+  \item the complete graph requires stronger dephasing to reach its optimum.
+\end{itemize}
+
+This is physically consistent with the literature: dephasing can remove
+destructive interference or dark-state bottlenecks, but whether that helps
+depends strongly on topology \citep{plenio_huelga_2008, rebentrost_2009,
+alterman_2024}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.84\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_statmech_observables.png}
+  \caption{Conditional statistical-mechanics observables for the clean family at the best dephasing rate of each case. The quantities are computed on the normalized state restricted to the physical graph nodes, so they quantify internal redistribution rather than sink capture.}
+\end{figure}
+
+\section{Disordered cases: pairwise analysis}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_sink_efficiency.png}
+  \caption{Mean sink efficiency versus dephasing rate for the disordered graph family. The shaded bands are sample standard deviations across static-disorder realizations. They measure sensitivity to disorder, not shot noise or experimental uncertainty.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.78\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_coherence.png}
+  \caption{Mean coherence versus dephasing rate for the disordered graph family. The same ensemble averaging is used as in the sink-efficiency plot. The disorder broadens the response, especially in the ring case.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.62\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_pairwise_eta_best.png}
+  \caption{Pairwise differences in the best sink efficiency for the disordered cases. Compared with the clean family, the pairwise differences are smaller, which means disorder compresses the performance gap between topologies.}
+\end{figure}
+
+The disordered collection changes the ranking slightly:
+\begin{itemize}
+  \item the ring becomes the best mean performer in the present ensemble;
+  \item the chain remains competitive but shifts to a mildly dissipative optimum;
+  \item the complete graph still prefers stronger dephasing than the other two.
+\end{itemize}
+
+The wide uncertainty band in the disordered ring case is important. It means the
+average is good, but the response is more realization-dependent. That is a real
+physical statement about sensitivity to static disorder.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.84\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_statmech_observables.png}
+  \caption{Conditional statistical-mechanics observables for the disordered family at the best dephasing rate of each case. Because the disorder ensemble is now larger, the bands report a more meaningful spread across realizations than in the initial pilot runs.}
+\end{figure}
+
+\section{Population-dynamics reading}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/clean_population_dynamics.png}
+  \caption{Population dynamics for the clean family at the dephasing rate that maximizes sink efficiency in each case. Each colored curve is a node population $P_i(t)=\rho_{ii}(t)$ and the dashed black curve is the sink population $P_s(t)=\rho_{ss}(t)$.}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\textwidth]{../../outputs/transport_networks/graph_collection/latest/figures/disordered_population_dynamics.png}
+  \caption{Population dynamics for the disordered family at the best dephasing rate. The shaded bands are ensemble spreads across disorder realizations. They show how much the site-resolved transport pattern fluctuates when the on-site energies are randomized.}
+\end{figure}
+
+These plots answer a question that the sink-efficiency curves alone cannot
+answer: \emph{how} does the excitation arrive? The sink curve can tell us that a
+case is successful, but only the node-population curves show whether the
+transfer is direct, oscillatory, bottlenecked, or broadly redistributed before
+capture.
+
+\section{Case-by-case comments}
+
+\input{generated/detailed_case_comments.tex}
+
+\section{Pairwise tables}
+
+\input{generated/pairwise_tables.tex}
+
+\input{generated/targeted_sections.tex}
+
+\section{What can be trusted}
+
+The present results are trustworthy in the following sense:
+\begin{itemize}
+  \item the trace deviations are of order $10^{-15}$;
+  \item the population-closure errors are also of order $10^{-15}$;
+  \item the minimum eigenvalues are non-negative up to tiny numerical roundoff.
+\end{itemize}
+
+Therefore the node, sink, and loss populations can be read as properly normalized probabilities within machine precision.
+
+\section{What the numbers mean physically}
+
+The main numerical columns should be read as follows:
+\begin{itemize}
+  \item $\eta_{\mathrm{best}}$: final success probability of arrival at the sink;
+  \item $\sigma_\eta$: spread of that success probability across disorder realizations;
+  \item $\gamma_\phi^{\mathrm{best}}$: dephasing rate that optimizes the mean sink efficiency in the scanned grid;
+  \item $C_{\ell_1}^{\mathrm{best}}$: mean coherence in the node basis at that optimum;
+  \item $\Gamma$: parasitic loss rate;
+  \item $\kappa$: useful sink-capture rate.
+\end{itemize}
+
+These numbers do not say the same thing. A topology can have high coherence but
+poor transport, or lower coherence but better sink capture. The correct reading
+is therefore always comparative: one must look at efficiency, coherence, loss,
+and diagnostics together.
+
+\section{Conclusions}
+
+The graph-family collection shows that the role of dissipation is strongly
+topology-dependent even in very small networks. The clean chain is already
+efficient in the coherent limit, the clean ring benefits from moderate
+dephasing, and the clean complete graph requires even stronger dephasing to
+perform well. Static disorder changes both the optimum and the uncertainty
+structure. In the present ensemble, the disordered ring becomes the best mean
+performer, but it is also more sensitive to realization-to-realization variation.
+
+The refined follow-up studies strengthen that picture. The chain now shows a
+more localized disorder window where the optimal regime changes, the ring
+continues to display size-sensitive behavior consistent with a parity or
+symmetry effect, and the sink-position sweep confirms that the target node is
+not a passive detail of the topology. That is the right direction for a
+transport atlas: topology, disorder, and target placement all matter.
+
+This is the right level at which to interpret the current laboratory:
+\begin{itemize}
+  \item populations are diagonal density-matrix elements;
+  \item sink efficiency is a target-arrival probability;
+  \item uncertainty comes from disorder ensembles when disorder is present;
+  \item numerical correctness must be checked through trace, closure, and positivity diagnostics.
+\end{itemize}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

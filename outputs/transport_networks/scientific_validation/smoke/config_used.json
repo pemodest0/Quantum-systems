@@ -1,0 +1,47 @@
+{
+  "profile": "smoke",
+  "families": [
+    "erdos_renyi",
+    "random_geometric"
+  ],
+  "edge_models_main": [
+    "unweighted"
+  ],
+  "edge_models_sensitivity": [
+    "unweighted",
+    "exponential_distance"
+  ],
+  "edge_sensitivity_families": [
+    "random_geometric"
+  ],
+  "n_sites_values": [
+    6
+  ],
+  "graph_realizations": 3,
+  "deterministic_graph_realizations": 3,
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "graph_seed_base": 5100,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.2,
+    0.6
+  ],
+  "target_styles": [
+    "near",
+    "far"
+  ],
+  "t_final_closed": 5.0,
+  "t_final_open": 6.0,
+  "n_time_samples": 42,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "n_repeats": 5
+}

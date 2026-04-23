@@ -1,0 +1,68 @@
+{
+  "Material full ring aggregate": [
+    {
+      "scenario_name": "Material full ring aggregate",
+      "label": "best",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.7466378544485756,
+      "ensemble_mean_efficiency": 0.7466378544485756,
+      "ensemble_std_efficiency": 0.0
+    },
+    {
+      "scenario_name": "Material full ring aggregate",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 5,
+      "representative_efficiency": 0.3826959719961203,
+      "ensemble_mean_efficiency": 0.3634379122467459,
+      "ensemble_std_efficiency": 0.11087375335668852
+    }
+  ],
+  "Material full disordered 2D sheet": [
+    {
+      "scenario_name": "Material full disordered 2D sheet",
+      "label": "best",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.6676389730682512,
+      "ensemble_mean_efficiency": 0.6676389730682512,
+      "ensemble_std_efficiency": 0.0
+    },
+    {
+      "scenario_name": "Material full disordered 2D sheet",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 11,
+      "representative_efficiency": 0.33668089134571516,
+      "ensemble_mean_efficiency": 0.33103256334312464,
+      "ensemble_std_efficiency": 0.010227298422621123
+    }
+  ],
+  "Material full bottleneck medium": [
+    {
+      "scenario_name": "Material full bottleneck medium",
+      "label": "best",
+      "disorder_over_coupling": 0.8,
+      "dephasing_over_coupling": 0.4,
+      "representative_seed": 7,
+      "representative_efficiency": 0.1819112348438366,
+      "ensemble_mean_efficiency": 0.17435979140699484,
+      "ensemble_std_efficiency": 0.021937401251487135
+    },
+    {
+      "scenario_name": "Material full bottleneck medium",
+      "label": "worst",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.12619693930089676,
+      "ensemble_mean_efficiency": 0.12619693930089676,
+      "ensemble_std_efficiency": 0.0
+    }
+  ]
+}

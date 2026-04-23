@@ -1,0 +1,2861 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "figures": [
+    {
+      "path": "outputs/transport_networks/article_figure_pack/latest/figures/article_four_panel.png",
+      "name": "article_four_panel.png",
+      "suffix": ".png",
+      "size_bytes": 447817,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 114307,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/coherence_vs_dephasing.png",
+      "name": "coherence_vs_dephasing.png",
+      "suffix": ".png",
+      "size_bytes": 114307,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/efficiency_vs_dephasing.png",
+      "name": "efficiency_vs_dephasing.png",
+      "suffix": ".png",
+      "size_bytes": 139358,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 311063,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 139358,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dephasing_scan/latest/figures/sink_population_traces.png",
+      "name": "sink_population_traces.png",
+      "suffix": ".png",
+      "size_bytes": 311063,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/arrival_by_family_heatmap.png",
+      "name": "arrival_by_family_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 75195,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/atlas_dashboard.png",
+      "name": "atlas_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 141615,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/entropy_coherence_panel.png",
+      "name": "entropy_coherence_panel.png",
+      "suffix": ".png",
+      "size_bytes": 240731,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/family_fingerprint_radar.png",
+      "name": "family_fingerprint_radar.png",
+      "suffix": ".png",
+      "size_bytes": 315686,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/quantum_minus_classical_map.png",
+      "name": "quantum_minus_classical_map.png",
+      "suffix": ".png",
+      "size_bytes": 74030,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/regime_phase_map.png",
+      "name": "regime_phase_map.png",
+      "suffix": ".png",
+      "size_bytes": 78879,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/figures/signature_embedding.png",
+      "name": "signature_embedding.png",
+      "suffix": ".png",
+      "size_bytes": 69186,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/arrival_by_family_heatmap.png",
+      "name": "arrival_by_family_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 82856,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/atlas_dashboard.png",
+      "name": "atlas_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 194378,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/entropy_coherence_panel.png",
+      "name": "entropy_coherence_panel.png",
+      "suffix": ".png",
+      "size_bytes": 323082,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/family_fingerprint_radar.png",
+      "name": "family_fingerprint_radar.png",
+      "suffix": ".png",
+      "size_bytes": 434454,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/quantum_minus_classical_map.png",
+      "name": "quantum_minus_classical_map.png",
+      "suffix": ".png",
+      "size_bytes": 92124,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/regime_phase_map.png",
+      "name": "regime_phase_map.png",
+      "suffix": ".png",
+      "size_bytes": 95365,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/figures/signature_embedding.png",
+      "name": "signature_embedding.png",
+      "suffix": ".png",
+      "size_bytes": 369050,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/confusion_matrix.png",
+      "name": "confusion_matrix.png",
+      "suffix": ".png",
+      "size_bytes": 75996,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/dephasing_gain_heatmap.png",
+      "name": "dephasing_gain_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 66012,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/feature_importance.png",
+      "name": "feature_importance.png",
+      "suffix": ".png",
+      "size_bytes": 101034,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/population_dynamics_correct_example.png",
+      "name": "population_dynamics_correct_example.png",
+      "suffix": ".png",
+      "size_bytes": 188100,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/population_dynamics_wrong_or_hard_example.png",
+      "name": "population_dynamics_wrong_or_hard_example.png",
+      "suffix": ".png",
+      "size_bytes": 190240,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/signature_embedding_2d.png",
+      "name": "signature_embedding_2d.png",
+      "suffix": ".png",
+      "size_bytes": 74083,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/figures/target_arrival_heatmap.png",
+      "name": "target_arrival_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 62498,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/confusion_matrix.png",
+      "name": "confusion_matrix.png",
+      "suffix": ".png",
+      "size_bytes": 75996,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/dephasing_gain_heatmap.png",
+      "name": "dephasing_gain_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 66012,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/feature_importance.png",
+      "name": "feature_importance.png",
+      "suffix": ".png",
+      "size_bytes": 101034,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/population_dynamics_correct_example.png",
+      "name": "population_dynamics_correct_example.png",
+      "suffix": ".png",
+      "size_bytes": 188100,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/population_dynamics_wrong_or_hard_example.png",
+      "name": "population_dynamics_wrong_or_hard_example.png",
+      "suffix": ".png",
+      "size_bytes": 190240,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/signature_embedding_2d.png",
+      "name": "signature_embedding_2d.png",
+      "suffix": ".png",
+      "size_bytes": 74083,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/figures/target_arrival_heatmap.png",
+      "name": "target_arrival_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 62498,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/interactive/figures/fractal_geometry_panel.png",
+      "name": "fractal_geometry_panel.png",
+      "suffix": ".png",
+      "size_bytes": 46467,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/interactive/figures/fractal_vs_lattice_msd.png",
+      "name": "fractal_vs_lattice_msd.png",
+      "suffix": ".png",
+      "size_bytes": 108527,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/latest/figures/fractal_geometry_panel.png",
+      "name": "fractal_geometry_panel.png",
+      "suffix": ".png",
+      "size_bytes": 46467,
+      "source_campaign": "fractal_geometry_followup"
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/latest/figures/fractal_vs_lattice_msd.png",
+      "name": "fractal_vs_lattice_msd.png",
+      "suffix": ".png",
+      "size_bytes": 108527,
+      "source_campaign": "fractal_geometry_followup"
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/clean_chain_population_evolution.gif",
+      "name": "clean_chain_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 516719,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/clean_complete_population_evolution.gif",
+      "name": "clean_complete_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 614912,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/clean_ring_population_evolution.gif",
+      "name": "clean_ring_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 550001,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/disordered_chain_population_evolution.gif",
+      "name": "disordered_chain_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 519325,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/disordered_complete_population_evolution.gif",
+      "name": "disordered_complete_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 616135,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/animations/disordered_ring_population_evolution.gif",
+      "name": "disordered_ring_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 554297,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_chain_topology.png",
+      "name": "clean_chain_topology.png",
+      "suffix": ".png",
+      "size_bytes": 79421,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_coherence.png",
+      "name": "clean_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 127401,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_complete_topology.png",
+      "name": "clean_complete_topology.png",
+      "suffix": ".png",
+      "size_bytes": 122122,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_pairwise_eta_best.png",
+      "name": "clean_pairwise_eta_best.png",
+      "suffix": ".png",
+      "size_bytes": 85294,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_population_dynamics.png",
+      "name": "clean_population_dynamics.png",
+      "suffix": ".png",
+      "size_bytes": 306292,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_ring_topology.png",
+      "name": "clean_ring_topology.png",
+      "suffix": ".png",
+      "size_bytes": 106744,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_sink_efficiency.png",
+      "name": "clean_sink_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 157224,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/clean_statmech_observables.png",
+      "name": "clean_statmech_observables.png",
+      "suffix": ".png",
+      "size_bytes": 364130,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_chain_topology.png",
+      "name": "disordered_chain_topology.png",
+      "suffix": ".png",
+      "size_bytes": 77527,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_coherence.png",
+      "name": "disordered_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 145035,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_complete_topology.png",
+      "name": "disordered_complete_topology.png",
+      "suffix": ".png",
+      "size_bytes": 120102,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_pairwise_eta_best.png",
+      "name": "disordered_pairwise_eta_best.png",
+      "suffix": ".png",
+      "size_bytes": 91891,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_population_dynamics.png",
+      "name": "disordered_population_dynamics.png",
+      "suffix": ".png",
+      "size_bytes": 356298,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_ring_topology.png",
+      "name": "disordered_ring_topology.png",
+      "suffix": ".png",
+      "size_bytes": 109064,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_sink_efficiency.png",
+      "name": "disordered_sink_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 193704,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/figures/disordered_statmech_observables.png",
+      "name": "disordered_statmech_observables.png",
+      "suffix": ".png",
+      "size_bytes": 365196,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/animations/chain_graph_population_evolution.gif",
+      "name": "chain_graph_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 660655,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/animations/complete_graph_population_evolution.gif",
+      "name": "complete_graph_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 651327,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/animations/ring_graph_population_evolution.gif",
+      "name": "ring_graph_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 696024,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/chain_graph_topology.png",
+      "name": "chain_graph_topology.png",
+      "suffix": ".png",
+      "size_bytes": 79828,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 123793,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/complete_graph_topology.png",
+      "name": "complete_graph_topology.png",
+      "suffix": ".png",
+      "size_bytes": 98508,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/graph_topology_overview.png",
+      "name": "graph_topology_overview.png",
+      "suffix": ".png",
+      "size_bytes": 173753,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 343497,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/ring_graph_topology.png",
+      "name": "ring_graph_topology.png",
+      "suffix": ".png",
+      "size_bytes": 106967,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 144201,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_extended_nodes/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 111839,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_extended_nodes/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 332556,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_extended_nodes/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 138763,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_high_loss/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 119468,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_high_loss/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 263030,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_high_loss/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 129479,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/lab_registry/latest/figures/evidence_prep_decision_panel.png",
+      "name": "evidence_prep_decision_panel.png",
+      "suffix": ".png",
+      "size_bytes": 223812,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/lab_registry/latest/figures/uncertainty_dashboard.png",
+      "name": "uncertainty_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 731927,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/animations/cadeia_de_2_nos_passeio_coerente_population_evolution.gif",
+      "name": "cadeia_de_2_nos_passeio_coerente_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 470082,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/figures/cadeia_de_2_nos_passeio_coerente_topology.png",
+      "name": "cadeia_de_2_nos_passeio_coerente_topology.png",
+      "suffix": ".png",
+      "size_bytes": 71996,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 80181,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/figures/graph_topology_overview.png",
+      "name": "graph_topology_overview.png",
+      "suffix": ".png",
+      "size_bytes": 65113,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 167123,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 70239,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/animations/cadeia_de_3_nos_com_sink_population_evolution.gif",
+      "name": "cadeia_de_3_nos_com_sink_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 568670,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/figures/cadeia_de_3_nos_com_sink_topology.png",
+      "name": "cadeia_de_3_nos_com_sink_topology.png",
+      "suffix": ".png",
+      "size_bytes": 75649,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 82809,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/figures/graph_topology_overview.png",
+      "name": "graph_topology_overview.png",
+      "suffix": ".png",
+      "size_bytes": 66328,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 173879,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 72665,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/animations/grafo_completo_de_4_nos_population_evolution.gif",
+      "name": "grafo_completo_de_4_nos_population_evolution.gif",
+      "suffix": ".gif",
+      "size_bytes": 629828,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/figures/coherence_by_graph.png",
+      "name": "coherence_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 92963,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/figures/grafo_completo_de_4_nos_topology.png",
+      "name": "grafo_completo_de_4_nos_topology.png",
+      "suffix": ".png",
+      "size_bytes": 99933,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/figures/graph_topology_overview.png",
+      "name": "graph_topology_overview.png",
+      "suffix": ".png",
+      "size_bytes": 94034,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/figures/population_dynamics_by_graph.png",
+      "name": "population_dynamics_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 135074,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/figures/sink_efficiency_by_graph.png",
+      "name": "sink_efficiency_by_graph.png",
+      "suffix": ".png",
+      "size_bytes": 88370,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/campaign_review/2d_target_heatmaps.png",
+      "name": "2d_target_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 103393,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/campaign_review/2d_target_ranking.png",
+      "name": "2d_target_ranking.png",
+      "suffix": ".png",
+      "size_bytes": 59367,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 88498,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 107186,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 132124,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 111449,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 114583,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/animations/2d_target_corner_trap_0_best_vs_worst.gif",
+      "name": "2d_target_corner_trap_0_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1433702,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/animations/2d_target_edge_trap_3_best_vs_worst.gif",
+      "name": "2d_target_edge_trap_3_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1502819,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/animations/2d_target_far_interior_trap_10_best_vs_worst.gif",
+      "name": "2d_target_far_interior_trap_10_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1425769,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1629995,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 576545,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3113809,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 612894,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3352918,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 636476,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3253562,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/campaign_review/material_full_dashboard.png",
+      "name": "material_full_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 123782,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/campaign_review/material_full_heatmaps.png",
+      "name": "material_full_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 120423,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 183866,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 116564,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 144643,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 119493,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 124743,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/animations/material_full_bottleneck_medium_best_vs_worst.gif",
+      "name": "material_full_bottleneck_medium_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1606394,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/animations/material_full_disordered_2d_sheet_best_vs_worst.gif",
+      "name": "material_full_disordered_2d_sheet_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1450971,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/animations/material_full_ring_aggregate_best_vs_worst.gif",
+      "name": "material_full_ring_aggregate_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1309214,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1635693,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 588538,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3160136,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 632318,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3441548,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 637853,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3270854,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/campaign_review/material_long_range_dashboard.png",
+      "name": "material_long_range_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 140511,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/campaign_review/material_long_range_heatmap.png",
+      "name": "material_long_range_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 116281,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 303114,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 112623,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 139251,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 117629,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 115998,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/animations/material_baseline_disordered_2d_sheet_best_vs_worst.gif",
+      "name": "material_baseline_disordered_2d_sheet_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1475603,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/animations/material_baseline_ring_aggregate_best_vs_worst.gif",
+      "name": "material_baseline_ring_aggregate_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1338797,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1364210,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 421396,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2200130,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 455457,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2367103,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 464621,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2242954,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 112574,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 93535,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 116362,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 99782,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 99645,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/animations/1d_chain_medium_best_vs_worst.gif",
+      "name": "1d_chain_medium_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1742761,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/animations/2d_square_lattice_medium_best_vs_worst.gif",
+      "name": "2d_square_lattice_medium_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 2080651,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/animations/ring_medium_best_vs_worst.frame0.png",
+      "name": "ring_medium_best_vs_worst.frame0.png",
+      "suffix": ".png",
+      "size_bytes": 71807,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/animations/ring_medium_best_vs_worst.gif",
+      "name": "ring_medium_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1708326,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/recap/campaign_recap.frame0.png",
+      "name": "campaign_recap.frame0.png",
+      "suffix": ".png",
+      "size_bytes": 37833,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 2211803,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 613795,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3267963,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 663343,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3510466,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 634547,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3132435,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 113587,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 108992,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 130792,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 115538,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 118158,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 286802,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 165856,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 194417,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 171926,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 184747,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 115366,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 94068,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 118317,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 100624,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 102932,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 165479,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 123727,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 141556,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 117012,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 120533,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/campaign_review/ring_ceiling_dashboard.png",
+      "name": "ring_ceiling_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 346084,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/campaign_review/ring_ceiling_heatmaps.png",
+      "name": "ring_ceiling_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 233299,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 103341,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 112874,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 125773,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 111077,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 117788,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/animations/ring_ceiling_favorable_target_best_vs_worst.gif",
+      "name": "ring_ceiling_favorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1641348,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/animations/ring_ceiling_unfavorable_target_best_vs_worst.gif",
+      "name": "ring_ceiling_unfavorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1689632,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1712647,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 507989,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2368140,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 516103,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2400599,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 555795,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2601750,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 101978,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 108375,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 120828,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 105683,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 111604,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/focus_review/ring_focus_dashboard.png",
+      "name": "ring_focus_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 354549,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/focus_review/ring_focus_heatmaps.png",
+      "name": "ring_focus_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 231083,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/animations/ring_favorable_target_best_vs_worst.gif",
+      "name": "ring_favorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1618058,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/animations/ring_unfavorable_target_best_vs_worst.gif",
+      "name": "ring_unfavorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1668532,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1693501,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 492516,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2306610,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 516697,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2417592,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 523642,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2452041,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/campaign_review/ring_size_dashboard.png",
+      "name": "ring_size_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 358342,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/campaign_review/ring_size_heatmap.png",
+      "name": "ring_size_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 96607,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 334584,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 163437,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 193060,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 169309,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 173699,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/animations/ring_size_n12_unfavorable_target_best_vs_worst.gif",
+      "name": "ring_size_n12_unfavorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1892977,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/animations/ring_size_n8_favorable_target_best_vs_worst.gif",
+      "name": "ring_size_n8_favorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1662179,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/animations/ring_size_n8_unfavorable_target_best_vs_worst.gif",
+      "name": "ring_size_n8_unfavorable_target_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1718504,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 2036572,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 612809,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3082281,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 641227,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3302141,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 681686,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3363726,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/campaign_review/ring_target_heatmaps.png",
+      "name": "ring_target_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 104047,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/campaign_review/ring_target_ranking.png",
+      "name": "ring_target_ranking.png",
+      "suffix": ".png",
+      "size_bytes": 59351,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 159606,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 115888,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 131642,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 113754,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 113575,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/animations/ring_target_sweep_trap_0_best_vs_worst.gif",
+      "name": "ring_target_sweep_trap_0_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1663141,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/animations/ring_target_sweep_trap_1_best_vs_worst.gif",
+      "name": "ring_target_sweep_trap_1_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1703713,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/animations/ring_target_sweep_trap_3_best_vs_worst.gif",
+      "name": "ring_target_sweep_trap_3_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1671815,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1953626,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 589185,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 2959793,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 615309,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3125613,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 655126,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3280986,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/campaign_review/strong_disorder_dashboard.png",
+      "name": "strong_disorder_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 111591,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/campaign_review/strong_disorder_heatmaps.png",
+      "name": "strong_disorder_heatmaps.png",
+      "suffix": ".png",
+      "size_bytes": 111480,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/figures/medium_geometry_overview.png",
+      "name": "medium_geometry_overview.png",
+      "suffix": ".png",
+      "size_bytes": 115890,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/figures/mixing_maps.png",
+      "name": "mixing_maps.png",
+      "suffix": ".png",
+      "size_bytes": 91346,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/figures/regime_maps.png",
+      "name": "regime_maps.png",
+      "suffix": ".png",
+      "size_bytes": 114379,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/figures/spreading_maps.png",
+      "name": "spreading_maps.png",
+      "suffix": ".png",
+      "size_bytes": 101239,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/figures/transport_success_maps.png",
+      "name": "transport_success_maps.png",
+      "suffix": ".png",
+      "size_bytes": 104893,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/animations/strong_disorder_2d_square_best_vs_worst.gif",
+      "name": "strong_disorder_2d_square_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1456310,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/animations/strong_disorder_chain_best_vs_worst.gif",
+      "name": "strong_disorder_chain_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1253928,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/animations/strong_disorder_ring_best_vs_worst.gif",
+      "name": "strong_disorder_ring_best_vs_worst.gif",
+      "suffix": ".gif",
+      "size_bytes": 1251239,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/recap/campaign_recap.gif",
+      "name": "campaign_recap.gif",
+      "suffix": ".gif",
+      "size_bytes": 1555582,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/mixing_surfaces.png",
+      "name": "mixing_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 575421,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/mixing_surfaces_rotation.gif",
+      "name": "mixing_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3108167,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/spreading_surfaces.png",
+      "name": "spreading_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 621945,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/spreading_surfaces_rotation.gif",
+      "name": "spreading_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3410647,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/transport_success_surfaces.png",
+      "name": "transport_success_surfaces.png",
+      "suffix": ".png",
+      "size_bytes": 654518,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/visuals/journey1/surfaces/transport_success_surfaces_rotation.gif",
+      "name": "transport_success_surfaces_rotation.gif",
+      "suffix": ".gif",
+      "size_bytes": 3313398,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/classification_controls.png",
+      "name": "classification_controls.png",
+      "suffix": ".png",
+      "size_bytes": 73649,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/closed_walk_return_probability.png",
+      "name": "closed_walk_return_probability.png",
+      "suffix": ".png",
+      "size_bytes": 532885,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/dephasing_assistance_window.png",
+      "name": "dephasing_assistance_window.png",
+      "suffix": ".png",
+      "size_bytes": 111555,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/edge_model_sensitivity.png",
+      "name": "edge_model_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 139188,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/population_dynamics_strongest_gain.png",
+      "name": "population_dynamics_strongest_gain.png",
+      "suffix": ".png",
+      "size_bytes": 137664,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/figures/trap_position_sensitivity.png",
+      "name": "trap_position_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 122552,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/classification_controls.png",
+      "name": "classification_controls.png",
+      "suffix": ".png",
+      "size_bytes": 73649,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/closed_walk_return_probability.png",
+      "name": "closed_walk_return_probability.png",
+      "suffix": ".png",
+      "size_bytes": 532885,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/dephasing_assistance_window.png",
+      "name": "dephasing_assistance_window.png",
+      "suffix": ".png",
+      "size_bytes": 111555,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/edge_model_sensitivity.png",
+      "name": "edge_model_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 139188,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/population_dynamics_strongest_gain.png",
+      "name": "population_dynamics_strongest_gain.png",
+      "suffix": ".png",
+      "size_bytes": 137664,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/figures/trap_position_sensitivity.png",
+      "name": "trap_position_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 122552,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/classification_controls.png",
+      "name": "classification_controls.png",
+      "suffix": ".png",
+      "size_bytes": 70898,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/closed_walk_return_probability.png",
+      "name": "closed_walk_return_probability.png",
+      "suffix": ".png",
+      "size_bytes": 264178,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/dephasing_assistance_window.png",
+      "name": "dephasing_assistance_window.png",
+      "suffix": ".png",
+      "size_bytes": 69498,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/edge_model_sensitivity.png",
+      "name": "edge_model_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 75472,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/population_dynamics_strongest_gain.png",
+      "name": "population_dynamics_strongest_gain.png",
+      "suffix": ".png",
+      "size_bytes": 120748,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/figures/trap_position_sensitivity.png",
+      "name": "trap_position_sensitivity.png",
+      "suffix": ".png",
+      "size_bytes": 62892,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/figures/arrival_vs_phase_scrambling_curves.png",
+      "name": "arrival_vs_phase_scrambling_curves.png",
+      "suffix": ".png",
+      "size_bytes": 276893,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/figures/arrival_w_gamma_heatmap.png",
+      "name": "arrival_w_gamma_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 81955,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/figures/gain_vs_phase_scrambling_curves.png",
+      "name": "gain_vs_phase_scrambling_curves.png",
+      "suffix": ".png",
+      "size_bytes": 275972,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/figures/gain_w_gamma_heatmap.png",
+      "name": "gain_w_gamma_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 88903,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/figures/peak_diagnostics.png",
+      "name": "peak_diagnostics.png",
+      "suffix": ".png",
+      "size_bytes": 175914,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/figures/arrival_vs_phase_scrambling_curves.png",
+      "name": "arrival_vs_phase_scrambling_curves.png",
+      "suffix": ".png",
+      "size_bytes": 276893,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/figures/arrival_w_gamma_heatmap.png",
+      "name": "arrival_w_gamma_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 81955,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/figures/gain_vs_phase_scrambling_curves.png",
+      "name": "gain_vs_phase_scrambling_curves.png",
+      "suffix": ".png",
+      "size_bytes": 275972,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/figures/gain_w_gamma_heatmap.png",
+      "name": "gain_w_gamma_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 88903,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/figures/peak_diagnostics.png",
+      "name": "peak_diagnostics.png",
+      "suffix": ".png",
+      "size_bytes": 175914,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/figures/accuracy_by_feature_set.png",
+      "name": "accuracy_by_feature_set.png",
+      "suffix": ".png",
+      "size_bytes": 90153,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/figures/combined_confusion_matrix.png",
+      "name": "combined_confusion_matrix.png",
+      "suffix": ".png",
+      "size_bytes": 150067,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/figures/combined_embedding_2d.png",
+      "name": "combined_embedding_2d.png",
+      "suffix": ".png",
+      "size_bytes": 255843,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/figures/combined_feature_importance.png",
+      "name": "combined_feature_importance.png",
+      "suffix": ".png",
+      "size_bytes": 130320,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/figures/size_generalization_transfer.png",
+      "name": "size_generalization_transfer.png",
+      "suffix": ".png",
+      "size_bytes": 87603,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/confirm/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 118263,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/confirm/figures/paper_claim_confidence.png",
+      "name": "paper_claim_confidence.png",
+      "suffix": ".png",
+      "size_bytes": 239570,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/confirm/figures/paper_verdict_overview.png",
+      "name": "paper_verdict_overview.png",
+      "suffix": ".png",
+      "size_bytes": 97578,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/latest/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 118263,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/latest/figures/paper_claim_confidence.png",
+      "name": "paper_claim_confidence.png",
+      "suffix": ".png",
+      "size_bytes": 239570,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/latest/figures/paper_verdict_overview.png",
+      "name": "paper_verdict_overview.png",
+      "suffix": ".png",
+      "size_bytes": 97578,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 70490,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 506447,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 144728,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/paper_claim_confidence.png",
+      "name": "paper_claim_confidence.png",
+      "suffix": ".png",
+      "size_bytes": 286631,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/paper_verdict_overview.png",
+      "name": "paper_verdict_overview.png",
+      "suffix": ".png",
+      "size_bytes": 114538,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 282154,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 34139,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 113842,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 70490,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 506447,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 144728,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/paper_claim_confidence.png",
+      "name": "paper_claim_confidence.png",
+      "suffix": ".png",
+      "size_bytes": 286631,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/paper_verdict_overview.png",
+      "name": "paper_verdict_overview.png",
+      "suffix": ".png",
+      "size_bytes": 114538,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 282154,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 34139,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 113842,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 71119,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 141456,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 77167,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/paper_claim_confidence.png",
+      "name": "paper_claim_confidence.png",
+      "suffix": ".png",
+      "size_bytes": 143462,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/paper_verdict_overview.png",
+      "name": "paper_verdict_overview.png",
+      "suffix": ".png",
+      "size_bytes": 70263,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 103898,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 37133,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 67645,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/parameter_space_analysis/latest/figures/combinatorial_explosion_dashboard.png",
+      "name": "combinatorial_explosion_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 183257,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/disorder_best_coherence.png",
+      "name": "disorder_best_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 80249,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/disorder_best_efficiency.png",
+      "name": "disorder_best_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 122843,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/disorder_best_gamma_phi.png",
+      "name": "disorder_best_gamma_phi.png",
+      "suffix": ".png",
+      "size_bytes": 59315,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/disorder_regime_map.png",
+      "name": "disorder_regime_map.png",
+      "suffix": ".png",
+      "size_bytes": 54082,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/kappa_best_coherence.png",
+      "name": "kappa_best_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 81329,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/kappa_best_efficiency.png",
+      "name": "kappa_best_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 108268,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/kappa_best_gamma_phi.png",
+      "name": "kappa_best_gamma_phi.png",
+      "suffix": ".png",
+      "size_bytes": 48779,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/kappa_regime_map.png",
+      "name": "kappa_regime_map.png",
+      "suffix": ".png",
+      "size_bytes": 51074,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/loss_best_coherence.png",
+      "name": "loss_best_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 94233,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/loss_best_efficiency.png",
+      "name": "loss_best_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 136502,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/loss_best_gamma_phi.png",
+      "name": "loss_best_gamma_phi.png",
+      "suffix": ".png",
+      "size_bytes": 49112,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/loss_regime_map.png",
+      "name": "loss_regime_map.png",
+      "suffix": ".png",
+      "size_bytes": 49434,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/size_best_coherence.png",
+      "name": "size_best_coherence.png",
+      "suffix": ".png",
+      "size_bytes": 98016,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/size_best_efficiency.png",
+      "name": "size_best_efficiency.png",
+      "suffix": ".png",
+      "size_bytes": 141109,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/size_best_gamma_phi.png",
+      "name": "size_best_gamma_phi.png",
+      "suffix": ".png",
+      "size_bytes": 69124,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/phase_sweep/latest/figures/size_regime_map.png",
+      "name": "size_regime_map.png",
+      "suffix": ".png",
+      "size_bytes": 54714,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/classification_article_panel.png",
+      "name": "classification_article_panel.png",
+      "suffix": ".png",
+      "size_bytes": 50295,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/fractal_msd_and_geometry.png",
+      "name": "fractal_msd_and_geometry.png",
+      "suffix": ".png",
+      "size_bytes": 111418,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/quantum_vs_classical_delta_map.png",
+      "name": "quantum_vs_classical_delta_map.png",
+      "suffix": ".png",
+      "size_bytes": 86714,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/quantum_vs_classical_scatter.png",
+      "name": "quantum_vs_classical_scatter.png",
+      "suffix": ".png",
+      "size_bytes": 165391,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/research_journey_dashboard.png",
+      "name": "research_journey_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 85269,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/figures/target_position_effect_map.png",
+      "name": "target_position_effect_map.png",
+      "suffix": ".png",
+      "size_bytes": 90612,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/classification_article_panel.png",
+      "name": "classification_article_panel.png",
+      "suffix": ".png",
+      "size_bytes": 50295,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/fractal_msd_and_geometry.png",
+      "name": "fractal_msd_and_geometry.png",
+      "suffix": ".png",
+      "size_bytes": 114221,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/quantum_vs_classical_delta_map.png",
+      "name": "quantum_vs_classical_delta_map.png",
+      "suffix": ".png",
+      "size_bytes": 86639,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/quantum_vs_classical_scatter.png",
+      "name": "quantum_vs_classical_scatter.png",
+      "suffix": ".png",
+      "size_bytes": 259250,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/research_journey_dashboard.png",
+      "name": "research_journey_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 86744,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/figures/target_position_effect_map.png",
+      "name": "target_position_effect_map.png",
+      "suffix": ".png",
+      "size_bytes": 92102,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/classification_article_panel.png",
+      "name": "classification_article_panel.png",
+      "suffix": ".png",
+      "size_bytes": 50295,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/fractal_msd_and_geometry.png",
+      "name": "fractal_msd_and_geometry.png",
+      "suffix": ".png",
+      "size_bytes": 114221,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/quantum_vs_classical_delta_map.png",
+      "name": "quantum_vs_classical_delta_map.png",
+      "suffix": ".png",
+      "size_bytes": 86639,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/quantum_vs_classical_scatter.png",
+      "name": "quantum_vs_classical_scatter.png",
+      "suffix": ".png",
+      "size_bytes": 259250,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/research_journey_dashboard.png",
+      "name": "research_journey_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 86744,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/figures/target_position_effect_map.png",
+      "name": "target_position_effect_map.png",
+      "suffix": ".png",
+      "size_bytes": 92102,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/classification_article_panel.png",
+      "name": "classification_article_panel.png",
+      "suffix": ".png",
+      "size_bytes": 50295,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/fractal_msd_and_geometry.png",
+      "name": "fractal_msd_and_geometry.png",
+      "suffix": ".png",
+      "size_bytes": 135969,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/quantum_vs_classical_delta_map.png",
+      "name": "quantum_vs_classical_delta_map.png",
+      "suffix": ".png",
+      "size_bytes": 68651,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/quantum_vs_classical_scatter.png",
+      "name": "quantum_vs_classical_scatter.png",
+      "suffix": ".png",
+      "size_bytes": 104502,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/research_journey_dashboard.png",
+      "name": "research_journey_dashboard.png",
+      "suffix": ".png",
+      "size_bytes": 86576,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/figures/target_position_effect_map.png",
+      "name": "target_position_effect_map.png",
+      "suffix": ".png",
+      "size_bytes": 73514,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_rs/latest/figures/r1_regime_boundaries_summary.png",
+      "name": "r1_regime_boundaries_summary.png",
+      "suffix": ".png",
+      "size_bytes": 112448,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_rs/latest/figures/r2_target_position_summary.png",
+      "name": "r2_target_position_summary.png",
+      "suffix": ".png",
+      "size_bytes": 151650,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_rs/latest/figures/r3_robustness_summary.png",
+      "name": "r3_robustness_summary.png",
+      "suffix": ".png",
+      "size_bytes": 113630,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_rs/latest/figures/r4_material_inspired_summary.png",
+      "name": "r4_material_inspired_summary.png",
+      "suffix": ".png",
+      "size_bytes": 136740,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 70490,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 506447,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 144728,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 282154,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 34139,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 113842,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 70490,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 506447,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 144728,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 282154,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 34139,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 113842,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/classification_group_vs_row.png",
+      "name": "classification_group_vs_row.png",
+      "suffix": ".png",
+      "size_bytes": 71119,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/closed_walk_benchmark.png",
+      "name": "closed_walk_benchmark.png",
+      "suffix": ".png",
+      "size_bytes": 141456,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/dephasing_gain_with_ci.png",
+      "name": "dephasing_gain_with_ci.png",
+      "suffix": ".png",
+      "size_bytes": 77167,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/quantum_vs_classical_arrival.png",
+      "name": "quantum_vs_classical_arrival.png",
+      "suffix": ".png",
+      "size_bytes": 103898,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/size_generalization.png",
+      "name": "size_generalization.png",
+      "suffix": ".png",
+      "size_bytes": 37133,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/figures/target_placement_with_controls.png",
+      "name": "target_placement_with_controls.png",
+      "suffix": ".png",
+      "size_bytes": 67645,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/interactive/figures/controlled_pair_tests.png",
+      "name": "controlled_pair_tests.png",
+      "suffix": ".png",
+      "size_bytes": 49233,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/interactive/figures/quantum_classical_target_controls.png",
+      "name": "quantum_classical_target_controls.png",
+      "suffix": ".png",
+      "size_bytes": 126925,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/interactive/figures/target_pair_contrasts.png",
+      "name": "target_pair_contrasts.png",
+      "suffix": ".png",
+      "size_bytes": 84885,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/latest/figures/controlled_pair_tests.png",
+      "name": "controlled_pair_tests.png",
+      "suffix": ".png",
+      "size_bytes": 49233,
+      "source_campaign": "target_geometry_confirm"
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/latest/figures/quantum_classical_target_controls.png",
+      "name": "quantum_classical_target_controls.png",
+      "suffix": ".png",
+      "size_bytes": 126925,
+      "source_campaign": "target_geometry_confirm"
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/latest/figures/target_pair_contrasts.png",
+      "name": "target_pair_contrasts.png",
+      "suffix": ".png",
+      "size_bytes": 84885,
+      "source_campaign": "target_geometry_confirm"
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/chain_crossover_refined.png",
+      "name": "chain_crossover_refined.png",
+      "suffix": ".png",
+      "size_bytes": 200250,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/ring_parity_distance.png",
+      "name": "ring_parity_distance.png",
+      "suffix": ".png",
+      "size_bytes": 271583,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/ring_size_refined.png",
+      "name": "ring_size_refined.png",
+      "suffix": ".png",
+      "size_bytes": 293387,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/sink_position_entropy_heatmap.png",
+      "name": "sink_position_entropy_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 53810,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/sink_position_eta_heatmap.png",
+      "name": "sink_position_eta_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 72280,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/sink_position_gamma_heatmap.png",
+      "name": "sink_position_gamma_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 54059,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/sink_position_metric_correlations.png",
+      "name": "sink_position_metric_correlations.png",
+      "suffix": ".png",
+      "size_bytes": 181435,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/targeted_studies/latest/figures/sink_position_participation_heatmap.png",
+      "name": "sink_position_participation_heatmap.png",
+      "suffix": ".png",
+      "size_bytes": 61701,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/tcc_review_pack/latest/figures/all_network_families.png",
+      "name": "all_network_families.png",
+      "suffix": ".png",
+      "size_bytes": 814266,
+      "source_campaign": null
+    }
+  ]
+}

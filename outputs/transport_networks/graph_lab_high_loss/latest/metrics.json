@@ -1,0 +1,40 @@
+{
+  "scenarios": {
+    "Complete graph (high loss)": {
+      "efficiency_no_dephasing": 0.2027886681126616,
+      "efficiency_optimal_dephasing": 0.4439573954509062,
+      "efficiency_high_dephasing": 0.41468413861038833,
+      "optimal_dephasing_rate_hz": 3.2,
+      "best_regime": "intermediate",
+      "enaqt_gain_over_coherent": 0.24116872733824457,
+      "high_dephasing_penalty": 0.029273256840517847,
+      "mean_coherence_at_optimum": 0.08360166097274954,
+      "final_sink_population_at_optimum": 0.4439573954509062,
+      "final_loss_population_at_optimum": 0.5454227284798954
+    },
+    "Ring graph (high loss)": {
+      "efficiency_no_dephasing": 0.6255257959977139,
+      "efficiency_optimal_dephasing": 0.6255257959977139,
+      "efficiency_high_dephasing": 0.3677426368080576,
+      "optimal_dephasing_rate_hz": 0.0,
+      "best_regime": "coherent",
+      "enaqt_gain_over_coherent": 0.0,
+      "high_dephasing_penalty": 0.2577831591896563,
+      "mean_coherence_at_optimum": 0.3904128126712633,
+      "final_sink_population_at_optimum": 0.6255257959977139,
+      "final_loss_population_at_optimum": 0.3672848377030903
+    },
+    "Chain graph (high loss)": {
+      "efficiency_no_dephasing": 0.5350698016613815,
+      "efficiency_optimal_dephasing": 0.5350698016613815,
+      "efficiency_high_dephasing": 0.09616963793172445,
+      "optimal_dephasing_rate_hz": 0.0,
+      "best_regime": "coherent",
+      "enaqt_gain_over_coherent": 0.0,
+      "high_dephasing_penalty": 0.43890016372965707,
+      "mean_coherence_at_optimum": 0.5043874270770389,
+      "final_sink_population_at_optimum": 0.5350698016613815,
+      "final_loss_population_at_optimum": 0.450591724097999
+    }
+  }
+}

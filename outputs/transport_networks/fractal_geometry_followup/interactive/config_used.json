@@ -1,0 +1,12 @@
+{
+  "profile": "interactive",
+  "n_sites_values": [
+    8,
+    13,
+    20,
+    27
+  ],
+  "t_final": 12.0,
+  "n_time_samples": 120,
+  "graph_seed_base": 10200
+}

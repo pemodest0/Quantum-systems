@@ -1,0 +1,5 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Ring target sweep trap 0,0.6537644921476776,0.6,0.0,coherent-dominated,3.2820266905537117,2.0041161853697373e-10
+Ring target sweep trap 1,0.5171328503528367,0.6,0.6,dephasing-assisted,3.2531025149195965,2.0559924256874007
+Ring target sweep trap 2,0.5449945669892642,0.6,0.6,dephasing-assisted,3.4057251011103853,2.0565475644936964
+Ring target sweep trap 3,0.5834154033666392,1.2,0.6,dephasing-assisted,3.632454355293415,2.050669053375684

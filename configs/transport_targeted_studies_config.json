@@ -1,0 +1,36 @@
+{
+  "study_name": "Targeted transport studies for crossover, ring scaling, and sink placement",
+  "output_subdir": "targeted_studies",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 220
+  },
+  "dephasing_rates_hz": [0.0, 0.05, 0.1, 0.2, 0.4, 0.8, 1.6],
+  "base_parameters": {
+    "coupling_hz": 1.0,
+    "sink_rate_hz": 0.65,
+    "loss_rate_hz": 0.02
+  },
+  "chain_crossover": {
+    "n_sites": 5,
+    "initial_site": 4,
+    "trap_site": 0,
+    "w_over_j_values": [0.4, 0.5, 0.55, 0.6, 0.65, 0.7, 0.72, 0.74, 0.76, 0.78, 0.8],
+    "dephasing_rates_hz": [0.0, 0.01, 0.02, 0.03, 0.04, 0.045, 0.05, 0.055, 0.06, 0.065, 0.07, 0.075, 0.08, 0.09, 0.1, 0.12, 0.15, 0.2, 0.3, 0.4, 0.8, 1.6],
+    "seeds": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293, 307, 311, 313]
+  },
+  "ring_size_refined": {
+    "n_values": [4, 5, 6, 7, 8, 9, 10, 11, 12]
+  },
+  "ring_parity_distance": {
+    "n_values": [4, 5, 6, 7, 8, 9, 10, 11, 12],
+    "initial_site": 0,
+    "disorder_strength_hz": 0.0
+  },
+  "sink_position_sweep": {
+    "n_sites": 5,
+    "topologies": ["chain", "ring", "complete"],
+    "disorder_strength_hz": 0.7,
+    "seeds": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137]
+  }
+}

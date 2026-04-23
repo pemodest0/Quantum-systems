@@ -1,0 +1,65 @@
+{
+  "study_name": "Passo 3 - O papel da dephasagem",
+  "dephasing_rates_hz": [
+    0.0,
+    0.2,
+    0.8,
+    3.2,
+    6.4
+  ],
+  "times": {
+    "t_final": 20.0,
+    "n_samples": 800
+  },
+  "visualization": {
+    "animation_stride": 14,
+    "animation_fps": 10
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "name": "Grafo completo de 4 nos",
+        "topology": "complete",
+        "n_sites": 4,
+        "coupling_hz": 1.0,
+        "sink_rate_hz": 0.7,
+        "loss_rate_hz": 0.02,
+        "initial_site": 1,
+        "trap_site": 0,
+        "disorder_strength_hz": 0.0,
+        "seed": 7
+      },
+      "site_energies_hz": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "best_regime": "intermediate",
+      "best_dephasing_rate_hz": 3.2,
+      "transport_efficiency": [
+        0.29967524964259384,
+        0.5597255148706662,
+        0.7439624458868113,
+        0.797944439228069,
+        0.7689573785060921
+      ],
+      "mean_coherence_l1": [
+        1.2330857946192013,
+        0.6016283735732358,
+        0.2714684808178657,
+        0.11242620828500087,
+        0.08376984284067492
+      ],
+      "final_loss_population": [
+        0.24830934520228073,
+        0.20304072976545576,
+        0.15800300575370432,
+        0.14054262290097266,
+        0.15208473004518072
+      ],
+      "topology_figure": "outputs\\transport_networks\\learning_step3_dephasing\\latest\\figures\\grafo_completo_de_4_nos_topology.png",
+      "population_animation_gif": "outputs\\transport_networks\\learning_step3_dephasing\\latest\\animations\\grafo_completo_de_4_nos_population_evolution.gif"
+    }
+  ]
+}

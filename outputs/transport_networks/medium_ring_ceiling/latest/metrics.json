@@ -1,0 +1,46 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "Ring ceiling favorable target",
+      "best_efficiency": 0.6974690914183743,
+      "best_disorder_over_coupling": 0.4,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 3.1977322168949818,
+      "best_mixing": 2.0042995816796015e-10
+    },
+    {
+      "scenario": "Ring ceiling unfavorable target",
+      "best_efficiency": 0.5214101534196659,
+      "best_disorder_over_coupling": 0.4,
+      "best_dephasing_over_coupling": 0.6,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 3.2686892291247087,
+      "best_mixing": 2.0566399458204607
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 52,
+    "dephasing-assisted": 108,
+    "localized-by-disorder": 0,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 110
+  },
+  "transport_range": [
+    0.31865676173994284,
+    0.6974690914183743
+  ],
+  "spreading_range": [
+    2.3339439473006367,
+    3.4989422363001355
+  ],
+  "mixing_range": [
+    2.0039138441049214e-10,
+    2.060818736433328
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais."
+  }
+}

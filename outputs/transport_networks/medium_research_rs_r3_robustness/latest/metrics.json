@@ -1,0 +1,55 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "R3 robustness 1D chain",
+      "best_efficiency": 0.6422651201892008,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 39.94760628488152,
+      "best_mixing": 2.5777546571613345e-10
+    },
+    {
+      "scenario": "R3 robustness ring",
+      "best_efficiency": 0.8030272956220651,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 3.904050141634253,
+      "best_mixing": 2.0052578633349264e-10
+    },
+    {
+      "scenario": "R3 robustness 2D square",
+      "best_efficiency": 0.6676389730682505,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 5.716898238629729,
+      "best_mixing": 4.293831338349035e-10
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 15,
+    "dephasing-assisted": 0,
+    "localized-by-disorder": 0,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 57
+  },
+  "transport_range": [
+    0.20511931117046983,
+    0.8030272956220651
+  ],
+  "spreading_range": [
+    2.6025709478431303,
+    39.94760628488152
+  ],
+  "mixing_range": [
+    2.0042552637388345e-10,
+    2.761721019914928
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais."
+  }
+}

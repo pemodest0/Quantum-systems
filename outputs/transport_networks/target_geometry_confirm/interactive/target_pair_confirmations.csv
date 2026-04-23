@@ -1,0 +1,5 @@
+family,pair_type,n,arrival_spread_mean,arrival_spread_ci95_low,arrival_spread_ci95_high,verdict
+chain,best_vs_worst,8,0.2717132480960134,0.2329616740722754,0.31046482211975135,target_confirmed
+modular_two_community,best_vs_worst,16,0.26451212742676,0.23529203763013623,0.2937322172233838,target_confirmed
+random_geometric,best_vs_worst,16,0.28197131797666664,0.22622201048741408,0.3377206254659192,target_confirmed
+ring,best_vs_worst,8,0.2547143916784791,0.2015980513570278,0.3078307319999304,target_confirmed

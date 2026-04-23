@@ -1,0 +1,6 @@
+{
+  "level": "pilot_only",
+  "main_concern": "Smoke run validates the pipeline but is too small for scientific claims.",
+  "evidence": "Uses a tiny grid and few disorder seeds.",
+  "next_action": "Run profile pilot for all network families, then refine only separable families."
+}

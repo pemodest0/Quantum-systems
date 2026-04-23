@@ -1,0 +1,6 @@
+{
+  "generated_at_utc": "2026-04-14T21:13:50.831499+00:00",
+  "script": "scripts\\run_transport_graph_lab.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_learning_step3_dephasing.json",
+  "output_dir": "outputs\\transport_networks\\learning_step3_dephasing\\latest"
+}

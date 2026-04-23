@@ -1,0 +1,17 @@
+[
+  {
+    "key": "Novo2016",
+    "url": "https://doi.org/10.1038/srep18142",
+    "reading": "Robustness claims must be checked with disorder ensembles, not from single draws."
+  },
+  {
+    "key": "Coutinho2022",
+    "url": "https://doi.org/10.1038/s42005-022-00866-7",
+    "reading": "Network robustness under noise requires both mean performance and variability."
+  },
+  {
+    "key": "Mohseni2008",
+    "url": "https://doi.org/10.1063/1.3002335",
+    "reading": "Moderate dephasing can partially recover transport once disorder is significant."
+  }
+]

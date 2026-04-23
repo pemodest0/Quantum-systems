@@ -1,0 +1,31 @@
+{
+  "profile": "smoke",
+  "target_record_count": 20,
+  "quantum_classical_record_count": 20,
+  "fractal_record_count": 3,
+  "validation": {
+    "max_trace_deviation": 1.9984014443252818e-15,
+    "max_population_closure_error": 1.887379141862766e-15,
+    "min_state_eigenvalue": -8.653178359493024e-16,
+    "classical_max_population_closure_error": 1.7763568394002505e-15
+  },
+  "numerics_pass": true,
+  "target_spread_mean": 0.12384508671009395,
+  "target_spread_ci95_low": 0.06450801779606828,
+  "target_spread_ci95_high": 0.1831821556241196,
+  "max_target_spread": 0.30589549862411397,
+  "mean_target_degree_spread": 1.4,
+  "target_degree_arrival_r2": 0.005069503135943091,
+  "strong_target_effect": true,
+  "mean_quantum_classical_delta": 0.1255736787320388,
+  "quantum_advantage_like_count": 12,
+  "classical_explains_count": 3,
+  "both_poor_count": 0,
+  "inconclusive_count": 5,
+  "classification_available": true,
+  "classification_dynamic_accuracy": 0.4149999999999999,
+  "classification_topology_accuracy": 0.5577777777777777,
+  "classification_classical_accuracy": 0.17555555555555555,
+  "classification_combined_accuracy": 0.6148148148148148,
+  "classification_combined_baseline": 0.13333333333333333
+}

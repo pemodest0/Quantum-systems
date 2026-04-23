@@ -1,0 +1,64 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "Material baseline ring aggregate",
+      "best_efficiency": 0.7466378544485756,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 2.564065225213515,
+      "best_mixing": 2.577073754158458e-10
+    },
+    {
+      "scenario": "Material long-range ring aggregate",
+      "best_efficiency": 0.5534440079538527,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 5.632816888794592,
+      "best_mixing": 2.5768175311583104e-10
+    },
+    {
+      "scenario": "Material baseline disordered 2D sheet",
+      "best_efficiency": 0.6676389730682512,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 5.716898238629739,
+      "best_mixing": 4.2935159095297314e-10
+    },
+    {
+      "scenario": "Material long-range disordered 2D sheet",
+      "best_efficiency": 0.44932945654622275,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 6.256315026716736,
+      "best_mixing": 4.2942095311896995e-10
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 16,
+    "dephasing-assisted": 2,
+    "localized-by-disorder": 0,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 46
+  },
+  "transport_range": [
+    0.2056037046220084,
+    0.7466378544485756
+  ],
+  "spreading_range": [
+    2.564065225213515,
+    6.8299785526084476
+  ],
+  "mixing_range": [
+    2.5763187639000536e-10,
+    2.7616068186956064
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais."
+  }
+}

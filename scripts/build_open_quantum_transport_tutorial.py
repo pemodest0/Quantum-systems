@@ -1,0 +1,206 @@
+from __future__ import annotations
+
+import argparse
+import json
+import os
+from pathlib import Path
+import shutil
+import subprocess
+import sys
+
+
+def _project_root() -> Path:
+    cwd = Path.cwd().resolve()
+    if (cwd / "pyproject.toml").exists() and (cwd / "src").exists():
+        return cwd
+    return Path(__file__).resolve().parents[1]
+
+
+ROOT = _project_root()
+REPORT_DIR = ROOT / "reports" / "open_quantum_transport_tutorial"
+TEX_FILE = REPORT_DIR / "open_quantum_transport_tutorial.tex"
+GENERATED_DIR = REPORT_DIR / "generated"
+LEARNING_SCRIPT = ROOT / "scripts" / "run_transport_learning_path.py"
+BASELINE_SCRIPT = ROOT / "scripts" / "run_transport_graph_lab.py"
+
+
+def run_command(command: list[str], cwd: Path) -> tuple[int, str]:
+    completed = subprocess.run(
+        command,
+        cwd=cwd,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        check=False,
+    )
+    return completed.returncode, completed.stdout
+
+
+def available_engine(tex_file: Path) -> tuple[str, list[str]] | None:
+    if shutil.which("tectonic"):
+        return "tectonic", ["tectonic", tex_file.name]
+    if shutil.which("pdflatex"):
+        return "pdflatex", ["pdflatex", "--enable-installer", "-interaction=nonstopmode", tex_file.name]
+    if shutil.which("latexmk"):
+        return "latexmk", ["latexmk", "-pdf", "-interaction=nonstopmode", tex_file.name]
+    miktex_candidates = [
+        Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "MiKTeX" / "miktex" / "bin" / "x64" / "pdflatex.exe",
+        Path(os.environ.get("ProgramFiles", "")) / "MiKTeX" / "miktex" / "bin" / "x64" / "pdflatex.exe",
+    ]
+    for candidate in miktex_candidates:
+        if candidate.exists():
+            return "pdflatex", [str(candidate), "--enable-installer", "-interaction=nonstopmode", tex_file.name]
+    return None
+
+
+def available_bibtex(tex_file: Path) -> list[str] | None:
+    if shutil.which("bibtex"):
+        return ["bibtex", tex_file.stem]
+    miktex_candidates = [
+        Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "MiKTeX" / "miktex" / "bin" / "x64" / "bibtex.exe",
+        Path(os.environ.get("ProgramFiles", "")) / "MiKTeX" / "miktex" / "bin" / "x64" / "bibtex.exe",
+    ]
+    for candidate in miktex_candidates:
+        if candidate.exists():
+            return [str(candidate), tex_file.stem]
+    return None
+
+
+def _run_learning_and_baseline() -> None:
+    env = os.environ.copy()
+    env["PYTHONPATH"] = str(ROOT / "src")
+    logs: list[str] = []
+    for script in (LEARNING_SCRIPT, BASELINE_SCRIPT):
+        completed = subprocess.run(
+            [sys.executable, str(script)],
+            cwd=ROOT,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            check=False,
+            env=env,
+        )
+        logs.append(f"=== {script.name} ===\n{completed.stdout}\n")
+        if completed.returncode != 0:
+            (REPORT_DIR / "simulation_generation.log").write_text("".join(logs), encoding="utf-8")
+            raise RuntimeError(f"simulation generation failed in {script.name}")
+    (REPORT_DIR / "simulation_generation.log").write_text("".join(logs), encoding="utf-8")
+
+
+def _generate_learning_summary() -> None:
+    learning_paths = [
+        ("Step 1", "Two-site coherent walk", ROOT / "outputs" / "transport_networks" / "learning_step1_walk" / "latest" / "metrics.json"),
+        ("Step 2", "Three-site chain with sink", ROOT / "outputs" / "transport_networks" / "learning_step2_sink" / "latest" / "metrics.json"),
+        ("Step 3", "Four-site complete graph with dephasing scan", ROOT / "outputs" / "transport_networks" / "learning_step3_dephasing" / "latest" / "metrics.json"),
+    ]
+    lines = [
+        "\\begin{table}[t]",
+        "\\centering",
+        "\\caption{Learning-path results generated directly from the current simulation artifacts.}",
+        "\\begin{tabular}{llcccc}",
+        "\\toprule",
+        "Step & Scenario & Best regime & $\\eta_{\\mathrm{coh}}$ & $\\eta_{\\mathrm{best}}$ & $\\gamma_{\\phi}^{\\mathrm{best}}$ \\\\",
+        "\\midrule",
+    ]
+    for label, scenario_name, path in learning_paths:
+        metrics = json.loads(path.read_text(encoding="utf-8"))
+        scenario = next(iter(metrics["scenarios"].values()))
+        lines.append(
+            f"{label} & {scenario_name} & {scenario['best_regime'].replace('_', ' ')} & "
+            f"{scenario['efficiency_no_dephasing']:.3f} & "
+            f"{scenario['efficiency_optimal_dephasing']:.3f} & "
+            f"{scenario['optimal_dephasing_rate_hz']:.3f} \\\\"
+        )
+    lines.extend(["\\bottomrule", "\\end{tabular}", "\\end{table}"])
+    (GENERATED_DIR / "learning_summary.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def _generate_baseline_summary() -> None:
+    metrics = json.loads((ROOT / "outputs" / "transport_networks" / "graph_lab" / "latest" / "metrics.json").read_text(encoding="utf-8"))
+    lines = [
+        "\\begin{table}[t]",
+        "\\centering",
+        "\\caption{Baseline graph-comparison results generated from the current laboratory run.}",
+        "\\begin{tabular}{lcccc}",
+        "\\toprule",
+        "Scenario & Best regime & $\\eta_{\\mathrm{coh}}$ & $\\eta_{\\mathrm{best}}$ & $\\gamma_{\\phi}^{\\mathrm{best}}$ \\\\",
+        "\\midrule",
+    ]
+    for name, metric in metrics["scenarios"].items():
+        lines.append(
+            f"{name} & {metric['best_regime'].replace('_', ' ')} & "
+            f"{metric['efficiency_no_dephasing']:.3f} & "
+            f"{metric['efficiency_optimal_dephasing']:.3f} & "
+            f"{metric['optimal_dephasing_rate_hz']:.3f} \\\\"
+        )
+    lines.extend(["\\bottomrule", "\\end{tabular}", "\\end{table}"])
+    (GENERATED_DIR / "baseline_summary.tex").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="Build the English open quantum transport tutorial PDF.")
+    parser.add_argument("--json", action="store_true", help="Print build status as JSON.")
+    args = parser.parse_args(argv)
+
+    REPORT_DIR.mkdir(parents=True, exist_ok=True)
+    GENERATED_DIR.mkdir(parents=True, exist_ok=True)
+    if not TEX_FILE.exists():
+        raise FileNotFoundError(TEX_FILE)
+
+    try:
+        _run_learning_and_baseline()
+    except RuntimeError as exc:
+        payload = {"status": "simulation_generation_failed", "message": str(exc), "log": str(REPORT_DIR / "simulation_generation.log")}
+        print(json.dumps(payload, indent=2))
+        return 1
+
+    _generate_learning_summary()
+    _generate_baseline_summary()
+
+    engine = available_engine(TEX_FILE)
+    if engine is None:
+        payload = {"status": "latex_engine_missing", "message": "No tectonic, latexmk, or pdflatex executable was found.", "latex_source": str(TEX_FILE)}
+        print(json.dumps(payload, indent=2))
+        return 2
+
+    engine_name, command = engine
+    code, output = run_command(command, REPORT_DIR)
+    (REPORT_DIR / "build.log").write_text(output, encoding="utf-8")
+
+    if engine_name == "pdflatex" and code == 0:
+        tex_source = TEX_FILE.read_text(encoding="utf-8")
+        if "\\bibliography{" in tex_source:
+            bibtex_command = available_bibtex(TEX_FILE)
+            if bibtex_command is not None:
+                bib_code, bib_output = run_command(bibtex_command, REPORT_DIR)
+                with (REPORT_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                    handle.write("\n\n--- bibtex pass ---\n\n")
+                    handle.write(bib_output)
+                code = bib_code
+        if code == 0:
+            code2, output2 = run_command(command, REPORT_DIR)
+            with (REPORT_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                handle.write("\n\n--- second pdflatex pass ---\n\n")
+                handle.write(output2)
+            code = code2
+        if code == 0:
+            code3, output3 = run_command(command, REPORT_DIR)
+            with (REPORT_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                handle.write("\n\n--- third pdflatex pass ---\n\n")
+                handle.write(output3)
+            code = code3
+
+    pdf_path = REPORT_DIR / "open_quantum_transport_tutorial.pdf"
+    payload = {
+        "status": "completed" if code == 0 and pdf_path.exists() else "failed",
+        "engine": engine_name,
+        "pdf": str(pdf_path) if pdf_path.exists() else None,
+        "log": str(REPORT_DIR / "build.log"),
+        "return_code": code,
+    }
+    print(json.dumps(payload, indent=2))
+    return 0 if payload["status"] == "completed" else 1
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

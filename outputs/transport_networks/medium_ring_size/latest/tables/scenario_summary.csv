@@ -1,0 +1,9 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Ring size N6 favorable target,0.7273665183136563,0.6,0.0,coherent-dominated,2.02484212638171,1.4317211482351158e-10
+Ring size N6 unfavorable target,0.6417966068088902,0.6,0.6,dephasing-assisted,1.9464555017143086,1.7644329159187706
+Ring size N8 favorable target,0.6477810219430649,0.6,0.0,coherent-dominated,3.3623130825092495,2.0040128904141547e-10
+Ring size N8 unfavorable target,0.5177523073980203,0.6,0.6,dephasing-assisted,3.257084041054999,2.0558980403562774
+Ring size N10 favorable target,0.5748793071968149,0.6,0.0,coherent-dominated,4.9736121417931995,2.576639509783782e-10
+Ring size N10 unfavorable target,0.42661415331446095,0.6,0.4,dephasing-assisted,4.944618544333226,2.2757344970945685
+Ring size N12 favorable target,0.4658345883666739,0.6,0.0,coherent-dominated,6.7683024155304,3.1495193452474526e-10
+Ring size N12 unfavorable target,0.35759870239012687,0.6,0.4,dephasing-assisted,7.01120794691654,2.460994475789176

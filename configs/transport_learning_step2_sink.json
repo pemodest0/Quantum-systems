@@ -1,0 +1,27 @@
+{
+  "study_name": "Passo 2 - Introduzindo o sink",
+  "output_subdir": "learning_step2_sink",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 700
+  },
+  "visualization": {
+    "animation_stride": 12,
+    "animation_fps": 10
+  },
+  "dephasing_rates_hz": [0.0],
+  "scenarios": [
+    {
+      "name": "Cadeia de 3 nos com sink",
+      "topology": "chain",
+      "n_sites": 3,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.45,
+      "loss_rate_hz": 0.0,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 2
+    }
+  ]
+}

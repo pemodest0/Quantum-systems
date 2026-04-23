@@ -1,0 +1,541 @@
+{
+  "label_name": "family",
+  "labels": [
+    "chain",
+    "complete",
+    "ring",
+    "star"
+  ],
+  "feature_names": [
+    "topology_density",
+    "topology_initial_degree",
+    "topology_initial_target_distance",
+    "topology_mean_degree",
+    "topology_modularity_approx",
+    "topology_n_edges",
+    "topology_n_sites",
+    "topology_spectral_degeneracy_approx",
+    "topology_spectral_gap",
+    "topology_spectral_initial_target_overlap",
+    "topology_spectral_radius",
+    "topology_std_degree",
+    "topology_target_betweenness",
+    "topology_target_closeness",
+    "topology_target_degree",
+    "topology_target_mode_weight_ipr"
+  ],
+  "accuracy": 1.0,
+  "baseline_accuracy": 0.25,
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "feature_importance": [
+    {
+      "feature": "topology_std_degree",
+      "importance": 1.1864940880364174
+    },
+    {
+      "feature": "topology_spectral_degeneracy_approx",
+      "importance": 0.974674304690673
+    },
+    {
+      "feature": "topology_modularity_approx",
+      "importance": 0.6506010831065829
+    },
+    {
+      "feature": "topology_initial_degree",
+      "importance": 0.5172375957443778
+    },
+    {
+      "feature": "topology_spectral_gap",
+      "importance": 0.4016670764192106
+    },
+    {
+      "feature": "topology_target_mode_weight_ipr",
+      "importance": 0.325446891057676
+    },
+    {
+      "feature": "topology_target_closeness",
+      "importance": 0.319578570422778
+    },
+    {
+      "feature": "topology_spectral_initial_target_overlap",
+      "importance": 0.29686055095073466
+    },
+    {
+      "feature": "topology_spectral_radius",
+      "importance": 0.2678941146359555
+    },
+    {
+      "feature": "topology_mean_degree",
+      "importance": 0.24736557291067668
+    },
+    {
+      "feature": "topology_density",
+      "importance": 0.24736557291067668
+    },
+    {
+      "feature": "topology_n_edges",
+      "importance": 0.2473655729106766
+    },
+    {
+      "feature": "topology_initial_target_distance",
+      "importance": 0.18668304442742267
+    },
+    {
+      "feature": "topology_target_degree",
+      "importance": 0.17055962648378772
+    },
+    {
+      "feature": "topology_target_betweenness",
+      "importance": 0.12344248783303306
+    },
+    {
+      "feature": "topology_n_sites",
+      "importance": 0.0
+    }
+  ],
+  "embedding_2d": [
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "chain",
+      "x": -2.6342878278744437,
+      "y": -0.06854061360857612
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "chain",
+      "x": -2.6342878278744437,
+      "y": -0.06854061360857612
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "chain",
+      "x": -2.6342878278744437,
+      "y": -0.06854061360857612
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "chain",
+      "x": -2.6342878278744437,
+      "y": -0.06854061360857612
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "chain",
+      "x": -3.529501537992528,
+      "y": -1.849490808171916
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "chain",
+      "x": -3.529501537992528,
+      "y": -1.849490808171916
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "chain",
+      "x": -3.529501537992528,
+      "y": -1.849490808171916
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "chain",
+      "x": -3.529501537992528,
+      "y": -1.849490808171916
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "ring",
+      "x": -1.0868006441026008,
+      "y": -0.22331960155009864
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "ring",
+      "x": -1.0868006441026008,
+      "y": -0.22331960155009864
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "ring",
+      "x": -1.0868006441026008,
+      "y": -0.22331960155009864
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "ring",
+      "x": -1.0868006441026008,
+      "y": -0.22331960155009864
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "ring",
+      "x": -1.8759273224370294,
+      "y": -1.0208207643526115
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "ring",
+      "x": -1.8759273224370294,
+      "y": -1.0208207643526115
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "ring",
+      "x": -1.8759273224370294,
+      "y": -1.0208207643526115
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "ring",
+      "x": -1.8759273224370294,
+      "y": -1.0208207643526115
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "complete",
+      "x": 5.228518908063709,
+      "y": -0.8624834115827094
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "star",
+      "x": 0.3650124749332063,
+      "y": 4.095663359462991
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "star",
+      "x": 0.3650124749332063,
+      "y": 4.095663359462991
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "star",
+      "x": 0.3650124749332063,
+      "y": 4.095663359462991
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "star",
+      "x": 0.3650124749332063,
+      "y": 4.095663359462991
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "star",
+      "x": -1.695532958654022,
+      "y": 0.7914752513856282
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "star",
+      "x": -1.695532958654022,
+      "y": 0.7914752513856282
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "star",
+      "x": -1.695532958654022,
+      "y": 0.7914752513856282
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "star",
+      "x": -1.695532958654022,
+      "y": 0.7914752513856282
+    }
+  ],
+  "predictions": [
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    }
+  ]
+}

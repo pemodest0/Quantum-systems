@@ -1,0 +1,45 @@
+{
+  "profile": "smoke",
+  "families": [
+    "chain",
+    "ring",
+    "star",
+    "complete"
+  ],
+  "edge_models_main": [
+    "unweighted"
+  ],
+  "edge_models_sensitivity": [
+    "unweighted",
+    "degree_normalized"
+  ],
+  "n_sites_values": [
+    6
+  ],
+  "graph_realizations": 1,
+  "deterministic_graph_realizations": 1,
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "graph_seed_base": 4100,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.2,
+    0.6
+  ],
+  "target_styles": [
+    "near",
+    "far"
+  ],
+  "t_final_closed": 8.0,
+  "t_final_open": 9.0,
+  "n_time_samples": 80,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02
+}

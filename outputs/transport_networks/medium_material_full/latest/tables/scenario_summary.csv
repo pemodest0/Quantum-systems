@@ -1,0 +1,6 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Material full molecular-wire-like chain,0.6422651201892012,0.0,0.0,coherent-dominated,39.94760628488157,2.5768924097231534e-10
+Material full ring aggregate,0.7466378544485756,0.0,0.0,coherent-dominated,2.564065225213515,2.577073754158458e-10
+Material full disordered 2D sheet,0.6676389730682512,0.0,0.0,coherent-dominated,5.716898238629739,4.2935159095297314e-10
+Material full bottleneck medium,0.17435979140699484,0.8,0.4,dephasing-assisted,11.553633662130546,2.837920794109731
+Material full clustered medium,0.5987773923841472,0.0,0.0,coherent-dominated,19.2801808946827,3.1491136901202225e-10

@@ -1,0 +1,41 @@
+{
+  "profile": "interactive",
+  "n_sites_values": [
+    8,
+    10,
+    12
+  ],
+  "graph_realizations": 2,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.4,
+    0.8
+  ],
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.2,
+    0.8,
+    1.4
+  ],
+  "target_styles": [
+    "near",
+    "far",
+    "high_centrality",
+    "low_centrality"
+  ],
+  "fractal_n_sites_values": [
+    8,
+    13,
+    20
+  ],
+  "t_final": 10.0,
+  "n_time_samples": 80,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "graph_seed_base": 8200
+}

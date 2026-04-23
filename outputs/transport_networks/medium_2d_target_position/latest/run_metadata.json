@@ -1,0 +1,6 @@
+{
+  "generated_at_utc": "2026-04-21T02:48:02.301875+00:00",
+  "script": "scripts\\run_transport_medium_campaign.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_2d_target_position_campaign.json",
+  "output_dir": "outputs\\transport_networks\\medium_2d_target_position\\latest"
+}

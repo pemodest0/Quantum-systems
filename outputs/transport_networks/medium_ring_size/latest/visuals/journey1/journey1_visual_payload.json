@@ -1,0 +1,68 @@
+{
+  "Ring size N8 favorable target": [
+    {
+      "scenario_name": "Ring size N8 favorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 17,
+      "representative_efficiency": 0.6467843718260287,
+      "ensemble_mean_efficiency": 0.6477810219430649,
+      "ensemble_std_efficiency": 0.06338187363118379
+    },
+    {
+      "scenario_name": "Ring size N8 favorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 1.2,
+      "representative_seed": 13,
+      "representative_efficiency": 0.47725835015364304,
+      "ensemble_mean_efficiency": 0.47631913473096493,
+      "ensemble_std_efficiency": 0.0144132880127458
+    }
+  ],
+  "Ring size N8 unfavorable target": [
+    {
+      "scenario_name": "Ring size N8 unfavorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.6,
+      "representative_seed": 37,
+      "representative_efficiency": 0.5165205224522476,
+      "ensemble_mean_efficiency": 0.5177523073980203,
+      "ensemble_std_efficiency": 0.009649813845910626
+    },
+    {
+      "scenario_name": "Ring size N8 unfavorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 37,
+      "representative_efficiency": 0.3626095855426052,
+      "ensemble_mean_efficiency": 0.35569379739497725,
+      "ensemble_std_efficiency": 0.10775036185279076
+    }
+  ],
+  "Ring size N12 unfavorable target": [
+    {
+      "scenario_name": "Ring size N12 unfavorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.4,
+      "representative_seed": 29,
+      "representative_efficiency": 0.35684213251639285,
+      "ensemble_mean_efficiency": 0.35759870239012687,
+      "ensemble_std_efficiency": 0.012589037192117384
+    },
+    {
+      "scenario_name": "Ring size N12 unfavorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 11,
+      "representative_efficiency": 0.22563552991814206,
+      "ensemble_mean_efficiency": 0.23474925144798572,
+      "ensemble_std_efficiency": 0.10499580078268732
+    }
+  ]
+}

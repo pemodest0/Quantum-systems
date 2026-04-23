@@ -1,0 +1,40 @@
+{
+  "closed_walk_return_probability.png": {
+    "title_meaning": "Mostra se a excitacao fica presa perto do ponto inicial ou se se espalha pela rede.",
+    "x_axis": "Tempo medido em unidades de 1/J. J e a forca basica de passagem entre nos ligados.",
+    "y_axis": "Probabilidade media de encontrar a excitacao no no onde ela comecou.",
+    "expected": "A literatura espera curvas diferentes para topologias diferentes, porque cada rede interfere e espalha de um jeito.",
+    "measured": "Use este painel como controle sem alvo, sem perda, sem ruido e sem desordem."
+  },
+  "trap_position_sensitivity.png": {
+    "title_meaning": "Mostra quanto a escolha do alvo muda a chegada da excitacao.",
+    "x_axis": "Tipo de alvo escolhido: perto, longe, central ou pouco central.",
+    "y_axis": "Familia de rede.",
+    "color": "Cor mais clara significa maior chegada ao alvo.",
+    "expected": "Razzoli et al. esperam que a posicao do trap/alvo importe e que conectividade sozinha nao explique tudo.",
+    "measured": "Maior diferenca encontrada entre posicoes de alvo: 0.737."
+  },
+  "dephasing_assistance_window.png": {
+    "title_meaning": "Mostra onde bagunca de fase ajuda ou atrapalha a chegada ao alvo.",
+    "x_axis": "Irregularidade fixa da rede comparada com J.",
+    "y_axis": "Familia de rede.",
+    "color": "Vermelho positivo significa que algum ruido melhorou a chegada; azul negativo significa que piorou.",
+    "expected": "Mohseni, Plenio e Rebentrost esperam ajuda em regime intermediario, nao em ruido muito forte.",
+    "measured": "Maior ganho encontrado: 0.325."
+  },
+  "classification_controls.png": {
+    "title_meaning": "Compara se a rede pode ser reconhecida pela dinamica, pela topologia estatica, ou pelas duas juntas.",
+    "x_axis": "Tipo de informacao entregue ao classificador.",
+    "y_axis": "Acerto no teste.",
+    "expected": "Se a dinamica carrega uma impressao digital real, dynamic only deve superar o chute majoritario.",
+    "measured": "Acerto dinamico: 0.540; acerto topologico: 0.553."
+  },
+  "edge_model_sensitivity.png": {
+    "title_meaning": "Mostra se mudar o significado fisico da aresta muda o transporte.",
+    "x_axis": "Modelo de aresta: igual para todas, normalizada por grau, decaimento por distancia etc.",
+    "y_axis": "Familia de rede.",
+    "color": "Cor mais clara significa melhor chegada media ao alvo.",
+    "expected": "A literatura de CTQW espera que pesos e alcances alterem a dinamica porque mudam o Hamiltoniano.",
+    "measured": "Este painel separa efeito de topologia do efeito de como a ligacao fisica e ponderada."
+  }
+}

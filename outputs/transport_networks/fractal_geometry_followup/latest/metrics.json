@@ -1,0 +1,54 @@
+{
+  "profile": "interactive",
+  "row_count": 12,
+  "validation": {
+    "max_trace_deviation": 4.6629367034256575e-15,
+    "max_population_closure_error": 4.884981308350689e-15,
+    "min_state_eigenvalue": -1.6247035877872297e-15
+  },
+  "numerics_pass": true,
+  "comparisons": [
+    {
+      "family": "sierpinski_gasket",
+      "n_sites": 8,
+      "msd_ratio_vs_lattice": 0.09899313803117925
+    },
+    {
+      "family": "sierpinski_carpet_like",
+      "n_sites": 8,
+      "msd_ratio_vs_lattice": 0.1972211401414383
+    },
+    {
+      "family": "sierpinski_gasket",
+      "n_sites": 13,
+      "msd_ratio_vs_lattice": 0.011283489443245656
+    },
+    {
+      "family": "sierpinski_carpet_like",
+      "n_sites": 13,
+      "msd_ratio_vs_lattice": 0.06759814245906966
+    },
+    {
+      "family": "sierpinski_gasket",
+      "n_sites": 20,
+      "msd_ratio_vs_lattice": 0.03658833477767801
+    },
+    {
+      "family": "sierpinski_carpet_like",
+      "n_sites": 20,
+      "msd_ratio_vs_lattice": 0.020561859728090465
+    },
+    {
+      "family": "sierpinski_gasket",
+      "n_sites": 27,
+      "msd_ratio_vs_lattice": 0.04171703572662208
+    },
+    {
+      "family": "sierpinski_carpet_like",
+      "n_sites": 27,
+      "msd_ratio_vs_lattice": 0.043045836160031395
+    }
+  ],
+  "fractal_geometry_changes_spreading": true,
+  "changed_count": 8
+}

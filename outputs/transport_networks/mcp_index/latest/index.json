@@ -1,0 +1,45 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "schema_version": 1,
+  "role": "read_only_research_hub_index",
+  "root": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems",
+  "registry_dir": "outputs/transport_networks/lab_registry/latest",
+  "source_of_truth": "outputs/transport_networks/lab_registry/latest",
+  "master_metrics": {
+    "generated_at_utc": "2026-04-23T05:25:05.347003+00:00",
+    "campaign_count": 8,
+    "master_result_count": 8328,
+    "master_uncertainty_count": 389,
+    "smoke_only_campaigns": [
+      "dynamic_network_atlas"
+    ],
+    "scientific_candidate_campaigns": [
+      "research_journey_v2",
+      "paper_reproduction_suite",
+      "network_classification_complete",
+      "dynamic_network_atlas_evidence_prep"
+    ],
+    "allowed_claim_count": 4,
+    "blocked_claim_count": 2
+  },
+  "counts": {
+    "campaigns": 8,
+    "metric_rows": 5057,
+    "entropy_rows": 36,
+    "quantum_classical_rows": 36,
+    "figures": 408,
+    "notebooks": 5,
+    "reports": 129
+  },
+  "files": {
+    "campaigns": "outputs/transport_networks/mcp_index/latest/campaigns.json",
+    "metric_summaries": "outputs/transport_networks/mcp_index/latest/metric_summaries.json",
+    "entropy_summary": "outputs/transport_networks/mcp_index/latest/entropy_summary.json",
+    "quantum_classical_summary": "outputs/transport_networks/mcp_index/latest/quantum_classical_summary.json",
+    "claims": "outputs/transport_networks/mcp_index/latest/claims.json",
+    "paper_guardrails": "outputs/transport_networks/mcp_index/latest/paper_guardrails.json",
+    "figures": "outputs/transport_networks/mcp_index/latest/figures.json",
+    "notebooks": "outputs/transport_networks/mcp_index/latest/notebooks.json",
+    "reports": "outputs/transport_networks/mcp_index/latest/reports.json"
+  }
+}

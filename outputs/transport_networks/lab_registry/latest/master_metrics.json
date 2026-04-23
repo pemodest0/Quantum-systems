@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:05.347003+00:00",
+  "campaign_count": 8,
+  "master_result_count": 8328,
+  "master_uncertainty_count": 389,
+  "smoke_only_campaigns": [
+    "dynamic_network_atlas"
+  ],
+  "scientific_candidate_campaigns": [
+    "research_journey_v2",
+    "paper_reproduction_suite",
+    "network_classification_complete",
+    "dynamic_network_atlas_evidence_prep"
+  ],
+  "allowed_claim_count": 4,
+  "blocked_claim_count": 2
+}

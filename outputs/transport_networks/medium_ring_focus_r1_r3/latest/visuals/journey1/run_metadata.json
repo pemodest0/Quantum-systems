@@ -1,0 +1,7 @@
+{
+  "generated_at_utc": "2026-04-20T01:35:51.632104+00:00",
+  "script": "scripts\\run_transport_visual_journey1.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_ring_focus_campaign.json",
+  "results_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_ring_focus_r1_r3\\latest\\results.json",
+  "output_dir": "outputs\\transport_networks\\medium_ring_focus_r1_r3\\latest\\visuals\\journey1"
+}

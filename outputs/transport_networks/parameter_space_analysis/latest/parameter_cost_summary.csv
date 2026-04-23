@@ -1,0 +1,11 @@
+campaign,profile,graph_instances,records,quantum_simulations,classical_simulations,estimated_cost_units,max_family_record_share,block,families,n_values,disorder_values,disorder_seeds,gamma_values,note,steady_state_solves
+dynamic_network_atlas,evidence_prep,22,1032,7224,1032,6416680145.454545,0.27906976744186046,,,,,,,,
+dynamic_network_atlas,intense,356,217536,3263040,217536,10296835185737.143,0.19329214474845544,,,,,,,,
+dynamic_network_atlas,strong,207,50000,400000,50000,609428945055.5845,0.1904,,,,,,,,
+paper_reproduction_suite_validation,paper,36,810,3240,810,1844898885.8181818,0.13333333333333333,,,,,,,,
+paper_reproduction_suite_auxiliary,paper,,480,480,0,,,coates_gamma_resolved_curves,4,1,4,2,15,Each row is one gamma-resolved quantum simulation.,
+paper_reproduction_suite_auxiliary,paper,,40,40,0,,,anderson_disorder_localization,4,1,5,2,1,Closed coherent simulations at different static disorder strengths.,
+paper_reproduction_suite_auxiliary,paper,,12,0,0,,,manzano_steady_state_source_drain,3,1,2,1,2,"Linear NESS solves, separate from finite-time absorbing sink simulations.",12
+paper_reproduction_suite_auxiliary,confirm,,1920,1920,0,,,coates_gamma_resolved_curves,4,2,4,4,15,Each row is one gamma-resolved quantum simulation.,
+paper_reproduction_suite_auxiliary,confirm,,160,160,0,,,anderson_disorder_localization,4,2,5,4,1,Closed coherent simulations at different static disorder strengths.,
+paper_reproduction_suite_auxiliary,confirm,,24,0,0,,,manzano_steady_state_source_drain,3,2,2,1,2,"Linear NESS solves, separate from finite-time absorbing sink simulations.",24

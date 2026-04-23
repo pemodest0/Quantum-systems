@@ -1,0 +1,93 @@
+{
+  "study_name": "Detailed graph-family study for coherent and dissipative transport",
+  "output_subdir": "graph_collection",
+  "time_grid": {
+    "t_final": 20.0,
+    "n_samples": 700
+  },
+  "visualization": {
+    "animation_stride": 15,
+    "animation_fps": 12
+  },
+  "dephasing_rates_hz": [0.0, 0.02, 0.05, 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, 6.4],
+  "cases": [
+    {
+      "name": "Clean chain",
+      "group": "clean",
+      "topology": "chain",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seeds": [7]
+    },
+    {
+      "name": "Clean ring",
+      "group": "clean",
+      "topology": "ring",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seeds": [11]
+    },
+    {
+      "name": "Clean complete",
+      "group": "clean",
+      "topology": "complete",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seeds": [13]
+    },
+    {
+      "name": "Disordered chain",
+      "group": "disordered",
+      "topology": "chain",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.7,
+      "seeds": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137]
+    },
+    {
+      "name": "Disordered ring",
+      "group": "disordered",
+      "topology": "ring",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.7,
+      "seeds": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137]
+    },
+    {
+      "name": "Disordered complete",
+      "group": "disordered",
+      "topology": "complete",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.7,
+      "seeds": [3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137]
+    }
+  ]
+}

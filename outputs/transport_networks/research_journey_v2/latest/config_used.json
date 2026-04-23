@@ -1,0 +1,45 @@
+{
+  "profile": "paper",
+  "n_sites_values": [
+    8,
+    10,
+    12
+  ],
+  "graph_realizations": 4,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.3,
+    0.6,
+    0.9
+  ],
+  "disorder_seeds": [
+    3,
+    5,
+    7,
+    11
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.1,
+    0.4,
+    0.8,
+    1.4
+  ],
+  "target_styles": [
+    "near",
+    "far",
+    "high_centrality",
+    "low_centrality"
+  ],
+  "fractal_n_sites_values": [
+    8,
+    13,
+    20
+  ],
+  "t_final": 12.0,
+  "n_time_samples": 100,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "graph_seed_base": 8300
+}

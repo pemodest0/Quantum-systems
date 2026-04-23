@@ -1,0 +1,27 @@
+{
+  "study_name": "Passo 3 - O papel da dephasagem",
+  "output_subdir": "learning_step3_dephasing",
+  "time_grid": {
+    "t_final": 20.0,
+    "n_samples": 800
+  },
+  "visualization": {
+    "animation_stride": 14,
+    "animation_fps": 10
+  },
+  "dephasing_rates_hz": [0.0, 0.2, 0.8, 3.2, 6.4],
+  "scenarios": [
+    {
+      "name": "Grafo completo de 4 nos",
+      "topology": "complete",
+      "n_sites": 4,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.7,
+      "loss_rate_hz": 0.02,
+      "initial_site": 1,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 7
+    }
+  ]
+}

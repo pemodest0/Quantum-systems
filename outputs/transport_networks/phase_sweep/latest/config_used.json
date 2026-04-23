@@ -1,0 +1,59 @@
+{
+  "study_name": "Transport phase-slice study",
+  "output_subdir": "phase_sweep",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 700
+  },
+  "dephasing_rates_hz": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.6,
+    3.2,
+    6.4
+  ],
+  "base_parameters": {
+    "n_sites": 5,
+    "coupling_hz": 1.0,
+    "sink_rate_hz": 0.65,
+    "loss_rate_hz": 0.02,
+    "disorder_strength_hz": 0.0
+  },
+  "sweeps": {
+    "n_sites": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "kappa_over_j": [
+      0.2,
+      0.4,
+      0.8,
+      1.2
+    ],
+    "Gamma_over_j": [
+      0.0,
+      0.02,
+      0.08,
+      0.16
+    ],
+    "W_over_j": [
+      0.0,
+      0.2,
+      0.4,
+      0.8
+    ]
+  },
+  "disorder_seeds": [
+    3,
+    7,
+    11,
+    19
+  ]
+}

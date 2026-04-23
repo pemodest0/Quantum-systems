@@ -1,0 +1,17 @@
+{
+  "profile": "interactive",
+  "pair_rows": 4,
+  "controlled_pair_rows": 96,
+  "quantum_classical_rows": 384,
+  "validation": {
+    "max_trace_deviation": 3.774758283725532e-15,
+    "max_population_closure_error": 3.6637359812630166e-15,
+    "min_state_eigenvalue": -1.6360879269043514e-15,
+    "classical_max_population_closure_error": 2.886579864025407e-15
+  },
+  "numerics_pass": true,
+  "confirmed_family_count": 4,
+  "mean_quantum_classical_delta": 0.07936478630195269,
+  "quantum_advantage_like_count": 220,
+  "classical_explains_count": 111
+}

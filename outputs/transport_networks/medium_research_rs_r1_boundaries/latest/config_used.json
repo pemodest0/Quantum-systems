@@ -1,0 +1,166 @@
+{
+  "study_name": "R1 transport regime boundaries",
+  "output_subdir": "medium_research_rs_r1_boundaries",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 240
+  },
+  "thresholds": {
+    "sink_hit_threshold": 0.1,
+    "transfer_threshold": 0.5
+  },
+  "sweep": {
+    "disorder_strength_over_coupling": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "dephasing_over_coupling": [
+      0.0,
+      0.02,
+      0.05,
+      0.08,
+      0.12,
+      0.2,
+      0.4,
+      0.8
+    ]
+  },
+  "ensemble_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23
+  ],
+  "scenarios": [
+    {
+      "name": "R1 boundary 1D chain",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 9,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "chain_1d",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site"
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 10,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 4.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "1D chain: clean coherent motion should be the reference, but geometry can make moderate phase scrambling useful.",
+        "expected_role_of_disorder": "Increasing local irregularity should usually reduce target arrival and increase ensemble-to-ensemble variability.",
+        "expected_role_of_phase_scrambling": "Weak or moderate phase scrambling can help when coherent motion is trapped, but large values should suppress propagation.",
+        "expected_failure_mode": "The expected failures are localization by irregularity, target-missing spread, or strong damping by excessive phase scrambling."
+      }
+    },
+    {
+      "name": "R1 boundary ring",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site"
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 8,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "ring: clean coherent motion should be the reference, but geometry can make moderate phase scrambling useful.",
+        "expected_role_of_disorder": "Increasing local irregularity should usually reduce target arrival and increase ensemble-to-ensemble variability.",
+        "expected_role_of_phase_scrambling": "Weak or moderate phase scrambling can help when coherent motion is trapped, but large values should suppress propagation.",
+        "expected_failure_mode": "The expected failures are localization by irregularity, target-missing spread, or strong damping by excessive phase scrambling."
+      }
+    },
+    {
+      "name": "R1 boundary 2D square",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 15,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "square_lattice_2d",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site"
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": 4,
+        "n_cols": 4,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 1.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "2D square lattice: clean coherent motion should be the reference, but geometry can make moderate phase scrambling useful.",
+        "expected_role_of_disorder": "Increasing local irregularity should usually reduce target arrival and increase ensemble-to-ensemble variability.",
+        "expected_role_of_phase_scrambling": "Weak or moderate phase scrambling can help when coherent motion is trapped, but large values should suppress propagation.",
+        "expected_failure_mode": "The expected failures are localization by irregularity, target-missing spread, or strong damping by excessive phase scrambling."
+      }
+    }
+  ]
+}

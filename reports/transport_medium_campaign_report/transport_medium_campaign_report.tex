@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\title{Medium Propagation Campaign A\\Open Quantum Transport Laboratory}
+\author{Pedro Henrique}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report documents the first spatial-medium campaign of the transport laboratory. The campaign replaces purely topological graph comparisons by explicit media with coordinates, spatial spreading observables, and deterministic regime labels. The scanned controls are the disorder strength relative to the coherent coupling and the phase-scrambling rate relative to the same coupling. The output is organized as a reviewed campaign with figures, tables, numerical diagnostics, literature-expectation tracking, and a next-action recommendation.
+\end{abstract}
+
+\section{Scope}
+We study how an initially localized excitation moves through three small open quantum media: a one-dimensional chain, a ring, and a two-dimensional square lattice. The coherent part of the model is a tight-binding Hamiltonian, while the open-system part includes local phase scrambling, target capture, and parasitic loss. The relevant observables are:
+\begin{itemize}
+\item final target population, interpreted as transport success;
+\item final mean squared displacement, interpreted as spatial spreading;
+\item final graph-normalized von Neumann entropy, interpreted as internal mixing;
+\item deterministic regime labels derived from explicit thresholds.
+\end{itemize}
+
+This work follows the general open-system framework of Breuer and Petruccione, the transport perspective emphasized by Plenio and Huelga, the environment-assisted transport picture of Mohseni \emph{et al.}, and graph-transport reviews such as M\"ulken and Blumen \cite{breuer2002theory,plenio2008dephasing,mohseni2008environment,mulken2011continuous,caruso2009highly}.
+
+\input{generated/summary_table.tex}
+
+\section{Geometry and maps}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{../../outputs/transport_networks/medium_propagation/latest/figures/medium_geometry_overview.png}
+\caption{Physical geometries used in campaign A. Blue marks the initial site and red marks the target site that feeds the successful arrival channel.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{../../outputs/transport_networks/medium_propagation/latest/figures/transport_success_maps.png}
+\caption{Transport-success maps. Each panel shows the final target population as a function of local irregularity divided by coherent coupling and phase scrambling divided by coherent coupling. White crosses mark the best point found in each medium.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{../../outputs/transport_networks/medium_propagation/latest/figures/spreading_maps.png}
+\caption{Spreading maps. The plotted quantity is the final mean squared displacement computed from the graph-normalized node populations and the explicit medium coordinates.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{../../outputs/transport_networks/medium_propagation/latest/figures/mixing_maps.png}
+\caption{Mixing maps. The plotted quantity is the final graph-normalized von Neumann entropy, used here as a measure of internal mixing in the physical sites.}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.92\textwidth]{../../outputs/transport_networks/medium_propagation/latest/figures/regime_maps.png}
+\caption{Deterministic regime-label maps generated from explicit thresholds rather than free-form text.}
+\end{figure}
+
+\input{generated/review_summary.tex}
+\input{generated/scenario_sections.tex}
+
+\section{Interpretive note}
+The report is intentionally conservative. A regime label is treated as meaningful only when it is supported by the transport map, the spreading map, and the mixing map simultaneously. The purpose of this campaign is not to make the strongest possible claim yet, but to establish a spatial baseline that the next campaigns can refine and extend.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

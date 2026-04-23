@@ -1,0 +1,16 @@
+{
+  "closed_walk_records": [
+    {
+      "benchmark": "closed_ctqw_topology",
+      "family": "modular_two_community",
+      "n_sites": 8,
+      "edge_model": "unweighted",
+      "long_time_average_return": 0.2771295102652711,
+      "minimum_average_return": 0.10859473605126217,
+      "maximum_average_participation": 5.030724347333732,
+      "time_to_average_return_below_half": 0.6050420168067228,
+      "literature_expectation": "Topology changes coherent spreading and return probability; no sink or dephasing should conserve network population."
+    }
+  ],
+  "target_position_records": []
+}

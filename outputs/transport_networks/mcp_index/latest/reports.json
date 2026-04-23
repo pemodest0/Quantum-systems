@@ -1,0 +1,908 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "reports": [
+    {
+      "path": "reports/apostila_transporte_quantico_ptbr/apostila_transporte_quantico_ptbr.pdf",
+      "name": "apostila_transporte_quantico_ptbr.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 1017626,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/apostila_transporte_quantico_ptbr/apostila_transporte_quantico_ptbr.tex",
+      "name": "apostila_transporte_quantico_ptbr.tex",
+      "suffix": ".tex",
+      "size_bytes": 17177,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/apostila_transporte_quantico_ptbr/generated/baseline_summary.tex",
+      "name": "baseline_summary.tex",
+      "suffix": ".tex",
+      "size_bytes": 432,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/famb_msc_transport_proposal.pdf",
+      "name": "famb_msc_transport_proposal.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 823578,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/famb_msc_transport_proposal.tex",
+      "name": "famb_msc_transport_proposal.tex",
+      "suffix": ".tex",
+      "size_bytes": 18921,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/blach_2025.pdf",
+      "name": "blach_2025.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 1714053,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/caruso_2014.pdf",
+      "name": "caruso_2014.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 14371,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/jacob_2024.pdf",
+      "name": "jacob_2024.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 1631065,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/kassal_2012.pdf",
+      "name": "kassal_2012.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 2094353,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/marais_2013.pdf",
+      "name": "marais_2013.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 14371,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/novo_2016.pdf",
+      "name": "novo_2016.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 2660572,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/famb_msc_transport_proposal/reference_pdfs/potocnik_2018.pdf",
+      "name": "potocnik_2018.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 812572,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/open_quantum_transport_tutorial/generated/baseline_summary.tex",
+      "name": "baseline_summary.tex",
+      "suffix": ".tex",
+      "size_bytes": 472,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/open_quantum_transport_tutorial/generated/learning_summary.tex",
+      "name": "learning_summary.tex",
+      "suffix": ".tex",
+      "size_bytes": 567,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/open_quantum_transport_tutorial/open_quantum_transport_tutorial.pdf",
+      "name": "open_quantum_transport_tutorial.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 1167503,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/open_quantum_transport_tutorial/open_quantum_transport_tutorial.tex",
+      "name": "open_quantum_transport_tutorial.tex",
+      "suffix": ".tex",
+      "size_bytes": 16984,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/generated/complete_figure_atlas.tex",
+      "name": "complete_figure_atlas.tex",
+      "suffix": ".tex",
+      "size_bytes": 55774,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/generated/direct_comparison_sections.tex",
+      "name": "direct_comparison_sections.tex",
+      "suffix": ".tex",
+      "size_bytes": 5022,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/generated/expanded_paper_sections.tex",
+      "name": "expanded_paper_sections.tex",
+      "suffix": ".tex",
+      "size_bytes": 33282,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/generated/experimental_simulation_sections.tex",
+      "name": "experimental_simulation_sections.tex",
+      "suffix": ".tex",
+      "size_bytes": 8456,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/open_quantum_control_review.pdf",
+      "name": "open_quantum_control_review.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 26237563,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/review_article/open_quantum_control_review.tex",
+      "name": "open_quantum_control_review.tex",
+      "suffix": ".tex",
+      "size_bytes": 28055,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/generated/detailed_case_comments.tex",
+      "name": "detailed_case_comments.tex",
+      "suffix": ".tex",
+      "size_bytes": 9395,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/generated/pairwise_tables.tex",
+      "name": "pairwise_tables.tex",
+      "suffix": ".tex",
+      "size_bytes": 919,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/generated/summary_table.tex",
+      "name": "summary_table.tex",
+      "suffix": ".tex",
+      "size_bytes": 853,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/generated/targeted_sections.tex",
+      "name": "targeted_sections.tex",
+      "suffix": ".tex",
+      "size_bytes": 7126,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/transport_graph_collection_report.pdf",
+      "name": "transport_graph_collection_report.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 4001118,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_collection_report/transport_graph_collection_report.tex",
+      "name": "transport_graph_collection_report.tex",
+      "suffix": ".tex",
+      "size_bytes": 17136,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_lab_demo/generated/comparative_table.tex",
+      "name": "comparative_table.tex",
+      "suffix": ".tex",
+      "size_bytes": 469,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_lab_demo/transport_graph_lab_demo.pdf",
+      "name": "transport_graph_lab_demo.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 836803,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_graph_lab_demo/transport_graph_lab_demo.tex",
+      "name": "transport_graph_lab_demo.tex",
+      "suffix": ".tex",
+      "size_bytes": 7321,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_medium_campaign_report/generated/review_summary.tex",
+      "name": "review_summary.tex",
+      "suffix": ".tex",
+      "size_bytes": 1253,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_medium_campaign_report/generated/scenario_sections.tex",
+      "name": "scenario_sections.tex",
+      "suffix": ".tex",
+      "size_bytes": 3725,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_medium_campaign_report/generated/summary_table.tex",
+      "name": "summary_table.tex",
+      "suffix": ".tex",
+      "size_bytes": 508,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_medium_campaign_report/transport_medium_campaign_report.pdf",
+      "name": "transport_medium_campaign_report.pdf",
+      "suffix": ".pdf",
+      "size_bytes": 726886,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_medium_campaign_report/transport_medium_campaign_report.tex",
+      "name": "transport_medium_campaign_report.tex",
+      "suffix": ".tex",
+      "size_bytes": 4323,
+      "source_campaign": null
+    },
+    {
+      "path": "reports/transport_phase_sweep_report/transport_phase_sweep_report.md",
+      "name": "transport_phase_sweep_report.md",
+      "suffix": ".md",
+      "size_bytes": 19697,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/article_figure_pack/latest/article_claims.md",
+      "name": "article_claims.md",
+      "suffix": ".md",
+      "size_bytes": 1058,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1409,
+      "source_campaign": "dynamic_network_atlas"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_atlas_evidence_prep/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1494,
+      "source_campaign": "dynamic_network_atlas_evidence_prep"
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1834,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/dynamic_network_classification/smoke/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1834,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/interactive/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 241,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/fractal_geometry_followup/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 241,
+      "source_campaign": "fractal_geometry_followup"
+    },
+    {
+      "path": "outputs/transport_networks/graph_collection/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 1597,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 517,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_extended_nodes/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 547,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_extended_nodes/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_high_loss/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 553,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/graph_lab_high_loss/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/lab_registry/latest/master_critic_report.md",
+      "name": "master_critic_report.md",
+      "suffix": ".md",
+      "size_bytes": 681,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/lab_registry/latest/transport_lab_memory.md",
+      "name": "transport_lab_memory.md",
+      "suffix": ".md",
+      "size_bytes": 1687,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 320,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step1_walk/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 310,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step2_sink/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/comparative_table.md",
+      "name": "comparative_table.md",
+      "suffix": ".md",
+      "size_bytes": 316,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/learning_step3_dephasing/latest/SINK_EXPLANATION.md",
+      "name": "SINK_EXPLANATION.md",
+      "suffix": ".md",
+      "size_bytes": 648,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/master_scientific_report/latest/master_report.md",
+      "name": "master_report.md",
+      "suffix": ".md",
+      "size_bytes": 2429,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1820,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 422,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_2d_target_position/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 535,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1812,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 525,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_full/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 665,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1532,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 459,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_material_long_range/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 578,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 326,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_propagation/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 422,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 333,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r1_boundaries/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 429,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 887,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r2_target_position/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 1149,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 339,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r3_robustness/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 435,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 480,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_research_rs_r4_materials/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 619,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 3071,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 293,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_ceiling/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 366,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/focus_review/ring_focus_summary.md",
+      "name": "ring_focus_summary.md",
+      "suffix": ".md",
+      "size_bytes": 2694,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 282,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_focus_r1_r3/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 350,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 2016,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 736,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_size/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 940,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1983,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 426,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_ring_target_sweep/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 532,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/campaign_review/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1534,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/tables/expectation_comparison.md",
+      "name": "expectation_comparison.md",
+      "suffix": ".md",
+      "size_bytes": 342,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/medium_strong_disorder_robustness/latest/tables/scenario_summary.md",
+      "name": "scenario_summary.md",
+      "suffix": ".md",
+      "size_bytes": 438,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/methodology.md",
+      "name": "methodology.md",
+      "suffix": ".md",
+      "size_bytes": 3005,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/interactive/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 5395,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/methodology.md",
+      "name": "methodology.md",
+      "suffix": ".md",
+      "size_bytes": 3005,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 5395,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/methodology.md",
+      "name": "methodology.md",
+      "suffix": ".md",
+      "size_bytes": 2535,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/methodological_benchmarks/smoke/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 4352,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1191,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/modular_refinement/paper/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1191,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/network_classification_complete/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 2102,
+      "source_campaign": "network_classification_complete"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/confirm/paper_reproduction_report.md",
+      "name": "paper_reproduction_report.md",
+      "suffix": ".md",
+      "size_bytes": 10074,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/confirm/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1829,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/latest/paper_reproduction_report.md",
+      "name": "paper_reproduction_report.md",
+      "suffix": ".md",
+      "size_bytes": 10074,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_confirm/latest/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1829,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/paper_reproduction_report.md",
+      "name": "paper_reproduction_report.md",
+      "suffix": ".md",
+      "size_bytes": 13066,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/latest/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1804,
+      "source_campaign": "paper_reproduction_suite"
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/paper_reproduction_report.md",
+      "name": "paper_reproduction_report.md",
+      "suffix": ".md",
+      "size_bytes": 13066,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/paper/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1804,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/paper_reproduction_report.md",
+      "name": "paper_reproduction_report.md",
+      "suffix": ".md",
+      "size_bytes": 6221,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/paper_reproduction_suite/smoke/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1797,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/parameter_space_analysis/latest/parameter_space_report.md",
+      "name": "parameter_space_report.md",
+      "suffix": ".md",
+      "size_bytes": 3330,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/material_motivation_table.md",
+      "name": "material_motivation_table.md",
+      "suffix": ".md",
+      "size_bytes": 926,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/interactive/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1152,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/material_motivation_table.md",
+      "name": "material_motivation_table.md",
+      "suffix": ".md",
+      "size_bytes": 926,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1153,
+      "source_campaign": "research_journey_v2"
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/material_motivation_table.md",
+      "name": "material_motivation_table.md",
+      "suffix": ".md",
+      "size_bytes": 926,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/paper/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1153,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/material_motivation_table.md",
+      "name": "material_motivation_table.md",
+      "suffix": ".md",
+      "size_bytes": 926,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_journey_v2/smoke/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 1151,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/research_rs/latest/research_rs_summary.md",
+      "name": "research_rs_summary.md",
+      "suffix": ".md",
+      "size_bytes": 3925,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/broad/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1809,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/scientific_findings_pack.md",
+      "name": "scientific_findings_pack.md",
+      "suffix": ".md",
+      "size_bytes": 3059,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/latest/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1804,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/scientific_validation/smoke/scientific_validation_report.md",
+      "name": "scientific_validation_report.md",
+      "suffix": ".md",
+      "size_bytes": 1813,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/interactive/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 528,
+      "source_campaign": null
+    },
+    {
+      "path": "outputs/transport_networks/target_geometry_confirm/latest/summary.md",
+      "name": "summary.md",
+      "suffix": ".md",
+      "size_bytes": 528,
+      "source_campaign": "target_geometry_confirm"
+    }
+  ]
+}

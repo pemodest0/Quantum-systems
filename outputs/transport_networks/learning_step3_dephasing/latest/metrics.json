@@ -1,0 +1,19 @@
+{
+  "scenarios": {
+    "Grafo completo de 4 nos": {
+      "efficiency_no_dephasing": 0.29967524964259384,
+      "efficiency_optimal_dephasing": 0.797944439228069,
+      "efficiency_high_dephasing": 0.7689573785060921,
+      "optimal_dephasing_rate_hz": 3.2,
+      "best_regime": "intermediate",
+      "enaqt_gain_over_coherent": 0.49826918958547517,
+      "high_dephasing_penalty": 0.028987060721976876,
+      "mean_coherence_at_optimum": 0.11242620828500087,
+      "final_sink_population_at_optimum": 0.797944439228069,
+      "final_loss_population_at_optimum": 0.14054262290097266,
+      "max_trace_deviation_at_optimum": 3.774758283725532e-15,
+      "max_population_closure_error_at_optimum": 3.774758283725532e-15,
+      "min_state_eigenvalue_at_optimum": 0.0
+    }
+  }
+}

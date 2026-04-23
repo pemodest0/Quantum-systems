@@ -1,0 +1,58 @@
+{
+  "atlas_dashboard.png": {
+    "title": "Painel geral do atlas dinamico",
+    "meaning": "Compara, por tipo de rede, chegada ao alvo, ganho por embaralhamento de fase, diferenca quantico menos classico e entropia final.",
+    "x_axis": "Familia da rede.",
+    "y_axis": "Valor medio da metrica indicada em cada painel.",
+    "color": "Cada barra representa uma familia; barras maiores nao sao sempre melhores, depende da metrica.",
+    "reading_rule": "Chegada alta e diferenca quantico-classico positiva sao sinais de transporte util; entropia alta so indica mistura/espalhamento."
+  },
+  "arrival_by_family_heatmap.png": {
+    "title": "Chegada ao alvo por rede e irregularidade",
+    "meaning": "Mostra quanto da excitacao chegou ao canal de chegada para cada familia e cada nivel de irregularidade local.",
+    "x_axis": "W/J: irregularidade local comparada ao acoplamento coerente.",
+    "y_axis": "Familia da rede.",
+    "color": "Mais claro significa maior chegada ao alvo.",
+    "reading_rule": "Nao confundir cor clara com espalhamento: aqui a cor e chegada acumulada no alvo."
+  },
+  "entropy_coherence_panel.png": {
+    "title": "Mistura, pureza, coerencia e participacao",
+    "meaning": "Compara se a excitacao fica coerente, misturada, pura ou espalhada por muitos nos.",
+    "x_axis": "Familia da rede.",
+    "y_axis": "Valor medio da metrica.",
+    "color": "Cada painel mostra uma metrica diferente.",
+    "reading_rule": "Entropia alta nao significa transporte melhor; ela significa estado mais misturado."
+  },
+  "quantum_minus_classical_map.png": {
+    "title": "Diferenca entre transporte quantico aberto e classico",
+    "meaning": "Mostra onde o modelo quantico chega mais ou menos ao alvo que a caminhada classica no mesmo grafo.",
+    "x_axis": "W/J: irregularidade local comparada ao acoplamento coerente.",
+    "y_axis": "Familia da rede.",
+    "color": "Positivo favorece o modelo quantico; perto de zero indica que o classico explica quase tudo.",
+    "reading_rule": "So chamar assinatura quantica se a diferenca for maior que 0.05 e estatisticamente sustentada."
+  },
+  "regime_phase_map.png": {
+    "title": "Mapa de regime fisico dominante",
+    "meaning": "Resume se cada familia tende a ser coerente, assistida por ruido, localizada, dominada por perda, amortecida ou mista.",
+    "x_axis": "W/J: irregularidade local comparada ao acoplamento coerente.",
+    "y_axis": "Familia da rede.",
+    "color": "Cada cor e um regime fisico dominante.",
+    "reading_rule": "Regimes sao classificacoes auditaveis por limiares, nao opiniao da IA."
+  },
+  "signature_embedding.png": {
+    "title": "Projecao 2D das impressoes digitais dinamicas",
+    "meaning": "Cada ponto e uma simulacao resumida por varias metricas dinamicas.",
+    "x_axis": "Componente dinamica 1.",
+    "y_axis": "Componente dinamica 2.",
+    "color": "Familia da rede.",
+    "reading_rule": "Separacao visual sugere que a dinamica carrega informacao sobre a rede; nao e prova sozinha."
+  },
+  "family_fingerprint_radar.png": {
+    "title": "Impressao digital media por familia",
+    "meaning": "Compara varias metricas normalizadas para ver o perfil dinamico medio de cada rede.",
+    "x_axis": "Metricas normalizadas.",
+    "y_axis": "Escala relativa de 0 a 1.",
+    "color": "Familia da rede.",
+    "reading_rule": "Serve para comparacao qualitativa; as conclusoes quantitativas devem vir dos CSVs com CI95."
+  }
+}

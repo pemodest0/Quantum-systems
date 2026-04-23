@@ -1,0 +1,31 @@
+{
+  "profile": "interactive",
+  "target_record_count": 504,
+  "quantum_classical_record_count": 504,
+  "fractal_record_count": 9,
+  "validation": {
+    "max_trace_deviation": 3.885780586188048e-15,
+    "max_population_closure_error": 3.885780586188048e-15,
+    "min_state_eigenvalue": -1.726948854396553e-15,
+    "classical_max_population_closure_error": 3.885780586188048e-15
+  },
+  "numerics_pass": true,
+  "target_spread_mean": 0.17350348172720678,
+  "target_spread_ci95_low": 0.1422834399535007,
+  "target_spread_ci95_high": 0.20472352350091286,
+  "max_target_spread": 0.5829616150002638,
+  "mean_target_degree_spread": 2.5714285714285716,
+  "target_degree_arrival_r2": 0.01406918527529577,
+  "strong_target_effect": true,
+  "mean_quantum_classical_delta": 0.11010777009345829,
+  "quantum_advantage_like_count": 311,
+  "classical_explains_count": 75,
+  "both_poor_count": 0,
+  "inconclusive_count": 118,
+  "classification_available": true,
+  "classification_dynamic_accuracy": 0.4149999999999999,
+  "classification_topology_accuracy": 0.5577777777777777,
+  "classification_classical_accuracy": 0.17555555555555555,
+  "classification_combined_accuracy": 0.6148148148148148,
+  "classification_combined_baseline": 0.13333333333333333
+}

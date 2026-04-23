@@ -1,0 +1,4 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+R3 robustness 1D chain,0.6422651201892008,0.0,0.0,coherent-dominated,39.94760628488152,2.5777546571613345e-10
+R3 robustness ring,0.8030272956220651,0.0,0.0,coherent-dominated,3.904050141634253,2.0052578633349264e-10
+R3 robustness 2D square,0.6676389730682505,0.0,0.0,coherent-dominated,5.716898238629729,4.293831338349035e-10

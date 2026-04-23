@@ -1,0 +1,23 @@
+{
+  "profile": "paper",
+  "curve_record_count": 9072,
+  "curve_stat_count": 63,
+  "validation": {
+    "max_trace_deviation": 5.329070518200751e-15,
+    "max_population_closure_error": 5.329070518200751e-15,
+    "min_state_eigenvalue": -1.777735192383102e-15
+  },
+  "numerics_pass": true,
+  "strongest_gain_mean": 0.09552929232144981,
+  "strongest_point": {
+    "disorder_strength_over_coupling": 0.7,
+    "best_dephasing_over_coupling": 1.6,
+    "best_arrival_mean": 0.4783012114786195,
+    "best_gain_mean": 0.09552929232144981,
+    "high_dephasing_penalty": 0.0006469090558166024,
+    "local_peak_count": 0,
+    "local_peak_gammas": [],
+    "curve_shape": "monotone_or_plateau"
+  },
+  "two_peak_candidate_count": 0
+}

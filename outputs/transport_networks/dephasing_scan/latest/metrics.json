@@ -1,0 +1,37 @@
+{
+  "scenarios": {
+    "Destructive-interference network": {
+      "efficiency_no_dephasing": 0.29967524964259573,
+      "efficiency_optimal_dephasing": 0.7979444392280711,
+      "efficiency_high_dephasing": 0.7689573785060859,
+      "optimal_dephasing_rate_hz": 3.2,
+      "enaqt_gain_over_coherent": 0.4982691895854754,
+      "high_dephasing_penalty": 0.028987060721985203,
+      "mean_coherence_at_optimum": 0.11244437704921209,
+      "final_sink_population_at_optimum": 0.7979444392280711,
+      "final_loss_population_at_optimum": 0.14054262290097322
+    },
+    "Disordered ring": {
+      "efficiency_no_dephasing": 0.7954220206603638,
+      "efficiency_optimal_dephasing": 0.7954220206603638,
+      "efficiency_high_dephasing": 0.6202041855690843,
+      "optimal_dephasing_rate_hz": 0.0,
+      "enaqt_gain_over_coherent": 0.0,
+      "high_dephasing_penalty": 0.17521783509127953,
+      "mean_coherence_at_optimum": 0.5683688674235495,
+      "final_sink_population_at_optimum": 0.7954220206603638,
+      "final_loss_population_at_optimum": 0.15875127629102487
+    },
+    "Ordered chain": {
+      "efficiency_no_dephasing": 0.8120840583381616,
+      "efficiency_optimal_dephasing": 0.8120840583381616,
+      "efficiency_high_dephasing": 0.24512250783113002,
+      "optimal_dephasing_rate_hz": 0.0,
+      "enaqt_gain_over_coherent": 0.0,
+      "high_dephasing_penalty": 0.5669615505070316,
+      "mean_coherence_at_optimum": 0.7338522286947952,
+      "final_sink_population_at_optimum": 0.8120840583381616,
+      "final_loss_population_at_optimum": 0.1255694444402066
+    }
+  }
+}

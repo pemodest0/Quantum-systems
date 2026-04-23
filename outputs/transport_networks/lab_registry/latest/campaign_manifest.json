@@ -1,0 +1,200 @@
+[
+  {
+    "campaign_id": "research_journey_v2",
+    "script": "scripts/run_transport_research_journey_v2.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\research_journey_v2\\latest",
+    "status": "present",
+    "profile": "paper",
+    "evidence_status": "scientific_candidate",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\research_journey_v2\\latest\\metrics.json",
+    "data_files": [
+      "target_geometry_records.csv",
+      "quantum_classical_comparison.csv",
+      "fractal_transport_summary.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 4,
+      ".json": 5,
+      ".md": 2,
+      ".png": 6
+    },
+    "key_metrics": {
+      "target_record_count": 2112,
+      "mean_quantum_classical_delta": 0.10142592327523431,
+      "target_spread_mean": 0.20763562930059976,
+      "strong_target_effect": true
+    }
+  },
+  {
+    "campaign_id": "target_geometry_confirm",
+    "script": "scripts/run_transport_target_geometry_confirm.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\target_geometry_confirm\\latest",
+    "status": "present",
+    "profile": "interactive",
+    "evidence_status": "exploratory_interactive",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\target_geometry_confirm\\latest\\metrics.json",
+    "data_files": [
+      "target_all_sites_records.csv",
+      "target_pair_confirmations.csv",
+      "controlled_pair_tests.csv",
+      "quantum_classical_target_controls.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 4,
+      ".json": 3,
+      ".md": 1,
+      ".png": 3
+    },
+    "key_metrics": {
+      "mean_quantum_classical_delta": 0.07936478630195269
+    }
+  },
+  {
+    "campaign_id": "fractal_geometry_followup",
+    "script": "scripts/run_transport_fractal_geometry_followup.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\fractal_geometry_followup\\latest",
+    "status": "present",
+    "profile": "interactive",
+    "evidence_status": "exploratory_interactive",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\fractal_geometry_followup\\latest\\metrics.json",
+    "data_files": [
+      "fractal_scaling_summary.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 1,
+      ".json": 4,
+      ".md": 1,
+      ".png": 2
+    },
+    "key_metrics": {
+      "row_count": 12,
+      "fractal_geometry_changes_spreading": true
+    }
+  },
+  {
+    "campaign_id": "paper_reproduction_suite",
+    "script": "scripts/run_transport_paper_reproduction_suite.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\paper_reproduction_suite\\latest",
+    "status": "present",
+    "profile": "paper",
+    "evidence_status": "scientific_candidate",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\paper_reproduction_suite\\latest\\paper_suite_metrics.json",
+    "data_files": [
+      "dynamic_signatures_with_classical.csv",
+      "statistical_summary.csv",
+      "paper_reproduction_table.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 8,
+      ".json": 14,
+      ".md": 2,
+      ".png": 8
+    },
+    "key_metrics": {
+      "open_signature_count": 810,
+      "group_combined_accuracy": 0.5564814814814815,
+      "scientific_verdict": "strong_candidate",
+      "paper_verdict_counts": {
+        "matched": 18,
+        "inconclusive": 1,
+        "not_applicable": 2
+      }
+    }
+  },
+  {
+    "campaign_id": "network_classification_complete",
+    "script": "scripts/build_transport_network_classification_pack.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\network_classification_complete\\latest",
+    "status": "present",
+    "profile": "unknown",
+    "evidence_status": "scientific_candidate",
+    "numerics_pass": null,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\network_classification_complete\\latest\\metrics.json",
+    "data_files": [],
+    "artifact_inventory": {
+      ".csv": 1,
+      ".json": 5,
+      ".md": 1,
+      ".png": 5
+    },
+    "key_metrics": {
+      "record_count": 810,
+      "family_count": 12,
+      "combined_accuracy": 0.6148148148148148,
+      "combined_baseline": 0.13333333333333333
+    }
+  },
+  {
+    "campaign_id": "dynamic_network_atlas",
+    "script": "scripts/run_transport_dynamic_network_atlas.py",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas\\latest",
+    "status": "present",
+    "profile": "smoke",
+    "evidence_status": "smoke_only",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas\\latest\\atlas_metrics.json",
+    "data_files": [
+      "atlas_records.csv",
+      "quantum_classical_delta.csv",
+      "atlas_summary_by_family.csv",
+      "atlas_summary_by_target.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 5,
+      ".json": 4,
+      ".md": 1,
+      ".png": 7
+    },
+    "key_metrics": {
+      "record_count": 24,
+      "family_count": 3,
+      "mean_best_arrival": 0.3531199569713237,
+      "mean_quantum_minus_classical": 0.09102018585520522
+    }
+  },
+  {
+    "campaign_id": "dynamic_network_atlas_evidence_prep",
+    "script": "scripts/run_transport_dynamic_network_atlas.py --profile evidence_prep",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas_evidence_prep\\latest",
+    "status": "present",
+    "profile": "evidence_prep",
+    "evidence_status": "scientific_candidate",
+    "numerics_pass": true,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas_evidence_prep\\latest\\atlas_metrics.json",
+    "data_files": [
+      "atlas_records.csv",
+      "quantum_classical_delta.csv",
+      "atlas_summary_by_family.csv",
+      "atlas_summary_by_target.csv"
+    ],
+    "artifact_inventory": {
+      ".csv": 5,
+      ".json": 4,
+      ".md": 1,
+      ".png": 7
+    },
+    "key_metrics": {
+      "record_count": 1032,
+      "family_count": 7,
+      "mean_best_arrival": 0.4054440073340322,
+      "mean_quantum_minus_classical": 0.09164357979960978
+    }
+  },
+  {
+    "campaign_id": "dynamic_network_atlas_intense",
+    "script": "scripts/run_transport_dynamic_network_atlas.py --profile intense",
+    "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas_intense\\latest",
+    "status": "missing",
+    "profile": "unknown",
+    "evidence_status": "unknown",
+    "numerics_pass": null,
+    "metrics_file": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\dynamic_network_atlas_intense\\latest\\atlas_metrics.json",
+    "data_files": [],
+    "artifact_inventory": {},
+    "key_metrics": {}
+  }
+]

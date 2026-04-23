@@ -1,0 +1,25 @@
+\section{Scenario-by-scenario reading}
+\subsection{1D chain medium}
+This medium uses the geometry type chain\_1d with 10 physical sites, coherent coupling $J=1.00$, target-capture rate $\kappa=0.65$, and parasitic loss rate $\Gamma=0.02$.
+The best point found in the scanned map occurs at disorder-to-coupling ratio $W/J=0.00$ and phase-scrambling-to-coupling ratio $\gamma_\phi/J=0.00$, giving final success $\eta=0.642$, final spread 39.948, final mixing entropy 0.000, and regime label coherent-dominated.
+\paragraph{Literature expectation.}
+Expected transport trend: Weak disorder should preserve coherent transport, while stronger disorder can be partially mitigated by moderate phase scrambling. Expected role of disorder: Increasing local irregularity should reduce spreading and lower arrival at the target. Expected role of phase scrambling: Moderate phase scrambling may help once coherent motion begins to get trapped by disorder. Expected failure mode: Too much phase scrambling should suppress spreading and reduce transport.
+\paragraph{Measured comparison.}
+Disorder suppression observed: True. Moderate phase scrambling helps: False. Strong phase scrambling suppresses transport: True. Agreement level: high with score 0.67.
+
+\subsection{Ring medium}
+This medium uses the geometry type ring with 8 physical sites, coherent coupling $J=1.00$, target-capture rate $\kappa=0.65$, and parasitic loss rate $\Gamma=0.02$.
+The best point found in the scanned map occurs at disorder-to-coupling ratio $W/J=0.00$ and phase-scrambling-to-coupling ratio $\gamma_\phi/J=0.00$, giving final success $\eta=0.803$, final spread 3.904, final mixing entropy 0.000, and regime label coherent-dominated.
+\paragraph{Literature expectation.}
+Expected transport trend: Symmetry can help or hinder transport depending on target geometry, so ring transport may benefit from moderate phase scrambling. Expected role of disorder: Disorder should break perfect symmetry and can either help or hinder depending on the baseline interference pattern. Expected role of phase scrambling: A moderate amount can break destructive interference and improve arrival at the target. Expected failure mode: Very strong phase scrambling should wash out coherent structure without preserving efficient long-range motion.
+\paragraph{Measured comparison.}
+Disorder suppression observed: True. Moderate phase scrambling helps: False. Strong phase scrambling suppresses transport: True. Agreement level: high with score 0.67.
+
+\subsection{2D square lattice medium}
+This medium uses the geometry type square\_lattice\_2d with 16 physical sites, coherent coupling $J=1.00$, target-capture rate $\kappa=0.65$, and parasitic loss rate $\Gamma=0.02$.
+The best point found in the scanned map occurs at disorder-to-coupling ratio $W/J=0.00$ and phase-scrambling-to-coupling ratio $\gamma_\phi/J=0.00$, giving final success $\eta=0.668$, final spread 5.717, final mixing entropy 0.000, and regime label coherent-dominated.
+\paragraph{Literature expectation.}
+Expected transport trend: A 2D medium should offer more alternate paths, so transport can remain viable even when one path is degraded. Expected role of disorder: Stronger irregularity should reduce clean spreading and may create trapped regions. Expected role of phase scrambling: A moderate amount may stabilize target arrival by reducing coherent path competition. Expected failure mode: Excessive phase scrambling should turn the motion into slow, heavily damped spreading.
+\paragraph{Measured comparison.}
+Disorder suppression observed: True. Moderate phase scrambling helps: False. Strong phase scrambling suppresses transport: True. Agreement level: high with score 0.67.
+

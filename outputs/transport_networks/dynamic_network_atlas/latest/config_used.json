@@ -1,0 +1,38 @@
+{
+  "profile": "smoke",
+  "families": [
+    "chain",
+    "ring",
+    "random_geometric"
+  ],
+  "n_sites_values": [
+    6
+  ],
+  "graph_realizations": 1,
+  "deterministic_graph_realizations": 1,
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "graph_seed_base": 9100,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.2
+  ],
+  "target_styles": [
+    "near",
+    "far"
+  ],
+  "t_final": 5.0,
+  "n_time_samples": 48,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "sink_hit_threshold": 0.1,
+  "transfer_threshold": 0.5,
+  "checkpoint_every": 25
+}

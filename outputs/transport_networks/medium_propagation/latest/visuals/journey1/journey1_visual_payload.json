@@ -1,0 +1,68 @@
+{
+  "1D chain medium": [
+    {
+      "scenario_name": "1D chain medium",
+      "label": "best",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.6422651201892008,
+      "ensemble_mean_efficiency": 0.6422651201892008,
+      "ensemble_std_efficiency": 0.0
+    },
+    {
+      "scenario_name": "1D chain medium",
+      "label": "worst",
+      "disorder_over_coupling": 0.8,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 19,
+      "representative_efficiency": 0.23207757040125596,
+      "ensemble_mean_efficiency": 0.22750305001711513,
+      "ensemble_std_efficiency": 0.011218525317100658
+    }
+  ],
+  "Ring medium": [
+    {
+      "scenario_name": "Ring medium",
+      "label": "best",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.8030272956220651,
+      "ensemble_mean_efficiency": 0.8030272956220651,
+      "ensemble_std_efficiency": 0.0
+    },
+    {
+      "scenario_name": "Ring medium",
+      "label": "worst",
+      "disorder_over_coupling": 0.8,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 3,
+      "representative_efficiency": 0.527939017103771,
+      "ensemble_mean_efficiency": 0.5275939332031445,
+      "ensemble_std_efficiency": 0.002877770996164836
+    }
+  ],
+  "2D square lattice medium": [
+    {
+      "scenario_name": "2D square lattice medium",
+      "label": "best",
+      "disorder_over_coupling": 0.0,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 3,
+      "representative_efficiency": 0.6676389730682505,
+      "ensemble_mean_efficiency": 0.6676389730682505,
+      "ensemble_std_efficiency": 0.0
+    },
+    {
+      "scenario_name": "2D square lattice medium",
+      "label": "worst",
+      "disorder_over_coupling": 0.8,
+      "dephasing_over_coupling": 0.8,
+      "representative_seed": 3,
+      "representative_efficiency": 0.36151135829014175,
+      "ensemble_mean_efficiency": 0.3605619437380875,
+      "ensemble_std_efficiency": 0.007612719808186599
+    }
+  ]
+}

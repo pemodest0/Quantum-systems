@@ -1,0 +1,39 @@
+{
+  "profile": "smoke",
+  "closed_record_count": 4,
+  "open_signature_count": 64,
+  "target_position_record_count": 8,
+  "families": [
+    "chain",
+    "complete",
+    "ring",
+    "star"
+  ],
+  "edge_models": [
+    "degree_normalized",
+    "unweighted"
+  ],
+  "largest_dephasing_gain": 0.21097231379683204,
+  "largest_dephasing_gain_family": "star",
+  "largest_dephasing_gain_target_style": "near",
+  "largest_dephasing_gain_edge_model": "degree_normalized",
+  "useful_dephasing_candidate_count": 46,
+  "max_target_position_spread": 0.39575654516253755,
+  "dynamic_only_family_accuracy": 1.0,
+  "topology_only_family_accuracy": 1.0,
+  "combined_family_accuracy": 1.0,
+  "family_baseline_accuracy": 0.25,
+  "validation": {
+    "max_trace_deviation": 5.10702591327572e-15,
+    "max_population_closure_error": 5.10702591327572e-15,
+    "min_state_eigenvalue": -2.631299944055401e-15
+  },
+  "acceptance": {
+    "numerics_pass": true,
+    "target_position_matters_candidate": true,
+    "dephasing_assistance_candidate": true,
+    "dynamic_classification_above_baseline": true,
+    "combined_classification_above_baseline": true,
+    "dynamics_adds_beyond_topology_candidate": false
+  }
+}

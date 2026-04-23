@@ -1,0 +1,27 @@
+{
+  "study_name": "Passo 1 - Passeio coerente mais simples",
+  "output_subdir": "learning_step1_walk",
+  "time_grid": {
+    "t_final": 12.0,
+    "n_samples": 500
+  },
+  "visualization": {
+    "animation_stride": 10,
+    "animation_fps": 10
+  },
+  "dephasing_rates_hz": [0.0],
+  "scenarios": [
+    {
+      "name": "Cadeia de 2 nos - passeio coerente",
+      "topology": "chain",
+      "n_sites": 2,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.0,
+      "loss_rate_hz": 0.0,
+      "initial_site": 1,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 1
+    }
+  ]
+}

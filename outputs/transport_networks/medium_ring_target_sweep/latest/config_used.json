@@ -1,0 +1,210 @@
+{
+  "study_name": "Ring target sweep campaign",
+  "output_subdir": "medium_ring_target_sweep",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 220
+  },
+  "thresholds": {
+    "sink_hit_threshold": 0.1,
+    "transfer_threshold": 0.5
+  },
+  "sweep": {
+    "disorder_strength_over_coupling": [
+      0.6,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "dephasing_over_coupling": [
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ]
+  },
+  "ensemble_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59
+  ],
+  "scenarios": [
+    {
+      "name": "Ring target sweep trap 0",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 8,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Different targets on the same ring should not be treated as equivalent, because the target changes the coherent pathways.",
+        "expected_role_of_disorder": "Higher irregularity should lower the absolute arrival, but may also make weak phase scrambling more useful for unfavorable targets.",
+        "expected_role_of_phase_scrambling": "Targets that are coherent-friendly should stay close to the zero-scrambling optimum; unfavorable targets may need a nonzero optimum.",
+        "expected_failure_mode": "If all targets collapse to the same behavior, target placement is not acting as a first-order variable in this setup."
+      }
+    },
+    {
+      "name": "Ring target sweep trap 1",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 1,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 1
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 8,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Different targets on the same ring should not be treated as equivalent, because the target changes the coherent pathways.",
+        "expected_role_of_disorder": "Higher irregularity should lower the absolute arrival, but may also make weak phase scrambling more useful for unfavorable targets.",
+        "expected_role_of_phase_scrambling": "Targets that are coherent-friendly should stay close to the zero-scrambling optimum; unfavorable targets may need a nonzero optimum.",
+        "expected_failure_mode": "If all targets collapse to the same behavior, target placement is not acting as a first-order variable in this setup."
+      }
+    },
+    {
+      "name": "Ring target sweep trap 2",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 2,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 2
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 8,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Different targets on the same ring should not be treated as equivalent, because the target changes the coherent pathways.",
+        "expected_role_of_disorder": "Higher irregularity should lower the absolute arrival, but may also make weak phase scrambling more useful for unfavorable targets.",
+        "expected_role_of_phase_scrambling": "Targets that are coherent-friendly should stay close to the zero-scrambling optimum; unfavorable targets may need a nonzero optimum.",
+        "expected_failure_mode": "If all targets collapse to the same behavior, target placement is not acting as a first-order variable in this setup."
+      }
+    },
+    {
+      "name": "Ring target sweep trap 3",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 3,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 3
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 8,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Different targets on the same ring should not be treated as equivalent, because the target changes the coherent pathways.",
+        "expected_role_of_disorder": "Higher irregularity should lower the absolute arrival, but may also make weak phase scrambling more useful for unfavorable targets.",
+        "expected_role_of_phase_scrambling": "Targets that are coherent-friendly should stay close to the zero-scrambling optimum; unfavorable targets may need a nonzero optimum.",
+        "expected_failure_mode": "If all targets collapse to the same behavior, target placement is not acting as a first-order variable in this setup."
+      }
+    }
+  ]
+}

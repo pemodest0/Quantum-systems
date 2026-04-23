@@ -1,0 +1,287 @@
+{
+  "study_name": "Ring size and symmetry campaign",
+  "output_subdir": "medium_ring_size",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 220
+  },
+  "thresholds": {
+    "sink_hit_threshold": 0.1,
+    "transfer_threshold": 0.5
+  },
+  "sweep": {
+    "disorder_strength_over_coupling": [
+      0.6,
+      0.8,
+      1.0,
+      1.2
+    ],
+    "dephasing_over_coupling": [
+      0.0,
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0,
+      1.2
+    ]
+  },
+  "ensemble_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41
+  ],
+  "scenarios": [
+    {
+      "name": "Ring size N6 favorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 3,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 6,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N6 unfavorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 3,
+      "trap_site": 1,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 6,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 1
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N8 favorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 8,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N8 unfavorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 4,
+      "trap_site": 1,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 8,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 1
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N10 favorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 10,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N10 unfavorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 1,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 10,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 1
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N12 favorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 6,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 12,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    },
+    {
+      "name": "Ring size N12 unfavorable target",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 6,
+      "trap_site": 1,
+      "medium": {
+        "medium_type": "ring",
+        "n_sites": 12,
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 1
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "If the target-position effect is structural, the unfavorable target should keep a positive average gain across several ring sizes.",
+        "expected_role_of_disorder": "Strong disorder should lower the absolute arrival but should not erase the size trend completely if the effect is robust.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling should help mainly the unfavorable target if interference is the main blocking mechanism.",
+        "expected_failure_mode": "If only one size shows assistance, the effect is likely finite-size-sensitive."
+      }
+    }
+  ]
+}

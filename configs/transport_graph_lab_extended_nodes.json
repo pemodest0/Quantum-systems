@@ -1,0 +1,51 @@
+{
+  "study_name": "Coherent and Dissipative Transport in Simple Open Quantum Networks - Extended Nodes",
+  "output_subdir": "graph_lab_extended_nodes",
+  "time_grid": {
+    "t_final": 24.0,
+    "n_samples": 1000
+  },
+  "visualization": {
+    "animation_stride": 18,
+    "animation_fps": 12
+  },
+  "dephasing_rates_hz": [0.0, 0.02, 0.05, 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, 6.4],
+  "scenarios": [
+    {
+      "name": "Complete graph (5 nodes)",
+      "topology": "complete",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.7,
+      "loss_rate_hz": 0.02,
+      "initial_site": 1,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 17
+    },
+    {
+      "name": "Ring graph (6 nodes)",
+      "topology": "ring",
+      "n_sites": 6,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.55,
+      "loss_rate_hz": 0.03,
+      "initial_site": 3,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.4,
+      "seed": 23
+    },
+    {
+      "name": "Chain graph (6 nodes)",
+      "topology": "chain",
+      "n_sites": 6,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 29
+    }
+  ]
+}

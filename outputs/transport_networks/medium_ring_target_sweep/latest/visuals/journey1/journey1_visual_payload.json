@@ -1,0 +1,68 @@
+{
+  "Ring target sweep trap 0": [
+    {
+      "scenario_name": "Ring target sweep trap 0",
+      "label": "best",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 17,
+      "representative_efficiency": 0.6467843718260287,
+      "ensemble_mean_efficiency": 0.6537644921476776,
+      "ensemble_std_efficiency": 0.06585532396808104
+    },
+    {
+      "scenario_name": "Ring target sweep trap 0",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 1.0,
+      "representative_seed": 7,
+      "representative_efficiency": 0.48326929718179434,
+      "ensemble_mean_efficiency": 0.4829327607791792,
+      "ensemble_std_efficiency": 0.017194062586732495
+    }
+  ],
+  "Ring target sweep trap 1": [
+    {
+      "scenario_name": "Ring target sweep trap 1",
+      "label": "best",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.6,
+      "representative_seed": 59,
+      "representative_efficiency": 0.5169915387078774,
+      "ensemble_mean_efficiency": 0.5171328503528367,
+      "ensemble_std_efficiency": 0.008567200464365803
+    },
+    {
+      "scenario_name": "Ring target sweep trap 1",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 37,
+      "representative_efficiency": 0.3626095855426052,
+      "ensemble_mean_efficiency": 0.33961245259367034,
+      "ensemble_std_efficiency": 0.10558396962762241
+    }
+  ],
+  "Ring target sweep trap 3": [
+    {
+      "scenario_name": "Ring target sweep trap 3",
+      "label": "best",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.6,
+      "representative_seed": 17,
+      "representative_efficiency": 0.584184070591235,
+      "ensemble_mean_efficiency": 0.5834154033666392,
+      "ensemble_std_efficiency": 0.02338871315879174
+    },
+    {
+      "scenario_name": "Ring target sweep trap 3",
+      "label": "worst",
+      "disorder_over_coupling": 0.6,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 5,
+      "representative_efficiency": 0.48510203517786327,
+      "ensemble_mean_efficiency": 0.4810192676221097,
+      "ensemble_std_efficiency": 0.05048607721350403
+    }
+  ]
+}

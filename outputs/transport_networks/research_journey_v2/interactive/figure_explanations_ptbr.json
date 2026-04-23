@@ -1,0 +1,22 @@
+{
+  "target_position_effect_map.png": {
+    "title": "Efeito da posição do alvo",
+    "axes": "Eixo horizontal: tipo de alvo. Eixo vertical: família da rede. Cor: chegada média ao canal de sucesso.",
+    "reading": "Se a cor muda muito na mesma linha, trocar só o alvo muda a física do transporte."
+  },
+  "quantum_vs_classical_delta_map.png": {
+    "title": "Diferença quântico menos clássico",
+    "axes": "Cor vermelha favorece o modelo quântico aberto; azul favorece ou aproxima o controle clássico.",
+    "reading": "Serve para separar assinatura quântica de efeito trivial de conectividade."
+  },
+  "classification_article_panel.png": {
+    "title": "Classificação de redes",
+    "axes": "Barras mostram acurácia com split honesto por instância de grafo.",
+    "reading": "Dinâmica ajuda, mas o melhor resultado vem de dinâmica mais topologia."
+  },
+  "fractal_msd_and_geometry.png": {
+    "title": "Fractais e espalhamento",
+    "axes": "Painel esquerdo: geometria. Painel direito: MSD ao longo do tempo.",
+    "reading": "MSD menor ou curva com formato diferente indica que a geometria altera a propagação."
+  }
+}

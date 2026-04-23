@@ -1,0 +1,31 @@
+{
+  "profile": "paper",
+  "target_record_count": 2112,
+  "quantum_classical_record_count": 2112,
+  "fractal_record_count": 9,
+  "validation": {
+    "max_trace_deviation": 5.662137425588298e-15,
+    "max_population_closure_error": 5.662137425588298e-15,
+    "min_state_eigenvalue": -1.9900479294186573e-15,
+    "classical_max_population_closure_error": 3.3306690738754696e-15
+  },
+  "numerics_pass": true,
+  "target_spread_mean": 0.20763562930059976,
+  "target_spread_ci95_low": 0.1924171869985868,
+  "target_spread_ci95_high": 0.22285407160261272,
+  "max_target_spread": 0.4464475828124189,
+  "mean_target_degree_spread": 2.727272727272727,
+  "target_degree_arrival_r2": 0.0024918232051188674,
+  "strong_target_effect": true,
+  "mean_quantum_classical_delta": 0.10142592327523431,
+  "quantum_advantage_like_count": 1256,
+  "classical_explains_count": 433,
+  "both_poor_count": 0,
+  "inconclusive_count": 423,
+  "classification_available": true,
+  "classification_dynamic_accuracy": 0.4149999999999999,
+  "classification_topology_accuracy": 0.5577777777777777,
+  "classification_classical_accuracy": 0.17555555555555555,
+  "classification_combined_accuracy": 0.6148148148148148,
+  "classification_combined_baseline": 0.13333333333333333
+}

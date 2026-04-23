@@ -1,0 +1,22 @@
+{
+  "profile": "evidence_prep",
+  "record_count": 1032,
+  "family_count": 7,
+  "n_sites_values": [
+    8,
+    12
+  ],
+  "max_trace_deviation": 6.8833827526759706e-15,
+  "max_population_closure_error": 6.8833827526759706e-15,
+  "max_classical_population_closure_error": 3.1086244689504383e-15,
+  "min_state_eigenvalue": -1.660227215491087e-15,
+  "mean_best_arrival": 0.4054440073340322,
+  "mean_dephasing_gain": 0.07845871412207181,
+  "mean_quantum_minus_classical": 0.09164357979960978,
+  "qc_case_counts": {
+    "classical_higher": 303,
+    "quantum_higher": 529,
+    "classical_explains": 200
+  },
+  "numerics_pass": true
+}

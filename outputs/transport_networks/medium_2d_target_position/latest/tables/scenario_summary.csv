@@ -1,0 +1,5 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+2D target corner trap 0,0.6034277702256022,0.4,0.0,coherent-dominated,6.477038401209751,4.294517647337176e-10
+2D target edge trap 3,0.2875015824722429,1.0,0.8,dephasing-assisted,6.980035727690015,2.7615141119294546
+2D target interior trap 5,0.3921879918924242,0.4,0.0,coherent-dominated,7.093768846213372,4.2946456776644507e-10
+2D target far interior trap 10,0.4187476698641123,1.0,0.0,coherent-dominated,6.491687930966395,4.294344827689601e-10

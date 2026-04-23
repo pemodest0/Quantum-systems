@@ -1,0 +1,599 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsfonts,mathtools}
+\usepackage{booktabs}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+\geometry{margin=1in}
+\setlength{\headheight}{14pt}
+\hypersetup{
+  hidelinks,
+  pdftitle={Apostila Introdutoria: Transporte Quantico em Grafos},
+  pdfauthor={Pedro Henrique}
+}
+\setlist[itemize]{leftmargin=1.4em}
+\setlist[enumerate]{leftmargin=1.6em}
+\captionsetup{font=small,labelfont=bf}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Apostila Introdutoria}
+\lhead{Transporte Quantico em Grafos}
+\cfoot{\thepage}
+
+\title{\textbf{Apostila Introdutoria em PT-BR}\\
+\large Transporte Quantico em Grafos Pequenos com Dissipacao}
+\author{Pedro Henrique}
+\date{Abril de 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Como ler esta apostila}
+
+Esta apostila foi escrita para um leitor que ja conhece mecanica quantica,
+fisica estatistica e termodinamica em nivel de graduacao, mas ainda nao viu em
+detalhe:
+\begin{itemize}
+  \item sistemas quanticos abertos;
+  \item equacao de Lindblad;
+  \item transporte quantico em redes;
+  \item a ideia de \emph{sink}, \emph{trap} e \emph{loss}.
+\end{itemize}
+
+O objetivo aqui nao e parecer sofisticado. O objetivo e fazer a ponte entre a
+linguagem que voce ja domina e a linguagem usada no laboratorio computacional.
+
+\section{O problema fisico em linguagem simples}
+
+Queremos estudar a seguinte pergunta:
+
+\begin{quote}
+Como uma excitacao quantica se move em um grafo pequeno quando existe tanto
+evolucao coerente quanto acao dissipativa do ambiente?
+\end{quote}
+
+Em termos concretos:
+\begin{itemize}
+  \item o grafo representa uma rede de sitios;
+  \item a excitacao pode estar em um desses sitios;
+  \item os acoplamentos entre sitios permitem que ela se mova;
+  \item o ambiente pode destruir coerencia ou drenar populacao;
+  \item um canal especial, chamado \emph{sink}, representa chegada bem-sucedida
+  ao destino.
+\end{itemize}
+
+Essa pergunta esta diretamente ligada a literatura de transporte assistido por
+ambiente em redes quanticas pequenas \citep{mohseni_2008,plenio_huelga_2008,rebentrost_2009,caruso_2009}.
+
+\section{Grafo, nos e arestas}
+
+Matematicamente, um grafo e um conjunto de vertices e arestas. Fisicamente, no
+nosso problema:
+\begin{itemize}
+  \item cada \textbf{no} e um sitio que pode hospedar a excitacao;
+  \item cada \textbf{aresta} e um canal de acoplamento entre dois sitios.
+\end{itemize}
+
+As topologias mais importantes aqui sao:
+\begin{itemize}
+  \item \textbf{chain}: cada no conversa apenas com seus vizinhos imediatos;
+  \item \textbf{ring}: uma cadeia fechada em circulo;
+  \item \textbf{complete}: todo no conversa com todo no.
+\end{itemize}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.95\textwidth]{../../outputs/transport_networks/graph_lab/latest/figures/graph_topology_overview.png}
+  \caption{Topologias usadas no baseline atual. O no azul indica o sitio
+  inicial, o no vermelho indica o \emph{trap site}, e o quadrado $S$
+  representa o \emph{sink}, isto e, o canal de captura bem-sucedida.}
+\end{figure}
+
+\section{Base de estados: o que significa ``a excitacao esta no no $i$''}
+
+Se o sistema tem $N$ nos, usamos a base
+\begin{equation}
+\{|0\rangle, |1\rangle, |2\rangle, \dots, |N-1\rangle\}.
+\end{equation}
+
+A interpretacao e direta:
+\begin{equation}
+|i\rangle = \text{``a excitacao esta localizada no no } i \text{''}.
+\end{equation}
+
+Entao, por exemplo, num sistema de dois nos:
+\begin{equation}
+|0\rangle =
+\begin{pmatrix}
+1 \\ 0
+\end{pmatrix},
+\qquad
+|1\rangle =
+\begin{pmatrix}
+0 \\ 1
+\end{pmatrix}.
+\end{equation}
+
+Se o estado inicial for $|1\rangle$, a excitacao comeca no segundo no.
+
+\section{Passo 1: o passeio coerente mais simples}
+
+Vamos comecar com o caso mais simples de todos:
+\begin{itemize}
+  \item dois nos;
+  \item sem \emph{sink};
+  \item sem \emph{loss};
+  \item sem dephasagem.
+\end{itemize}
+
+\subsection{Hamiltoniano de dois nos}
+
+Se os dois nos estao acoplados com intensidade $J$, o Hamiltoniano pode ser
+escrito como
+\begin{equation}
+H =
+J\left(|0\rangle\langle 1| + |1\rangle\langle 0|\right).
+\end{equation}
+
+Na base $\{|0\rangle,|1\rangle\}$, isso vira a matriz
+\begin{equation}
+H =
+\begin{pmatrix}
+0 & J \\
+J & 0
+\end{pmatrix}.
+\end{equation}
+
+\subsection{Abrindo a conta da evolucao unitaria}
+
+A evolucao unitaria e dada por
+\begin{equation}
+U(t)=e^{-iHt}.
+\end{equation}
+
+Como
+\begin{equation}
+H^2 =
+\begin{pmatrix}
+0 & J \\
+J & 0
+\end{pmatrix}^2
+=
+\begin{pmatrix}
+J^2 & 0 \\
+0 & J^2
+\end{pmatrix}
+= J^2 \mathbb{I},
+\end{equation}
+as potencias de $H$ ficam simples. Entao a serie exponencial pode ser somada:
+\begin{align}
+U(t)
+&= \mathbb{I} - iHt - \frac{H^2t^2}{2!} + \frac{iH^3t^3}{3!} + \dots \\
+&= \mathbb{I}\left(1 - \frac{J^2t^2}{2!} + \frac{J^4t^4}{4!} - \dots\right)
+- i\frac{H}{J}\left(Jt - \frac{(Jt)^3}{3!} + \frac{(Jt)^5}{5!} - \dots\right) \\
+&= \cos(Jt)\,\mathbb{I} - i\sin(Jt)\,\frac{H}{J}.
+\end{align}
+
+Se o estado inicial for $|\psi(0)\rangle = |1\rangle$, entao
+\begin{align}
+|\psi(t)\rangle
+&= U(t)|1\rangle \\
+&= \cos(Jt)|1\rangle - i\sin(Jt)\frac{H}{J}|1\rangle \\
+&= \cos(Jt)|1\rangle - i\sin(Jt)|0\rangle.
+\end{align}
+
+Portanto, as probabilidades sao
+\begin{equation}
+P_0(t) = \sin^2(Jt),
+\qquad
+P_1(t) = \cos^2(Jt).
+\end{equation}
+
+Esse e o \textbf{passeio coerente} mais basico: a excitacao oscila entre os
+dois nos.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.55\textwidth]{../../outputs/transport_networks/learning_step1_walk/latest/figures/graph_topology_overview.png}
+  \caption{Passo 1 da trilha pedagogica: cadeia de 2 nos, sem \emph{sink}, sem
+  perda e sem dephasagem. Aqui o objetivo e apenas enxergar a oscilacao
+  coerente mais simples.}
+\end{figure}
+
+\section{Por que sair do vetor de estado e usar matriz densidade}
+
+Quando o sistema esta isolado, um vetor de estado ja resolve. Mas quando existe
+ambiente, perda de coerencia ou perda de populacao, o objeto natural passa a ser
+a matriz densidade:
+\begin{equation}
+\rho = |\psi\rangle\langle\psi|
+\end{equation}
+para estados puros, e de forma mais geral uma combinacao estatistica para
+estados mistos.
+
+No caso de dois nos,
+\begin{equation}
+\rho =
+\begin{pmatrix}
+\rho_{00} & \rho_{01} \\
+\rho_{10} & \rho_{11}
+\end{pmatrix}.
+\end{equation}
+
+Interpretacao:
+\begin{itemize}
+  \item $\rho_{00}$ e $\rho_{11}$ sao populacoes;
+  \item $\rho_{01}$ e $\rho_{10}$ sao coerencias.
+\end{itemize}
+
+Em qualquer instante:
+\begin{equation}
+\rho_{ii}(t) = P_i(t).
+\end{equation}
+
+\section{Da equacao de Schrodinger a equacao de von Neumann}
+
+Se o sistema e fechado, a evolucao do vetor de estado obedece
+\begin{equation}
+i\frac{d}{dt}|\psi\rangle = H|\psi\rangle.
+\end{equation}
+
+Partindo de $\rho = |\psi\rangle\langle\psi|$, derivamos:
+\begin{align}
+\frac{d\rho}{dt}
+&= \frac{d}{dt}\left(|\psi\rangle\langle\psi|\right) \\
+&= \left(\frac{d|\psi\rangle}{dt}\right)\langle\psi|
++ |\psi\rangle\left(\frac{d\langle\psi|}{dt}\right).
+\end{align}
+
+Usando
+\begin{equation}
+\frac{d|\psi\rangle}{dt} = -iH|\psi\rangle,
+\qquad
+\frac{d\langle\psi|}{dt} = i\langle\psi|H,
+\end{equation}
+obtemos
+\begin{align}
+\frac{d\rho}{dt}
+&= -iH|\psi\rangle\langle\psi| + i|\psi\rangle\langle\psi|H \\
+&= -iH\rho + i\rho H \\
+&= -i[H,\rho].
+\end{align}
+
+Essa e a equacao de von Neumann para sistema fechado.
+
+\section{Abrindo a conta do comutador num sistema de dois nos}
+
+Vamos usar
+\begin{equation}
+H =
+\begin{pmatrix}
+0 & J \\
+J & 0
+\end{pmatrix},
+\qquad
+\rho =
+\begin{pmatrix}
+\rho_{00} & \rho_{01} \\
+\rho_{10} & \rho_{11}
+\end{pmatrix}.
+\end{equation}
+
+Primeiro:
+\begin{equation}
+H\rho =
+\begin{pmatrix}
+J\rho_{10} & J\rho_{11} \\
+J\rho_{00} & J\rho_{01}
+\end{pmatrix}.
+\end{equation}
+
+Depois:
+\begin{equation}
+\rho H =
+\begin{pmatrix}
+J\rho_{01} & J\rho_{00} \\
+J\rho_{11} & J\rho_{10}
+\end{pmatrix}.
+\end{equation}
+
+Logo,
+\begin{equation}
+[H,\rho] =
+\begin{pmatrix}
+J(\rho_{10}-\rho_{01}) & J(\rho_{11}-\rho_{00}) \\
+J(\rho_{00}-\rho_{11}) & J(\rho_{01}-\rho_{10})
+\end{pmatrix}.
+\end{equation}
+
+Entao
+\begin{equation}
+\frac{d\rho}{dt} = -i[H,\rho]
+\end{equation}
+implica
+\begin{align}
+\dot{\rho}_{00} &= -iJ(\rho_{10}-\rho_{01}), \\
+\dot{\rho}_{11} &= -iJ(\rho_{01}-\rho_{10}), \\
+\dot{\rho}_{01} &= -iJ(\rho_{11}-\rho_{00}), \\
+\dot{\rho}_{10} &= -iJ(\rho_{00}-\rho_{11}).
+\end{align}
+
+Essas equacoes mostram, explicitamente, que populacoes e coerencias se acoplam.
+
+\section{Sistema quantico aberto e equacao de Lindblad}
+
+Agora entra a ideia principal de \textbf{sistema quantico aberto}. O sistema nao
+esta perfeitamente isolado; ele troca informacao ou energia com um ambiente.
+
+Um modelo efetivo padrao para isso e a equacao de Lindblad:
+\begin{equation}
+\frac{d\rho}{dt}
+= -i[H,\rho]
++ \sum_k \left(L_k\rho L_k^\dagger - \frac12\{L_k^\dagger L_k,\rho\}\right).
+\end{equation}
+
+Interpretacao:
+\begin{itemize}
+  \item $-i[H,\rho]$: parte coerente;
+  \item $L_k$: canais dissipativos;
+  \item cada $L_k$ representa um processo fisico efetivo.
+\end{itemize}
+
+Essa equacao e o ponto de partida padrao para sistemas quanticos abertos em
+nivel efetivo \citep{breuer_petruccione_2007,rivas_huelga_2012}.
+
+\section{Dephasagem: o primeiro canal dissipativo importante}
+
+No laboratorio, o canal dissipativo mais importante e a dephasagem. Em um no
+$i$, escrevemos
+\begin{equation}
+L_i^{(\phi)} = \sqrt{\gamma_{\phi,i}}\,|i\rangle\langle i|.
+\end{equation}
+
+O efeito principal da dephasagem nao e remover populacao diretamente. O efeito
+principal e matar coerencia.
+
+Se fizermos a conta para dois nos com a mesma taxa $\gamma_\phi$ em cada no, a
+parte dissipativa faz
+\begin{equation}
+\dot{\rho}_{01}\Big|_{\phi} = -\gamma_\phi\,\rho_{01},
+\qquad
+\dot{\rho}_{10}\Big|_{\phi} = -\gamma_\phi\,\rho_{10},
+\end{equation}
+enquanto as diagonais nao recebem esse amortecimento direto.
+
+Esse resultado ja explica intuitivamente o grafico de coerencia:
+\begin{itemize}
+  \item se $\gamma_\phi$ cresce, a coerencia tende a cair;
+  \item isso pode destruir interferencia ruim, mas tambem pode matar
+  transporte demais se ficar forte demais.
+\end{itemize}
+
+\section{O que e o sink, finalmente}
+
+O \emph{sink} e um estado absorvente de sucesso. Ele nao e um no fisico do
+grafo. Ele representa:
+\begin{quote}
+``a excitacao chegou ao destino util''.
+\end{quote}
+
+Se o \emph{trap site} for o no $|t\rangle$, escrevemos
+\begin{equation}
+L^{(\mathrm{sink})} = \sqrt{\kappa}\,|s\rangle\langle t|,
+\end{equation}
+onde $|s\rangle$ e o estado do \emph{sink}.
+
+A observavel principal do laboratorio e
+\begin{equation}
+\eta(T)=\rho_{ss}(T).
+\end{equation}
+
+Interpretacao:
+\begin{itemize}
+  \item $\eta(T)\approx 1$: grande parte da excitacao foi capturada;
+  \item $\eta(T)\approx 0$: o transporte para o destino foi ruim.
+\end{itemize}
+
+\subsection{Abrindo a conta da populacao do sink}
+
+Se focarmos no termo de captura e observarmos a populacao do sink,
+\begin{equation}
+\rho_{ss}(t) = \langle s|\rho(t)|s\rangle,
+\end{equation}
+podemos ver que a derivada recebe contribuicao proporcional a populacao do
+\emph{trap site}:
+\begin{equation}
+\frac{d}{dt}\rho_{ss}(t) \propto \kappa\,\rho_{tt}(t).
+\end{equation}
+
+Traduzindo:
+\begin{itemize}
+  \item a excitacao precisa primeiro chegar no \emph{trap site};
+  \item so entao ela pode alimentar o sink;
+  \item por isso o sink nao mede ``andar pelo grafo'' em geral;
+  \item ele mede ``chegar ao destino certo''.
+\end{itemize}
+
+\section{O que e o loss}
+
+O \emph{loss} e outro canal absorvente, mas agora de fracasso. Ele representa
+perda parasita:
+\begin{equation}
+L_i^{(\mathrm{loss})} = \sqrt{\Gamma_i}\,|\ell\rangle\langle i|.
+\end{equation}
+
+Assim, a populacao que some do grafo pode ter dois destinos:
+\begin{itemize}
+  \item \textbf{sink}: sucesso;
+  \item \textbf{loss}: fracasso dissipativo.
+\end{itemize}
+
+\section{Observaveis do laboratorio}
+
+As tres observaveis principais sao:
+\begin{enumerate}
+  \item \textbf{sink efficiency}
+  \begin{equation}
+  \eta(T)=\rho_{ss}(T);
+  \end{equation}
+  \item \textbf{population dynamics}
+  \begin{equation}
+  P_i(t)=\rho_{ii}(t);
+  \end{equation}
+  \item \textbf{coherence}
+  \begin{equation}
+  C_{\ell_1}(\rho)=\sum_{i\neq j}|\rho_{ij}|.
+  \end{equation}
+\end{enumerate}
+
+\section{Trilha de aprendizado: tres simulacoes simples}
+
+\subsection{Passo 1: passeio coerente}
+
+Configuracao:
+\begin{quote}
+\texttt{configs/transport\_learning\_step1\_walk.json}
+\end{quote}
+
+Aqui nao existe sink ativo nem perda. Portanto:
+\begin{equation}
+\eta(T)=0.
+\end{equation}
+
+Isso e proposital. O objetivo deste passo nao e medir eficiencia. O objetivo e
+ver a excitacao oscilando no sistema mais simples possivel.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.60\textwidth]{../../outputs/transport_networks/learning_step1_walk/latest/figures/population_dynamics_by_graph.png}
+  \caption{Passo 1: dinamica populacional de um sistema de dois nos sem
+  dissipacao nem sink. A leitura correta aqui e: a excitacao vai e volta entre
+  os nos, exatamente como previsto pelo passeio coerente.}
+\end{figure}
+
+\subsection{Passo 2: introduzindo o sink}
+
+Configuracao:
+\begin{quote}
+\texttt{configs/transport\_learning\_step2\_sink.json}
+\end{quote}
+
+Agora a excitacao caminha por uma cadeia de 3 nos e pode ser capturada ao
+atingir o \emph{trap site}. O ponto conceitual importante e:
+\begin{quote}
+o sink nao mede ``estar em qualquer lugar do sistema''; ele mede ``chegar no
+destino util''.
+\end{quote}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.60\textwidth]{../../outputs/transport_networks/learning_step2_sink/latest/figures/population_dynamics_by_graph.png}
+  \caption{Passo 2: com sink ativo, a populacao do sink cresce ao longo do
+  tempo. Essa figura e a primeira que deve ser lida como ``transporte
+  bem-sucedido''.}
+\end{figure}
+
+\subsection{Passo 3: introduzindo dephasagem}
+
+Configuracao:
+\begin{quote}
+\texttt{configs/transport\_learning\_step3\_dephasing.json}
+\end{quote}
+
+Aqui aparece a pergunta realmente interessante:
+\begin{quote}
+uma pequena dephasagem pode ajudar o transporte?
+\end{quote}
+
+No exemplo atual, sim. O maximo da curva de eficiencia nao ocorre em
+$\gamma_\phi=0$, mas em um valor intermediario.
+
+Esse tipo de efeito e exatamente o que tornou famosa a ideia de transporte
+assistido por dephasagem \citep{mohseni_2008,plenio_huelga_2008,rebentrost_2009,caruso_2009}.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.88\textwidth]{../../outputs/transport_networks/learning_step3_dephasing/latest/figures/sink_efficiency_by_graph.png}
+  \caption{Passo 3: exemplo em que a eficiencia melhora quando a dephasagem sai
+  de zero e vai para um regime intermediario. Esse e o nucleo fisico do tema de
+  transporte assistido por ambiente.}
+\end{figure}
+
+\section{Como ler os graficos do baseline completo}
+
+No baseline maior, com \emph{chain}, \emph{ring} e \emph{complete}, a leitura e:
+\begin{itemize}
+  \item \textbf{sink efficiency}: responde quem transporta melhor;
+  \item \textbf{population dynamics}: mostra por onde a excitacao passa;
+  \item \textbf{coherence}: mostra quanta estrutura quantica sobrevive.
+\end{itemize}
+
+\input{generated/baseline_summary.tex}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.90\textwidth]{../../outputs/transport_networks/graph_lab/latest/figures/sink_efficiency_by_graph.png}
+  \caption{Comparacao principal entre grafos no baseline atual. O grafo
+  completo apresenta regime otimo intermediario, enquanto chain e ring ficam
+  melhores no limite coerente para este conjunto de parametros.}
+\end{figure}
+
+\section{Como usar o laboratorio sem se perder}
+
+O fluxo mais inteligente para voce agora e:
+\begin{enumerate}
+  \item rodar o passo 1 e entender apenas oscilacao coerente;
+  \item rodar o passo 2 e entender o que e o sink;
+  \item rodar o passo 3 e entender o que a dephasagem faz;
+  \item so depois partir para o baseline completo.
+\end{enumerate}
+
+Os arquivos mais importantes sao:
+\begin{itemize}
+  \item \texttt{configs/transport\_learning\_step1\_walk.json};
+  \item \texttt{configs/transport\_learning\_step2\_sink.json};
+  \item \texttt{configs/transport\_learning\_step3\_dephasing.json};
+  \item \texttt{configs/transport\_graph\_lab\_config.json};
+  \item \texttt{scripts/run\_transport\_learning\_path.py};
+  \item \texttt{scripts/run\_transport\_graph\_lab.py}.
+\end{itemize}
+
+\section{Fechamento}
+
+Se voce chegou ate aqui, a ideia principal que precisa ficar e a seguinte:
+
+\begin{quote}
+O laboratorio nao esta simulando ``qualquer passeio num grafo''. Ele esta
+simulando como uma excitacao quantica anda, perde coerencia, se perde por canais
+parasitas ou chega com sucesso ao destino.
+\end{quote}
+
+Em outras palavras:
+\begin{itemize}
+  \item os nos dizem onde a excitacao pode estar;
+  \item o Hamiltoniano diz como ela anda;
+  \item Lindblad diz como o ambiente age;
+  \item o sink mede sucesso;
+  \item o loss mede fracasso;
+  \item a topologia muda tudo isso.
+\end{itemize}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

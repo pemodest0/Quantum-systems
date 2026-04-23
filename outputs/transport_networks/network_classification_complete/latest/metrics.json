@@ -1,0 +1,11 @@
+{
+  "source_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\paper_reproduction_suite\\latest",
+  "record_count": 810,
+  "family_count": 12,
+  "n_repeats": 40,
+  "dynamic_accuracy": 0.4149999999999999,
+  "topology_accuracy": 0.5577777777777777,
+  "classical_accuracy": 0.17555555555555555,
+  "combined_accuracy": 0.6148148148148148,
+  "combined_baseline": 0.13333333333333333
+}

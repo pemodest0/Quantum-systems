@@ -1,0 +1,222 @@
+[
+  {
+    "paper_key": "muelken_blumen_2011",
+    "claim_id": "closed_ctqw_topology_dependence",
+    "expected_trend": "Closed CTQW observables depend on network topology.",
+    "observed_metric": "std(long_time_average_return)",
+    "threshold": 0.01,
+    "observed_value": 0.0,
+    "verdict": "inconclusive",
+    "confidence": 0.7,
+    "reason": "Closed-system topology separation is below threshold."
+  },
+  {
+    "paper_key": "razzoli_2021",
+    "claim_id": "trap_position_changes_efficiency",
+    "expected_trend": "Changing only trap/target position changes transport efficiency.",
+    "observed_metric": "max_target_position_spread",
+    "threshold": 0.05,
+    "observed_value": 0.0,
+    "verdict": "inconclusive",
+    "confidence": 0.75,
+    "reason": "Target placement effect is below threshold."
+  },
+  {
+    "paper_key": "razzoli_2021",
+    "claim_id": "connectivity_is_not_sufficient",
+    "expected_trend": "Target degree alone should not explain transport efficiency.",
+    "observed_metric": "r2(target_degree, target_arrival)",
+    "threshold": "<0.75",
+    "observed_value": 1.0,
+    "verdict": "inconclusive",
+    "confidence": 0.0,
+    "reason": "Degree correlation is too high or data are under-varied."
+  },
+  {
+    "paper_key": "plenio_huelga_2008",
+    "claim_id": "dephasing_assisted_transport",
+    "expected_trend": "Nonzero dephasing can improve useful target arrival.",
+    "observed_metric": "max_mean_dephasing_gain_with_ci95_low",
+    "threshold": 0.05,
+    "observed_value": 0.17152676521947005,
+    "verdict": "matched",
+    "confidence": 1.0,
+    "reason": "A nonzero dephasing point has gain above threshold with positive CI95 lower bound."
+  },
+  {
+    "paper_key": "mohseni_2008",
+    "claim_id": "enaqt_intermediate_regime",
+    "expected_trend": "Intermediate environment action improves sink efficiency, while strongest dephasing is not always optimal.",
+    "observed_metric": "dephasing_gain_and_high_dephasing_penalty",
+    "threshold": "gain>=0.05 and penalty>0.02",
+    "observed_value": "gain=0.172; suppression=True",
+    "verdict": "matched",
+    "confidence": 1.0,
+    "reason": "Best transport occurs at nonzero dephasing and high dephasing is not uniformly optimal."
+  },
+  {
+    "paper_key": "caruso_2009",
+    "claim_id": "noise_opens_transport_pathways_in_dissipative_networks",
+    "expected_trend": "Noise can improve excitation transfer through a dissipative network instead of only degrading it.",
+    "observed_metric": "positive_dephasing_gain_with_sink_loss_model",
+    "threshold": "gain>=0.05 at nonzero dephasing",
+    "observed_value": "candidate_records=732; mean_loss=0.187",
+    "verdict": "matched",
+    "confidence": 1.0,
+    "reason": "The sink/loss model contains cases where nonzero dephasing improves useful arrival."
+  },
+  {
+    "paper_key": "kendon_2007",
+    "claim_id": "decoherence_as_a_tunable_quantum_walk_parameter",
+    "expected_trend": "Moderate decoherence can tune quantum-walk spreading or mixing, while excessive decoherence removes coherent advantages.",
+    "observed_metric": "dephasing_gain_and_high_dephasing_penalty",
+    "threshold": "gain>=0.05 and penalty>0.02",
+    "observed_value": "gain=0.172; suppression=True",
+    "verdict": "matched",
+    "confidence": 1.0,
+    "reason": "The simulations show a useful nonzero-dephasing region and a high-dephasing penalty."
+  },
+  {
+    "paper_key": "rebentrost_2009",
+    "claim_id": "disorder_dephasing_efficiency_map",
+    "expected_trend": "Efficiency maps contain a useful intermediate dephasing window across disorder values.",
+    "observed_metric": "persistent_positive_dephasing_gain_and_high_noise_suppression",
+    "threshold": ">=2 disorder values and penalty>0.02",
+    "observed_value": "persistent=True; suppression=True",
+    "verdict": "matched",
+    "confidence": 0.85,
+    "reason": "Positive dephasing gain persists across disorder values and high-noise suppression appears."
+  },
+  {
+    "paper_key": "whitfield_2010",
+    "claim_id": "classical_quantum_walks_are_distinguishable_limits",
+    "expected_trend": "Quantum/open signatures should not be fully explained by the classical rate-walk control.",
+    "observed_metric": "max(quantum_only, quantum_minus_classical)-classical_only_accuracy",
+    "threshold": 0.02,
+    "observed_value": 0.0,
+    "verdict": "inconclusive",
+    "confidence": 0.6666666666666667,
+    "reason": "Classical control explains most of the signal."
+  },
+  {
+    "paper_key": "rossi_2015",
+    "claim_id": "dynamic_signatures_encode_graph_similarity",
+    "expected_trend": "Dynamic CTQW-inspired signatures should place same-family graphs closer than different-family graphs.",
+    "observed_metric": "mean_interfamily_distance/mean_intrafamily_distance",
+    "threshold": 1.1,
+    "observed_value": 1.0,
+    "verdict": "inconclusive",
+    "confidence": 0.8333333333333337,
+    "reason": "Dynamic-signature separation is below threshold."
+  },
+  {
+    "paper_key": "minello_2019",
+    "claim_id": "quantum_walk_signatures_support_graph_classification",
+    "expected_trend": "Quantum-walk dynamic signatures should classify graph families above baseline.",
+    "observed_metric": "group_split_accuracy",
+    "threshold": "quantum>baseline and combined>=topology",
+    "observed_value": "quantum=0.000; topology=0.000; combined=0.000; baseline=0.000",
+    "verdict": "inconclusive",
+    "confidence": 0.5,
+    "reason": "Classification is not sufficiently above controls."
+  },
+  {
+    "paper_key": "novo_2016",
+    "claim_id": "disorder_can_assist_suboptimal_transport",
+    "expected_trend": "Moderate disorder can improve transport in suboptimal regimes.",
+    "observed_metric": "max_arrival_delta_disorder_vs_clean_same_context",
+    "threshold": 0.03,
+    "observed_value": 0.0,
+    "verdict": "inconclusive",
+    "confidence": 0.8,
+    "reason": "No clean same-context disorder improvement above threshold was found."
+  },
+  {
+    "paper_key": "coates_2023",
+    "claim_id": "multiple_enaqt_optima_require_gamma_resolved_curves",
+    "expected_trend": "Some disordered networks can have more than one optimal noise regime rather than a single Goldilocks peak.",
+    "observed_metric": "gamma_resolved_peak_count",
+    "threshold": "at least two separated local maxima",
+    "observed_value": "not exported by current summary-level campaign",
+    "verdict": "inconclusive",
+    "confidence": 0.35,
+    "reason": "The current campaign stores best-point summaries, not full efficiency-versus-dephasing curves needed to count twin peaks."
+  },
+  {
+    "paper_key": "blach_2025",
+    "claim_id": "environment_assisted_transport_as_material_motivation",
+    "expected_trend": "Experiments can show best transport when disorder and dephasing are balanced.",
+    "observed_metric": "effective_model_dephasing_disorder_window",
+    "threshold": "persistent positive dephasing gain with high-noise suppression",
+    "observed_value": "persistent=True; suppression=True",
+    "verdict": "matched",
+    "confidence": 0.8,
+    "reason": "The effective model reproduces the qualitative balanced-regime motif, not the perovskite microscopic experiment."
+  },
+  {
+    "paper_key": "blach_2025",
+    "claim_id": "perovskite_nanocrystal_microscopic_reproduction",
+    "expected_trend": "A perovskite experiment requires material-specific structure, temperature dependence, and exciton parameters.",
+    "observed_metric": "model_scope",
+    "threshold": "material-specific parameters required",
+    "observed_value": "effective network model only",
+    "verdict": "not_applicable",
+    "confidence": 1.0,
+    "reason": "This lab uses controlled effective networks and does not yet include perovskite nanocrystal parameters."
+  },
+  {
+    "paper_key": "rojo_francas_2024",
+    "claim_id": "fractal_geometry_changes_transport_exponents",
+    "expected_trend": "Fractal lattices can show anomalous spreading governed by geometry and spectral structure.",
+    "observed_metric": "fractal_family_and_msd_exponent",
+    "threshold": "fractal lattice family with fitted MSD exponent",
+    "observed_value": "fractal media not implemented in this campaign",
+    "verdict": "not_applicable",
+    "confidence": 1.0,
+    "reason": "Fractal lattices are a valuable next extension, but the current campaign uses chains, rings, random graphs, and regular/effective media."
+  },
+  {
+    "paper_key": "gamble_2010",
+    "claim_id": "two_particle_quantum_walk_graph_isomorphism",
+    "expected_trend": "Interacting two-particle quantum walks can distinguish graph structures beyond some single-particle invariants.",
+    "observed_metric": "particle_number",
+    "threshold": "two-particle interacting walk required",
+    "observed_value": "single-excitation effective model",
+    "verdict": "not_applicable",
+    "confidence": 1.0,
+    "reason": "The current lab intentionally stays in the single-excitation sector, so this paper is a limitation guardrail rather than a direct benchmark."
+  },
+  {
+    "paper_key": "engel_2007",
+    "claim_id": "photosynthetic_wavelike_coherence_experimental_motivation",
+    "expected_trend": "Spectroscopic experiments can reveal coherent excitation dynamics in photosynthetic complexes.",
+    "observed_metric": "experimental_spectroscopy_scope",
+    "threshold": "microscopic photosynthetic complex and spectroscopy required",
+    "observed_value": "effective graph transport model",
+    "verdict": "not_applicable",
+    "confidence": 1.0,
+    "reason": "This paper motivates coherent excitation transport but is not reproduced by a generic graph model."
+  },
+  {
+    "paper_key": "maier_2019",
+    "claim_id": "finite_network_coherent_assisted_damped_progression",
+    "expected_trend": "Finite controlled networks can show coherent, assisted, and high-noise-damped regimes.",
+    "observed_metric": "finite_size_grid_plus_dephasing_window_plus_suppression",
+    "threshold": "finite N and dephasing window with suppression",
+    "observed_value": "N=[8, 10, 12]; window=True; suppression=True",
+    "verdict": "matched",
+    "confidence": 0.8,
+    "reason": "The effective finite-network model reproduces the qualitative regime progression."
+  },
+  {
+    "paper_key": "maier_2019",
+    "claim_id": "exact_10_qubit_hardware_reproduction",
+    "expected_trend": "Exact trapped-ion/qubit hardware reproduction would require microscopic hardware parameters.",
+    "observed_metric": "model_scope",
+    "threshold": "hardware-specific parameters required",
+    "observed_value": "effective network model only",
+    "verdict": "not_applicable",
+    "confidence": 1.0,
+    "reason": "This lab tests a qualitative finite-network analogue, not the experimental hardware implementation."
+  }
+]

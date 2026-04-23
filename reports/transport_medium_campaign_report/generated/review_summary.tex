@@ -1,0 +1,18 @@
+\section{Automated review summary}
+A campanha comparou 3 meios e encontrou uma faixa de sucesso de transporte entre 0.228 e 0.803. O espalhamento espacial variou entre 2.882 e 39.948, e a mistura interna variou entre 0.000 e 2.762. Isso ja permite falar em regioes fisicas diferentes do mapa, em vez de so mostrar numeros isolados.
+
+\subsection{Scout findings}
+\textbf{Finding:} A campanha ja separa chegada ao alvo, espalhamento pelo meio e mistura interna do estado.\\
+\textbf{Reason:} Isso evita confundir boa chegada ao alvo com simples espalhamento dentro do meio.\\
+
+\textbf{Finding:} Ha regioes de mudanca de regime dentro do mapa.\\
+\textbf{Reason:} Os rotulos calculados nao ficaram todos iguais, entao ha fronteiras fisicas a explorar.\\
+
+\subsection{Critic assessment}
+\textbf{Level:} ok\\
+\textbf{Concern:} Nenhum problema estrutural imediato apareceu na leitura automatica.\\
+\textbf{Evidence:} As tres familias de observaveis variaram e os regimes nao colapsaram num unico rotulo.\\
+
+\subsection{Planner recommendation}
+\textbf{Next action:} refine a boundary\\
+\textbf{Reason:} O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais.\\

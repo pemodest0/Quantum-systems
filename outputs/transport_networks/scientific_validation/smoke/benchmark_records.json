@@ -1,0 +1,160 @@
+{
+  "closed_walk_records": [
+    {
+      "benchmark": "closed_ctqw_topology",
+      "family": "erdos_renyi",
+      "n_sites": 6,
+      "edge_model": "unweighted",
+      "long_time_average_return": 0.15654285443983315,
+      "minimum_average_return": 0.05258817188874546,
+      "maximum_average_participation": 5.293451619874502,
+      "time_to_average_return_below_half": 0.4878048780487805,
+      "literature_expectation": "Topology changes coherent spreading and return probability; no sink or dephasing should conserve network population."
+    },
+    {
+      "benchmark": "closed_ctqw_topology",
+      "family": "random_geometric",
+      "n_sites": 6,
+      "edge_model": "unweighted",
+      "long_time_average_return": 0.35541101644833856,
+      "minimum_average_return": 0.151868915795756,
+      "maximum_average_participation": 4.802962837053999,
+      "time_to_average_return_below_half": 0.4878048780487805,
+      "literature_expectation": "Topology changes coherent spreading and return probability; no sink or dephasing should conserve network population."
+    }
+  ],
+  "target_position_records": [
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r0_s65100_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.3130095577503812,
+      "mean_target_degree": 4.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r0_s65100_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.27879736833193547,
+      "mean_target_degree": 1.0,
+      "mean_initial_target_distance": 3.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r1_s65209_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.4333856164227137,
+      "mean_target_degree": 2.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r1_s65209_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.17360651142613442,
+      "mean_target_degree": 3.0,
+      "mean_initial_target_distance": 2.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r2_s65318_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.3246787503880665,
+      "mean_target_degree": 3.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "erdos_renyi",
+      "instance_id": "erdos_renyi_N6_r2_s65318_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.36995649900033256,
+      "mean_target_degree": 1.0,
+      "mean_initial_target_distance": 3.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r0_s65124_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.1480090094011087,
+      "mean_target_degree": 5.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r0_s65124_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.14879969853892358,
+      "mean_target_degree": 2.0,
+      "mean_initial_target_distance": 2.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r1_s65241_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.13726236885143372,
+      "mean_target_degree": 4.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r1_s65241_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.13726236885143372,
+      "mean_target_degree": 4.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r2_s65358_edge-unweighted",
+      "target_style": "near",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.17456001840880406,
+      "mean_target_degree": 4.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    },
+    {
+      "benchmark": "trap_target_placement",
+      "family": "random_geometric",
+      "instance_id": "random_geometric_N6_r2_s65358_edge-unweighted",
+      "target_style": "far",
+      "edge_model": "unweighted",
+      "mean_zero_dephasing_arrival": 0.17456001840880406,
+      "mean_target_degree": 4.0,
+      "mean_initial_target_distance": 1.0,
+      "literature_expectation": "Changing only trap/target placement can change transport; degree alone should not be treated as a sufficient predictor."
+    }
+  ]
+}

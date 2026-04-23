@@ -1,0 +1,54 @@
+{
+  "profile": "evidence_prep",
+  "families": [
+    "chain",
+    "ring",
+    "bottleneck",
+    "clustered",
+    "random_geometric",
+    "modular_two_community",
+    "square_lattice_2d"
+  ],
+  "n_sites_values": [
+    8,
+    12
+  ],
+  "graph_realizations": 3,
+  "deterministic_graph_realizations": 1,
+  "disorder_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17
+  ],
+  "graph_seed_base": 9300,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6,
+    0.9,
+    1.2
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2
+  ],
+  "target_styles": [
+    "near",
+    "far"
+  ],
+  "t_final": 12.0,
+  "n_time_samples": 120,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "sink_hit_threshold": 0.1,
+  "transfer_threshold": 0.5,
+  "checkpoint_every": 50
+}

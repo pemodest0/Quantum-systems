@@ -1,0 +1,19 @@
+{
+  "record_count": 32,
+  "families": [
+    "chain",
+    "complete",
+    "ring",
+    "star"
+  ],
+  "classification_accuracy": 1.0,
+  "topology_only_accuracy": 1.0,
+  "baseline_accuracy": 0.25,
+  "max_dephasing_gain": 0.12191379907760233,
+  "useful_dephasing_candidate_count": 20,
+  "validation": {
+    "max_trace_deviation": 3.1086244689504383e-15,
+    "max_population_closure_error": 3.219646771412954e-15,
+    "min_state_eigenvalue": -8.293023751708531e-16
+  }
+}

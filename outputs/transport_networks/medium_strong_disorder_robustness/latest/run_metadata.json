@@ -1,0 +1,6 @@
+{
+  "generated_at_utc": "2026-04-21T02:51:55.546584+00:00",
+  "script": "scripts\\run_transport_medium_campaign.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_strong_disorder_robustness_campaign.json",
+  "output_dir": "outputs\\transport_networks\\medium_strong_disorder_robustness\\latest"
+}

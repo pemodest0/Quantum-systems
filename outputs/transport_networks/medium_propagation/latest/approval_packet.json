@@ -1,0 +1,153 @@
+{
+  "campaign_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest",
+  "agents": [
+    {
+      "name": "Scout",
+      "responsibility": "Inspect completed campaign outputs and flag unusual zones or candidate transitions.",
+      "allowed_actions": [
+        "scan finished outputs",
+        "identify anomalies",
+        "summarize suspicious regions"
+      ],
+      "blocked_actions": [
+        "edit physics assumptions",
+        "launch new campaigns without approval"
+      ]
+    },
+    {
+      "name": "Analyst",
+      "responsibility": "Write the first physical reading of the campaign and explain figures in plain PT-BR.",
+      "allowed_actions": [
+        "read outputs",
+        "compare observables",
+        "draft simple explanations"
+      ],
+      "blocked_actions": [
+        "change labels by hand without rules",
+        "overstate claims"
+      ]
+    },
+    {
+      "name": "Critic",
+      "responsibility": "Check whether conclusions outrun the data and flag under-resolved regions.",
+      "allowed_actions": [
+        "flag weak ensembles",
+        "flag ambiguous boundaries",
+        "flag low-confidence claims"
+      ],
+      "blocked_actions": [
+        "erase inconvenient results",
+        "replace evidence with opinion"
+      ]
+    },
+    {
+      "name": "Planner",
+      "responsibility": "Propose the next parameter refinement or medium extension after a human gate.",
+      "allowed_actions": [
+        "recommend one next action",
+        "suggest local refinement",
+        "suggest ensemble increase"
+      ],
+      "blocked_actions": [
+        "run the next campaign without approval",
+        "change the campaign goal alone"
+      ]
+    },
+    {
+      "name": "Scribe",
+      "responsibility": "Assemble the technical report and the lighter review payload.",
+      "allowed_actions": [
+        "write report fragments",
+        "organize figures",
+        "export summary tables"
+      ],
+      "blocked_actions": [
+        "change numerical results",
+        "invent missing evidence"
+      ]
+    }
+  ],
+  "next_action": "refine a boundary",
+  "next_action_reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais.",
+  "critic": [
+    {
+      "level": "ok",
+      "concern": "Nenhum problema estrutural imediato apareceu na leitura automatica.",
+      "evidence": "As tres familias de observaveis variaram e os regimes nao colapsaram num unico rotulo."
+    }
+  ],
+  "figure_explanations": [
+    {
+      "figure_key": "transport_success_maps",
+      "title_meaning_ptbr": "Este grafico mostra quanto da excitacao conseguiu chegar ao alvo no fim da evolucao.",
+      "axes_meaning_ptbr": [
+        "Eixo horizontal: embaralhamento de fase comparado com a forca de troca entre os sitios.",
+        "Eixo vertical: irregularidade local comparada com a mesma forca de troca."
+      ],
+      "symbols_meaning_ptbr": [
+        "Cada painel e um tipo de meio diferente.",
+        "Cores mais claras significam chegada mais eficiente ao alvo."
+      ],
+      "literature_expectation_ptbr": "A literatura espera que alguma desordem atrapalhe e que uma quantidade moderada de embaralhamento as vezes ajude.",
+      "measured_result_ptbr": "O mapa medido mostra onde o transporte melhora, piora ou quase nao muda.",
+      "physical_sense_ptbr": "Faz sentido quando regioes claras aparecem entre regioes muito coerentes e regioes muito dissipativas.",
+      "uncertainty_ptbr": "Se as transicoes entre cores forem muito suaves ou muito ruidosas, ainda pode faltar ensemble ou refinamento local."
+    },
+    {
+      "figure_key": "spreading_maps",
+      "title_meaning_ptbr": "Este grafico mostra o quanto a excitacao se espalhou pelo meio antes de ser perdida ou capturada.",
+      "axes_meaning_ptbr": [
+        "Eixo horizontal: embaralhamento de fase comparado com a troca entre os sitios.",
+        "Eixo vertical: irregularidade local comparada com essa troca."
+      ],
+      "symbols_meaning_ptbr": [
+        "A cor representa o espalhamento espacial final.",
+        "Valores maiores significam que a excitacao percorreu uma regiao maior do meio."
+      ],
+      "literature_expectation_ptbr": "Em meios simples, espera-se espalhamento maior no caso mais coerente e espalhamento menor quando ha forte travamento por ruido ou irregularidade.",
+      "measured_result_ptbr": "O mapa mostra se boa chegada ao alvo veio junto com boa propagacao espacial ou nao.",
+      "physical_sense_ptbr": "Isso e importante porque um meio pode chegar bem ao alvo sem realmente propagar longe, se houver geometria favoravel.",
+      "uncertainty_ptbr": "Se o mapa de espalhamento nao contrastar com o mapa de sucesso, a interpretacao fisica pode ficar fraca."
+    },
+    {
+      "figure_key": "mixing_maps",
+      "title_meaning_ptbr": "Este grafico mostra o quanto o estado ficou misturado dentro do meio.",
+      "axes_meaning_ptbr": [
+        "Eixo horizontal: embaralhamento de fase relativo a troca.",
+        "Eixo vertical: irregularidade local relativa a troca."
+      ],
+      "symbols_meaning_ptbr": [
+        "A cor representa a mistura interna do estado.",
+        "Valores maiores significam perda maior de estrutura quantica fina."
+      ],
+      "literature_expectation_ptbr": "Espera-se mais mistura quando aumentamos o embaralhamento de fase.",
+      "measured_result_ptbr": "O mapa medido indica onde o transporte melhora junto com mistura e onde isso nao acontece.",
+      "physical_sense_ptbr": "Isso ajuda a distinguir transporte assistido por ambiente de simples destruicao de coerencia.",
+      "uncertainty_ptbr": "Se a mistura cresce mas o transporte nao muda, talvez o ruido so esteja apagando informacao sem ajudar a dinamica util."
+    },
+    {
+      "figure_key": "regime_maps",
+      "title_meaning_ptbr": "Este grafico coloca um rotulo fisico em cada ponto do mapa de parametros.",
+      "axes_meaning_ptbr": [
+        "Eixo horizontal: embaralhamento de fase relativo a troca.",
+        "Eixo vertical: irregularidade local relativa a troca."
+      ],
+      "symbols_meaning_ptbr": [
+        "Cada cor e um regime diferente.",
+        "O rotulo foi decidido por regras explicitas, nao por texto livre."
+      ],
+      "literature_expectation_ptbr": "A literatura sugere regioes coerentes, regioes assistidas por ruido e regioes em que a irregularidade trava o transporte.",
+      "measured_result_ptbr": "O mapa medido mostra onde cada comportamento domina no conjunto atual de meios.",
+      "physical_sense_ptbr": "Faz sentido quando as fronteiras entre regimes acompanham mudancas visiveis nos mapas de sucesso, espalhamento e mistura.",
+      "uncertainty_ptbr": "Se a confianca da classificacao for baixa em muitas celulas, a campanha seguinte deve refinar a fronteira em vez de abrir um tema novo."
+    }
+  ],
+  "files_to_open": [
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\figures\\medium_geometry_overview.png",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\figures\\transport_success_maps.png",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\figures\\spreading_maps.png",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\figures\\mixing_maps.png",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\figures\\regime_maps.png",
+    "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\reports\\transport_medium_campaign_report\\transport_medium_campaign_report.pdf"
+  ]
+}

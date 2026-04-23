@@ -1,0 +1,48 @@
+{
+  "study_name": "Passo 2 - Introduzindo o sink",
+  "dephasing_rates_hz": [
+    0.0
+  ],
+  "times": {
+    "t_final": 18.0,
+    "n_samples": 700
+  },
+  "visualization": {
+    "animation_stride": 12,
+    "animation_fps": 10
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "name": "Cadeia de 3 nos com sink",
+        "topology": "chain",
+        "n_sites": 3,
+        "coupling_hz": 1.0,
+        "sink_rate_hz": 0.45,
+        "loss_rate_hz": 0.0,
+        "initial_site": 2,
+        "trap_site": 0,
+        "disorder_strength_hz": 0.0,
+        "seed": 2
+      },
+      "site_energies_hz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "best_regime": "coherent",
+      "best_dephasing_rate_hz": 0.0,
+      "transport_efficiency": [
+        0.9233834938092575
+      ],
+      "mean_coherence_l1": [
+        0.3972399730282869
+      ],
+      "final_loss_population": [
+        0.0
+      ],
+      "topology_figure": "outputs\\transport_networks\\learning_step2_sink\\latest\\figures\\cadeia_de_3_nos_com_sink_topology.png",
+      "population_animation_gif": "outputs\\transport_networks\\learning_step2_sink\\latest\\animations\\cadeia_de_3_nos_com_sink_population_evolution.gif"
+    }
+  ]
+}

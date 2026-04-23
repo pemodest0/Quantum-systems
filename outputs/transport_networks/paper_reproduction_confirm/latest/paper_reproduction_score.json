@@ -1,0 +1,18 @@
+{
+  "matched_expectation": [
+    "Mohseni/Plenio/Rebentrost: nonzero dephasing can improve target arrival.",
+    "Mohseni/Plenio/Rebentrost: high dephasing suppression appears after the optimum."
+  ],
+  "failed_expectation": [
+    "Razzoli: target/trap placement did not change efficiency above threshold."
+  ],
+  "uncertain": [
+    "Mulken/Blumen: topology dependence in closed-walk return was weak in this grid."
+  ],
+  "thresholds": {
+    "closed_return_std": 0.01,
+    "target_spread": 0.05,
+    "dephasing_gain": 0.05,
+    "high_dephasing_penalty": 0.02
+  }
+}

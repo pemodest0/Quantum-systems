@@ -1,0 +1,4 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Strong disorder chain,0.4375380524677444,0.8,0.0,coherent-dominated,21.040086461580213,2.5767441618155437e-10
+Strong disorder ring,0.5818717471243579,0.8,0.0,coherent-dominated,3.0641043263640273,2.0043748518478281e-10
+Strong disorder 2D square,0.5176894004091386,0.8,0.0,coherent-dominated,6.0967006978752,4.2947474296555477e-10

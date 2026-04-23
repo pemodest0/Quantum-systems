@@ -1,0 +1,170 @@
+{
+  "generated_at_utc": "2026-04-23T05:13:57.360220+00:00",
+  "summary": [
+    {
+      "campaign": "dynamic_network_atlas",
+      "profile": "evidence_prep",
+      "graph_instances": 22,
+      "records": 1032,
+      "quantum_simulations": 7224,
+      "classical_simulations": 1032,
+      "estimated_cost_units": 6416680145.454545,
+      "max_family_record_share": 0.27906976744186046
+    },
+    {
+      "campaign": "dynamic_network_atlas",
+      "profile": "intense",
+      "graph_instances": 356,
+      "records": 217536,
+      "quantum_simulations": 3263040,
+      "classical_simulations": 217536,
+      "estimated_cost_units": 10296835185737.143,
+      "max_family_record_share": 0.19329214474845544
+    },
+    {
+      "campaign": "dynamic_network_atlas",
+      "profile": "strong",
+      "graph_instances": 207,
+      "records": 50000,
+      "quantum_simulations": 400000,
+      "classical_simulations": 50000,
+      "estimated_cost_units": 609428945055.5845,
+      "max_family_record_share": 0.1904
+    },
+    {
+      "campaign": "paper_reproduction_suite_validation",
+      "profile": "paper",
+      "graph_instances": 36,
+      "records": 810,
+      "quantum_simulations": 3240,
+      "classical_simulations": 810,
+      "estimated_cost_units": 1844898885.8181818,
+      "max_family_record_share": 0.13333333333333333
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "paper",
+      "block": "coates_gamma_resolved_curves",
+      "families": 4,
+      "n_values": 1,
+      "disorder_values": 4,
+      "disorder_seeds": 2,
+      "gamma_values": 15,
+      "quantum_simulations": 480,
+      "records": 480,
+      "classical_simulations": 0,
+      "note": "Each row is one gamma-resolved quantum simulation."
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "paper",
+      "block": "anderson_disorder_localization",
+      "families": 4,
+      "n_values": 1,
+      "disorder_values": 5,
+      "disorder_seeds": 2,
+      "gamma_values": 1,
+      "quantum_simulations": 40,
+      "records": 40,
+      "classical_simulations": 0,
+      "note": "Closed coherent simulations at different static disorder strengths."
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "paper",
+      "block": "manzano_steady_state_source_drain",
+      "families": 3,
+      "n_values": 1,
+      "disorder_values": 2,
+      "disorder_seeds": 1,
+      "gamma_values": 2,
+      "quantum_simulations": 0,
+      "steady_state_solves": 12,
+      "records": 12,
+      "classical_simulations": 0,
+      "note": "Linear NESS solves, separate from finite-time absorbing sink simulations."
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "confirm",
+      "block": "coates_gamma_resolved_curves",
+      "families": 4,
+      "n_values": 2,
+      "disorder_values": 4,
+      "disorder_seeds": 4,
+      "gamma_values": 15,
+      "quantum_simulations": 1920,
+      "records": 1920,
+      "classical_simulations": 0,
+      "note": "Each row is one gamma-resolved quantum simulation."
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "confirm",
+      "block": "anderson_disorder_localization",
+      "families": 4,
+      "n_values": 2,
+      "disorder_values": 5,
+      "disorder_seeds": 4,
+      "gamma_values": 1,
+      "quantum_simulations": 160,
+      "records": 160,
+      "classical_simulations": 0,
+      "note": "Closed coherent simulations at different static disorder strengths."
+    },
+    {
+      "campaign": "paper_reproduction_suite_auxiliary",
+      "profile": "confirm",
+      "block": "manzano_steady_state_source_drain",
+      "families": 3,
+      "n_values": 2,
+      "disorder_values": 2,
+      "disorder_seeds": 1,
+      "gamma_values": 2,
+      "quantum_simulations": 0,
+      "steady_state_solves": 24,
+      "records": 24,
+      "classical_simulations": 0,
+      "note": "Linear NESS solves, separate from finite-time absorbing sink simulations."
+    }
+  ],
+  "profile_totals": [
+    {
+      "records": 1032.0,
+      "quantum_simulations": 7224.0,
+      "classical_simulations": 1032.0,
+      "estimated_cost_units": 6416680145.454546,
+      "graph_instances": 22.0,
+      "campaign": "dynamic_network_atlas",
+      "profile": "evidence_prep"
+    },
+    {
+      "records": 50000.0,
+      "quantum_simulations": 400000.0,
+      "classical_simulations": 50000.0,
+      "estimated_cost_units": 609428945055.5847,
+      "graph_instances": 207.0,
+      "campaign": "dynamic_network_atlas",
+      "profile": "strong"
+    },
+    {
+      "records": 217536.0,
+      "quantum_simulations": 3263040.0,
+      "classical_simulations": 217536.0,
+      "estimated_cost_units": 10296835185737.148,
+      "graph_instances": 356.0,
+      "campaign": "dynamic_network_atlas",
+      "profile": "intense"
+    },
+    {
+      "records": 810.0,
+      "quantum_simulations": 3240.0,
+      "classical_simulations": 810.0,
+      "estimated_cost_units": 1844898885.8181822,
+      "graph_instances": 36.0,
+      "campaign": "paper_reproduction_suite_validation",
+      "profile": "paper"
+    }
+  ],
+  "output_dir": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\parameter_space_analysis\\latest"
+}

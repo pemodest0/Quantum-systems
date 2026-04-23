@@ -1,0 +1,64 @@
+{
+  "profile": "paper",
+  "families": [
+    "chain",
+    "ring",
+    "star",
+    "complete",
+    "square_lattice_2d",
+    "bottleneck",
+    "clustered",
+    "erdos_renyi",
+    "watts_strogatz_small_world",
+    "barabasi_albert_scale_free",
+    "modular_two_community",
+    "random_geometric"
+  ],
+  "edge_models_main": [
+    "unweighted"
+  ],
+  "edge_models_sensitivity": [
+    "unweighted",
+    "exponential_distance"
+  ],
+  "edge_sensitivity_families": [
+    "random_geometric",
+    "ring",
+    "modular_two_community"
+  ],
+  "n_sites_values": [
+    8,
+    10,
+    12
+  ],
+  "graph_realizations": 1,
+  "deterministic_graph_realizations": 1,
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "graph_seed_base": 5250,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6,
+    1.2
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.1,
+    0.4,
+    0.8
+  ],
+  "target_styles": [
+    "near",
+    "far",
+    "high_centrality"
+  ],
+  "t_final_closed": 9.0,
+  "t_final_open": 12.0,
+  "n_time_samples": 72,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02,
+  "n_repeats": 8
+}

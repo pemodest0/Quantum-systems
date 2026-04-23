@@ -1,0 +1,2 @@
+scenario,topology,n_sites,best_regime,eta_coherent,eta_best,gamma_best,eta_high,coherence_best,loss_best
+Cadeia de 3 nos com sink,chain,3,coherent,0.9233834938092575,0.9233834938092575,0.0,0.9233834938092575,0.3972399730282869,0.0

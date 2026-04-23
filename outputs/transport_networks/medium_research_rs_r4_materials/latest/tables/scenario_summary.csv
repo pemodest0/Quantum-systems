@@ -1,0 +1,6 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+R4 molecular-wire-like chain,0.7175471276964223,0.0,0.0,coherent-dominated,11.338690115330994,2.0043245690800848e-10
+R4 ring aggregate,0.8030272956220651,0.0,0.0,coherent-dominated,3.904050141634253,2.0052578633349264e-10
+R4 disordered 2D excitonic sheet,0.8210222960835696,0.0,0.0,coherent-dominated,1.1072446113959686,2.2905070509684603e-10
+R4 bottleneck medium,0.40685147036409003,0.0,0.6,dephasing-assisted,5.189100065602539,2.0274283492791003
+R4 clustered medium,0.7693698568433117,0.0,0.0,coherent-dominated,17.318875080845235,2.0047811582842469e-10

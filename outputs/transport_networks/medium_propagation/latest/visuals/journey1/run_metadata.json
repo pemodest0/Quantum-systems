@@ -1,0 +1,7 @@
+{
+  "generated_at_utc": "2026-04-19T23:45:56.290466+00:00",
+  "script": "scripts\\run_transport_visual_journey1.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_medium_campaign_config.json",
+  "results_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\medium_propagation\\latest\\results.json",
+  "output_dir": "outputs\\transport_networks\\medium_propagation\\latest\\visuals\\journey1"
+}

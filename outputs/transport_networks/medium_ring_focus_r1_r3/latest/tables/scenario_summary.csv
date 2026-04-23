@@ -1,0 +1,3 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Ring favorable target,0.6967099315010734,0.4,0.0,coherent-dominated,3.186507916140401,2.0041790285153556e-10
+Ring unfavorable target,0.5216148699532274,0.4,0.6,dephasing-assisted,3.2702451030772526,2.056554326326836

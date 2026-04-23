@@ -1,0 +1,42 @@
+{
+  "downloaded_count": 7,
+  "downloads": [
+    {
+      "id": "potocnik_2018",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\potocnik_2018.pdf",
+      "url": "https://www.nature.com/articles/s41467-018-03312-x.pdf"
+    },
+    {
+      "id": "jacob_2024",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\jacob_2024.pdf",
+      "url": "https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2024.1474018/pdf"
+    },
+    {
+      "id": "novo_2016",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\novo_2016.pdf",
+      "url": "https://www.nature.com/articles/srep18142.pdf"
+    },
+    {
+      "id": "blach_2025",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\blach_2025.pdf",
+      "url": "https://www.nature.com/articles/s41467-024-55812-8.pdf"
+    },
+    {
+      "id": "kassal_2012",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\kassal_2012.pdf",
+      "url": "https://arxiv.org/pdf/1201.5202.pdf"
+    },
+    {
+      "id": "caruso_2014",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\caruso_2014.pdf",
+      "url": "https://iopscience.iop.org/article/10.1088/1367-2630/16/5/055015/pdf"
+    },
+    {
+      "id": "marais_2013",
+      "path": "reports\\famb_msc_transport_proposal\\reference_pdfs\\marais_2013.pdf",
+      "url": "https://iopscience.iop.org/article/10.1088/1367-2630/15/1/013038/pdf"
+    }
+  ],
+  "failed_count": 0,
+  "failures": []
+}

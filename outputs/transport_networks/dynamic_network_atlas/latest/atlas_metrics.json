@@ -1,0 +1,21 @@
+{
+  "profile": "smoke",
+  "record_count": 24,
+  "family_count": 3,
+  "n_sites_values": [
+    6
+  ],
+  "max_trace_deviation": 2.220446049250313e-15,
+  "max_population_closure_error": 2.220446049250313e-15,
+  "max_classical_population_closure_error": 1.7763568394002505e-15,
+  "min_state_eigenvalue": -7.261547448709225e-16,
+  "mean_best_arrival": 0.3531199569713237,
+  "mean_dephasing_gain": 0.016440964851303575,
+  "mean_quantum_minus_classical": 0.09102018585520522,
+  "qc_case_counts": {
+    "classical_higher": 11,
+    "quantum_higher": 12,
+    "classical_explains": 1
+  },
+  "numerics_pass": true
+}

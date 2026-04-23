@@ -1,0 +1,640 @@
+{
+  "generated_at_utc": "2026-04-21T06:03:08.864237+00:00",
+  "exercise_count": 70,
+  "passed": 70,
+  "score": 1.0,
+  "hallucination_guard_violations": 0,
+  "accepted": true,
+  "results": [
+    {
+      "id": "concept-001",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_states_and_density_matrices.md"
+    },
+    {
+      "id": "concept-002",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\entropy_purity_ipr.md"
+    },
+    {
+      "id": "concept-003",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_states_and_density_matrices.md"
+    },
+    {
+      "id": "concept-004",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "concept-005",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "concept-006",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 0.667,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\dephasing_loss_sink.md"
+    },
+    {
+      "id": "concept-007",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\dephasing_loss_sink.md"
+    },
+    {
+      "id": "concept-008",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\dephasing_loss_sink.md"
+    },
+    {
+      "id": "concept-009",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "concept-010",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "concept-011",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "concept-012",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "concept-013",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\entropy_purity_ipr.md"
+    },
+    {
+      "id": "concept-014",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 0.75,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\stat_mech_for_open_systems.md"
+    },
+    {
+      "id": "concept-015",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "concept-016",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "concept-017",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_states_and_density_matrices.md"
+    },
+    {
+      "id": "concept-018",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "concept-019",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\papers\\transport\\mohseni_2008_environment_assisted_quantum_walks.md"
+    },
+    {
+      "id": "concept-020",
+      "category": "conceptual",
+      "source_count": 7,
+      "keyword_score": 0.545,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\environment_assisted_transport.md"
+    },
+    {
+      "id": "figure-001",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\how_to_read_lab_figures.md"
+    },
+    {
+      "id": "figure-002",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-003",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "figure-004",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-005",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-006",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-007",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\stat_mech_for_open_systems.md"
+    },
+    {
+      "id": "figure-008",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-009",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-010",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "figure-011",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-012",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-013",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "outputs\\transport_networks\\medium_ring_size\\latest\\campaign_review\\summary.md"
+    },
+    {
+      "id": "figure-014",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-015",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-016",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\how_to_read_lab_figures.md"
+    },
+    {
+      "id": "figure-017",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\how_to_read_lab_figures.md"
+    },
+    {
+      "id": "figure-018",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-019",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "figure-020",
+      "category": "figure_reading",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\how_to_read_lab_figures.md"
+    },
+    {
+      "id": "lindblad-001",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\open_quantum_systems_lindblad.md"
+    },
+    {
+      "id": "lindblad-002",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "lindblad-003",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "lindblad-004",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\dephasing_loss_sink.md"
+    },
+    {
+      "id": "lindblad-005",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "lindblad-006",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "lindblad-007",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 0.833,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\open_quantum_systems_lindblad.md"
+    },
+    {
+      "id": "lindblad-008",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\open_quantum_systems_lindblad.md"
+    },
+    {
+      "id": "lindblad-009",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "lindblad-010",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "lindblad-011",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "lindblad-012",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "lindblad-013",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\quantum_transport_observables.md"
+    },
+    {
+      "id": "lindblad-014",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\stat_mech_for_open_systems.md"
+    },
+    {
+      "id": "lindblad-015",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "lindblad-016",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\papers\\transport\\anderson_1958_absence_of_diffusion.md"
+    },
+    {
+      "id": "lindblad-017",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "lindblad-018",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\environment_assisted_transport.md"
+    },
+    {
+      "id": "lindblad-019",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\papers\\transport\\manzano_2013_steady_state_transport.md"
+    },
+    {
+      "id": "lindblad-020",
+      "category": "transport_lindblad",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "trap-001",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 0.75,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\entropy_purity_ipr.md"
+    },
+    {
+      "id": "trap-002",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 0.417,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\environment_assisted_transport.md"
+    },
+    {
+      "id": "trap-003",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 0.625,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\tight_binding_and_graphs.md"
+    },
+    {
+      "id": "trap-004",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "trap-005",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\open_quantum_systems_lindblad.md"
+    },
+    {
+      "id": "trap-006",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\stat_mech_for_open_systems.md"
+    },
+    {
+      "id": "trap-007",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    },
+    {
+      "id": "trap-008",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\how_to_read_lab_figures.md"
+    },
+    {
+      "id": "trap-009",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_curriculum\\README.md"
+    },
+    {
+      "id": "trap-010",
+      "category": "trap",
+      "source_count": 7,
+      "keyword_score": 1.0,
+      "confusion_risk": false,
+      "passed": true,
+      "top_source": "docs\\physics_exercises\\transport_exercise_bank.json"
+    }
+  ]
+}

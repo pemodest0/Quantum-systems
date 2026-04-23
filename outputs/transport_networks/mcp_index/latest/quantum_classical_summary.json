@@ -1,0 +1,367 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "meaning": "best open-quantum target arrival minus classical target arrival on the same graph/control.",
+  "threshold": "quantum_higher requires mean > 0.05 and CI95 low > 0.",
+  "rows": [
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "clustered",
+      "n": 192,
+      "mean": 0.17541003272206201,
+      "ci95_low": 0.14196018135832666,
+      "ci95_high": 0.20885988408579736,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas",
+      "family": "ring",
+      "n": 16,
+      "mean": 0.17226240803952936,
+      "ci95_low": 0.0458996900206054,
+      "ci95_high": 0.2986251260584533,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "clustered",
+      "n": 54,
+      "mean": 0.17013034602851093,
+      "ci95_low": 0.11530546882209501,
+      "ci95_high": 0.22495522323492684,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "bottleneck",
+      "n": 54,
+      "mean": 0.16037808944799414,
+      "ci95_low": 0.10196851463731149,
+      "ci95_high": 0.2187876642586768,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "bottleneck",
+      "n": 192,
+      "mean": 0.1529962436581834,
+      "ci95_low": 0.11616903393462491,
+      "ci95_high": 0.1898234533817419,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "chain",
+      "n": 54,
+      "mean": 0.1477988300034795,
+      "ci95_low": 0.07685374144766668,
+      "ci95_high": 0.2187439185592923,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "ring",
+      "n": 192,
+      "mean": 0.14536971226622328,
+      "ci95_low": 0.11869399126501967,
+      "ci95_high": 0.17204543326742688,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "chain",
+      "n": 192,
+      "mean": 0.12372685809362176,
+      "ci95_low": 0.08375852805510875,
+      "ci95_high": 0.16369518813213477,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas",
+      "family": "chain",
+      "n": 16,
+      "mean": 0.11151940410906509,
+      "ci95_low": -0.07062172524794628,
+      "ci95_high": 0.29366053346607646,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "ring",
+      "n": 108,
+      "mean": 0.10063607539583926,
+      "ci95_low": 0.06220918591359293,
+      "ci95_high": 0.1390629648780856,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "square_lattice_2d",
+      "n": 192,
+      "mean": 0.09142695540439005,
+      "ci95_low": 0.06204969965341248,
+      "ci95_high": 0.12080421115536763,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "watts_strogatz_small_world",
+      "n": 54,
+      "mean": 0.059892856455709964,
+      "ci95_low": 0.033298802472104566,
+      "ci95_high": 0.08648691043931536,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "random_geometric",
+      "n": 528,
+      "mean": 0.05580289860030579,
+      "ci95_low": 0.04387583191632401,
+      "ci95_high": 0.06772996528428757,
+      "verdict": "quantum_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas_evidence_prep",
+      "family": "modular_two_community",
+      "n": 576,
+      "mean": 0.047593569850161305,
+      "ci95_low": 0.03915334136930671,
+      "ci95_high": 0.0560337983310159,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "modular_two_community",
+      "n": 108,
+      "mean": 0.021070406541392868,
+      "ci95_low": 0.0016866978291346542,
+      "ci95_high": 0.040454115253651085,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "square_lattice_2d",
+      "n": 54,
+      "mean": 0.020821316083471184,
+      "ci95_low": -0.03305509653169238,
+      "ci95_high": 0.07469772869863475,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "random_geometric",
+      "n": 108,
+      "mean": 0.019231156317309952,
+      "ci95_low": -0.009647587740686667,
+      "ci95_high": 0.048109900375306575,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "sierpinski_carpet_like",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "sierpinski_gasket",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "square_lattice_2d",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "chain",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "modular_two_community",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "random_geometric",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "ring",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "sierpinski_carpet_like",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "sierpinski_gasket",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "square_lattice_2d",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "target_geometry_confirm",
+      "family": "chain",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "target_geometry_confirm",
+      "family": "modular_two_community",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "target_geometry_confirm",
+      "family": "random_geometric",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "target_geometry_confirm",
+      "family": "ring",
+      "n": 0,
+      "mean": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "barabasi_albert_scale_free",
+      "n": 54,
+      "mean": -0.010208690139286313,
+      "ci95_low": -0.06935063838686645,
+      "ci95_high": 0.048933258108293826,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "dynamic_network_atlas",
+      "family": "random_geometric",
+      "n": 16,
+      "mean": -0.010721254582978852,
+      "ci95_low": -0.059402173608762265,
+      "ci95_high": 0.03795966444280456,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "erdos_renyi",
+      "n": 54,
+      "mean": -0.031249052492881367,
+      "ci95_low": -0.07187155632493188,
+      "ci95_high": 0.009373451339169142,
+      "verdict": "classical_explains_or_inconclusive",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "complete",
+      "n": 54,
+      "mean": -0.15223654585842883,
+      "ci95_low": -0.15829989778036083,
+      "ci95_high": -0.14617319393649683,
+      "verdict": "classical_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    },
+    {
+      "campaign_id": "paper_reproduction_suite",
+      "family": "star",
+      "n": 54,
+      "mean": -0.3685764404460825,
+      "ci95_low": -0.4394001706790076,
+      "ci95_high": -0.2977527102131574,
+      "verdict": "classical_higher",
+      "source_file": "outputs/transport_networks/lab_registry/latest/master_uncertainty.csv"
+    }
+  ]
+}

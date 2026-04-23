@@ -1,0 +1,35 @@
+{
+  "profile": "smoke",
+  "families": [
+    "chain",
+    "ring",
+    "complete",
+    "star"
+  ],
+  "n_sites_values": [
+    6
+  ],
+  "graph_realizations": 1,
+  "disorder_seeds": [
+    3,
+    5
+  ],
+  "graph_seed_base": 1000,
+  "disorder_strength_over_coupling": [
+    0.0,
+    0.6
+  ],
+  "dephasing_over_coupling": [
+    0.0,
+    0.2
+  ],
+  "target_styles": [
+    "near",
+    "far"
+  ],
+  "t_final": 10.0,
+  "n_time_samples": 90,
+  "coupling_hz": 1.0,
+  "sink_rate_hz": 0.65,
+  "loss_rate_hz": 0.02
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "key": "Mohseni2008",
+    "url": "https://doi.org/10.1063/1.3002335",
+    "use": "Environment-assisted transport benchmark: moderate dephasing can improve arrival when coherent motion is trapped by interference or disorder."
+  },
+  {
+    "key": "PlenioHuelga2008",
+    "url": "https://doi.org/10.1088/1367-2630/10/11/113019",
+    "use": "Noise can assist transport in network-like systems, but excessive dephasing suppresses useful coherent motion."
+  },
+  {
+    "key": "Rebentrost2009",
+    "url": "https://doi.org/10.1088/1367-2630/11/3/033003",
+    "use": "Sink efficiency and dephasing scans are standard metrics for excitation transport in open networks."
+  },
+  {
+    "key": "Caruso2009",
+    "url": "https://doi.org/10.1063/1.3223548",
+    "use": "Interplay of coherence, disorder, and trapping motivates tracking target population, coherence, and dissipative loss separately."
+  },
+  {
+    "key": "Manzano2013",
+    "url": "https://doi.org/10.1371/journal.pone.0057041",
+    "use": "Steady-state network transport separates excitation transfer from energy transfer and emphasizes sink-mediated efficiency."
+  },
+  {
+    "key": "Novo2016",
+    "url": "https://doi.org/10.1038/srep18142",
+    "use": "Disorder can sometimes assist transport outside the optimal decoherence regime, so robustness must be checked by ensembles."
+  },
+  {
+    "key": "MuelkenBlumen2011",
+    "url": "https://doi.org/10.1016/j.physrep.2011.01.002",
+    "use": "Continuous-time quantum walks on networks motivate topology-dependent transport comparisons."
+  },
+  {
+    "key": "Razzoli2021",
+    "url": "https://doi.org/10.3390/e23010085",
+    "use": "Graph-dependent transport efficiency depends on initial state, target placement, and propagation direction."
+  },
+  {
+    "key": "Coutinho2022",
+    "url": "https://doi.org/10.1038/s42005-022-00866-7",
+    "use": "Robustness should be treated as a network-level observable, not just a single best-case number."
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "Ring favorable target": [
+    {
+      "scenario_name": "Ring favorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 31,
+      "representative_efficiency": 0.697740198695347,
+      "ensemble_mean_efficiency": 0.6967099315010734,
+      "ensemble_std_efficiency": 0.05567979966514464
+    },
+    {
+      "scenario_name": "Ring favorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 1.0,
+      "representative_seed": 61,
+      "representative_efficiency": 0.48758033172111226,
+      "ensemble_mean_efficiency": 0.48803462028456923,
+      "ensemble_std_efficiency": 0.01765982694449855
+    }
+  ],
+  "Ring unfavorable target": [
+    {
+      "scenario_name": "Ring unfavorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.6,
+      "representative_seed": 37,
+      "representative_efficiency": 0.5215281159248549,
+      "ensemble_mean_efficiency": 0.5216148699532274,
+      "ensemble_std_efficiency": 0.004330359523629705
+    },
+    {
+      "scenario_name": "Ring unfavorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.2,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 107,
+      "representative_efficiency": 0.3583025163963741,
+      "ensemble_mean_efficiency": 0.358256545598331,
+      "ensemble_std_efficiency": 0.11226355358672473
+    }
+  ]
+}

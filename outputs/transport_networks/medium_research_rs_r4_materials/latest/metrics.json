@@ -1,0 +1,73 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "R4 molecular-wire-like chain",
+      "best_efficiency": 0.7175471276964223,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 11.338690115330994,
+      "best_mixing": 2.0043245690800848e-10
+    },
+    {
+      "scenario": "R4 ring aggregate",
+      "best_efficiency": 0.8030272956220651,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 3.904050141634253,
+      "best_mixing": 2.0052578633349264e-10
+    },
+    {
+      "scenario": "R4 disordered 2D excitonic sheet",
+      "best_efficiency": 0.8210222960835696,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 1.1072446113959686,
+      "best_mixing": 2.2905070509684603e-10
+    },
+    {
+      "scenario": "R4 bottleneck medium",
+      "best_efficiency": 0.40685147036409003,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.6,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 5.189100065602539,
+      "best_mixing": 2.0274283492791003
+    },
+    {
+      "scenario": "R4 clustered medium",
+      "best_efficiency": 0.7693698568433117,
+      "best_disorder_over_coupling": 0.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 17.318875080845235,
+      "best_mixing": 2.0047811582842469e-10
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 23,
+    "dephasing-assisted": 6,
+    "localized-by-disorder": 1,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 30
+  },
+  "transport_range": [
+    0.23009553854586823,
+    0.8210222960835696
+  ],
+  "spreading_range": [
+    1.1072446113959686,
+    17.318875080845235
+  ],
+  "mixing_range": [
+    2.0036911803158168e-10,
+    2.1759651907832867
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais."
+  }
+}

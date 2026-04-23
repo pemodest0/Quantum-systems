@@ -1,0 +1,236 @@
+{
+  "study_name": "Material-inspired full campaign",
+  "output_subdir": "medium_material_full",
+  "time_grid": {
+    "t_final": 18.0,
+    "n_samples": 160
+  },
+  "thresholds": {
+    "sink_hit_threshold": 0.1,
+    "transfer_threshold": 0.5
+  },
+  "sweep": {
+    "disorder_strength_over_coupling": [
+      0.0,
+      0.4,
+      0.8,
+      1.2
+    ],
+    "dephasing_over_coupling": [
+      0.0,
+      0.1,
+      0.4,
+      0.8
+    ]
+  },
+  "ensemble_seeds": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17
+  ],
+  "scenarios": [
+    {
+      "name": "Material full molecular-wire-like chain",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 9,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "chain_1d",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 10,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 4.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Families with alternate paths should resist damage better than bottlenecked families, but target arrival and spreading need not rank the same way.",
+        "expected_role_of_disorder": "Stronger disorder should lower arrival and reveal whether a family is structurally robust or fragile.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling may help only in families where coherent geometry creates harmful path competition.",
+        "expected_failure_mode": "A family that only spreads more but does not improve useful arrival should not be called better transport."
+      }
+    },
+    {
+      "name": "Material full ring aggregate",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 5,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "ring",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": 10,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 0.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Families with alternate paths should resist damage better than bottlenecked families, but target arrival and spreading need not rank the same way.",
+        "expected_role_of_disorder": "Stronger disorder should lower arrival and reveal whether a family is structurally robust or fragile.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling may help only in families where coherent geometry creates harmful path competition.",
+        "expected_failure_mode": "A family that only spreads more but does not improve useful arrival should not be called better transport."
+      }
+    },
+    {
+      "name": "Material full disordered 2D sheet",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 15,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "square_lattice_2d",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": 4,
+        "n_cols": 4,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 1.5
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Families with alternate paths should resist damage better than bottlenecked families, but target arrival and spreading need not rank the same way.",
+        "expected_role_of_disorder": "Stronger disorder should lower arrival and reveal whether a family is structurally robust or fragile.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling may help only in families where coherent geometry creates harmful path competition.",
+        "expected_failure_mode": "A family that only spreads more but does not improve useful arrival should not be called better transport."
+      }
+    },
+    {
+      "name": "Material full bottleneck medium",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 17,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "bottleneck_lattice",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": 3,
+        "n_cols": null,
+        "n_cols_left": 3,
+        "n_cols_right": 3,
+        "cluster_size": null,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 3.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Families with alternate paths should resist damage better than bottlenecked families, but target arrival and spreading need not rank the same way.",
+        "expected_role_of_disorder": "Stronger disorder should lower arrival and reveal whether a family is structurally robust or fragile.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling may help only in families where coherent geometry creates harmful path competition.",
+        "expected_failure_mode": "A family that only spreads more but does not improve useful arrival should not be called better transport."
+      }
+    },
+    {
+      "name": "Material full clustered medium",
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.65,
+      "loss_rate_hz": 0.02,
+      "initial_site": 11,
+      "trap_site": 0,
+      "medium": {
+        "medium_type": "clustered_lattice",
+        "length_scale": 1.0,
+        "coupling_law": "nearest_neighbor",
+        "site_energy_profile": "static_disorder",
+        "sink_definition": {
+          "mode": "single_site",
+          "site_index": 0
+        },
+        "loss_definition": {
+          "mode": "uniform_local_loss"
+        },
+        "coordinates": null,
+        "n_sites": null,
+        "n_rows": null,
+        "n_cols": null,
+        "n_cols_left": null,
+        "n_cols_right": null,
+        "cluster_size": 3,
+        "gradient_strength_hz": 0.0,
+        "decay_length": 1.5,
+        "power_law_exponent": 3.0,
+        "cutoff_radius": null,
+        "interface_axis": "x",
+        "interface_position": 3.0
+      },
+      "literature_expectation": {
+        "expected_transport_trend": "Families with alternate paths should resist damage better than bottlenecked families, but target arrival and spreading need not rank the same way.",
+        "expected_role_of_disorder": "Stronger disorder should lower arrival and reveal whether a family is structurally robust or fragile.",
+        "expected_role_of_phase_scrambling": "Moderate phase scrambling may help only in families where coherent geometry creates harmful path competition.",
+        "expected_failure_mode": "A family that only spreads more but does not improve useful arrival should not be called better transport."
+      }
+    }
+  ]
+}

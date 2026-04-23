@@ -1,0 +1,19 @@
+{
+  "scenarios": {
+    "Cadeia de 3 nos com sink": {
+      "efficiency_no_dephasing": 0.9233834938092575,
+      "efficiency_optimal_dephasing": 0.9233834938092575,
+      "efficiency_high_dephasing": 0.9233834938092575,
+      "optimal_dephasing_rate_hz": 0.0,
+      "best_regime": "coherent",
+      "enaqt_gain_over_coherent": 0.0,
+      "high_dephasing_penalty": 0.0,
+      "mean_coherence_at_optimum": 0.3972399730282869,
+      "final_sink_population_at_optimum": 0.9233834938092575,
+      "final_loss_population_at_optimum": 0.0,
+      "max_trace_deviation_at_optimum": 2.6645352591003757e-15,
+      "max_population_closure_error_at_optimum": 2.6645352591003757e-15,
+      "min_state_eigenvalue_at_optimum": -6.096477363722793e-16
+    }
+  }
+}

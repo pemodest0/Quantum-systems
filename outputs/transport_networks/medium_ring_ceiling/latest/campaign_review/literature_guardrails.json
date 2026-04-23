@@ -1,0 +1,22 @@
+[
+  {
+    "key": "Mohseni2008",
+    "url": "https://doi.org/10.1063/1.3002335",
+    "reading": "Moderate dephasing can improve transport when coherent motion gets trapped by interference or disorder."
+  },
+  {
+    "key": "PlenioHuelga2008",
+    "url": "https://doi.org/10.1088/1367-2630/10/11/113019",
+    "reading": "There is typically an assistance window at weak or moderate noise, followed by suppression at stronger noise."
+  },
+  {
+    "key": "Rebentrost2009",
+    "url": "https://doi.org/10.1088/1367-2630/11/3/033003",
+    "reading": "A sink-efficiency scan over disorder and dephasing is the standard diagnosis for environment-assisted transport."
+  },
+  {
+    "key": "Maier2019",
+    "url": "https://doi.org/10.1103/PhysRevLett.122.050501",
+    "reading": "Experiments support a progression from coherent motion to assistance and then suppression at stronger noise."
+  }
+]

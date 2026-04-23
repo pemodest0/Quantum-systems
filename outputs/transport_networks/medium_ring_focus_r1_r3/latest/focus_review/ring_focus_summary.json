@@ -1,0 +1,185 @@
+{
+  "literature_guardrails": [
+    {
+      "key": "Mohseni2008",
+      "url": "https://doi.org/10.1063/1.3002335",
+      "reading": "Moderate phase scrambling can improve transport when coherent motion is trapped by interference or disorder."
+    },
+    {
+      "key": "PlenioHuelga2008",
+      "url": "https://doi.org/10.1088/1367-2630/10/11/113019",
+      "reading": "Noise can help dissipative-network transport, but excessive noise suppresses useful coherent propagation."
+    },
+    {
+      "key": "Rebentrost2009",
+      "url": "https://doi.org/10.1088/1367-2630/11/3/033003",
+      "reading": "Target efficiency under a dephasing scan is a standard way to diagnose environment-assisted transport."
+    },
+    {
+      "key": "Manzano2013",
+      "url": "https://doi.org/10.1371/journal.pone.0057041",
+      "reading": "Excitation transfer to a sink and energy transfer need not behave the same; here we track target population only."
+    },
+    {
+      "key": "Novo2016",
+      "url": "https://doi.org/10.1038/srep18142",
+      "reading": "Disorder and dephasing must be scanned together; ensemble averaging is required before robustness claims."
+    },
+    {
+      "key": "Razzoli2021",
+      "url": "https://doi.org/10.3390/e23010085",
+      "reading": "Transport efficiency depends on graph structure, starting site, and trap site; target placement is not a detail."
+    },
+    {
+      "key": "Maier2019",
+      "url": "https://doi.org/10.1103/PhysRevLett.122.050501",
+      "reading": "Experiments observe crossover from coherent dynamics and localization to noise-assisted transport and then suppression at strong noise."
+    }
+  ],
+  "rows": [
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.4,
+      "zero_scrambling_arrival": 0.6967099315010734,
+      "best_arrival": 0.6967099315010734,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.05567979966514464
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.5,
+      "zero_scrambling_arrival": 0.6715098476856721,
+      "best_arrival": 0.6715098476856721,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.06376596559193709
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.6,
+      "zero_scrambling_arrival": 0.6478750491317636,
+      "best_arrival": 0.6478750491317636,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.07233529948200043
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.7,
+      "zero_scrambling_arrival": 0.6234827117572195,
+      "best_arrival": 0.6234827117572195,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.08217978553726324
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.8,
+      "zero_scrambling_arrival": 0.5977342519178175,
+      "best_arrival": 0.5977342519178175,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.09271027194458326
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 0.9,
+      "zero_scrambling_arrival": 0.5716585414157997,
+      "best_arrival": 0.5716585414157997,
+      "gain": 0.0,
+      "best_phase_scrambling": 0.0,
+      "ensemble_spread": 0.10208056635659075
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 1.0,
+      "zero_scrambling_arrival": 0.5471846366585412,
+      "best_arrival": 0.5489791293822466,
+      "gain": 0.0017944927237053543,
+      "best_phase_scrambling": 0.08,
+      "ensemble_spread": 0.06572489287083089
+    },
+    {
+      "scenario": "Ring favorable target",
+      "disorder": 1.2,
+      "zero_scrambling_arrival": 0.5037073419273745,
+      "best_arrival": 0.5172434970563284,
+      "gain": 0.013536155128953897,
+      "best_phase_scrambling": 0.2,
+      "ensemble_spread": 0.04485190660594619
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.4,
+      "zero_scrambling_arrival": 0.37385624527534833,
+      "best_arrival": 0.5216148699532274,
+      "gain": 0.14775862467787904,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.004330359523629705
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.5,
+      "zero_scrambling_arrival": 0.3751692761441393,
+      "best_arrival": 0.5199295534824672,
+      "gain": 0.14476027733832786,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.006470473128667827
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.6,
+      "zero_scrambling_arrival": 0.37798675617055677,
+      "best_arrival": 0.5178127195381433,
+      "gain": 0.13982596336758657,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.008901409743623656
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.7,
+      "zero_scrambling_arrival": 0.3809278978707142,
+      "best_arrival": 0.5152414402184066,
+      "gain": 0.13431354234769238,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.011582674579754773
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.8,
+      "zero_scrambling_arrival": 0.3814423564819396,
+      "best_arrival": 0.512194831862423,
+      "gain": 0.1307524753804834,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.014482114553387864
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 0.9,
+      "zero_scrambling_arrival": 0.37813156889968286,
+      "best_arrival": 0.5086549399263667,
+      "gain": 0.13052337102668382,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.017569866951755653
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 1.0,
+      "zero_scrambling_arrival": 0.37217130770723283,
+      "best_arrival": 0.5046077092028662,
+      "gain": 0.1324364014956334,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.0208163206695743
+    },
+    {
+      "scenario": "Ring unfavorable target",
+      "disorder": 1.2,
+      "zero_scrambling_arrival": 0.358256545598331,
+      "best_arrival": 0.49496100548971544,
+      "gain": 0.13670445989138447,
+      "best_phase_scrambling": 0.6,
+      "ensemble_spread": 0.027673755496590152
+    }
+  ]
+}

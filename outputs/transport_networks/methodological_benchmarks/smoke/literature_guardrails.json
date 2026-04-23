@@ -1,0 +1,62 @@
+[
+  {
+    "key": "MulkenBlumen2011",
+    "url": "https://doi.org/10.1016/j.physrep.2011.01.002",
+    "benchmark": "closed_ctqw_topology",
+    "reading": "Continuous-time quantum-walk transport depends strongly on graph topology; return probability and spreading are standard closed-system diagnostics."
+  },
+  {
+    "key": "MulkenPerniceBlumen2007",
+    "url": "https://doi.org/10.1103/PhysRevE.76.051125",
+    "benchmark": "closed_ctqw_topology",
+    "reading": "Small-world shortcuts can speed coherent spreading while still preserving non-classical memory of the initial node."
+  },
+  {
+    "key": "RazzoliParisBordone2021",
+    "url": "https://doi.org/10.3390/e23010085",
+    "benchmark": "trap_target_placement",
+    "reading": "Trap position, graph structure, and initial state determine transport efficiency; connectivity alone is not a reliable global predictor."
+  },
+  {
+    "key": "Mohseni2008",
+    "url": "https://doi.org/10.1063/1.3002335",
+    "benchmark": "dephasing_assisted_transport",
+    "reading": "Moderate environmental dephasing can enhance transport when purely coherent motion is hindered by interference or disorder."
+  },
+  {
+    "key": "PlenioHuelga2008",
+    "url": "https://doi.org/10.1088/1367-2630/10/11/113019",
+    "benchmark": "dephasing_assisted_transport",
+    "reading": "Local dephasing can assist excitation transport, but excessive dephasing suppresses useful motion."
+  },
+  {
+    "key": "Rebentrost2009",
+    "url": "https://doi.org/10.1088/1367-2630/11/3/033003",
+    "benchmark": "dephasing_assisted_transport",
+    "reading": "Efficiency maps over static disorder and dephasing are a standard way to diagnose environment-assisted transport."
+  },
+  {
+    "key": "RossiTorselloHancock2015",
+    "url": "https://doi.org/10.1103/PhysRevE.91.022815",
+    "benchmark": "dynamic_graph_similarity",
+    "reading": "Graph similarity can be probed by continuous-time quantum-walk evolution and quantum-state divergence."
+  },
+  {
+    "key": "MinelloRossiTorsello2019",
+    "url": "https://doi.org/10.3390/e21030328",
+    "benchmark": "dynamic_graph_similarity",
+    "reading": "Quantum-walk-based graph similarity can be used in graph classification tasks."
+  },
+  {
+    "key": "Gamble2010",
+    "url": "https://doi.org/10.1103/PhysRevA.81.052313",
+    "benchmark": "limits_guardrail",
+    "reading": "Quantum-walk signatures are not universal graph-isomorphism solvers; highly symmetric graphs can remain difficult."
+  },
+  {
+    "key": "Maier2019",
+    "url": "https://doi.org/10.1103/PhysRevLett.122.050501",
+    "benchmark": "dephasing_assisted_transport",
+    "reading": "Controlled quantum simulators observe a crossover from coherent/localized dynamics to assisted transport and high-noise suppression."
+  }
+]

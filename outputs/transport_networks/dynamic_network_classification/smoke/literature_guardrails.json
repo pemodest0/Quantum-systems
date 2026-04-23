@@ -1,0 +1,37 @@
+[
+  {
+    "key": "Mohseni2008",
+    "url": "https://doi.org/10.1063/1.3002335",
+    "reading": "Moderate environmental action can improve transport when coherent motion is trapped by interference or disorder."
+  },
+  {
+    "key": "PlenioHuelga2008",
+    "url": "https://doi.org/10.1088/1367-2630/10/11/113019",
+    "reading": "Dephasing can assist transport in networks, but excessive dephasing suppresses useful coherent motion."
+  },
+  {
+    "key": "Rebentrost2009",
+    "url": "https://doi.org/10.1088/1367-2630/11/3/033003",
+    "reading": "Efficiency scans over disorder and dephasing are standard diagnostics for environment-assisted transport."
+  },
+  {
+    "key": "Novo2016",
+    "url": "https://doi.org/10.1038/srep18142",
+    "reading": "Disorder can assist in suboptimal decoherence regimes, so ensemble statistics are necessary."
+  },
+  {
+    "key": "Razzoli2021",
+    "url": "https://doi.org/10.3390/e23010085",
+    "reading": "Trap position and graph topology strongly affect continuous-time quantum-walk transport efficiency."
+  },
+  {
+    "key": "Maier2019",
+    "url": "https://doi.org/10.1103/PhysRevLett.122.050501",
+    "reading": "Quantum simulators observe a progression from coherent dynamics to assistance and high-noise suppression."
+  },
+  {
+    "key": "PerovskiteENAQT2025",
+    "url": "https://www.nature.com/articles/s41467-024-55812-8",
+    "reading": "Recent experiments support intermediate-regime transport where static disorder and dephasing compete."
+  }
+]

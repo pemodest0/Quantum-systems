@@ -1,0 +1,6 @@
+{
+  "generated_at_utc": "2026-04-14T21:13:27.840054+00:00",
+  "script": "scripts\\run_transport_graph_lab.py",
+  "config_path": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\configs\\transport_learning_step1_walk.json",
+  "output_dir": "outputs\\transport_networks\\learning_step1_walk\\latest"
+}

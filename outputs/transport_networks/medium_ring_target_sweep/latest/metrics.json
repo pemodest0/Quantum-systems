@@ -1,0 +1,64 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "Ring target sweep trap 0",
+      "best_efficiency": 0.6537644921476776,
+      "best_disorder_over_coupling": 0.6,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 3.2820266905537117,
+      "best_mixing": 2.0041161853697373e-10
+    },
+    {
+      "scenario": "Ring target sweep trap 1",
+      "best_efficiency": 0.5171328503528367,
+      "best_disorder_over_coupling": 0.6,
+      "best_dephasing_over_coupling": 0.6,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 3.2531025149195965,
+      "best_mixing": 2.0559924256874007
+    },
+    {
+      "scenario": "Ring target sweep trap 2",
+      "best_efficiency": 0.5449945669892642,
+      "best_disorder_over_coupling": 0.6,
+      "best_dephasing_over_coupling": 0.6,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 3.4057251011103853,
+      "best_mixing": 2.0565475644936964
+    },
+    {
+      "scenario": "Ring target sweep trap 3",
+      "best_efficiency": 0.5834154033666392,
+      "best_disorder_over_coupling": 1.2,
+      "best_dephasing_over_coupling": 0.6,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 3.632454355293415,
+      "best_mixing": 2.050669053375684
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 32,
+    "dephasing-assisted": 70,
+    "localized-by-disorder": 0,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 26
+  },
+  "transport_range": [
+    0.33961245259367034,
+    0.6537644921476776
+  ],
+  "spreading_range": [
+    2.539484179534044,
+    3.854421496316448
+  ],
+  "mixing_range": [
+    2.0038191220741944e-10,
+    2.060351919390576
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (dephasing-assisted) em vez de abrir um meio novo cedo demais."
+  }
+}

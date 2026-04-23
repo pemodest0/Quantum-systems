@@ -1,0 +1,46 @@
+{
+  "Ring ceiling favorable target": [
+    {
+      "scenario_name": "Ring ceiling favorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 31,
+      "representative_efficiency": 0.697740198695347,
+      "ensemble_mean_efficiency": 0.6974690914183743,
+      "ensemble_std_efficiency": 0.053830283928161866
+    },
+    {
+      "scenario_name": "Ring ceiling favorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.4,
+      "dephasing_over_coupling": 1.6,
+      "representative_seed": 47,
+      "representative_efficiency": 0.43873557703836663,
+      "ensemble_mean_efficiency": 0.43872440335886487,
+      "ensemble_std_efficiency": 0.016374077389742128
+    }
+  ],
+  "Ring ceiling unfavorable target": [
+    {
+      "scenario_name": "Ring ceiling unfavorable target",
+      "label": "best",
+      "disorder_over_coupling": 0.4,
+      "dephasing_over_coupling": 0.6,
+      "representative_seed": 37,
+      "representative_efficiency": 0.5215281159248549,
+      "ensemble_mean_efficiency": 0.5214101534196659,
+      "ensemble_std_efficiency": 0.00432931225798068
+    },
+    {
+      "scenario_name": "Ring ceiling unfavorable target",
+      "label": "worst",
+      "disorder_over_coupling": 1.4,
+      "dephasing_over_coupling": 0.0,
+      "representative_seed": 41,
+      "representative_efficiency": 0.32708358030641,
+      "ensemble_mean_efficiency": 0.31865676173994284,
+      "ensemble_std_efficiency": 0.10932027606243772
+    }
+  ]
+}

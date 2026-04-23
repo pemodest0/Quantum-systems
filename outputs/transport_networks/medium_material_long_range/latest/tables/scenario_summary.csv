@@ -1,0 +1,5 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Material baseline ring aggregate,0.7466378544485756,0.0,0.0,coherent-dominated,2.564065225213515,2.577073754158458e-10
+Material long-range ring aggregate,0.5534440079538527,0.0,0.0,coherent-dominated,5.632816888794592,2.5768175311583104e-10
+Material baseline disordered 2D sheet,0.6676389730682512,0.0,0.0,coherent-dominated,5.716898238629739,4.2935159095297314e-10
+Material long-range disordered 2D sheet,0.44932945654622275,0.0,0.0,coherent-dominated,6.256315026716736,4.2942095311896995e-10

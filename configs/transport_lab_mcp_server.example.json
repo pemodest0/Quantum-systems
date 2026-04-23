@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "transport-lab": {
+      "command": "python",
+      "args": [
+        "scripts/run_transport_lab_mcp_server.py",
+        "--transport",
+        "stdio"
+      ],
+      "cwd": "C:/Users/Pedro Henrique/Downloads/Assyntrax-main/repos/Quantum-systems"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "theme": "A minimal phase diagram for noise-assisted transport in simple open quantum networks",
+  "advisor_name_verified": "Alexandre Souto Martinez",
+  "core_question": "How do topology, dephasing, useful sink capture, and parasitic loss organize transport regimes in small open quantum networks?",
+  "high_impact_strategy": {
+    "main_angle": "Do not just show ENAQT again. Build a reusable minimal benchmark that organizes regimes through dimensionless parameters.",
+    "why_citable": [
+      "Clear separation between useful sink capture and parasitic loss",
+      "Systematic comparison across simple graph families",
+      "Dimensionless regime organization",
+      "Reproducible code-and-figure benchmark"
+    ],
+    "avoid": [
+      "Overly broad model stacks without a single organizing result",
+      "Purely qualitative plots with no reduced variables",
+      "Claiming generality beyond the minimal model"
+    ]
+  },
+  "priority_clusters": [
+    {
+      "name": "Formal open-systems foundation",
+      "priority": "core",
+      "references": [
+        "breuer_petruccione_2007",
+        "rivas_huelga_2012",
+        "breuer_2016"
+      ]
+    },
+    {
+      "name": "Seminal ENAQT theory",
+      "priority": "core",
+      "references": [
+        "mohseni_2008",
+        "plenio_huelga_2008",
+        "rebentrost_2009",
+        "caruso_2009"
+      ]
+    },
+    {
+      "name": "Closest papers to the proposed niche",
+      "priority": "highest",
+      "references": [
+        "kassal_2012",
+        "manzano_2013",
+        "caruso_2014",
+        "marais_2013",
+        "wu_2013",
+        "novo_2016",
+        "coates_2021",
+        "coates_2023",
+        "jacob_2024"
+      ]
+    },
+    {
+      "name": "Experimental bridge",
+      "priority": "high",
+      "references": [
+        "potocnik_2018",
+        "maier_2019",
+        "blach_2025"
+      ]
+    },
+    {
+      "name": "Broader context",
+      "priority": "medium",
+      "references": [
+        "lambert_2013",
+        "huelga_plenio_2013",
+        "whitfield_2010"
+      ]
+    }
+  ],
+  "closest_competition": [
+    {
+      "id": "coates_2021",
+      "reason": "Already seeks a simple organizing principle for optimal noise, but focuses on localization and one-dimensional chains."
+    },
+    {
+      "id": "coates_2023",
+      "reason": "Shows that multiple optimal regimes can emerge, which is highly relevant to the phase-diagram viewpoint."
+    },
+    {
+      "id": "jacob_2024",
+      "reason": "Recent simple-chain study with dephasing-assisted transport and analytical guidance."
+    },
+    {
+      "id": "caruso_2014",
+      "reason": "Systematic noisy transport on complex networks, but with a different methodological emphasis."
+    }
+  ],
+  "proposed_contribution_targets": [
+    "A topology-resolved minimal phase diagram in reduced variables",
+    "A sink-versus-loss transport benchmark",
+    "A compact criterion for the optimal dephasing scale",
+    "A fully reproducible open-network benchmark package"
+  ]
+}

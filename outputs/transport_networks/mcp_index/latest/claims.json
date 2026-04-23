@@ -1,0 +1,283 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:03.355868+00:00",
+  "allowed_claims": [
+    {
+      "claim": "Target arrival is measurable with uncertainty in the paper-level journey.",
+      "campaign_id": "research_journey_v2",
+      "supporting_families": [
+        {
+          "family": "chain",
+          "n": 192,
+          "mean": 0.48284526021733654,
+          "ci95_low": 0.465414353056683,
+          "ci95_high": 0.5002761673779901
+        },
+        {
+          "family": "modular_two_community",
+          "n": 768,
+          "mean": 0.3740479047320482,
+          "ci95_low": 0.366957970615833,
+          "ci95_high": 0.38113783884826336
+        },
+        {
+          "family": "random_geometric",
+          "n": 768,
+          "mean": 0.3620534569583833,
+          "ci95_low": 0.3545800858693938,
+          "ci95_high": 0.3695268280473728
+        },
+        {
+          "family": "ring",
+          "n": 192,
+          "mean": 0.4677136822024446,
+          "ci95_low": 0.4561071518748267,
+          "ci95_high": 0.47932021253006246
+        },
+        {
+          "family": "square_lattice_2d",
+          "n": 195,
+          "mean": 0.41552745696386956,
+          "ci95_low": 0.40673367018092227,
+          "ci95_high": 0.42432124374681685
+        }
+      ]
+    },
+    {
+      "claim": "Some families show quantum-higher target arrival against the classical control.",
+      "rule": "mean quantum_minus_classical > 0.05 and CI95 low > 0",
+      "supporting_groups": [
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "bottleneck",
+          "mean": 0.1529962436581834,
+          "ci95_low": 0.11616903393462491,
+          "n": 192
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "chain",
+          "mean": 0.12372685809362176,
+          "ci95_low": 0.08375852805510875,
+          "n": 192
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "clustered",
+          "mean": 0.17541003272206201,
+          "ci95_low": 0.14196018135832666,
+          "n": 192
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "random_geometric",
+          "mean": 0.05580289860030579,
+          "ci95_low": 0.04387583191632401,
+          "n": 528
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "ring",
+          "mean": 0.14536971226622328,
+          "ci95_low": 0.11869399126501967,
+          "n": 192
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "square_lattice_2d",
+          "mean": 0.09142695540439005,
+          "ci95_low": 0.06204969965341248,
+          "n": 192
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "bottleneck",
+          "mean": 0.16037808944799414,
+          "ci95_low": 0.10196851463731149,
+          "n": 54
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "chain",
+          "mean": 0.1477988300034795,
+          "ci95_low": 0.07685374144766668,
+          "n": 54
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "clustered",
+          "mean": 0.17013034602851093,
+          "ci95_low": 0.11530546882209501,
+          "n": 54
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "ring",
+          "mean": 0.10063607539583926,
+          "ci95_low": 0.06220918591359293,
+          "n": 108
+        }
+      ]
+    },
+    {
+      "claim": "Dephasing-assisted transport appears in selected non-smoke campaign/family groups.",
+      "rule": "gain mean >= 0.05 and CI95 low > 0",
+      "supporting_groups": [
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "bottleneck",
+          "mean": 0.06948777399529062,
+          "ci95_low": 0.054924745397380965,
+          "n": 99
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "chain",
+          "mean": 0.07649529105739833,
+          "ci95_low": 0.058348051364422795,
+          "n": 99
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "clustered",
+          "mean": 0.06181901583319762,
+          "ci95_low": 0.047662501133489174,
+          "n": 99
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "modular_two_community",
+          "mean": 0.09017206269237014,
+          "ci95_low": 0.08190198070836625,
+          "n": 291
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "random_geometric",
+          "mean": 0.08877133532130871,
+          "ci95_low": 0.0809081420941981,
+          "n": 267
+        },
+        {
+          "campaign_id": "dynamic_network_atlas_evidence_prep",
+          "family": "square_lattice_2d",
+          "mean": 0.07487026628568297,
+          "ci95_low": 0.05892260626682521,
+          "n": 99
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "barabasi_albert_scale_free",
+          "mean": 0.10111951158654041,
+          "ci95_low": 0.08418982693814213,
+          "n": 71
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "complete",
+          "mean": 0.09460346241911047,
+          "ci95_low": 0.08470254232695315,
+          "n": 66
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "erdos_renyi",
+          "mean": 0.0625702835323422,
+          "ci95_low": 0.049483665695272586,
+          "n": 74
+        },
+        {
+          "campaign_id": "paper_reproduction_suite",
+          "family": "modular_two_community",
+          "mean": 0.05670759057071411,
+          "ci95_low": 0.0447734334764056,
+          "n": 161
+        }
+      ]
+    },
+    {
+      "claim": "Paper-by-paper guardrails are available for interpretation.",
+      "campaign_id": "paper_reproduction_suite",
+      "source": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems\\outputs\\transport_networks\\paper_reproduction_suite\\latest\\paper_verdicts.json"
+    }
+  ],
+  "blocked_claims": [
+    {
+      "claim": "dynamic_network_atlas is scientifically conclusive",
+      "reason": "Campaign profile is smoke; smoke validates plumbing only.",
+      "campaign_id": "dynamic_network_atlas"
+    },
+    {
+      "claim": "All family-level boundaries are resolved.",
+      "reason": "Some non-smoke groups are under-sampled.",
+      "examples": [
+        {
+          "campaign_id": "fractal_geometry_followup",
+          "family": "sierpinski_carpet_like",
+          "metric": "arrival",
+          "n": 4
+        },
+        {
+          "campaign_id": "fractal_geometry_followup",
+          "family": "sierpinski_gasket",
+          "metric": "arrival",
+          "n": 4
+        },
+        {
+          "campaign_id": "fractal_geometry_followup",
+          "family": "square_lattice_2d",
+          "metric": "arrival",
+          "n": 4
+        },
+        {
+          "campaign_id": "research_journey_v2",
+          "family": "sierpinski_carpet_like",
+          "metric": "arrival",
+          "n": 3
+        },
+        {
+          "campaign_id": "research_journey_v2",
+          "family": "sierpinski_gasket",
+          "metric": "arrival",
+          "n": 3
+        }
+      ]
+    }
+  ],
+  "under_sampled_groups": [
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "sierpinski_carpet_like",
+      "metric": "arrival",
+      "n": 4
+    },
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "sierpinski_gasket",
+      "metric": "arrival",
+      "n": 4
+    },
+    {
+      "campaign_id": "fractal_geometry_followup",
+      "family": "square_lattice_2d",
+      "metric": "arrival",
+      "n": 4
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "sierpinski_carpet_like",
+      "metric": "arrival",
+      "n": 3
+    },
+    {
+      "campaign_id": "research_journey_v2",
+      "family": "sierpinski_gasket",
+      "metric": "arrival",
+      "n": 3
+    }
+  ],
+  "next_actions": [
+    "Run the dynamic network atlas with profile strong, then rerun registry_only.",
+    "Refine families with positive quantum-minus-classical CI95 before widening new themes."
+  ],
+  "source_file": "outputs/transport_networks/lab_registry/latest/master_claims.json"
+}

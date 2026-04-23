@@ -1,0 +1,40 @@
+{
+  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "notebooks": [
+    {
+      "path": "notebooks/colab_open_quantum_transport_lab.ipynb",
+      "name": "colab_open_quantum_transport_lab.ipynb",
+      "size_bytes": 40949,
+      "role": "colab_presentation",
+      "source_file": "notebooks/colab_open_quantum_transport_lab.ipynb"
+    },
+    {
+      "path": "notebooks/dynamic_network_atlas.ipynb",
+      "name": "dynamic_network_atlas.ipynb",
+      "size_bytes": 8144,
+      "role": "lab_notebook",
+      "source_file": "notebooks/dynamic_network_atlas.ipynb"
+    },
+    {
+      "path": "notebooks/transport_lab_master_notebook.ipynb",
+      "name": "transport_lab_master_notebook.ipynb",
+      "size_bytes": 3864,
+      "role": "lab_notebook",
+      "source_file": "notebooks/transport_lab_master_notebook.ipynb"
+    },
+    {
+      "path": "notebooks/transport_research_journey_v2.ipynb",
+      "name": "transport_research_journey_v2.ipynb",
+      "size_bytes": 4178,
+      "role": "lab_notebook",
+      "source_file": "notebooks/transport_research_journey_v2.ipynb"
+    },
+    {
+      "path": "notebooks/transport_scientific_validation_lab.ipynb",
+      "name": "transport_scientific_validation_lab.ipynb",
+      "size_bytes": 5332,
+      "role": "lab_notebook",
+      "source_file": "notebooks/transport_scientific_validation_lab.ipynb"
+    }
+  ]
+}

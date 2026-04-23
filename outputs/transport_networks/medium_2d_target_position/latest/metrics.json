@@ -1,0 +1,64 @@
+{
+  "scenario_best_points": [
+    {
+      "scenario": "2D target corner trap 0",
+      "best_efficiency": 0.6034277702256022,
+      "best_disorder_over_coupling": 0.4,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 6.477038401209751,
+      "best_mixing": 4.294517647337176e-10
+    },
+    {
+      "scenario": "2D target edge trap 3",
+      "best_efficiency": 0.2875015824722429,
+      "best_disorder_over_coupling": 1.0,
+      "best_dephasing_over_coupling": 0.8,
+      "best_regime": "dephasing-assisted",
+      "best_spreading": 6.980035727690015,
+      "best_mixing": 2.7615141119294546
+    },
+    {
+      "scenario": "2D target interior trap 5",
+      "best_efficiency": 0.3921879918924242,
+      "best_disorder_over_coupling": 0.4,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 7.093768846213372,
+      "best_mixing": 4.2946456776644507e-10
+    },
+    {
+      "scenario": "2D target far interior trap 10",
+      "best_efficiency": 0.4187476698641123,
+      "best_disorder_over_coupling": 1.0,
+      "best_dephasing_over_coupling": 0.0,
+      "best_regime": "coherent-dominated",
+      "best_spreading": 6.491687930966395,
+      "best_mixing": 4.294344827689601e-10
+    }
+  ],
+  "regime_counts": {
+    "coherent-dominated": 16,
+    "dephasing-assisted": 11,
+    "localized-by-disorder": 0,
+    "loss-dominated": 0,
+    "strongly-damped": 0,
+    "mixed-crossover": 37
+  },
+  "transport_range": [
+    0.2149543512842468,
+    0.6034277702256022
+  ],
+  "spreading_range": [
+    5.898042813669808,
+    7.56757868788777
+  ],
+  "mixing_range": [
+    4.2941720857503057e-10,
+    2.765800702311152
+  ],
+  "planner_next_action": {
+    "next_action": "refine a boundary",
+    "reason": "O proximo passo mais seguro e refinar a fronteira do regime dominante observado (mixed-crossover) em vez de abrir um meio novo cedo demais."
+  }
+}

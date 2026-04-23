@@ -1,0 +1,194 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Transport Lab: Run default graph study",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\run_transport_graph_lab.py"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Lab: Run extended-nodes preset",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts\\run_transport_graph_lab.py",
+        "--config",
+        "configs\\transport_graph_lab_extended_nodes.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Lab: Run high-loss preset",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts\\run_transport_graph_lab.py",
+        "--config",
+        "configs\\transport_graph_lab_high_loss.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Lab: Run proposal lab summary",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\run_transport_project_lab.py"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Lab: Build demo PDF",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\build_transport_graph_lab_demo.py", "--json"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Step 1 coherent walk",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts\\run_transport_graph_lab.py",
+        "--config",
+        "configs\\transport_learning_step1_walk.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Step 2 sink capture",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts\\run_transport_graph_lab.py",
+        "--config",
+        "configs\\transport_learning_step2_sink.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Step 3 dephasing",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "scripts\\run_transport_graph_lab.py",
+        "--config",
+        "configs\\transport_learning_step3_dephasing.json"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Run all steps",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\run_transport_learning_path.py"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Build PT-BR tutorial PDF",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\build_apostila_transporte_quantico_ptbr.py", "--json"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Learning: Build English tutorial PDF",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\build_open_quantum_transport_tutorial.py", "--json"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Collection: Run detailed graph study",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\run_transport_graph_collection.py"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Transport Collection: Build detailed report PDF",
+      "type": "shell",
+      "command": "python",
+      "args": ["scripts\\build_transport_graph_collection_report.py", "--json"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}\\src"
+        }
+      },
+      "problemMatcher": []
+    }
+  ]
+}

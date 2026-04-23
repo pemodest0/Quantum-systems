@@ -1,0 +1,47 @@
+{
+  "study_name": "Passo 1 - Passeio coerente mais simples",
+  "dephasing_rates_hz": [
+    0.0
+  ],
+  "times": {
+    "t_final": 12.0,
+    "n_samples": 500
+  },
+  "visualization": {
+    "animation_stride": 10,
+    "animation_fps": 10
+  },
+  "scenarios": [
+    {
+      "scenario": {
+        "name": "Cadeia de 2 nos - passeio coerente",
+        "topology": "chain",
+        "n_sites": 2,
+        "coupling_hz": 1.0,
+        "sink_rate_hz": 0.0,
+        "loss_rate_hz": 0.0,
+        "initial_site": 1,
+        "trap_site": 0,
+        "disorder_strength_hz": 0.0,
+        "seed": 1
+      },
+      "site_energies_hz": [
+        0.0,
+        0.0
+      ],
+      "best_regime": "coherent",
+      "best_dephasing_rate_hz": 0.0,
+      "transport_efficiency": [
+        0.0
+      ],
+      "mean_coherence_l1": [
+        0.6422849557718914
+      ],
+      "final_loss_population": [
+        0.0
+      ],
+      "topology_figure": "outputs\\transport_networks\\learning_step1_walk\\latest\\figures\\cadeia_de_2_nos_passeio_coerente_topology.png",
+      "population_animation_gif": "outputs\\transport_networks\\learning_step1_walk\\latest\\animations\\cadeia_de_2_nos_passeio_coerente_population_evolution.gif"
+    }
+  ]
+}

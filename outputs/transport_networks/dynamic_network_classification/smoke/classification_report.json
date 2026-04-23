@@ -1,0 +1,578 @@
+{
+  "label_name": "family",
+  "labels": [
+    "chain",
+    "complete",
+    "ring",
+    "star"
+  ],
+  "feature_names": [
+    "zero_dephasing_arrival",
+    "best_arrival",
+    "dephasing_gain",
+    "best_dephasing_over_coupling",
+    "high_dephasing_penalty",
+    "mean_arrival_over_dephasing",
+    "arrival_std_over_dephasing",
+    "best_loss_population",
+    "best_network_population",
+    "best_mean_coherence_l1",
+    "best_final_purity",
+    "best_final_entropy",
+    "best_population_shannon_entropy",
+    "best_participation_ratio",
+    "best_ipr",
+    "best_final_msd",
+    "best_final_front_width",
+    "best_integrated_interface_current",
+    "best_sink_hitting_time_filled",
+    "best_transfer_time_filled",
+    "regime_confidence",
+    "topology_density",
+    "topology_initial_degree",
+    "topology_initial_target_distance",
+    "topology_mean_degree",
+    "topology_modularity_approx",
+    "topology_n_edges",
+    "topology_n_sites",
+    "topology_spectral_degeneracy_approx",
+    "topology_spectral_gap",
+    "topology_spectral_initial_target_overlap",
+    "topology_spectral_radius",
+    "topology_std_degree",
+    "topology_target_betweenness",
+    "topology_target_closeness",
+    "topology_target_degree",
+    "topology_target_mode_weight_ipr"
+  ],
+  "accuracy": 1.0,
+  "baseline_accuracy": 0.25,
+  "confusion_matrix": [
+    [
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2
+    ]
+  ],
+  "feature_importance": [
+    {
+      "feature": "topology_std_degree",
+      "importance": 0.5213624057447397
+    },
+    {
+      "feature": "best_final_front_width",
+      "importance": 0.5213170224568444
+    },
+    {
+      "feature": "best_final_msd",
+      "importance": 0.48303012276345936
+    },
+    {
+      "feature": "best_sink_hitting_time_filled",
+      "importance": 0.32678030346812176
+    },
+    {
+      "feature": "topology_spectral_degeneracy_approx",
+      "importance": 0.2962241790206405
+    },
+    {
+      "feature": "topology_initial_degree",
+      "importance": 0.2778508223692106
+    },
+    {
+      "feature": "topology_spectral_gap",
+      "importance": 0.23570062665090047
+    },
+    {
+      "feature": "topology_modularity_approx",
+      "importance": 0.23376618305479696
+    },
+    {
+      "feature": "mean_arrival_over_dephasing",
+      "importance": 0.2060694007348405
+    },
+    {
+      "feature": "best_network_population",
+      "importance": 0.2058525120539869
+    },
+    {
+      "feature": "best_arrival",
+      "importance": 0.20487467791752575
+    },
+    {
+      "feature": "arrival_std_over_dephasing",
+      "importance": 0.2015724393953861
+    },
+    {
+      "feature": "best_loss_population",
+      "importance": 0.1972374193387596
+    },
+    {
+      "feature": "topology_mean_degree",
+      "importance": 0.19603236711351757
+    },
+    {
+      "feature": "topology_density",
+      "importance": 0.19603236711351754
+    },
+    {
+      "feature": "topology_n_edges",
+      "importance": 0.1960323671135175
+    },
+    {
+      "feature": "zero_dephasing_arrival",
+      "importance": 0.19137105477697652
+    },
+    {
+      "feature": "best_participation_ratio",
+      "importance": 0.1897457858237035
+    },
+    {
+      "feature": "topology_spectral_radius",
+      "importance": 0.18727121499428476
+    },
+    {
+      "feature": "regime_confidence",
+      "importance": 0.17342674452967738
+    }
+  ],
+  "embedding_2d": [
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "chain",
+      "x": 3.9939813254091927,
+      "y": 4.379888565336024
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "chain",
+      "x": 3.9939813254091927,
+      "y": 4.379888565336024
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "chain",
+      "x": 3.753947291063161,
+      "y": 4.152434221585148
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "chain",
+      "x": 3.84708952042884,
+      "y": 4.0757150830101185
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "chain",
+      "x": 6.0607053274146585,
+      "y": -2.9579421171926934
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "chain",
+      "x": 6.0607053274146585,
+      "y": -2.9579421171926934
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "chain",
+      "x": 6.1651977047907485,
+      "y": -2.3599868286815204
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "chain",
+      "x": 5.521452050207276,
+      "y": -2.8744502598369626
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "ring",
+      "x": 0.6408432066776726,
+      "y": 2.588997839746604
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "ring",
+      "x": 0.6408432066776726,
+      "y": 2.588997839746604
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "ring",
+      "x": 0.8755517083375541,
+      "y": 2.704740574031853
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "ring",
+      "x": 0.9485545722957908,
+      "y": 2.644001564425475
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "ring",
+      "x": 4.55437588722821,
+      "y": -5.198774212901873
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "ring",
+      "x": 4.55437588722821,
+      "y": -5.198774212901873
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "ring",
+      "x": 4.6976166260590775,
+      "y": -4.4181393592409455
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "ring",
+      "x": 3.0600569417175576,
+      "y": 2.5939035062632114
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "complete",
+      "x": -5.731030905979128,
+      "y": -1.5731112715112217
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "complete",
+      "x": -5.731030905979128,
+      "y": -1.5731112715112217
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "complete",
+      "x": -5.445975940041507,
+      "y": -1.4881254069176204
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "complete",
+      "x": -5.609293987655062,
+      "y": -0.8272961876783879
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "complete",
+      "x": -5.731030905979128,
+      "y": -1.5731112715112217
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "complete",
+      "x": -5.731030905979128,
+      "y": -1.5731112715112217
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "complete",
+      "x": -5.445975940041507,
+      "y": -1.4881254069176204
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "complete",
+      "x": -5.609293987655062,
+      "y": -0.8272961876783879
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed3",
+      "family": "star",
+      "x": -2.6836493011352345,
+      "y": 0.28222307032654115
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed5",
+      "family": "star",
+      "x": -2.6836493011352345,
+      "y": 0.28222307032654115
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed3",
+      "family": "star",
+      "x": -2.561460590710583,
+      "y": 0.28337010743840785
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed5",
+      "family": "star",
+      "x": -2.4057611956113085,
+      "y": 1.0826036178346625
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed3",
+      "family": "star",
+      "x": -1.0370071780390955,
+      "y": 1.2810819075397255
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed5",
+      "family": "star",
+      "x": -1.0370071780390955,
+      "y": 1.2810819075397255
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed3",
+      "family": "star",
+      "x": -1.145491531275843,
+      "y": 0.7268107039610919
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed5",
+      "family": "star",
+      "x": -0.78058815310342,
+      "y": 1.561335238737691
+    }
+  ],
+  "predictions": [
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "chain_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "chain",
+      "predicted_label": "chain",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "ring_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "ring",
+      "predicted_label": "ring",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "complete_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "complete",
+      "predicted_label": "complete",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.000_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": true,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-near_W0.600_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.000_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed3",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    },
+    {
+      "record_id": "star_N6_r0_s1006_target-far_W0.600_seed5",
+      "true_label": "star",
+      "predicted_label": "star",
+      "is_test": false,
+      "correct": true
+    }
+  ]
+}

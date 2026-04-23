@@ -1,0 +1,3 @@
+scenario,best_efficiency,best_disorder_over_coupling,best_dephasing_over_coupling,best_regime,best_spreading,best_mixing
+Ring ceiling favorable target,0.6974690914183743,0.4,0.0,coherent-dominated,3.1977322168949818,2.0042995816796015e-10
+Ring ceiling unfavorable target,0.5214101534196659,0.4,0.6,dephasing-assisted,3.2686892291247087,2.0566399458204607

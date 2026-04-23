@@ -1,0 +1,100 @@
+{
+  "rows": [
+    {
+      "family": "barabasi_albert_scale_free",
+      "n_records": 54,
+      "mean_arrival": 0.414346731837444,
+      "mean_dephasing_gain": 0.1084918002761392,
+      "mean_best_dephasing": 0.6537037037037036,
+      "combined_test_accuracy_first_split": 0.8888888888888888
+    },
+    {
+      "family": "bottleneck",
+      "n_records": 54,
+      "mean_arrival": 0.4661405207105534,
+      "mean_dephasing_gain": 0.031290854209600844,
+      "mean_best_dephasing": 0.27037037037037037,
+      "combined_test_accuracy_first_split": 0.0
+    },
+    {
+      "family": "chain",
+      "n_records": 54,
+      "mean_arrival": 0.4502742285517805,
+      "mean_dephasing_gain": 0.051288019854725114,
+      "mean_best_dephasing": 0.312962962962963,
+      "combined_test_accuracy_first_split": 0.3888888888888889
+    },
+    {
+      "family": "clustered",
+      "n_records": 54,
+      "mean_arrival": 0.46540524803515165,
+      "mean_dephasing_gain": 0.036141345702680454,
+      "mean_best_dephasing": 0.27592592592592596,
+      "combined_test_accuracy_first_split": 0.0
+    },
+    {
+      "family": "complete",
+      "n_records": 54,
+      "mean_arrival": 0.19391812846884562,
+      "mean_dephasing_gain": 0.09834370269387739,
+      "mean_best_dephasing": 0.7555555555555552,
+      "combined_test_accuracy_first_split": 1.0
+    },
+    {
+      "family": "erdos_renyi",
+      "n_records": 54,
+      "mean_arrival": 0.3819725156399475,
+      "mean_dephasing_gain": 0.06587387099359618,
+      "mean_best_dephasing": 0.5351851851851853,
+      "combined_test_accuracy_first_split": 0.6666666666666666
+    },
+    {
+      "family": "modular_two_community",
+      "n_records": 108,
+      "mean_arrival": 0.30011547398451743,
+      "mean_dephasing_gain": 0.05710191535181252,
+      "mean_best_dephasing": 0.39259259259259266,
+      "combined_test_accuracy_first_split": 0.5
+    },
+    {
+      "family": "random_geometric",
+      "n_records": 108,
+      "mean_arrival": 0.34098030217976216,
+      "mean_dephasing_gain": 0.05726886536534709,
+      "mean_best_dephasing": 0.48796296296296293,
+      "combined_test_accuracy_first_split": 0.16666666666666666
+    },
+    {
+      "family": "ring",
+      "n_records": 108,
+      "mean_arrival": 0.46494642560890614,
+      "mean_dephasing_gain": 0.05850433876963343,
+      "mean_best_dephasing": 0.46851851851851845,
+      "combined_test_accuracy_first_split": 1.0
+    },
+    {
+      "family": "square_lattice_2d",
+      "n_records": 54,
+      "mean_arrival": 0.4140149780123984,
+      "mean_dephasing_gain": 0.09488102363856868,
+      "mean_best_dephasing": 0.5870370370370371,
+      "combined_test_accuracy_first_split": 0.6666666666666666
+    },
+    {
+      "family": "star",
+      "n_records": 54,
+      "mean_arrival": 0.2922310494078642,
+      "mean_dephasing_gain": 0.17539910261290223,
+      "mean_best_dephasing": 0.7851851851851848,
+      "combined_test_accuracy_first_split": 1.0
+    },
+    {
+      "family": "watts_strogatz_small_world",
+      "n_records": 54,
+      "mean_arrival": 0.42535703743248915,
+      "mean_dephasing_gain": 0.05947504044616023,
+      "mean_best_dephasing": 0.4981481481481482,
+      "combined_test_accuracy_first_split": 0.7777777777777778
+    }
+  ]
+}

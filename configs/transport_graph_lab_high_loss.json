@@ -1,0 +1,51 @@
+{
+  "study_name": "Coherent and Dissipative Transport in Simple Open Quantum Networks - High Loss",
+  "output_subdir": "graph_lab_high_loss",
+  "time_grid": {
+    "t_final": 20.0,
+    "n_samples": 900
+  },
+  "visualization": {
+    "animation_stride": 15,
+    "animation_fps": 12
+  },
+  "dephasing_rates_hz": [0.0, 0.02, 0.05, 0.1, 0.2, 0.4, 0.8, 1.6, 3.2, 6.4],
+  "scenarios": [
+    {
+      "name": "Complete graph (high loss)",
+      "topology": "complete",
+      "n_sites": 4,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.6,
+      "loss_rate_hz": 0.12,
+      "initial_site": 1,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 7
+    },
+    {
+      "name": "Ring graph (high loss)",
+      "topology": "ring",
+      "n_sites": 4,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.55,
+      "loss_rate_hz": 0.10,
+      "initial_site": 2,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.5,
+      "seed": 13
+    },
+    {
+      "name": "Chain graph (high loss)",
+      "topology": "chain",
+      "n_sites": 5,
+      "coupling_hz": 1.0,
+      "sink_rate_hz": 0.6,
+      "loss_rate_hz": 0.10,
+      "initial_site": 4,
+      "trap_site": 0,
+      "disorder_strength_hz": 0.0,
+      "seed": 19
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+| scenario | topology | n_sites | best_regime | eta_coherent | eta_best | gamma_best | eta_high | coherence_best | loss_best |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cadeia de 2 nos - passeio coerente | chain | 2 | coherent | 0.000000 | 0.000000 | 0.000000 | 0.000000 | 0.642285 | 0.000000 |

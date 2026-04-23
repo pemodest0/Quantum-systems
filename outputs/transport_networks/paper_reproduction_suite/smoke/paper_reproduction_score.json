@@ -1,0 +1,17 @@
+{
+  "matched_expectation": [
+    "Mulken/Blumen: closed-walk return probability depends on topology.",
+    "Razzoli: target/trap placement changes transport efficiency.",
+    "Mohseni/Plenio/Rebentrost: nonzero dephasing can improve target arrival."
+  ],
+  "failed_expectation": [],
+  "uncertain": [
+    "Mohseni/Plenio/Rebentrost: high-noise suppression was not resolved in this grid."
+  ],
+  "thresholds": {
+    "closed_return_std": 0.01,
+    "target_spread": 0.05,
+    "dephasing_gain": 0.05,
+    "high_dephasing_penalty": 0.02
+  }
+}

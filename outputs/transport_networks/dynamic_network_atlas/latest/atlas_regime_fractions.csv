@@ -1,0 +1,7 @@
+family,disorder_strength_over_coupling,dominant_regime,dominant_fraction,record_count,fraction_coherent-dominated,fraction_dephasing-assisted,fraction_localized-by-disorder,fraction_loss-dominated,fraction_strongly-damped,fraction_mixed-crossover
+chain,0.00,dephasing-assisted,0.5,4,0.5,0.5,0.0,0.0,0.0,0.0
+chain,0.60,dephasing-assisted,0.5,4,0.5,0.5,0.0,0.0,0.0,0.0
+random_geometric,0.00,mixed-crossover,0.5,4,0.5,0.0,0.0,0.0,0.0,0.5
+random_geometric,0.60,mixed-crossover,1.0,4,0.0,0.0,0.0,0.0,0.0,1.0
+ring,0.00,dephasing-assisted,0.5,4,0.5,0.5,0.0,0.0,0.0,0.0
+ring,0.60,coherent-dominated,0.5,4,0.5,0.25,0.0,0.0,0.0,0.25
