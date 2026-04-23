@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import time
 import textwrap
 from pathlib import Path
 from typing import Any
@@ -19,21 +20,21 @@ ANNOTATION_STATE_PATH = ROOT / ".figure_annotation_state.json"
 
 SOURCE_REFERENCES: dict[str, str] = {
     "internal_validation_baseline": "Internal baseline for spin-3/2 Na-23 operators, Hamiltonians, Liouvillian consistency, and synthetic spectra.",
-    "na23_relaxometry_2023": 'Paper A. "23Na relaxometry: An overview of theory and applications," Magnetic Resonance Letters (2023), DOI: 10.1016/j.mrl.2023.04.001.',
-    "spin32_algebraic_2004": 'Paper B. "Algebraic description of spin 3/2 dynamics in NMR experiments," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.12.009.',
-    "qst_relaxation_2008": 'Paper C. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography," Journal of Magnetic Resonance (2008), DOI: 10.1016/j.jmr.2008.01.009.',
-    "spin32_qlogic_qst_2005": 'Paper D. "Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum state tomography," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2005.04.009.',
-    "nonmarkov_noise_2022": 'Paper E. "Characterization and control of non-Markovian quantum noise," Nature Reviews Physics (2022), DOI: 10.1038/s42254-022-00446-2.',
-    "multipass_qpt_2024": 'Paper F. "Multipass quantum process tomography," Scientific Reports (2024), DOI: 10.1038/s41598-024-68353-3.',
-    "quadrupolar_qip_2012": 'Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.',
-    "grape_nmr_control_2005": 'Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.',
-    "pps_optimal_control_2012": 'Paper I. "Preparing Pseudo-Pure States in a Quadrupolar Spin System Using Optimal Control," Chinese Physics Letters (2012), DOI: 10.1088/0256-307X/29/12/127601.',
-    "projected_ls_qpt_2022": 'Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.',
-    "gate_set_tomography_2021": 'Paper K. "Gate Set Tomography," Quantum (2021), DOI: 10.22331/q-2021-10-05-557.',
-    "nonmarkov_process_tensor_2020": 'Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.',
-    "noise_filtering_control_2014": 'Paper M. "Experimental noise filtering by quantum control," Nature Physics (2014), DOI: 10.1038/nphys3115.',
-    "dd_noise_spectroscopy_2011": 'Paper N. "Measuring the spectrum of colored noise by dynamical decoupling," Physical Review Letters (2011), DOI: 10.1103/PhysRevLett.107.230501.',
-    "flux_qubit_noise_spectroscopy_2011": 'Paper O. "Noise spectroscopy through dynamical decoupling with a superconducting flux qubit," Nature Physics (2011), DOI: 10.1038/nphys1994.',
+    "na23_relaxometry_2023": 'Song, Y. et al. "23Na relaxometry: An overview of theory and applications." Magnetic Resonance Letters 3(2), 150--174 (2023). DOI: 10.1016/j.mrl.2023.04.001.',
+    "spin32_algebraic_2004": 'Tanase, C. and Boada, F. E. "Algebraic description of spin 3/2 dynamics in NMR experiments." Journal of Magnetic Resonance 173(2), 236--253 (2005). DOI: 10.1016/j.jmr.2004.12.009.',
+    "qst_relaxation_2008": 'Auccaise, R. et al. "A study of the relaxation dynamics in a quadrupolar NMR system using Quantum State Tomography." Journal of Magnetic Resonance 192(1), 17--26 (2008). DOI: 10.1016/j.jmr.2008.01.009.',
+    "spin32_qlogic_qst_2005": 'Bonk, F. A. et al. "Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum state tomography." Journal of Magnetic Resonance 175(2), 226--234 (2005). DOI: 10.1016/j.jmr.2005.04.009.',
+    "nonmarkov_noise_2022": 'White, G. "Characterization and control of non-Markovian quantum noise." Nature Reviews Physics 4, 287 (2022). DOI: 10.1038/s42254-022-00446-2.',
+    "multipass_qpt_2024": 'Stanchev, S. G. and Vitanov, N. V. "Multipass quantum process tomography." Scientific Reports 14(1), 18185 (2024). DOI: 10.1038/s41598-024-68353-3.',
+    "quadrupolar_qip_2012": 'Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.',
+    "grape_nmr_control_2005": 'Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.',
+    "pps_optimal_control_2012": 'Tan, Y.-P. et al. "Preparing Pseudo-Pure States in a Quadrupolar Spin System Using Optimal Control." Chinese Physics Letters 29(12), 127601 (2012). DOI: 10.1088/0256-307X/29/12/127601.',
+    "projected_ls_qpt_2022": 'Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.',
+    "gate_set_tomography_2021": 'Nielsen, E. et al. "Gate Set Tomography." Quantum 5, 557 (2021). DOI: 10.22331/q-2021-10-05-557.',
+    "nonmarkov_process_tensor_2020": 'White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.',
+    "noise_filtering_control_2014": 'Soare, A. et al. "Experimental noise filtering by quantum control." Nature Physics 10(11), 825--829 (2014). DOI: 10.1038/nphys3115.',
+    "dd_noise_spectroscopy_2011": 'Alvarez, G. A. and Suter, D. "Measuring the spectrum of colored noise by dynamical decoupling." Physical Review Letters 107(23), 230501 (2011). DOI: 10.1103/PhysRevLett.107.230501.',
+    "flux_qubit_noise_spectroscopy_2011": 'Bylander, J. et al. "Noise spectroscopy through dynamical decoupling with a superconducting flux qubit." Nature Physics 7(7), 565--570 (2011). DOI: 10.1038/nphys1994.',
     "experimental_decision_pipeline": "Internal workflow synthesis of Papers C, D, M, and N for laboratory decision support.",
 }
 
@@ -175,6 +176,84 @@ OUTPUT_FIGURE_SUMMARIES: dict[str, dict[str, str]] = {
     },
 }
 
+FIGURE_TITLE_OVERRIDES: dict[str, str] = {
+    "nmr_open_simulation.png": "Open-System Na-23 Simulation Diagnostics",
+    "nmr_synthetic_dissipation_fit.png": "Synthetic Dissipation-Fit Validation",
+    "nmr_validation_suite.png": "Noise-Robustness Validation Suite",
+    "nmr_reference_dissipation_fit.png": "Reference-FID Dissipation Fit",
+    "nmr_tomography_pipeline.png": "End-to-End Na-23 Tomography Pipeline",
+    "open_qubit_demo.png": "Generic Open-Qubit Demonstration",
+    "comparison_figure_count.png": "Artifact Coverage across Reproductions and Workflows",
+    "comparison_quality_scores.png": "Normalized Performance Indicators across the Benchmark Suite",
+    "comparison_improvement_factors.png": "Improvement Factors Relative to Each Baseline Protocol",
+    "comparison_error_metrics.png": "Representative Residual and Error Metrics across Benchmarks",
+    "internal_validation_baseline.png": "Spin-3/2 Baseline Validation Panel",
+    "envelope_residuals.png": "Residual Comparison of Relaxation-Envelope Models",
+    "phenomenological_vs_redfield_decay.png": "Phenomenological versus Redfield-Inspired Relaxation",
+    "rates_vs_tau_c.png": "Relaxation Rates versus Correlation Time",
+    "spectral_density_regimes.png": "Reduced Spectral-Density Regimes",
+    "b0_b1_energy_map.png": "B0/B1 Energy and Sensitivity Map",
+    "coherence_order_pathways.png": "Coherence-Order Pathways in the Spin-3/2 Algebra",
+    "hilbert_vs_liouville_fid.png": "Hilbert- versus Liouville-Space FID Comparison",
+    "superoperator_factorization_error.png": "Superoperator-Factorization Error",
+    "density_element_decay.png": "Density-Matrix Element Decay under QST",
+    "extracted_rate_vs_true.png": "Extracted versus True Relaxation Rates",
+    "phase_error_sensitivity.png": "Sensitivity to Tomography Phase Error",
+    "tomography_fidelity_vs_noise.png": "QST Fidelity versus Measurement Noise",
+    "all_transition_fidelity_comparison.png": "Selective-Pulse Fidelity across Addressed Transitions",
+    "population_transfer_vs_duration.png": "Population Transfer versus Pulse Duration",
+    "qst_density_monitor.png": "QST Density-Matrix Monitor after Logical Operation",
+    "selective_pulse_fidelity_vs_duration.png": "Selective-Pulse Fidelity versus Duration",
+    "lindblad_failure_signatures.png": "Failure Signatures of the Markovian Fit",
+    "markovian_vs_memory_ramsey_echo.png": "Ramsey and Echo Decay: Markovian versus Memory Models",
+    "time_local_rate_negative_intervals.png": "Negative Intervals of the Time-Local Rate",
+    "trace_distance_revival.png": "Trace-Distance Revival under Non-Markovian Dynamics",
+    "error_vs_passes.png": "Process-Tomography Error versus Number of Passes",
+    "ptm_comparison.png": "PTM Reconstruction Comparison",
+    "shot_noise_sweep.png": "Shot-Noise Dependence of Multipass QPT",
+    "single_vs_multipass_error_distribution.png": "Error Distribution: Single-Pass versus Multipass QPT",
+    "grover_marked_state_populations.png": "Marked-State Population in Encoded Grover Dynamics",
+    "product_operator_decomposition.png": "Encoded Two-Qubit Product-Operator Decomposition",
+    "pseudopure_visibility.png": "Pseudo-Pure-State Visibility",
+    "qst_noise_sensitivity.png": "QST Robustness to Measurement Noise",
+    "grape_fidelity_convergence.png": "GRAPE Fidelity Convergence",
+    "optimized_controls.png": "Optimized Control Waveforms",
+    "rectangular_vs_grape_state_fidelity.png": "State Fidelity: Rectangular versus GRAPE Control",
+    "robustness_map.png": "Robustness Map over Detuning and RF Scale",
+    "pps_grape_convergence.png": "GRAPE Convergence for Pseudo-Pure-State Preparation",
+    "pps_optimized_controls.png": "Optimized Controls for Pseudo-Pure-State Preparation",
+    "pps_population_profiles.png": "Population Profiles for Pseudo-Pure-State Preparation",
+    "pps_qst_noise_sensitivity.png": "Pseudo-Pure-State QST Robustness to Noise",
+    "choi_eigenvalues_raw_vs_pls.png": "Choi Eigenvalues: Raw versus Projected Least Squares",
+    "physicality_violations_vs_shots.png": "Physicality Violations versus Shot Count",
+    "ptm_reconstruction_comparison.png": "PTM Reconstruction: Raw versus Projected Estimators",
+    "qpt_error_distribution.png": "Quantum Process Tomography Error Distribution",
+    "gst_gate_matrix_residuals.png": "Gate-Matrix Residuals after GST Fitting",
+    "gst_gauge_dependent_spam.png": "Gauge-Dependent SPAM Parameters in GST",
+    "gst_heldout_predictions.png": "Held-Out Predictive Performance of GST",
+    "gst_prediction_by_sequence_length.png": "GST Prediction Error versus Sequence Length",
+    "process_tensor_control_landscape.png": "Control Landscape under the Process-Tensor Model",
+    "process_tensor_echo_witness.png": "Echo Witness: Process Tensor versus Markovian Channel",
+    "process_tensor_prediction_scatter.png": "Predicted versus True Observables under Competing Models",
+    "process_tensor_rmse_by_length.png": "Prediction RMSE versus Sequence Temporal Depth",
+    "coherence_vs_control_sequence.png": "Coherence versus Control Sequence Family",
+    "filter_peak_tracking.png": "Tracking the Dominant Filter Peak",
+    "noise_spectrum_and_filters.png": "Noise Spectrum and Control-Sequence Filters",
+    "time_domain_switching_functions.png": "Time-Domain Switching Functions",
+    "dd_coherence_fit.png": "DD Coherence Fit after Spectral Reconstruction",
+    "dd_reconstructed_spectrum.png": "Dynamical-Decoupling Reconstructed Spectrum",
+    "dd_sequence_sensitivity.png": "Frequency Sensitivity of the DD Sequence Set",
+    "dd_spectrum_residual.png": "Residual Spectrum after DD Reconstruction",
+    "flux_coherence_vs_pulse_count.png": "Flux-Qubit Coherence versus Pulse Count",
+    "flux_filter_peak_map.png": "Filter-Peak Map for Flux-Qubit Spectroscopy",
+    "flux_power_law_fit.png": "Power-Law Fit to the Recovered Noise Spectrum",
+    "flux_spectrum_peak_estimates.png": "Peak-Based Spectral Estimates for the Flux-Qubit Benchmark",
+    "control_sequence_decision.png": "Control-Sequence Decision from Reconstructed Noise",
+    "dd_spectroscopy_fit.png": "Workflow DD Spectroscopy Fit",
+    "reconstructed_noise_spectrum.png": "Reconstructed Effective Noise Spectrum",
+    "state_preparation_qst.png": "State Preparation and QST Validation",
+}
+
 
 def _sha256_file(path: Path) -> str:
     digest = hashlib.sha256()
@@ -195,7 +274,36 @@ def _save_state(state: dict[str, dict[str, str]]) -> None:
 
 
 def humanize_figure_name(filename: str) -> str:
-    return filename.replace(".png", "").replace("_", " ").strip().title()
+    if filename in FIGURE_TITLE_OVERRIDES:
+        return FIGURE_TITLE_OVERRIDES[filename]
+
+    replacements = {
+        "qst": "QST",
+        "dd": "DD",
+        "grape": "GRAPE",
+        "ptm": "PTM",
+        "pps": "PPS",
+        "fid": "FID",
+        "rmse": "RMSE",
+        "spam": "SPAM",
+        "raw": "Raw",
+        "pls": "PLS",
+        "cptp": "CPTP",
+        "choi": "Choi",
+        "b0": "B0",
+        "b1": "B1",
+        "tau": "Tau",
+    }
+    words: list[str] = []
+    for token in filename.replace(".png", "").split("_"):
+        low = token.lower()
+        if low == "vs":
+            words.append("versus")
+        elif low in replacements:
+            words.append(replacements[low])
+        else:
+            words.append(token.capitalize())
+    return " ".join(words).strip()
 
 
 def reference_for_source(source_id: str) -> str:
@@ -282,7 +390,19 @@ def annotation_lines_from_note(note: dict[str, str]) -> list[str]:
 
 
 def _render_annotation(path: Path, lines: list[str]) -> None:
-    image = plt.imread(path)
+    last_error: Exception | None = None
+    image = None
+    for _ in range(3):
+        try:
+            image = plt.imread(path)
+            break
+        except (OSError, SyntaxError) as exc:
+            last_error = exc
+            time.sleep(0.2)
+    if image is None:
+        if last_error is not None:
+            raise last_error
+        raise RuntimeError(f"Could not load image for annotation: {path}")
     height, width = image.shape[0], image.shape[1]
     aspect = width / max(height, 1)
     wrapped_lines: list[str] = []

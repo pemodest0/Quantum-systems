@@ -58,11 +58,16 @@ def mesolve(
     states = np.zeros((t.size, dim, dim), dtype=complex)
     states[0] = rho_init
 
+    previous_dt: float | None = None
+    propagator: np.ndarray | None = None
     for idx in range(1, t.size):
         dt = float(t[idx] - t[idx - 1])
         if dt <= 0:
             raise ValueError("times must be strictly increasing")
-        rho_vec = expm(l_op * dt) @ rho_vec
+        if previous_dt is None or propagator is None or not np.isclose(dt, previous_dt):
+            propagator = expm(l_op * dt)
+            previous_dt = dt
+        rho_vec = propagator @ rho_vec
         states[idx] = vector_to_density_matrix(rho_vec, dim)
 
     return MasterEquationResult(times=t, states=states)

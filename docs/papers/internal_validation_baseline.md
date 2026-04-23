@@ -20,19 +20,19 @@ The central insight is methodological: a wrong commutator, non-Hermitian Hamilto
 
 Spin operators, Hamiltonian scales, synthetic spectra, and Liouvillian checks.
 
-## Direct Laboratory Comparison
+## Direct Comparison with the Published Reference
 
 The baseline is the reference layer against which all paper reproductions are compared. If a later paper seems to disagree with the platform, the first check is whether the baseline assumptions, units, phase conventions, or FFT conventions were changed.
 
-## Project Lesson
+## Interpretation for the Present Study
 
 No reproduction should be trusted until the spin-3/2 algebra and spectrum basics pass.
 
-## Next Laboratory Use
+## Experimental Implication
 
 Before importing a new TNT file, pulse sequence, or tomography series, rerun the baseline and record the hashes in research memory.
 
-## Known Limitations
+## Current Deviations from the Published Reference
 
 This is an internal benchmark, not an external paper reproduction.
 
@@ -42,9 +42,9 @@ This is an internal benchmark, not an external paper reproduction.
 
 ## Figure Guide
 
-### Figure 1. Internal Validation Baseline
+### Figure 1. Spin-3/2 Baseline Validation Panel
 
-![Internal Validation Baseline](../../outputs/repro/internal_validation_baseline/latest/internal_validation_baseline.png)
+![Spin-3/2 Baseline Validation Panel](../../outputs/repro/internal_validation_baseline/latest/internal_validation_baseline.png)
 
 - Summary: The baseline panel consolidates commutator checks, Hermiticity checks, transition positions, and physical-state diagnostics for the Na-23 spin-3/2 model.
 - Interpretation: In this laboratory, the figure is used to certify the physical consistency of the spin-3/2 platform before any later claim. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.

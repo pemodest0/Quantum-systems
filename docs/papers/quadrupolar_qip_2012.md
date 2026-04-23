@@ -6,7 +6,7 @@ Category: `Encoded QIP`
 
 ## Primary Reference
 
-Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.
+Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.
 
 ## Article Summary
 
@@ -20,19 +20,19 @@ The important insight is the dual identity of the system: it is simultaneously a
 
 Product-operator decompositions, pseudo-pure states, Grover benchmark, synthetic QST.
 
-## Direct Laboratory Comparison
+## Direct Comparison with the Published Reference
 
 Our reproduction validated the mapping from spin operators to encoded two-qubit product operators and reproduced ideal Grover-style behavior under synthetic assumptions. This links the Na-23 spectroscopy code to quantum-information protocols.
 
-## Project Lesson
+## Interpretation for the Present Study
 
 Na-23 can be modeled both as quadrupolar NMR and as an encoded four-level QIP platform.
 
-## Next Laboratory Use
+## Experimental Implication
 
 Use this paper to decide how to label states, transitions, pseudo-pure preparations, and logical operations in future lab notes.
 
-## Known Limitations
+## Current Deviations from the Published Reference
 
 Ideal encoded operations are synthetic and require pulse-level implementation for experiments.
 
@@ -47,37 +47,37 @@ Ideal encoded operations are synthetic and require pulse-level implementation fo
 
 ## Figure Guide
 
-### Figure 1. Grover Marked State Populations
+### Figure 1. Marked-State Population in Encoded Grover Dynamics
 
-![Grover Marked State Populations](../../outputs/repro/quadrupolar_qip_2012/latest/figures/grover_marked_state_populations.png)
+![Marked-State Population in Encoded Grover Dynamics](../../outputs/repro/quadrupolar_qip_2012/latest/figures/grover_marked_state_populations.png)
 
 - Summary: The marked-state population is followed through the encoded Grover-style sequence implemented on the four-level quadrupolar model.
 - Interpretation: In this laboratory, the figure is used to reinterpret the Na-23 spin-3/2 nucleus as an encoded two-qubit information processor. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.
+- Reference: Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.
 
-### Figure 2. Product Operator Decomposition
+### Figure 2. Encoded Two-Qubit Product-Operator Decomposition
 
-![Product Operator Decomposition](../../outputs/repro/quadrupolar_qip_2012/latest/figures/product_operator_decomposition.png)
+![Encoded Two-Qubit Product-Operator Decomposition](../../outputs/repro/quadrupolar_qip_2012/latest/figures/product_operator_decomposition.png)
 
 - Summary: Spin-3/2 observables are decomposed into the effective two-qubit product-operator language used in quadrupolar NMR QIP.
 - Interpretation: In this laboratory, the figure is used to reinterpret the Na-23 spin-3/2 nucleus as an encoded two-qubit information processor. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.
+- Reference: Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.
 
-### Figure 3. Pseudopure Visibility
+### Figure 3. Pseudo-Pure-State Visibility
 
-![Pseudopure Visibility](../../outputs/repro/quadrupolar_qip_2012/latest/figures/pseudopure_visibility.png)
+![Pseudo-Pure-State Visibility](../../outputs/repro/quadrupolar_qip_2012/latest/figures/pseudopure_visibility.png)
 
 - Summary: The effective contrast or visibility of the pseudo-pure deviation state is monitored after the preparation sequence.
 - Interpretation: In this laboratory, the figure is used to reinterpret the Na-23 spin-3/2 nucleus as an encoded two-qubit information processor. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.
+- Reference: Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.
 
-### Figure 4. Qst Noise Sensitivity
+### Figure 4. QST Robustness to Measurement Noise
 
-![Qst Noise Sensitivity](../../outputs/repro/quadrupolar_qip_2012/latest/figures/qst_noise_sensitivity.png)
+![QST Robustness to Measurement Noise](../../outputs/repro/quadrupolar_qip_2012/latest/figures/qst_noise_sensitivity.png)
 
 - Summary: The reconstructed encoded-state fidelity is tracked as synthetic noise is added to the tomography signals.
 - Interpretation: In this laboratory, the figure is used to reinterpret the Na-23 spin-3/2 nucleus as an encoded two-qubit information processor. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper G. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei," Philosophical Transactions of the Royal Society A (2012), DOI: 10.1098/rsta.2011.0365.
+- Reference: Teles, J. et al. "Quantum information processing by nuclear magnetic resonance on quadrupolar nuclei." Philosophical Transactions of the Royal Society A 370(1976), 4770--4793 (2012). DOI: 10.1098/rsta.2011.0365.
 
 
 ## Canonical Artifacts

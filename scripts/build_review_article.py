@@ -30,10 +30,10 @@ def run_command(command: list[str], cwd: Path) -> tuple[int, str]:
 def available_engine() -> tuple[str, list[str]] | None:
     if shutil.which("tectonic"):
         return "tectonic", ["tectonic", TEX_FILE.name]
-    if shutil.which("latexmk"):
-        return "latexmk", ["latexmk", "-pdf", "-interaction=nonstopmode", TEX_FILE.name]
     if shutil.which("pdflatex"):
         return "pdflatex", ["pdflatex", "--enable-installer", "-interaction=nonstopmode", TEX_FILE.name]
+    if shutil.which("latexmk"):
+        return "latexmk", ["latexmk", "-pdf", "-interaction=nonstopmode", TEX_FILE.name]
     miktex_candidates = [
         Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "MiKTeX" / "miktex" / "bin" / "x64" / "pdflatex.exe",
         Path(os.environ.get("ProgramFiles", "")) / "MiKTeX" / "miktex" / "bin" / "x64" / "pdflatex.exe",
@@ -41,6 +41,19 @@ def available_engine() -> tuple[str, list[str]] | None:
     for candidate in miktex_candidates:
         if candidate.exists():
             return "pdflatex", [str(candidate), "--enable-installer", "-interaction=nonstopmode", TEX_FILE.name]
+    return None
+
+
+def available_bibtex() -> list[str] | None:
+    if shutil.which("bibtex"):
+        return ["bibtex", TEX_FILE.stem]
+    miktex_candidates = [
+        Path(os.environ.get("LOCALAPPDATA", "")) / "Programs" / "MiKTeX" / "miktex" / "bin" / "x64" / "bibtex.exe",
+        Path(os.environ.get("ProgramFiles", "")) / "MiKTeX" / "miktex" / "bin" / "x64" / "bibtex.exe",
+    ]
+    for candidate in miktex_candidates:
+        if candidate.exists():
+            return [str(candidate), TEX_FILE.stem]
     return None
 
 
@@ -87,11 +100,27 @@ def main(argv: list[str] | None = None) -> int:
     (ARTICLE_DIR / "build.log").write_text(output, encoding="utf-8")
 
     if engine_name == "pdflatex" and code == 0:
-        code2, output2 = run_command(command, ARTICLE_DIR)
-        with (ARTICLE_DIR / "build.log").open("a", encoding="utf-8") as handle:
-            handle.write("\n\n--- second pdflatex pass ---\n\n")
-            handle.write(output2)
-        code = code2
+        tex_source = TEX_FILE.read_text(encoding="utf-8")
+        if "\\bibliography{" in tex_source:
+            bibtex_command = available_bibtex()
+            if bibtex_command is not None:
+                bib_code, bib_output = run_command(bibtex_command, ARTICLE_DIR)
+                with (ARTICLE_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                    handle.write("\n\n--- bibtex pass ---\n\n")
+                    handle.write(bib_output)
+                code = bib_code
+        if code == 0:
+            code2, output2 = run_command(command, ARTICLE_DIR)
+            with (ARTICLE_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                handle.write("\n\n--- second pdflatex pass ---\n\n")
+                handle.write(output2)
+            code = code2
+        if code == 0:
+            code3, output3 = run_command(command, ARTICLE_DIR)
+            with (ARTICLE_DIR / "build.log").open("a", encoding="utf-8") as handle:
+                handle.write("\n\n--- third pdflatex pass ---\n\n")
+                handle.write(output3)
+            code = code3
 
     pdf_path = ARTICLE_DIR / "open_quantum_control_review.pdf"
     payload = {

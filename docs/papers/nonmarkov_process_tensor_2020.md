@@ -6,7 +6,7 @@ Category: `Multi-time memory`
 
 ## Primary Reference
 
-Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.
 
 ## Article Summary
 
@@ -20,19 +20,19 @@ The central insight is that memory is operational: the best next control can dep
 
 Synthetic process tensor versus Markovian channel for multi-time prediction and control selection.
 
-## Direct Laboratory Comparison
+## Direct Comparison with the Published Reference
 
 Our synthetic process-tensor benchmark predicted multi-time probabilities far better than a fixed Markovian model and selected a different, better control sequence.
 
-## Project Lesson
+## Interpretation for the Present Study
 
 Memory-aware prediction can select different and better controls than Markovian modeling.
 
-## Next Laboratory Use
+## Experimental Implication
 
 Escalate to process-tensor experiments only after simpler DD, QST, and Lindblad models fail; it is powerful but experimentally expensive.
 
-## Known Limitations
+## Current Deviations from the Published Reference
 
 Synthetic correlated dephasing only; real process-tensor tomography is experimentally expensive.
 
@@ -43,37 +43,37 @@ Synthetic correlated dephasing only; real process-tensor tomography is experimen
 
 ## Figure Guide
 
-### Figure 1. Process Tensor Control Landscape
+### Figure 1. Control Landscape under the Process-Tensor Model
 
-![Process Tensor Control Landscape](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_control_landscape.png)
+![Control Landscape under the Process-Tensor Model](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_control_landscape.png)
 
 - Summary: Candidate controls are scored using a multi-time process-tensor description instead of a memoryless channel.
 - Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+- Reference: White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.
 
-### Figure 2. Process Tensor Echo Witness
+### Figure 2. Echo Witness: Process Tensor versus Markovian Channel
 
-![Process Tensor Echo Witness](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_echo_witness.png)
+![Echo Witness: Process Tensor versus Markovian Channel](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_echo_witness.png)
 
 - Summary: Multi-time echo observables are compared for the Markovian approximation and the process-tensor model.
 - Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+- Reference: White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.
 
-### Figure 3. Process Tensor Prediction Scatter
+### Figure 3. Predicted versus True Observables under Competing Models
 
-![Process Tensor Prediction Scatter](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_prediction_scatter.png)
+![Predicted versus True Observables under Competing Models](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_prediction_scatter.png)
 
 - Summary: Predicted versus true observables are scattered for the competing models across the synthetic validation dataset.
 - Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+- Reference: White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.
 
-### Figure 4. Process Tensor Rmse By Length
+### Figure 4. Prediction RMSE versus Sequence Temporal Depth
 
-![Process Tensor Rmse By Length](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_rmse_by_length.png)
+![Prediction RMSE versus Sequence Temporal Depth](../../outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_rmse_by_length.png)
 
 - Summary: The root-mean-square prediction error is plotted against the temporal depth of the control/measurement sequence.
 - Interpretation: In this laboratory, the figure is used to escalate to multi-time memory models when Markovian channels fail. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper L. "Demonstration of non-Markovian process characterisation and control on a quantum processor," Nature Communications (2020), DOI: 10.1038/s41467-020-20113-3.
+- Reference: White, G. A. L. et al. "Demonstration of non-Markovian process characterisation and control on a quantum processor." Nature Communications 11, 5301 (2020). DOI: 10.1038/s41467-020-20113-3.
 
 
 ## Canonical Artifacts

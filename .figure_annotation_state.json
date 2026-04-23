@@ -1,286 +1,286 @@
 {
   "outputs/nmr_open_simulation.png": {
-    "caption_hash": "af35ebd961fc9925e862fb724313f15195c27fde259d1702070fa898bde9bce0",
-    "file_hash": "eb31283653dbba90a50ec8301e9c2301e02c226aaca8976be714ffdda60d19ea"
+    "caption_hash": "40d57cecd5c88cb3c18c8397b8d35d5bb017f298dedbee55b69d9d23e5eef4c1",
+    "file_hash": "7c39da7b406abec750293f50534f5068e21ff935897ea4826600de92bcb64ebe"
   },
   "outputs/nmr_reference_dissipation_fit.png": {
-    "caption_hash": "2b714ecb65bde628357f321ba0919eee72c08e0b6d48e96af571f7589ead44ab",
-    "file_hash": "0bac4d436549f56d20a3cdd2926adf9216380f44afc0386a91931ead42c11f5c"
+    "caption_hash": "dbe4ba6f835b755d15327869681f443bce016897334d761f760ec24a75031dd7",
+    "file_hash": "08d95e2034b16bceaf9999b80d30962f38c9db2fd88a747760930fba21a5d984"
   },
   "outputs/nmr_synthetic_dissipation_fit.png": {
-    "caption_hash": "d18c86c7b26c65ed951f21c6b7833522869b26ac23ac80a904d5ef8fd27f998c",
-    "file_hash": "4d459efdd80c9433978a78a933b2817392bcef2965a5f97b44cd43676b2b85cb"
+    "caption_hash": "7b6f1926cf000df771e03a9b56e825c2e68aad37afe6b274deac54ffb5d36af8",
+    "file_hash": "b028a93e88c27e840f1cae52afa539b5daf2e0325daa281fad95c7245b797ca4"
   },
   "outputs/nmr_tomography_pipeline.png": {
-    "caption_hash": "16bcaacd17b630f315c8f5ab557b2bacec1505a7a063700f89be902f9c7f1acf",
-    "file_hash": "e5719b759c279b94091e08a32bb05ebda1515ac97cc3f9c1f6cfdc686c5a2504"
+    "caption_hash": "5f60c48adbce1304ddad7af2282fc730179313c14659632349222e14d9ade4fe",
+    "file_hash": "27970e319144bec19365dbfc2fd133d6965015db6efd3423a1a6a39b64a680ed"
   },
   "outputs/nmr_validation_suite.png": {
-    "caption_hash": "61b69ca6e10175d750fcc1151b62897ad3aec13de30fdae17c53d9702012a8e6",
-    "file_hash": "6fce8aef351c4c9aec8b0ee4538b1dc3f4fbea8a945c76e8a12ce07109199195"
+    "caption_hash": "60ebe11d3f44bce97a13ee119dc87969cc3b83fb5be25915ad9aecc9f3891cda",
+    "file_hash": "a9c351f432f8d64c4895067957de3be44655b221d97ff821c57e1890740e10ae"
   },
   "outputs/open_qubit_demo.png": {
-    "caption_hash": "d9efcd4d0492658a49c90e67b190861012f97f8ff5e404dce8a9970f708718dc",
-    "file_hash": "4735bd5f8071420916cba355a4a54b3c5e56da383d57f0c387b931ab46897910"
+    "caption_hash": "d7efdd75faea8352d962f65c7775125719a4c9400b052e0b09f57041f65edf4c",
+    "file_hash": "358035dea135f7b5f3db3d7668b8d1e5d5f2d5677bde414f01958dfe028c2e0c"
   },
   "outputs/repro/internal_validation_baseline/latest/internal_validation_baseline.png": {
-    "caption_hash": "97b870380c896f64ad5b4437c13c4d7901c25fa9ad07ed8df0555012fed6421a",
-    "file_hash": "23d256eda70f10ec64e7acd44f58d604ce2957dd6ee57381af16e67764b655b9"
+    "caption_hash": "366628b0466168ef18da8049fa0abda5a4e96b1e4b8d767d963e0a8788734926",
+    "file_hash": "f173c47a4e223f90d686c687382956e1d1ea2fce64c50892b67dbce59966acdf"
   },
   "outputs/repro/na23_relaxometry_2023/latest/figures/envelope_residuals.png": {
-    "caption_hash": "4a75330d991f302f2756218bad1c3ede25211cb35212e7544fa79c5016731e5c",
-    "file_hash": "616f23a11e7d1bd38bfb6514919ae0938032ea3083bc9d7a7f2ab02d7a697fd3"
+    "caption_hash": "f7fb0b7ea8337e3c6b477209ec408a0fa98baeb813538a731340caddebec01fe",
+    "file_hash": "e3923893c62d8fce306415cdc9ae555ffc8c51737486ee650f9defe9d3543a8c"
   },
   "outputs/repro/na23_relaxometry_2023/latest/figures/phenomenological_vs_redfield_decay.png": {
-    "caption_hash": "a3a95a101d32be0438e46a22ff5812c452f52a72df5e3a368cffbfda7b3d6356",
-    "file_hash": "c3c08883be69eb076954d4026b58034da5ea0746f7c3aa32de4c6d9cab41d1e9"
+    "caption_hash": "c52eb8616260a61ee7626c695cf98469db46ee5a9365b5b9cfceb565a71421e4",
+    "file_hash": "375574ef22bb2c98d676e0319059ba862387c7584a174fc8b0d95a71f841159f"
   },
   "outputs/repro/na23_relaxometry_2023/latest/figures/rates_vs_tau_c.png": {
-    "caption_hash": "c175f62e75c62998f7e05eb1008c7b46792c6cef3e7d2a95736f8525c16b1274",
-    "file_hash": "33cd24e9a22c212dbb3492fdd4a42b50ba85f234398c0dd1ab0f1a6d489ca3c2"
+    "caption_hash": "99a6850b0ad71c857c09b41b524539ec79c46efb7a4719ab426c4a82837dcc3d",
+    "file_hash": "1f15d7c7a1b2b71a60181991476c1622396a9a37996b72256c0d749cb2b269a8"
   },
   "outputs/repro/na23_relaxometry_2023/latest/figures/spectral_density_regimes.png": {
-    "caption_hash": "ba8da465d1b80b37a30861f25b1706cbda243b87ce34e8c3bf8629f6ff3fb450",
-    "file_hash": "79a8aba7894048ad19d26dc83c94088585974b99c63f2d070170bc27ebfc221e"
+    "caption_hash": "8a646bbcb21cbe9160d0e35affc848845a3a39b26a894eb6adbddf0d4b23dac7",
+    "file_hash": "ce547a7b002b73826c99ab5e2143a88fdb9d8bc1e652c117c96a0e1f208f2664"
   },
   "outputs/repro/spin32_algebraic_2004/latest/figures/b0_b1_energy_map.png": {
-    "caption_hash": "1de037d7e4b2ee61e6c9ab5949c04c9a3bf7ec061aff2eba887951fc81737ffc",
-    "file_hash": "a3fe6fd1615a32b65f750ce8c0ef0e840aaddabf61da605bd320c4e938e24a16"
+    "caption_hash": "398b1cacfefdbce1f9e07b3ebcac197706b3231f0eef82f6343f1ae9db95b499",
+    "file_hash": "3b54423222915a116f85bbfa9c91c90851621a836b2efb825f26784214f7cc92"
   },
   "outputs/repro/spin32_algebraic_2004/latest/figures/coherence_order_pathways.png": {
-    "caption_hash": "8050eeb78d1089f0ff0fabf885d76cae9f290869ec7a44de15faecd62d7c7ef6",
-    "file_hash": "add4c777e0e34243de04465ce488de89e3b755b350fa56acd568f71aaa8ee82b"
+    "caption_hash": "942bacd9afa622023907c346e41c8ea2d44023b6ed096b27ab6f079e8c54541e",
+    "file_hash": "a1617e0b05f2e9b19e1803dcde90aa4fa6a55154edda571c6a887a987d4a5589"
   },
   "outputs/repro/spin32_algebraic_2004/latest/figures/hilbert_vs_liouville_fid.png": {
-    "caption_hash": "c7f010e6bdb1e3d2ccb310acdea98d9dd9b88d07d1bc778d5e2a24b7ae6ab1cd",
-    "file_hash": "cb65826d61a116bda4d3af8000be4105e96791de9d6033fa65016ae4b3f9bafa"
+    "caption_hash": "5170fceadce0d55a894ff6e25e0e90231ebdc34f04db82c579703b81ada67cc4",
+    "file_hash": "c7da7ca35fb24337f378b68bffa48ea6eaa29a7e9ac9b44bcfc01e60024ed804"
   },
   "outputs/repro/spin32_algebraic_2004/latest/figures/superoperator_factorization_error.png": {
-    "caption_hash": "9081b77c776c8baad99d5ce0202efadc2fadafb057979367e1b78593b4bfa724",
-    "file_hash": "17591b843893db4619a46fd8fcf8f8149ea4f7eaea4567707598d97bdd1373ad"
+    "caption_hash": "2bd0a0c290031a016969bc9fa175f14a7b1d82530bf088ef7157f53636326fdd",
+    "file_hash": "4ad55fa00952d3268a44a596b3dd25c9a369bf11a00abe2271a87c2b173be824"
   },
   "outputs/repro/qst_relaxation_2008/latest/figures/density_element_decay.png": {
-    "caption_hash": "03cf122ef461d52d36b37d77c168d5c97cb2c53567ae485940baa166a4e587e4",
-    "file_hash": "b9635543596a087034ed7884477e47828932bad37c9d6d25a90c72fd988b62d2"
+    "caption_hash": "b60e54a6cfcd37556880b67e3d1ea84fcd538e61f1dd5b4b8fce9b8a73eaa0ef",
+    "file_hash": "8bce14adf59be69b1af64caf9a42c61a4fcc069f93f86f0afb5770f68ba3f4ac"
   },
   "outputs/repro/qst_relaxation_2008/latest/figures/extracted_rate_vs_true.png": {
-    "caption_hash": "f0e87286c509acc2b1929fc5866d4c3ba8b591eb7ee1a2d93e5975edf11fa858",
-    "file_hash": "47cb961d59675e38c2b32d8ee5e4bdcd14f321a1a10f221a63b5e4b8c1726a63"
+    "caption_hash": "83502984e1b53f0ef8faf1eabec663fe9669ecaeb6a9f9e37ad765d0381af693",
+    "file_hash": "a6b32534174a3f3972f60dc22e35a68bad181947e8846c0b8ce617b7b0ef32bf"
   },
   "outputs/repro/qst_relaxation_2008/latest/figures/phase_error_sensitivity.png": {
-    "caption_hash": "ffe47a92e405e8808aee0efd9290365dbd414b73ef4b71a60fea61d48d787812",
-    "file_hash": "35e7dafaedf12f9b4575be064c82bb7ecffc79e038fc848689ade802133d203c"
+    "caption_hash": "db4c9ff46ca7b265d4264d5153802e42964e0153dcab08b2c125ed95d922d274",
+    "file_hash": "94dfbad4eedac93c6500bfa9b910c935392c529c14a06ea29aa1d2099b605620"
   },
   "outputs/repro/qst_relaxation_2008/latest/figures/tomography_fidelity_vs_noise.png": {
-    "caption_hash": "7fa24be79ebea45e49deb49711c965143abce9d1c8299cfae94f9f9bb20f86bc",
-    "file_hash": "20bf116aeeda4674f578baa215bcd1c7639fedf2ff146c5c880beea0a8e535c6"
+    "caption_hash": "143ea310a313482cdb0117cf3804d41d90aa3899e22802a84e1fa8ff34555eb8",
+    "file_hash": "7e3da4e0a7cbf13911197d12d921f6d680f0e987a34630ea5f466b0a33009c78"
   },
   "outputs/repro/spin32_qlogic_qst_2005/latest/figures/all_transition_fidelity_comparison.png": {
-    "caption_hash": "b5fb183cbd78aa81fed2d7eba947e8947fac538b0908f0d76dca2b4b81f90437",
-    "file_hash": "2a08609f96a97c6edf34686b55b900299e429bed4f7e13032c139941a87b8d1a"
+    "caption_hash": "d668ee39130c29165fde095aebf3c9b94993198f1ccd175bcfb68dacb92cf204",
+    "file_hash": "185f12ee2307bb6374c828f42c5b51416654fa242c0eb0507ef13a1e90e88032"
   },
   "outputs/repro/spin32_qlogic_qst_2005/latest/figures/population_transfer_vs_duration.png": {
-    "caption_hash": "76e7793ad8c6cc9279054ec2e1cb52bb254f55b0704ef2926a0d747454ec267b",
-    "file_hash": "d1381017597c9964f4a5656ec18701b2fba21cf3019323b55eb04192df87a066"
+    "caption_hash": "6c9cef29b8ec0a8e319d5231579e4682c67aa2ae10bf49082c0b3b372265b51e",
+    "file_hash": "492845b895d7918b5cd74f536346cc16c604e322b48805828af3b83e2ccbc198"
   },
   "outputs/repro/spin32_qlogic_qst_2005/latest/figures/qst_density_monitor.png": {
-    "caption_hash": "801a83280a9649d34400f2f3280a6bf8e7f9faf20aaad3fa224f933f8ad304ef",
-    "file_hash": "9f8e4742598bfce5615fe75c0357c2b682ecfbdc47f3d06266980dbde4bee2f8"
+    "caption_hash": "558e4ccd5ad9e913a0831e781acdfc8032738fc26d88ccfc9cc8a1ee3a997b00",
+    "file_hash": "41a66a3d3d934df247d2f81fae7c4bcc63c4138441196a3fc56019c0c28627f2"
   },
   "outputs/repro/spin32_qlogic_qst_2005/latest/figures/selective_pulse_fidelity_vs_duration.png": {
-    "caption_hash": "fbea68dd48233098655f0f1e19ea7384981fee21b406afd296c7419e9742fa0a",
-    "file_hash": "845a1a30569e8d2b7466edd4b3599d0e0199059ad68f3d5d1730722286252a76"
+    "caption_hash": "acc36979d8d8ce1e41ff2bac5fc140309330abd3a17576d263a29d15600595cc",
+    "file_hash": "8c904fc3c5044fb17a4282981fb0e9a82635ed828f3fc3e11694805dfdb66875"
   },
   "outputs/repro/nonmarkov_noise_2022/latest/figures/lindblad_failure_signatures.png": {
-    "caption_hash": "b34cbe2f664b71fb0ea43cb6cc824921a753c77892928b06bf708e30d8f9384d",
-    "file_hash": "bc4a9e9a6fd55cd896dc1778c8794fe7343a81335f1101830513b77e863213e4"
+    "caption_hash": "87efce6d03761bb0c0f2620fc50fa9868e4cada29ad36ded1298a829e33b6c77",
+    "file_hash": "20d507dbda86b9ddc0529189a2a54e2563b3b808e1d6cfec5fc2804f9d9a43aa"
   },
   "outputs/repro/nonmarkov_noise_2022/latest/figures/markovian_vs_memory_ramsey_echo.png": {
-    "caption_hash": "e3f2f085111962b9aff8e379d8cd19a9a955d30e7fff1c321eb678f2274d45be",
-    "file_hash": "8603c5153f08cc5aed67c9be96f87d653680619046ba9dda93e56e8ab80b74b7"
+    "caption_hash": "a14ac5f8d3bb5f61b4bc7002c205529594a4de3720db1ce02fae582c81e42a81",
+    "file_hash": "6bb0b19398d88d85e8411d328501dccba2d9e3e1cb25869a1f2c63aea4bf300f"
   },
   "outputs/repro/nonmarkov_noise_2022/latest/figures/time_local_rate_negative_intervals.png": {
-    "caption_hash": "88e6702d19c429b8856e4404a117e5007a740aeaa91249896911b74439121a81",
-    "file_hash": "2fecac5d3a470f0fa87c3f647131e41a4eee62c0df2aa54c28d5b57cb8792127"
+    "caption_hash": "35fc0671cd3f69ba6461b90b2aebef879e611adeae53123c306422bea9ee828f",
+    "file_hash": "c0e73410d8d0d55574839eb67c7a2f53603ae5aa83f5fdeba8ecf6fdcc49d4db"
   },
   "outputs/repro/nonmarkov_noise_2022/latest/figures/trace_distance_revival.png": {
-    "caption_hash": "10add28fad9048b4e5f32a3bf10c611f3921cbb09089f39283b3734d40229c58",
-    "file_hash": "4e41f4f17f8c7a5ba95cd9a3f88117de333d81bb1bae72733802cf49ab1d918e"
+    "caption_hash": "262c43507d7208054d5d319deaa923bf1d1b80af69c32673c0cace1c5d048871",
+    "file_hash": "e4c32ab54754ddb797beb0edb85ae5ebfb93a99ef7fd67ca8f999ce4142af340"
   },
   "outputs/repro/multipass_qpt_2024/latest/figures/error_vs_passes.png": {
-    "caption_hash": "dfc52498f1fe7c3eb4a77c3deab8832fe21f8ebea2d9df66fa22de1acc07e163",
-    "file_hash": "05a404da77153273f00f49b3c95f147391603fb1bd8823a312b62f075d73f108"
+    "caption_hash": "e48e617c23b9b9828420889ecdb411ae96750169200b16accb9f0d256efb5d75",
+    "file_hash": "5ad991b2a28ca4fa0900c5b76ca73ef24373104bf1a25a90abb3fc6872964690"
   },
   "outputs/repro/multipass_qpt_2024/latest/figures/ptm_comparison.png": {
-    "caption_hash": "7d1a05dcd75572c50613fdfeef3549f3c86960a637a29a6e706af2185b6d44f7",
-    "file_hash": "7e61baf4b790887e5500f0d7178814a17a4e1ce09e04ab02143d7ea1dcb30d2f"
+    "caption_hash": "98bca196accfc800b10705a682448ad011fd435cd86b46f057c3d01fc611dc3e",
+    "file_hash": "6c5458c76764f5a85081dd3974aabbd4ef03f979743710d5c94554241fafc3ab"
   },
   "outputs/repro/multipass_qpt_2024/latest/figures/shot_noise_sweep.png": {
-    "caption_hash": "51269766a8f0244ac6b89db492d7440368d1f91a8c605ab7f9488476a7d3b065",
-    "file_hash": "edd097d9b11ed5d3c8d085b50f85a869a7541171afef3256d37dcb1d6a344593"
+    "caption_hash": "83e42004aa074bedf651204e72e4c9b6f58d65159411446b7432567f9abac8ea",
+    "file_hash": "a8aa904443c4f1295a2ae860ebaccf6c6a14987897bcc7d8a9dbe7370f6ad6d8"
   },
   "outputs/repro/multipass_qpt_2024/latest/figures/single_vs_multipass_error_distribution.png": {
-    "caption_hash": "b2de98b1b4f67f25d4421a24f3c6657301995048f9f888f762f329a5c5d58037",
-    "file_hash": "74f967061b4e9a7e3b74235e38fe806846a708c2c2aba7be58b5ffa9b4106242"
+    "caption_hash": "e0b729538344a526473bbafff7030a4739b9b0aea8b1111e630167b36fa8e020",
+    "file_hash": "1557648794707d1c6f40181e6c262b366b1ce5c376ec202b81240aae13506dc7"
   },
   "outputs/repro/quadrupolar_qip_2012/latest/figures/grover_marked_state_populations.png": {
-    "caption_hash": "84a869148e59dd2c374ee46e11b9f0e1010e38d2e9083805d2de034a6844c6ec",
-    "file_hash": "0103cdac022cb9150a91d3efa7c0a40552ed21bea3754c1b5a512fde42643bfb"
+    "caption_hash": "051322c43c40fa0c1673a09af20fd7ce74ac157eb2cc969bbd2d9d99f462bedc",
+    "file_hash": "26426b4a40e1e971b334dfeb4114e57f19429603b6f9c9179eb23154fcc3b5e9"
   },
   "outputs/repro/quadrupolar_qip_2012/latest/figures/product_operator_decomposition.png": {
-    "caption_hash": "e3731a1d06e1f00e0ce030e61776d2640700236b5d83195024f0832ede2e2bdd",
-    "file_hash": "f8454e6816b80eed570226d9234daca4dd97342bf95f174624b8699e3eb39d82"
+    "caption_hash": "27941a6193df7880ea6fe25786e724bdeb41d79758c54c9e0064a3942c7770a9",
+    "file_hash": "0ba31d6815367eac35f1bd7f50b2b43eeef141e71740f0c9daf74581c2255be4"
   },
   "outputs/repro/quadrupolar_qip_2012/latest/figures/pseudopure_visibility.png": {
-    "caption_hash": "1c78d48244bbf7245cb93dcf51897ae554f93e29baf3da36c020b9821968c575",
-    "file_hash": "1704a478acdd4b2bd4f6be2aa9d7a780b0fcb22fb0be7b8b3a2513ef4b32a982"
+    "caption_hash": "74b13dc15543132521d3ae402ec8aa4af9ea249a94888fd42669d7b52dab2558",
+    "file_hash": "f77e9d316ac9b7a2b0d2dc888311e97199d75e757617be5805473674562d5158"
   },
   "outputs/repro/quadrupolar_qip_2012/latest/figures/qst_noise_sensitivity.png": {
-    "caption_hash": "a90640b8eea8581a9f659d4821c8a43470ffd5d30c7920418c9df70726a54e99",
-    "file_hash": "0f39bad7936adbf3a2f9129c669d3d55d87b88695070c59fa7acafb39c575e9e"
+    "caption_hash": "e2bfc64b1cef269f7f4b5dec78f37fb3dd4782f278847995b7c43da4c9c52d2a",
+    "file_hash": "9f2a0fcae441531c4d1078397d11e2a0289b9dfd3cb8d8994a5512701c63f1a8"
   },
   "outputs/repro/grape_nmr_control_2005/latest/figures/grape_fidelity_convergence.png": {
-    "caption_hash": "b12b6f0040dc0ef5f0f04eaa269a0b1993b70381b8588bf2b122fc8b8c25b9fd",
-    "file_hash": "c11b6037cc5fb07e37e761808d8111993a260218faa80e7e9d69fd0051e61061"
+    "caption_hash": "4d0695fa911ffebf7c96adffb9ed7db7593c1525f0fe5f787b8ab35d404bc29f",
+    "file_hash": "bca6b3e56cc16cadec1ee405c4afd0d60149e35134263f79a0a784aafe59f2be"
   },
   "outputs/repro/grape_nmr_control_2005/latest/figures/optimized_controls.png": {
-    "caption_hash": "5c0805c15f20868a18a3a87054257756d2bb9935f07ae370b496518d10ce66ab",
-    "file_hash": "5ed99c8a897175db7b5bd9c9bf84026cd32560944f4b3d8e116c196bb1f5b4a8"
+    "caption_hash": "fe8c61509280dc439fa777b63c8689dc9c70cf94a710512e7ae76781faced585",
+    "file_hash": "0d3a7fe3c019792f92120a26cdde329d10e298e728b92fe797d4b88c2418c080"
   },
   "outputs/repro/grape_nmr_control_2005/latest/figures/rectangular_vs_grape_state_fidelity.png": {
-    "caption_hash": "62f864f8256f88c063e84f2b5c4de94f623a4c85dae6b677e67d2791ac697c4e",
-    "file_hash": "7c5b60ee3960b342cc48c135ea207f674d318321dd3a665cad174d8dfe7534c9"
+    "caption_hash": "9732b1bbc09aaa33305c3645bbb15aabfb9cea00c2d2f88298a41bd8125ec8fd",
+    "file_hash": "43284d6a58394c93f6d232c31a0d069d86cce8444f0170eefb9b5239611b7d79"
   },
   "outputs/repro/grape_nmr_control_2005/latest/figures/robustness_map.png": {
-    "caption_hash": "2be0f93485a91f6016a89cad5fe9bd9844ff617d68ea91aa9d7eb2a782542c66",
-    "file_hash": "7ccfcc73e5654ea2aae58a014410ab3916a6a1a9740a0770bfe7c857c1a85314"
+    "caption_hash": "3f6a27d7ad0c5d0ddb23190ed60f9054fd959179f439b6f399ce13f891466e59",
+    "file_hash": "216f574a6e6e2278bba62ef5ec5b6f9383b793393af6073f7524c288649cda11"
   },
   "outputs/repro/pps_optimal_control_2012/latest/figures/pps_grape_convergence.png": {
-    "caption_hash": "c4a66364c211abdccbe7a6f29c4478bf4f6039476f690265088d8e0726eabb9f",
-    "file_hash": "c17f566772c635012bc54b804e5df42df3298aac5878d9e27563e6b09e428827"
+    "caption_hash": "6c4a1546db32d5bb8f8ee65af90d9b0ba55ba4d57a173984d672d8e1fe579ab0",
+    "file_hash": "425927691f63dedc4a2c9c276fa46cf1e44dbf6fc72aa1b39f4476bdc3c73725"
   },
   "outputs/repro/pps_optimal_control_2012/latest/figures/pps_optimized_controls.png": {
-    "caption_hash": "71f364517f466610c910d7d35eb2f365ef79786e68a76a25935a920f19558fc5",
-    "file_hash": "b7873de061330d0c19a5ccd81878f62429900f6ec7a0e01ca800a38b779a6e44"
+    "caption_hash": "9ee8bec74bab9be4f564c381299019d366a331acbd0bb986deafcb1ffd7c9cd7",
+    "file_hash": "2866784be939078eec276b85f3fa0f92641b79e776b837edd061e2c6a7eeb9a6"
   },
   "outputs/repro/pps_optimal_control_2012/latest/figures/pps_population_profiles.png": {
-    "caption_hash": "e60a199042c5ef69b0449a9c247c5583982a35cef65e2b077fe187084f994758",
-    "file_hash": "ebea71534ed7adfef5ef510bb88af12ea86bd9f404ab097e48fa524053b331ba"
+    "caption_hash": "ac2bbdba3726f296027bc8808ab7472dd3da00dca169690fc102305cefdf2a76",
+    "file_hash": "0be52186d37476888b1e8d1dd47a12999bd87e5ab10cb2ba8554db119c42d376"
   },
   "outputs/repro/pps_optimal_control_2012/latest/figures/pps_qst_noise_sensitivity.png": {
-    "caption_hash": "f8cac11bce60e37eac8ea4db3122d82158b3093bcc76c217ff644f5ad3f727dd",
-    "file_hash": "333317e19cb9c5b6217ee93febb67242083b917556d6f054ef811e3afba3635f"
+    "caption_hash": "15885779027381b8d1449891ed59473550f5d5ae272851c2ec6c9c9be8b0bec7",
+    "file_hash": "0a19fa8daaa3bfd35a98b2d2b53ecb7a808a7b97214aa99a4f81d1a9435f351e"
   },
   "outputs/repro/projected_ls_qpt_2022/latest/figures/choi_eigenvalues_raw_vs_pls.png": {
-    "caption_hash": "30314304c3005786d6a931c55a2590f198a0248f98d38d44cbb7221d0668b0dc",
-    "file_hash": "f74803d9ca550e5d8bca80e42e2caa08038f5f7f7ae1d25cf8f03e0afbaa9f8d"
+    "caption_hash": "1a3306c755c252561e65e26b654d83257cc7e9b46f7e53c4be10e7cd0827f4f9",
+    "file_hash": "c05f76bf2a3439dce66a94c3a19e8ef491fae120a2fdb684fb0da670e02d03c5"
   },
   "outputs/repro/projected_ls_qpt_2022/latest/figures/physicality_violations_vs_shots.png": {
-    "caption_hash": "a71cf82768234661fc520c878f670cf337e9040accfb4eef3ab2b267e0fe2d50",
-    "file_hash": "6d09813383517ec7a35527a0eb1bbbf0f3b6527bacde6e7e2095d226419b2584"
+    "caption_hash": "48984f5ad05eec81b79a3377ac0fedad166940e1f4de02f272d261a3b72be24d",
+    "file_hash": "5264dd2e16f59bb63055b031d5182187c786c2a139978b78f1919bc1a1ec28c1"
   },
   "outputs/repro/projected_ls_qpt_2022/latest/figures/ptm_reconstruction_comparison.png": {
-    "caption_hash": "afbfa9db4cdfd6af227554c47d70da917fb7d9617312662439b1f2a5a391e8d2",
-    "file_hash": "bff087de6e658b812bdf80df8ab1454e467753f5615fdc88e7a3add92c898d4f"
+    "caption_hash": "8f57f28b3fc7d37c45417118284b983e7d0725a3c97769308636b107a5a0d7ad",
+    "file_hash": "1d2a6aebb382e79c316c291f398828ad9a06ccd06a9d631a9f9bcea3f80f6620"
   },
   "outputs/repro/projected_ls_qpt_2022/latest/figures/qpt_error_distribution.png": {
-    "caption_hash": "af5ba4d4abd8643eeaeab122ea079b4aeb783808adb1bb7057af57eb6d470259",
-    "file_hash": "458852b42508deda6a4b9da63ecbc3dc1800783bf95a29167f5ea96b5b9dbd5d"
+    "caption_hash": "37af7ac9136cf2b24f3673e3facc370be2fcd6855f84b85253aa027f5429817a",
+    "file_hash": "863f7ddc2a748bb03763b1e93e3e056af4e775d59cf2061bc3a377af095945b5"
   },
   "outputs/repro/gate_set_tomography_2021/latest/figures/gst_gate_matrix_residuals.png": {
-    "caption_hash": "4c2db722dca41bba2fb9b4357fdbab20198397b019b69bca9cb2be523d8f80f0",
-    "file_hash": "3fcd0d1d1d3ee78917c7626dd52c15b2581c6056d11ec6c425266753a645a1e2"
+    "caption_hash": "3995036f6d4b68a941f7d9edd3b99d27d43c7344e30d9a745d12711e8ccaa8ce",
+    "file_hash": "20b721bcf5a102d7e627247b1722c36e22c6ebd63ea16a1740838b6279e200b7"
   },
   "outputs/repro/gate_set_tomography_2021/latest/figures/gst_gauge_dependent_spam.png": {
-    "caption_hash": "a5370248b32a80940d4fdd5e18211d9d79caf4b059e5a5b33c9d0ce80539aff4",
-    "file_hash": "5232ac524cf4332b3be591b5f80214cfcada23abbea8606129a07e8ee7120852"
+    "caption_hash": "9ae65ca1cd39dac4d71a7dd963199a3e0d3c99a3810109b4ec69fc5f1eb52a41",
+    "file_hash": "22e221d3c1d816ff2a9e8e1d50a0af8e785e19d590c2cc1d478461cd812c923d"
   },
   "outputs/repro/gate_set_tomography_2021/latest/figures/gst_heldout_predictions.png": {
-    "caption_hash": "c2cecccb0f4a372866fc6181a4689ecd7a54d43f4bafa7205740140980cdd6f6",
-    "file_hash": "a72dfc81e18afe6204bdb943f2dc1e546f05e57ec81634b57e97b9c21e1ed4fa"
+    "caption_hash": "0d69441112448d559f93acef76caefc13e350f814285ea7a82f0cf339b132a2b",
+    "file_hash": "0b9e75016ae7526a992406756ef45b64f05652f3cdcdc28968b2930ec1728309"
   },
   "outputs/repro/gate_set_tomography_2021/latest/figures/gst_prediction_by_sequence_length.png": {
-    "caption_hash": "dc2f99b7a5bc5b6f86372182deecf635bb9e0d56092f10e6c2c8665ec98a0cd6",
-    "file_hash": "7a47f01e102af988db32a91d5df999e1e77ec6286ead8c208d0bac03279d569b"
+    "caption_hash": "ef7a12663f4400ea27280b11aee7ba5cae75c43889fb8f65fbbcc810045562e4",
+    "file_hash": "e6c86dba877bacc571de51f1467398d1b50c9111303b818ec444a051686d3cb1"
   },
   "outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_control_landscape.png": {
-    "caption_hash": "80331487ad0459a9bb7e306e3c9c7a16f1fdf221c6274a531fcf905af765c942",
-    "file_hash": "191785c3fcef26175b6d959f5c12e7be63b6f89081887240c4dadc7089f54b38"
+    "caption_hash": "553134f2defb0edce401d80d8cbcb757530619f92d4cceae7813409346459ae5",
+    "file_hash": "1cf7f449b1e905e517db3a0b4f00dd44e0d13eda57ee4478cbede3d4919bfc33"
   },
   "outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_echo_witness.png": {
-    "caption_hash": "9211afca3905f87edf87877815ee9c72bf22817960f09a9bdbabf8c116ff9408",
-    "file_hash": "00631b9eba5dcc11e58eea407581d944b30530ca12bc1513c39c3890128fddf4"
+    "caption_hash": "810eb5191a8c255922c757e54a5d29ed23a774e7ec08c001c721cd9497d5f620",
+    "file_hash": "5a41489eb9c6b1be9ece7f7ef3ee065383e756628ede3cf6bd70f017ff2fd4af"
   },
   "outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_prediction_scatter.png": {
-    "caption_hash": "00949613ee4d7aff15aa3208fd7a812e9248cc84cec5cb6df8310010b1ba23ba",
-    "file_hash": "9c32db3e41e207818da5cf6209ff13816af4a233e0fedca53819fddc12dd1ad5"
+    "caption_hash": "a29c788b23b46958899ef9642159b80b573382f62b8e562c55929288ee24c188",
+    "file_hash": "5c6db008395884206945ed58d09fc32126a1836a4a080e4205da7c964d6fe97c"
   },
   "outputs/repro/nonmarkov_process_tensor_2020/latest/figures/process_tensor_rmse_by_length.png": {
-    "caption_hash": "afd03bded8e763aca3693e5386d37e2a920c70ac037d7801981d082ead3f67ed",
-    "file_hash": "838f6c73e0299a4b61cc3e22341ab8648b69fdeabfaf5a5e0c8db2cc118145c6"
+    "caption_hash": "0af2f04ccb6a4bba236444e1f4aa3ce5a758bf7e2f99ed28b2743e48226e1559",
+    "file_hash": "46898a7d7a41a76f638cf559ecd644c582aa434936c3709c79912a9c735cfec8"
   },
   "outputs/repro/noise_filtering_control_2014/latest/figures/coherence_vs_control_sequence.png": {
-    "caption_hash": "f29c91f778bdf1edc1978487fa6e1db11566189e12912ec7d301d1dc9b5c64f5",
-    "file_hash": "9f571f2f9760444e307697e67ffae0161fe4fd5bf90b8c204b61080ae28cc41a"
+    "caption_hash": "ad1640bb5ce440c64b7c9b7456b6ee09e1f56686576bd3b35da801a721c0c9e0",
+    "file_hash": "b92ea11416e7e3ad07b9ea63d8b32159f02dec02ade691832f84257230c562b3"
   },
   "outputs/repro/noise_filtering_control_2014/latest/figures/filter_peak_tracking.png": {
-    "caption_hash": "38db2d068419885e72a49559a56c5a5d34972fd1d3b9261172413433b81ba805",
-    "file_hash": "43fd15d3064636c6778b10bb6e77a36a4017350893e54085e5f07cc6527f0f0c"
+    "caption_hash": "8202113c939b2b9d0a70ad9e61347c55693686612d4f717f5e0d768e27aaa111",
+    "file_hash": "168c105ddfece0c4a32589d240bff3ee3ec769a122b3e60227f1e671dafcf2e6"
   },
   "outputs/repro/noise_filtering_control_2014/latest/figures/noise_spectrum_and_filters.png": {
-    "caption_hash": "b936fd107875f75088ae8d23891c990235356c9ae9ee28e6a63bcce231b9e2c0",
-    "file_hash": "95ed71eed18065d4f72f18fecbc469cf75a44d583efefcf9748ee3864403daeb"
+    "caption_hash": "bfe80328932b2613cdf6fde4a783679ce03a25bf3a82e9c091e1697dd29e90d6",
+    "file_hash": "7402028e47fa155984fe616f103526a2b4364a684ece26176cfd1e5785c91848"
   },
   "outputs/repro/noise_filtering_control_2014/latest/figures/time_domain_switching_functions.png": {
-    "caption_hash": "6bb45c00d685d208bf0976e5b37e1cad83d10145f9828e4e2af452fc2ccb5e1d",
-    "file_hash": "f2f6b14ab4836d6ddfe013b6cf1385591099a1b2a278253f42e44b1d93dcb60b"
+    "caption_hash": "0fbe8f5b06f335ac1e263b4674ae8cc05d1ddd3c9a28fe861e6731a8f06459ef",
+    "file_hash": "38c65d37b65c7df270f8ef46c6e5f8d88ebaca0e3f09f6c4eee353161ab40fae"
   },
   "outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_coherence_fit.png": {
-    "caption_hash": "4d8e56f1ac4bbc84cf876b86d54d1e98a369f2127fcd7c591954b2c0e5687cf7",
-    "file_hash": "f5c42007327379f1cb7d2f43e02be6653303cb619b7f06356c19358629afc391"
+    "caption_hash": "1505c862218c01741e5e9b9a20df793b2c4df450943770cfb47c884309b5a015",
+    "file_hash": "3200fcd95d36858e52798bf72dc7e44696c5a83d1cf3bdf2a5fd5cbe1eb34654"
   },
   "outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_reconstructed_spectrum.png": {
-    "caption_hash": "d06332732b70fbe7256633c367cc50ecf1aea149156d8648b7530db61f19f18b",
-    "file_hash": "cd986c69cba04c347afe834ede9ef637a55748acf9aa2e170c5a0c6006981372"
+    "caption_hash": "ae0788e08f225560b9c9ee194367dcaf04d1015c15d44798c8ee558063856937",
+    "file_hash": "3a8f49dad97192abec2b0729979112f8959449f351b821cf5a8d7842364b1c28"
   },
   "outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_sequence_sensitivity.png": {
-    "caption_hash": "dcf591b0e40bb603b124c99efa8408557e745e54502d3c6ff7bde5b81441922e",
-    "file_hash": "3db867720d71d7c9e8944eff5d443cb1838ea1d2692a8a73b20f62a2ff31d3b8"
+    "caption_hash": "4e9fa06e8adc274af4b42d02c4123b7c686154905d4c40d81f0c82aa0f23c08b",
+    "file_hash": "7f23b6b8c71582166652c447e39e715e0673d4eb5ccf96af07b7636aac2c4b41"
   },
   "outputs/repro/dd_noise_spectroscopy_2011/latest/figures/dd_spectrum_residual.png": {
-    "caption_hash": "b4a2222167a822859f529bb068f68aa0f18c0648014e0a46f5b9ba5e4f9e5f48",
-    "file_hash": "29032121292218516c029099817d737ca6861c72e8d2994b8d821a3d5b1cafa7"
+    "caption_hash": "365d723f30974ea51aa5e8470d5d2ec192fbf2ff0a404fc53f39dcedd1ad11a0",
+    "file_hash": "916d3a6714a9fce8052d1cf6b5d78679f2fb8ae23ee763aebd7ebfb7bf055662"
   },
   "outputs/repro/flux_qubit_noise_spectroscopy_2011/latest/figures/flux_coherence_vs_pulse_count.png": {
-    "caption_hash": "e47cec1035753cc77f233bda68c2fa13a079ee45dba999738cf11d59c497eca2",
-    "file_hash": "e5763fe7814df10011444bc092a7ea29e09a45ca20c580386b33ef5467da0373"
+    "caption_hash": "00b12c4142bfd549ba4f30d1e77fd71547ba8b7a7a23f64326304bca2f2b3d10",
+    "file_hash": "603480d05d675a1373f8aab9f645597ee1bb6e09356b04d97f2f80afbd3e37c6"
   },
   "outputs/repro/flux_qubit_noise_spectroscopy_2011/latest/figures/flux_filter_peak_map.png": {
-    "caption_hash": "ef11ff2e7f2a7da00a6134ad53e5854e5be15ce66b9b5a530cef558544d08716",
-    "file_hash": "94330ea072a6a4cc735a0130bc98e0124dd97eb854917b192af4181ffbdf098a"
+    "caption_hash": "829b127ea00b53a6576135ae7c20066a666bbdc06e8d13633865b0c4438db3f8",
+    "file_hash": "a77a056d8d57ce90d371059ff91156e9468e340fd17c6cec41549a5473ba49bc"
   },
   "outputs/repro/flux_qubit_noise_spectroscopy_2011/latest/figures/flux_power_law_fit.png": {
-    "caption_hash": "cf594c9dbbb33235f22235bff7e1882cc3ce244bb191181d175783bc323de945",
-    "file_hash": "bfa9c0f75f8fe00ae9093833d9eebb005b5af86f48ae4c16ee872a918550d4e3"
+    "caption_hash": "1f9598c00f2b609fc54a5f2ca4069bb316e05a2da7a8adbf581eaeaa487d5c0d",
+    "file_hash": "9387f880470e8f247eb18f3dfa38ead0f3f4e34b96f4a52c87f425b0c37b6cd3"
   },
   "outputs/repro/flux_qubit_noise_spectroscopy_2011/latest/figures/flux_spectrum_peak_estimates.png": {
-    "caption_hash": "e7596dad4a930302ed0b741bde86a6f7d28ae492d3613589114deed18991bb7d",
-    "file_hash": "ee825020e8a79102153de7d315f5d0fe6e6a5b5eaf88657689470a06a3d7eca9"
+    "caption_hash": "1a58c38470cb70c8017d76afcf24b405930bde5acb8f57a5431aaf87e3847d74",
+    "file_hash": "58964edc5d82c7a8d153d1c4fa8db1aa289f358da43fc2f4f5115b93a36f8111"
   },
   "outputs/workflows/experimental_decision_pipeline/latest/figures/control_sequence_decision.png": {
-    "caption_hash": "ca1fc6c0cfe8973ba203ed97a3620f37805c67301fb298dd1e596781da716d35",
-    "file_hash": "ea5be1f4e05498cb56cf4ec4d4c3c7aca7afb47aaaa97a83d238f9977926ea95"
+    "caption_hash": "08377b2fdb331228bb8078169a2ecb474a42cdd3e8c3b8daa38d63b17f449399",
+    "file_hash": "0cf89c67dbc2e0ede9d8dad3aa3f37b8471801b5e52f0d1c21f6cd99b299cd97"
   },
   "outputs/workflows/experimental_decision_pipeline/latest/figures/dd_spectroscopy_fit.png": {
-    "caption_hash": "89c2e0adb845b735bdc2fdaf401d7418f8d4677a3feb3d76ff28e4bbcafc1788",
-    "file_hash": "ddf4af667958ec7a8e59cdee5f203dbd5bb6e5115515c7de4b94433ed67eeb82"
+    "caption_hash": "daccbd263a64af7bce14386f7398afa00d954ea80fd01ff5d2782798f4278fb5",
+    "file_hash": "1424c524d4ea900eb70da0b043627aa74a43343fa7400d671be440d5de95017f"
   },
   "outputs/workflows/experimental_decision_pipeline/latest/figures/reconstructed_noise_spectrum.png": {
-    "caption_hash": "fdf755e036ec1616564668f5bbfc72a941d8cdbb0dd54012c8861720e35253e6",
-    "file_hash": "3855c1c10f538a6e74ad6ae102390e5f094f7ce43b11075ada84d16ca28ee278"
+    "caption_hash": "06d18e12fa8bd9eaf92fc7639103d788bc3b615a983cdc5dcce1eefb685011c9",
+    "file_hash": "2c1f06233994f91d1c338e25dd061e585e010e22579a35f877b6b7813fd5fa7f"
   },
   "outputs/workflows/experimental_decision_pipeline/latest/figures/state_preparation_qst.png": {
-    "caption_hash": "368b30df2a56a9472f6eb93482fb18bca6f563395eca84c59111452e7a7d91ec",
-    "file_hash": "7f8fa0bc08847baf24c5dca80061b7298e54d5ce4cc7a957e59f52a06c77245e"
+    "caption_hash": "04280f8f69a416f2d1154ca5de9a5e15fb3c7422235be99d48d9379ce5cbc673",
+    "file_hash": "ecdd2db8f7934fb5da4d7aa99c4c902c23a13996a8a76f81eac3c6a649669d56"
   }
 }

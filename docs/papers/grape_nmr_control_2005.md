@@ -6,7 +6,7 @@ Category: `Optimal control`
 
 ## Primary Reference
 
-Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.
 
 ## Article Summary
 
@@ -20,19 +20,19 @@ The central insight is that high-fidelity control is an optimization problem con
 
 GRAPE unitary optimization over detuning and RF-scale ensemble members.
 
-## Direct Laboratory Comparison
+## Direct Comparison with the Published Reference
 
 Our reproduction directly compared a rectangular pulse to a GRAPE-optimized pulse on the spin-3/2 platform. The optimized pulse improved mean robustness-grid fidelity and fixed the failure mode exposed by Paper D.
 
-## Project Lesson
+## Interpretation for the Present Study
 
 Robust pulse design is necessary for high-fidelity quadrupolar spin-3/2 operations.
 
-## Next Laboratory Use
+## Experimental Implication
 
 After measuring real B0/B1 offsets and RF limits, train GRAPE pulses against those calibrated uncertainties and validate them with QST.
 
-## Known Limitations
+## Current Deviations from the Published Reference
 
 Optimization is synthetic and does not yet include measured hardware transfer functions.
 
@@ -43,37 +43,37 @@ Optimization is synthetic and does not yet include measured hardware transfer fu
 
 ## Figure Guide
 
-### Figure 1. Grape Fidelity Convergence
+### Figure 1. GRAPE Fidelity Convergence
 
-![Grape Fidelity Convergence](../../outputs/repro/grape_nmr_control_2005/latest/figures/grape_fidelity_convergence.png)
+![GRAPE Fidelity Convergence](../../outputs/repro/grape_nmr_control_2005/latest/figures/grape_fidelity_convergence.png)
 
 - Summary: The optimization trace records how the target fidelity improves across GRAPE iterations.
 - Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+- Reference: Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.
 
-### Figure 2. Optimized Controls
+### Figure 2. Optimized Control Waveforms
 
-![Optimized Controls](../../outputs/repro/grape_nmr_control_2005/latest/figures/optimized_controls.png)
+![Optimized Control Waveforms](../../outputs/repro/grape_nmr_control_2005/latest/figures/optimized_controls.png)
 
 - Summary: The time-dependent control amplitudes are shown for the pulse that maximizes the spin-3/2 target fidelity.
 - Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+- Reference: Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.
 
-### Figure 3. Rectangular Vs Grape State Fidelity
+### Figure 3. State Fidelity: Rectangular versus GRAPE Control
 
-![Rectangular Vs Grape State Fidelity](../../outputs/repro/grape_nmr_control_2005/latest/figures/rectangular_vs_grape_state_fidelity.png)
+![State Fidelity: Rectangular versus GRAPE Control](../../outputs/repro/grape_nmr_control_2005/latest/figures/rectangular_vs_grape_state_fidelity.png)
 
 - Summary: A direct comparison is made between a simple rectangular pulse and the optimized GRAPE pulse on the same control task.
 - Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+- Reference: Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.
 
-### Figure 4. Robustness Map
+### Figure 4. Robustness Map over Detuning and RF Scale
 
-![Robustness Map](../../outputs/repro/grape_nmr_control_2005/latest/figures/robustness_map.png)
+![Robustness Map over Detuning and RF Scale](../../outputs/repro/grape_nmr_control_2005/latest/figures/robustness_map.png)
 
 - Summary: The optimized pulse is evaluated over a grid of detuning and RF-scale errors to show where high fidelity survives.
 - Interpretation: In this laboratory, the figure is used to replace fragile rectangular pulses with robust optimized controls. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper H. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms," Journal of Magnetic Resonance (2005), DOI: 10.1016/j.jmr.2004.11.004.
+- Reference: Khaneja, N. et al. "Optimal control of coupled spin dynamics: Design of NMR pulse sequences by gradient ascent algorithms." Journal of Magnetic Resonance 172(2), 296--305 (2005). DOI: 10.1016/j.jmr.2004.11.004.
 
 
 ## Canonical Artifacts

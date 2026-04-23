@@ -10,60 +10,65 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{hyperref}
 \usepackage{microtype}
 \usepackage{enumitem}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{hyperref}
 
 \geometry{margin=1in}
 \hypersetup{
-  colorlinks=true,
-  linkcolor=blue!50!black,
-  citecolor=blue!50!black,
-  urlcolor=blue!50!black
+  hidelinks,
+  pdftitle={Open Quantum Control Laboratory for Dissipative Spin-3/2 Dynamics},
+  pdfauthor={Pedro Henrique and Ygor}
 }
 \setlist[itemize]{leftmargin=1.4em}
 \setlist[enumerate]{leftmargin=1.6em}
 \renewcommand{\arraystretch}{1.16}
+\captionsetup{font=small,labelfont=bf}
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
 
 \title{\textbf{Open Quantum Control Laboratory for Dissipative Spin-$3/2$ Dynamics:}\\
-\large A Reproducible Review, Benchmark, and Experimental-Decision Framework}
+\large Reproducible Review, Benchmarking, and Experimental-Decision Framework}
 
 \author{
-Pedro Henrique, Ygor, and the Open Quantum Control working repository\\
-\small Python-first computational laboratory for open quantum systems, NMR, tomography, and control
+Pedro Henrique and Ygor\\
+\small Open Quantum Control Laboratory\\
+\small Python-first computational research environment for open quantum systems, NMR, tomography, and control
 }
 
-\date{Draft generated from the local reproducibility layer, April 2026}
+\date{April 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-This draft consolidates the current state of the Open Quantum Control laboratory:
-a Python-first research environment designed to identify and control dissipative
-quantum dynamics, initially through quadrupolar Na-23 nuclear magnetic resonance
-(NMR) and then through hardware-facing characterization workflows.  The document
-reviews the external papers reproduced so far, the internal physical benchmarks,
-the mathematical model stack, the computational laboratory architecture, and the
-new experimental-decision pipeline.  The central theme is the control and
-identification of dissipative dynamics in open quantum systems with experimental
-validation.  The technical strategy is deliberately reproducible: each paper
-reproduction or workflow generates scripts, configuration files, figures,
-metrics, hashes, and a local research-memory record.  The present stage is not a
-claim of experimental confirmation.  It is a validated synthetic benchmark layer
-that specifies what should be measured next, how incoming data should be
-registered, and which model failures would require a more advanced description
-such as pulse-error modeling, non-Markovian memory, gate-set tomography, or
-process-tensor characterization.
+We present a reproducible review and benchmarking layer for the Open Quantum
+Control laboratory, a Python-first environment designed to identify and control
+dissipative dynamics in open quantum systems.  The current experimental anchor
+is quadrupolar Na-23 nuclear magnetic resonance (NMR), modeled as a spin-$3/2$
+platform with tomography, finite-pulse control, dynamical-decoupling (DD)
+filtering, and open-system identification.  The manuscript consolidates the
+paper reproductions completed so far, the internal physical benchmarks, the
+mathematical model stack, the computational-laboratory architecture, and the
+experimental-decision workflow prepared for future raw laboratory data.  The
+central claim is methodological rather than experimental: every result is tied
+to scripts, configuration files, figures, metrics, hashes, and a research-memory
+record.  At the present stage, the repository provides a validated synthetic
+benchmark layer that sharpens model choice, exposes failure modes, and specifies
+which measurements are required before stronger physical claims can be made.
 \end{abstract}
 
-\tableofcontents
-\newpage
+\noindent\textbf{Keywords:} open quantum systems; quadrupolar NMR; sodium-23;
+spin-$3/2$ dynamics; quantum state tomography; dynamical decoupling; quantum
+control; process characterization.
 
-\section{Scope and Scientific Question}
+\section{Introduction and Scientific Scope}
 
-The working research theme is:
+The central scientific question addressed here is:
 \begin{quote}
 \emph{Control and identification of dissipative dynamics in open quantum systems:
 a statistical-physics approach with experimental validation.}
@@ -76,7 +81,15 @@ starting experimental platform is Na-23 NMR, where a single quadrupolar nucleus
 with spin $I=3/2$ spans a four-dimensional Hilbert space.  This system is rich
 enough to contain an encoded two-qubit structure, quadrupolar splittings,
 coherence-order dynamics, state tomography, pseudo-pure state preparation, and
-control errors during finite pulses.
+control errors during finite pulses
+\citep{spin32_algebraic_2004,qst_relaxation_2008,spin32_qlogic_qst_2005,
+quadrupolar_qip_2012,grape_nmr_control_2005,pps_optimal_control_2012}.  The
+hardware-facing extensions of the repository are guided by DD filtering,
+noise-spectroscopy, multipass QPT, GST, and process-tensor ideas
+\citep{noise_filtering_control_2014,dd_noise_spectroscopy_2011,
+flux_qubit_noise_spectroscopy_2011,multipass_qpt_2024,
+projected_ls_qpt_2022,gate_set_tomography_2021,
+nonmarkov_process_tensor_2020,nonmarkov_noise_2022}.
 
 The immediate laboratory problem is not to claim a final physical model.  It is
 to build a reproducible framework with the following properties:
@@ -89,7 +102,7 @@ to build a reproducible framework with the following properties:
   \item a decision pipeline that can ingest future laboratory data.
 \end{enumerate}
 
-\section{Physical Model Stack}
+\section{Methods: Physical Model and Inference Stack}
 
 \subsection{Spin-$3/2$ Hilbert space}
 
@@ -130,7 +143,8 @@ The first-order quadrupolar contribution is modeled as
 which produces a central transition and two satellite transitions.  The current
 Na-23 configuration uses $\nu_Q \approx 15625~\mathrm{Hz}$, matching the
 synthetic and reference spectra in which the satellites appear near
-$\pm\nu_Q$.
+$\pm\nu_Q$ \citep{na23_relaxometry_2023,spin32_algebraic_2004,
+spin32_qlogic_qst_2005,quadrupolar_qip_2012}.
 
 The RF pulse Hamiltonian is
 \begin{equation}
@@ -141,7 +155,7 @@ where $\omega_1$ is the RF amplitude and $\phi$ is the transmitter phase.  Finit
 pulses are important: the Paper D benchmark showed that ignoring internal
 quadrupolar evolution during a long selective pulse can be catastrophically
 wrong, whereas GRAPE-style control can recover high fidelity under modeled
-detuning and RF-scale errors.
+detuning and RF-scale errors \citep{spin32_qlogic_qst_2005,grape_nmr_control_2005}.
 
 \subsection{Density matrices, tomography, and open dynamics}
 
@@ -165,7 +179,8 @@ For Markovian open dynamics, the standard Lindblad form is
   \right).
 \end{equation}
 This is not assumed to be universally sufficient.  The non-Markovian benchmarks
-explicitly test when a time-local or fixed-channel approximation fails.
+explicitly test when a time-local or fixed-channel approximation fails
+\citep{nonmarkov_noise_2022,nonmarkov_process_tensor_2020}.
 
 Tomography is implemented as a linear inverse problem.  For each tomography
 pulse $U_k$, selected single-quantum coherences are measured:
@@ -182,14 +197,14 @@ normalization, and optional projection onto the positive semidefinite cone.
 
 \subsection{FID, spectrum, and dynamical-decoupling filters}
 
-The NMR free induction decay (FID) is computed from
+The NMR free-induction decay (FID) is computed from
 \begin{equation}
   s_n = \mathrm{Tr}(\rho_n D),
 \end{equation}
 where $D$ is the complex receiver observable.  The frequency-domain spectrum is
 obtained by a shifted discrete Fourier transform:
 \begin{equation}
-  S(\nu)=\mathcal{F}[s(t)].
+  \tilde{s}(\nu)=\mathcal{F}[s(t)].
 \end{equation}
 
 For dephasing-noise spectroscopy, a control sequence defines a switching
@@ -209,9 +224,10 @@ Discretization gives the inverse problem
   \qquad S_j\ge 0,
 \end{equation}
 which is solved by non-negative least squares in the current synthetic
-spectroscopy layer.
+spectroscopy layer \citep{noise_filtering_control_2014,
+dd_noise_spectroscopy_2011,flux_qubit_noise_spectroscopy_2011}.
 
-\section{Reproducibility Architecture}
+\section{Methods: Reproducibility Architecture and Benchmark Protocol}
 
 The repository is organized as a computational laboratory rather than as a loose
 collection of notebooks.  The practical roles are:
@@ -229,151 +245,177 @@ collection of notebooks.  The practical roles are:
   and artifact indices.
 \end{itemize}
 
-Every reproduction is expected to generate:
+Each benchmark or reproduction run generates the artifact tuple
 \begin{equation}
   \{\mathrm{script},\mathrm{note},\mathrm{figures},
   \mathrm{metrics.json},\mathrm{config\_used.json},\mathrm{results.json},
   \mathrm{run\_metadata.json}\}.
 \end{equation}
-At the time of this draft, the test suite reports 88 passing tests and the
+At the time of this manuscript build, the test suite reports 90 passing tests and the
 research-memory layer contains 17 records: 15 paper reproductions, one internal
 validation baseline, and one experimental-decision workflow.
 
-\section{Paper-by-Paper Scientific Synthesis}
+\section{Quantitative Evaluation Metrics}
 
-\subsection{Core Na-23 and spin-$3/2$ NMR papers}
+The benchmark layer compares reproductions and workflows through physically
+interpretable metrics rather than through a single aggregate score.  The
+definitions below are those used repeatedly throughout the present manuscript.
 
-\paragraph{Paper A: Na-23 relaxometry review.}
-The Na-23 relaxometry review provides the physical vocabulary for quadrupolar
-relaxation: $T_1$, $T_2$, correlation times, spectral densities, and
-Redfield-inspired relaxation rates.  The implemented target was not a
-full reproduction of a review article.  Instead, the code compares the previous
-phenomenological biexponential envelope model against a reduced
-quadrupolar-relaxation model.  The best synthetic fit used
-$\tau_c=4.033\times10^{-10}\,\mathrm{s}$ and an effective quadrupolar coupling
-near $5.01\times10^4\,\mathrm{Hz}$, with global envelope RMSE $0.04457$.
-The project-level conclusion is that the current biexponential model is useful
-as an empirical envelope, but future experimental claims should connect fitted
-rates to correlation times and spectral densities when possible.
+\subsection{Notation conventions}
 
-\paragraph{Paper B: algebraic spin-$3/2$ dynamics.}
-The algebraic spin-$3/2$ paper is the bridge between the MATLAB-style operator
-construction and the Python Liouville-space implementation.  The reproduction
-validated Hilbert-space and Liouville-space propagation against each other with
-maximum FID discrepancy $2.55\times10^{-17}$.  The benchmark also quantified
-B0/B1 sensitivity, with relative bias reaching about $24.2\%$ in the explored
-synthetic grid.  This result supports using a Liouville representation for
-future dissipative dynamics and tomography.
+To keep the notation uniform across NMR, open-system, and hardware-facing
+sections, the following conventions are used throughout.  The time-domain NMR
+signal is denoted by $s(t)$, whereas its Fourier-domain representation is
+$\tilde{s}(\nu)$.  The environmental noise power spectral density is denoted by
+$S(\omega)$.  Estimated or reconstructed quantities carry a hat, for example
+$\hat{\rho}$ or $\hat{S}(\omega)$, while sample means are denoted by an
+overbar.  When two competing protocols are compared, the label ``baseline''
+refers to the simpler or previously used procedure, and ``method'' denotes the
+candidate replacement.
 
-\paragraph{Paper C: QST relaxation in a quadrupolar system.}
-This paper is a direct template for the future experiment: prepare states, let
-them relax, reconstruct density matrices, and estimate rates.  The synthetic
-workflow recovered the population and dephasing rates exactly in the noiseless
-case, with mean QST fidelity essentially one.  Under controlled synthetic noise,
-the error remained interpretable.  This paper establishes QST as the main bridge
-from spectral fitting to density-matrix-level model identification.
+\subsection{State, gate, and observable metrics}
 
-\paragraph{Paper D: spin-$3/2$ quantum logical operations monitored by QST.}
-The selective-pulse benchmark showed a failure mode that is crucial for the
-laboratory.  A rectangular selective pulse may look reasonable if internal
-quadrupolar evolution is ignored, but including that evolution can destroy the
-intended coherent gate.  At the QST pulse duration used in the benchmark, the
-target-vs-actual state fidelity was only $0.0471$.  The practical consequence is
-that selective pulses must be modeled as finite-time controls under the full
-internal Hamiltonian, not as instantaneous ideal gates.
+For reconstructed or propagated density matrices $\rho$ and $\sigma$, the state
+fidelity is
+\begin{equation}
+  F(\rho,\sigma)=
+  \left[
+    \mathrm{Tr}
+    \left(
+      \sqrt{\sqrt{\rho}\,\sigma\,\sqrt{\rho}}
+    \right)
+  \right]^2.
+\end{equation}
+For unitary control targets $U_{\mathrm{tar}}$ and implemented propagators
+$U$, the normalized operator overlap used in the control benchmarks is
+\begin{equation}
+  F_{\mathrm{op}}(U,U_{\mathrm{tar}})
+  =
+  \frac{\left|\mathrm{Tr}\!\left(U_{\mathrm{tar}}^\dagger U\right)\right|}{d}.
+\end{equation}
+For fitted or predicted observables $x_j$ and references $\hat{x}_j$, the
+root-mean-square error is
+\begin{equation}
+  \mathrm{RMSE}(x,\hat{x})
+  =
+  \sqrt{\frac{1}{N}\sum_{j=1}^{N}(x_j-\hat{x}_j)^2}.
+\end{equation}
 
-\paragraph{Paper G: quadrupolar nuclei for quantum information processing.}
-This reproduction validated the encoded two-qubit interpretation of a spin-$3/2$
-quadrupolar nucleus.  The project recovered the product-operator mapping
-$I_z = ZI + 0.5\,IZ$ and
-$3I_z^2-I(I+1)\mathbb{I}=3\,ZZ$ in the chosen convention.  It also reproduced
-an ideal Grover-type benchmark with marked-state population one and synthetic
-QST deviation fidelity above $0.9997$ at noise level $0.02$.  This paper makes
-the NMR platform useful not only as spectroscopy, but also as a controlled
-four-level quantum information processor.
+\subsection{Spectral metrics}
 
-\paragraph{Paper H: GRAPE NMR optimal control.}
-The GRAPE reproduction directly answers the failure revealed by Paper D.  A
-rectangular central-transition gate had mean grid fidelity $0.387$, whereas the
-optimized GRAPE pulse reached mean grid fidelity $0.962$ and minimum grid
-fidelity $0.809$ across the synthetic robustness grid.  This establishes the
-control-design direction for real pulses: use optimized waveforms, explicitly
-include drift, and benchmark robustness against detuning and RF-scale errors.
+For reconstructed and reference noise spectra sampled on the same grid, the
+reported relative spectrum error is
+\begin{equation}
+  \epsilon_{S}
+  =
+  \frac{\left\|S-\hat{S}\right\|_{2}}{\left\|\hat{S}\right\|_{2}}.
+\end{equation}
+The spectrum-correlation metric used in the DD spectroscopy and decision
+pipeline layers is the Pearson coefficient
+\begin{equation}
+  r_{S}
+  =
+  \frac{\sum_j (S_j-\bar{S})(\hat{S}_j-\bar{\hat{S}})}
+  {\sqrt{\sum_j (S_j-\bar{S})^2}\sqrt{\sum_j (\hat{S}_j-\bar{\hat{S}})^2}}.
+\end{equation}
+These two quantities are intentionally reported together: correlation captures
+shape agreement, whereas $\epsilon_S$ captures amplitude-level mismatch.
 
-\paragraph{Paper I: pseudo-pure states by optimal control.}
-The pseudo-pure-state reproduction validates the preparation layer required for
-encoded qubit experiments.  The analytical population-averaging preparation had
-error $1.85\times10^{-15}$, while the GRAPE-based preparation reached error
-$3.07\times10^{-9}$ and deviation fidelity one.  This gives the laboratory a
-reproducible path from thermal deviation magnetization to target pseudo-pure
-states.
+\subsection{Improvement and memory diagnostics}
 
-\subsection{Open-system noise, memory, and control papers}
+When two methods are compared against the same target observable, the reported
+improvement factor is
+\begin{equation}
+  \mathcal{I}
+  =
+  \frac{E_{\mathrm{baseline}}}{E_{\mathrm{method}}},
+\end{equation}
+where $E$ denotes an error metric such as RMSE or process-reconstruction error.
+For coherence-preservation comparisons, a gain factor
+\begin{equation}
+  \mathcal{G}
+  =
+  \frac{C_{\mathrm{method}}}{C_{\mathrm{baseline}}}
+\end{equation}
+is used instead.  For non-Markovian diagnostics, the benchmark layer uses the
+Breuer--Laine--Piilo backflow functional
+\begin{equation}
+  \mathcal{N}_{\mathrm{BLP}}
+  =
+  \int_{\dot{D}(t)>0}\frac{d}{dt}D\!\left(\rho_1(t),\rho_2(t)\right)\,dt,
+\end{equation}
+where $D$ is the trace distance between two evolved states.  No single metric is
+treated as sufficient in isolation; each numerical value is interpreted in the
+context of the physical observable and of the associated reference paper.
 
-\paragraph{Paper E: non-Markovian quantum noise.}
-This reproduction is a scope-control benchmark.  It shows how a simple
-Markovian model can fail when memory produces trace-distance revivals, negative
-time-local rates, or echo recovery inconsistent with a fixed exponential decay.
-The synthetic memory benchmark produced BLP backflow $5.457$, negative-rate
-fraction $0.483$, and Markovian fit RMSE $0.273$.  The resulting rule is
-operational: Lindblad is acceptable only while it predicts the measured
-coherences, QST trajectories, and echo responses within uncertainty.
+\section{Results: Scientific Synthesis across the Reproduced Literature}
 
-\paragraph{Paper L: process tensor characterization and control.}
-The process-tensor benchmark extends Paper E into a multi-time prediction and
-control framework.  In the synthetic correlated-dephasing test, the process
-tensor achieved validation RMSE $0.00994$, while a fixed Markovian channel had
-RMSE $0.146$, a factor $14.7$ worse.  The process tensor also selected a better
-control sequence than the Markovian model.  This defines the future escalation
-path if real data show memory effects.
+\subsection{Quadrupolar-NMR modeling, tomography, and control}
 
-\paragraph{Paper M: experimental noise filtering by quantum control.}
-This reproduction established the filter-function layer.  Ramsey coherence was
-$0.609$, while the best tested CPMG sequence reached $0.998$, a $1.64\times$
-gain.  This validates the idea that control sequences are not only gates; they
-are spectral filters that can suppress environmental noise.
+The Na-23 and spin-$3/2$ references establish a coherent modeling chain from
+operator algebra to state preparation, tomography, and pulse design
+\citep{na23_relaxometry_2023,spin32_algebraic_2004,qst_relaxation_2008,
+spin32_qlogic_qst_2005,quadrupolar_qip_2012,grape_nmr_control_2005,
+pps_optimal_control_2012}.  Three quantitative conclusions are especially
+important.  First, the algebraic layer is numerically stable: Hilbert-space and
+Liouville-space propagation agree to within $2.55\times10^{-17}$ in the FID
+benchmark.  Second, density-matrix-level identification is substantially more
+informative than spectrum-only fitting: the tomography workflow recovers the
+synthetic relaxation rates exactly in the noiseless limit, with mean QST
+fidelity equal to one.  Third, finite-pulse modeling is indispensable:
+rectangular selective control can fail catastrophically once quadrupolar
+evolution during the pulse is retained, whereas GRAPE optimization restores a
+mean robustness-grid fidelity of $0.962$.
 
-\paragraph{Paper N: colored-noise spectroscopy by dynamical decoupling.}
-The DD spectroscopy reproduction reconstructed a synthetic colored noise
-spectrum from coherence data.  The reconstructed spectrum had correlation
-$0.923$ with the true spectrum, relative error $0.311$, and located a narrow
-feature near $6.11\,\mathrm{kHz}$ for a true feature near $5.94\,\mathrm{kHz}$.
-This paper supplies the inversion step used in the experimental-decision
-pipeline.
+Within this same group, the relaxometry and pseudo-pure-state benchmarks clarify
+how the laboratory should interpret future data.  The relaxometry layer shows
+that biexponential envelopes remain useful as empirical descriptions, but that
+microscopic interpretation requires spectral-density parameters rather than
+envelope fitting alone.  The pseudo-pure-state layer shows that encoded control
+experiments can be initialized reproducibly, with analytical and optimized
+preparation procedures reaching near-unit deviation-state fidelity in the
+synthetic setting.
 
-\paragraph{Paper O: flux-qubit noise spectroscopy.}
-The flux-qubit reproduction tests the same idea in a hardware-facing setting:
-estimate a $1/f^\alpha$ spectrum from CPMG peak-filter samples.  The true
-synthetic exponent was $\alpha=0.78$, and the fitted value was
-$0.7399$, with absolute error $0.0401$.  This justifies keeping the
-noise-spectroscopy code platform-independent.
+\subsection{Noise spectroscopy, memory diagnostics, and control selection}
 
-\subsection{Hardware characterization papers}
+The noise and memory reproductions define the model-selection logic of the
+laboratory \citep{nonmarkov_noise_2022,nonmarkov_process_tensor_2020,
+noise_filtering_control_2014,dd_noise_spectroscopy_2011,
+flux_qubit_noise_spectroscopy_2011}.  The Markovian benchmark produces a BLP
+backflow value of $5.457$, a negative-rate fraction of $0.483$, and a
+Markovian-fit RMSE of $0.273$, demonstrating that a simple Lindblad description
+cannot be accepted merely because it is convenient.  Once the model class is
+restricted to dephasing-noise filtering, DD control yields a clear operational
+gain: the best tested CPMG sequence raises synthetic coherence from $0.609$ to
+$0.998$.  The spectroscopy layer then turns coherence data into inference: the
+reconstructed colored spectrum reaches correlation $0.923$ with the synthetic
+truth and localizes a narrow spectral feature to within the discretization
+resolution.
 
-\paragraph{Paper F: multipass quantum process tomography.}
-The multipass QPT benchmark compared single-pass process reconstruction against
-repeated applications of the same process under synthetic SPAM, readout, and
-shot noise.  Single-pass mean PTM error was $0.216$, while the best multipass
-configuration reached $0.0342$ at seven passes, a $6.30\times$ improvement.
-This is relevant for future gate-model hardware tests, where repeated-process
-experiments can amplify weak errors.
+The flux-qubit benchmark is important because it shows that the spectroscopy
+logic is not specific to Na-23 NMR.  In the hardware-facing synthetic test, the
+power-law fit returns $\alpha=0.7399$ for a true $1/f^{0.78}$ spectrum, which
+supports carrying the same inference machinery toward gate-model quantum
+hardware once calibrated coherence data become available.
 
-\paragraph{Paper J: projected least-squares QPT.}
-This reproduction shows why physical constraints matter.  Raw least-squares
-Choi estimates were often non-physical; projecting onto the CPTP set reduced
-mean Choi error from $0.245$ to $0.177$ and eliminated negative eigenvalue
-violations in the synthetic test.  This is the process-tomography analogue of
-projecting QST density matrices onto the physical state set.
+\subsection{Process characterization for hardware-facing validation}
 
-\paragraph{Paper K: gate-set tomography.}
-GST addresses a critical limitation of ordinary QPT: state-preparation and
-measurement errors can masquerade as gate errors.  The GST-like reproduction
-improved held-out prediction RMSE from $0.0655$ for a gate-only ideal-SPAM model
-to $0.00762$, an $8.60\times$ improvement.  Direct gate-parameter comparisons
-remain gauge-dependent, so predictive probabilities are the preferred
-gauge-safe metric.
+The tomography and characterization reproductions define the route from
+open-system inference to hardware validation
+\citep{multipass_qpt_2024,projected_ls_qpt_2022,gate_set_tomography_2021}.
+Multipass QPT reduces the synthetic PTM reconstruction error from $0.216$ to
+$0.0342$ at the best pass number, an improvement factor of $6.30$.  Projected
+least-squares QPT shows that physical constraints are not optional: projection
+onto the CPTP set reduces the mean Choi error from $0.245$ to $0.177$ while
+removing unphysical negative-eigenvalue violations.  GST then addresses the
+remaining ambiguity due to SPAM, improving held-out prediction RMSE from
+$0.0655$ to $0.00762$ under self-consistent fitting.  Taken together, these
+results imply that future hardware experiments should be interpreted through a
+hierarchy: ordinary tomography when assumptions are controlled, physical
+projection when finite-data artifacts dominate, and GST-style predictive fitting
+when SPAM or gauge issues become the limiting factor.
 
-\section{Condensed Result Matrix}
+\section{Results Summary Matrix}
 
 \begin{longtable}{p{0.18\textwidth}p{0.34\textwidth}p{0.38\textwidth}}
 \toprule
@@ -420,11 +462,7 @@ correlation $0.9326$, selected sequence CPMG-24, waiting for lab data.\\
 
 \input{generated/direct_comparison_sections.tex}
 
-\input{generated/experimental_simulation_sections.tex}
-
-\input{generated/expanded_paper_sections.tex}
-
-\section{Experimental-Decision Pipeline}
+\section{Results: Integrated Experimental-Decision Workflow}
 
 The new workflow composes the validated modules into a single decision loop:
 \begin{enumerate}
@@ -436,6 +474,11 @@ The new workflow composes the validated modules into a single decision loop:
   \item select the sequence with highest predicted coherence;
   \item compare predictions against real laboratory measurements when available.
 \end{enumerate}
+This operational layer combines the tomography-identification logic of
+\citep{qst_relaxation_2008}, the finite-pulse warning from
+\citep{spin32_qlogic_qst_2005}, the filter-function viewpoint of
+\citep{noise_filtering_control_2014}, and the DD spectral inversion strategy of
+\citep{dd_noise_spectroscopy_2011}.
 
 In the current synthetic run, the state-preparation QST fidelity is
 $0.9856$, the reconstructed spectrum has correlation $0.9326$, and the selected
@@ -445,29 +488,36 @@ comparison status is \texttt{waiting\_for\_lab\_data}.
 \begin{figure}[ht]
   \centering
   \IfFileExists{../../outputs/workflows/experimental_decision_pipeline/latest/figures/reconstructed_noise_spectrum.png}{
-    \includegraphics[width=0.82\textwidth]{../../outputs/workflows/experimental_decision_pipeline/latest/figures/reconstructed_noise_spectrum.png}
+    \includegraphics[width=0.82\textwidth,height=0.64\textheight,keepaspectratio]{../../outputs/workflows/experimental_decision_pipeline/latest/figures/reconstructed_noise_spectrum.png}
   }{
     \fbox{\parbox{0.82\textwidth}{Noise-spectrum figure not found. Run
     \texttt{python scripts/run\_experimental\_decision\_pipeline.py}.}}
   }
   \caption{Synthetic effective noise spectrum reconstructed from
-  dynamical-decoupling coherence measurements.}
+  dynamical-decoupling coherence measurements.  This figure is the workflow
+  realization of the inversion logic discussed in
+  \citep{noise_filtering_control_2014,dd_noise_spectroscopy_2011}.}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
   \IfFileExists{../../outputs/workflows/experimental_decision_pipeline/latest/figures/control_sequence_decision.png}{
-    \includegraphics[width=0.82\textwidth]{../../outputs/workflows/experimental_decision_pipeline/latest/figures/control_sequence_decision.png}
+    \includegraphics[width=0.82\textwidth,height=0.64\textheight,keepaspectratio]{../../outputs/workflows/experimental_decision_pipeline/latest/figures/control_sequence_decision.png}
   }{
     \fbox{\parbox{0.82\textwidth}{Control-decision figure not found. Run
     \texttt{python scripts/run\_experimental\_decision\_pipeline.py}.}}
   }
-  \caption{Candidate control sequences scored by predicted coherence.}
+  \caption{Candidate control sequences scored by predicted coherence.  The
+  decision metric is computed from the reconstructed effective spectrum and
+  therefore turns the spectroscopy layer into an explicit control-selection
+  policy.}
 \end{figure}
 
-\section{What Can Be Claimed Now}
+\section{Discussion}
 
-The current repository supports the following claims:
+\subsection{Scope of the present claims}
+
+The present benchmark layer supports the following claims:
 \begin{itemize}
   \item the Python spin-$3/2$ operator and Hamiltonian layer is internally
   validated by tests;
@@ -485,7 +535,7 @@ The current repository supports the following claims:
   as synthetic benchmarks for future hardware-facing characterization.
 \end{itemize}
 
-The current repository does not yet support these stronger claims:
+The present study does not yet support the following stronger claims:
 \begin{itemize}
   \item that a real Na-23 sample follows the current synthetic relaxation
   model;
@@ -495,10 +545,10 @@ The current repository does not yet support these stronger claims:
   already been characterized.
 \end{itemize}
 
-\section{Failure Modes and Model Escalation}
+\subsection{Model limitations and escalation criteria}
 
-The laboratory should treat disagreement with data as information, not as an
-implementation failure.  The escalation logic is:
+Disagreement with incoming data should be treated as physical information rather
+than as an implementation defect.  The escalation logic is:
 \begin{enumerate}
   \item If FID and spectrum peaks are shifted, inspect $\nu_Q$, offset, dwell
   time, phase convention, and apodization.
@@ -515,7 +565,7 @@ implementation failure.  The escalation logic is:
   fitting rather than ordinary QPT alone.
 \end{enumerate}
 
-\section{Incoming Experimental Data Protocol}
+\section{Experimental Validation Protocol}
 
 When new lab data arrive, each run should provide:
 \begin{itemize}
@@ -529,7 +579,7 @@ When new lab data arrive, each run should provide:
   \item model snapshot and configuration hash.
 \end{itemize}
 
-The default operational question is:
+The operational question for the first laboratory campaign is:
 \begin{quote}
 Does the current synthetic-to-effective model predict the measured coherences
 and QST observables within uncertainty?  If yes, use the selected control
@@ -537,18 +587,26 @@ sequence.  If no, identify which assumption failed and escalate the model
 class.
 \end{quote}
 
-\section{Conclusion}
+\section{Conclusions}
 
-The current work has converted an initial MATLAB-based Na-23 NMR project into a
+The present manuscript converts an initial MATLAB-based Na-23 NMR effort into a
 Python-first computational research laboratory.  The repository now contains a
-validated spin-$3/2$ model, a reproducible set of paper-inspired benchmarks, a
-research-memory agent, and an experimental-decision pipeline.  The main
-scientific value is not any single synthetic number.  The value is the structure:
-each claim is tied to code, configuration, metrics, figures, and tests.  This is
-the foundation required to turn incoming NMR and quantum-hardware data into
+validated spin-$3/2$ model, a reproducible suite of paper-grounded benchmarks,
+a research-memory layer, and an experimental-decision workflow.  The scientific
+value is structural: each claim is attached to code, configuration, metrics,
+figures, and tests, and each synthetic success is explicitly separated from the
+stronger claims that still require experimental validation.  That structure is
+the prerequisite for turning future NMR and quantum-hardware measurements into
 defensible physical conclusions.
 
 \appendix
+
+\section{Technical Appendix Overview}
+
+The appendices collect the material that is useful for auditability and
+reproduction but would otherwise over-expand the main manuscript: baseline
+validation artifacts, detailed paper-by-paper reference comparisons, the full
+figure atlas, and execution paths.
 
 \section{Commands}
 
@@ -569,93 +627,13 @@ lab/research_memory/
 reports/review_article/
 \end{verbatim}
 
+\input{generated/experimental_simulation_sections.tex}
+
+\input{generated/expanded_paper_sections.tex}
+
 \input{generated/complete_figure_atlas.tex}
 
-\section{Bibliography}
-
-\begin{thebibliography}{99}
-
-\bibitem{na23_relaxometry_2023}
-23Na relaxometry: An overview of theory and applications.
-\emph{Magnetic Resonance Letters}, 2023.
-doi:10.1016/j.mrl.2023.04.001.
-
-\bibitem{spin32_algebraic_2004}
-Algebraic description of spin 3/2 dynamics in NMR experiments.
-\emph{Journal of Magnetic Resonance} 173(2), 236--253, 2005.
-doi:10.1016/j.jmr.2004.12.009.
-
-\bibitem{qst_relaxation_2008}
-A study of the relaxation dynamics in a quadrupolar NMR system using Quantum
-State Tomography.
-\emph{Journal of Magnetic Resonance}, 2008.
-doi:10.1016/j.jmr.2008.01.009.
-
-\bibitem{spin32_qlogic_qst_2005}
-Quantum logical operations for spin 3/2 quadrupolar nuclei monitored by quantum
-state tomography.
-\emph{Journal of Magnetic Resonance}, 2005.
-doi:10.1016/j.jmr.2005.04.009.
-
-\bibitem{nonmarkov_noise_2022}
-Characterization and control of non-Markovian quantum noise.
-\emph{Nature Reviews Physics}, 2022.
-doi:10.1038/s42254-022-00446-2.
-
-\bibitem{multipass_qpt_2024}
-Multipass quantum process tomography.
-\emph{Scientific Reports} 14, 18185, 2024.
-doi:10.1038/s41598-024-68353-3.
-
-\bibitem{quadrupolar_qip_2012}
-Quantum information processing by nuclear magnetic resonance on quadrupolar
-nuclei.
-\emph{Philosophical Transactions of the Royal Society A} 370, 4770--4793, 2012.
-doi:10.1098/rsta.2011.0365.
-
-\bibitem{grape_nmr_control_2005}
-Optimal control of coupled spin dynamics: Design of NMR pulse sequences by
-gradient ascent algorithms.
-\emph{Journal of Magnetic Resonance} 172(2), 296--305, 2005.
-doi:10.1016/j.jmr.2004.11.004.
-
-\bibitem{pps_optimal_control_2012}
-Preparing Pseudo-Pure States in a Quadrupolar Spin System Using Optimal Control.
-\emph{Chinese Physics Letters} 29(12), 127601, 2012.
-doi:10.1088/0256-307X/29/12/127601.
-
-\bibitem{projected_ls_qpt_2022}
-Projected Least-Squares Quantum Process Tomography.
-\emph{Quantum} 6, 844, 2022.
-doi:10.22331/q-2022-10-20-844.
-
-\bibitem{gst_2021}
-Gate Set Tomography.
-\emph{Quantum} 5, 557, 2021.
-doi:10.22331/q-2021-10-05-557.
-
-\bibitem{process_tensor_2020}
-Demonstration of non-Markovian process characterisation and control on a quantum
-processor.
-\emph{Nature Communications} 11, 5301, 2020.
-doi:10.1038/s41467-020-20113-3.
-
-\bibitem{noise_filtering_2014}
-Experimental noise filtering by quantum control.
-\emph{Nature Physics} 10, 644--648, 2014.
-doi:10.1038/nphys3115.
-
-\bibitem{dd_noise_spectroscopy_2011}
-Measuring the spectrum of colored noise by dynamical decoupling.
-\emph{Physical Review Letters} 107, 230501, 2011.
-doi:10.1103/PhysRevLett.107.230501.
-
-\bibitem{flux_qubit_noise_2011}
-Noise spectroscopy through dynamical decoupling with a superconducting flux
-qubit.
-\emph{Nature Physics} 7, 565--570, 2011.
-doi:10.1038/nphys1994.
-
-\end{thebibliography}
+\bibliographystyle{unsrtnat}
+\bibliography{references}
 
 \end{document}

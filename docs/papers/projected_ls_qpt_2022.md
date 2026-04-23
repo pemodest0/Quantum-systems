@@ -6,7 +6,7 @@ Category: `Physical QPT`
 
 ## Primary Reference
 
-Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.
+Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.
 
 ## Article Summary
 
@@ -20,19 +20,19 @@ The central insight is that physical constraints are not cosmetic. Enforcing com
 
 Raw Choi least squares compared with PSD and CPTP projections.
 
-## Direct Laboratory Comparison
+## Direct Comparison with the Published Reference
 
 Our synthetic benchmark showed raw Choi estimates with frequent physicality violations, while CPTP projection removed negative-eigenvalue violations and improved mean reconstruction error.
 
-## Project Lesson
+## Interpretation for the Present Study
 
 Projection reduces unphysical estimates and improves synthetic process reconstruction.
 
-## Next Laboratory Use
+## Experimental Implication
 
 Whenever process data are reconstructed from hardware, report both raw residuals and physicality-projected estimates.
 
-## Known Limitations
+## Current Deviations from the Published Reference
 
 Projection is a statistical post-processing layer; it cannot fix bad experimental design alone.
 
@@ -43,37 +43,37 @@ Projection is a statistical post-processing layer; it cannot fix bad experimenta
 
 ## Figure Guide
 
-### Figure 1. Choi Eigenvalues Raw Vs Pls
+### Figure 1. Choi Eigenvalues: Raw versus Projected Least Squares
 
-![Choi Eigenvalues Raw Vs Pls](../../outputs/repro/projected_ls_qpt_2022/latest/figures/choi_eigenvalues_raw_vs_pls.png)
+![Choi Eigenvalues: Raw versus Projected Least Squares](../../outputs/repro/projected_ls_qpt_2022/latest/figures/choi_eigenvalues_raw_vs_pls.png)
 
 - Summary: The eigenvalues of the reconstructed Choi matrix are shown before and after projection onto the physical CPTP set.
 - Interpretation: In this laboratory, the figure is used to enforce physicality in process reconstruction instead of trusting raw least-squares inversion. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.
+- Reference: Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.
 
-### Figure 2. Physicality Violations Vs Shots
+### Figure 2. Physicality Violations versus Shot Count
 
-![Physicality Violations Vs Shots](../../outputs/repro/projected_ls_qpt_2022/latest/figures/physicality_violations_vs_shots.png)
+![Physicality Violations versus Shot Count](../../outputs/repro/projected_ls_qpt_2022/latest/figures/physicality_violations_vs_shots.png)
 
 - Summary: The frequency or severity of non-CPTP reconstructions is plotted as the measurement shot budget changes.
 - Interpretation: In this laboratory, the figure is used to enforce physicality in process reconstruction instead of trusting raw least-squares inversion. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.
+- Reference: Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.
 
-### Figure 3. Ptm Reconstruction Comparison
+### Figure 3. PTM Reconstruction: Raw versus Projected Estimators
 
-![Ptm Reconstruction Comparison](../../outputs/repro/projected_ls_qpt_2022/latest/figures/ptm_reconstruction_comparison.png)
+![PTM Reconstruction: Raw versus Projected Estimators](../../outputs/repro/projected_ls_qpt_2022/latest/figures/ptm_reconstruction_comparison.png)
 
 - Summary: The target PTM is compared with the raw least-squares estimate and the projected least-squares estimate.
 - Interpretation: In this laboratory, the figure is used to enforce physicality in process reconstruction instead of trusting raw least-squares inversion. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.
+- Reference: Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.
 
-### Figure 4. Qpt Error Distribution
+### Figure 4. Quantum Process Tomography Error Distribution
 
-![Qpt Error Distribution](../../outputs/repro/projected_ls_qpt_2022/latest/figures/qpt_error_distribution.png)
+![Quantum Process Tomography Error Distribution](../../outputs/repro/projected_ls_qpt_2022/latest/figures/qpt_error_distribution.png)
 
 - Summary: Repeated synthetic trials are summarized as an error distribution for raw and projected process tomography.
 - Interpretation: In this laboratory, the figure is used to enforce physicality in process reconstruction instead of trusting raw least-squares inversion. It should be read together with the matching metrics.json and results.json files, because visual agreement alone is not treated as sufficient evidence.
-- Reference: Paper J. "Projected Least-Squares Quantum Process Tomography," Quantum (2022), DOI: 10.22331/q-2022-10-20-844.
+- Reference: Surawy-Stepney, T. et al. "Projected Least-Squares Quantum Process Tomography." Quantum 6, 844 (2022). DOI: 10.22331/q-2022-10-20-844.
 
 
 ## Canonical Artifacts
