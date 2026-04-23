@@ -12,6 +12,8 @@ Before doing anything substantial, read these files in this order:
 4. `outputs/transport_networks/paper_reproduction_suite/latest/paper_reproduction_report.md`
 5. `docs/handoffs/transport_lab_mac_handoff.md`
 6. `docs/handoffs/workspace_repo_map.md`
+7. `docs/handoffs/transport_research_scope_ptbr.md`
+8. `docs/handoffs/transport_professor_conversation_ptbr.md`
 
 ## Ground rules
 
