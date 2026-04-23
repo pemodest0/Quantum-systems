@@ -6,6 +6,7 @@ This file is the navigation map for the active research workspace.
 
 - `README.md`: high-level description of the full repository.
 - `docs/PROJECT_OVERVIEW.md`: separation between control/NMR and transport tracks.
+- `docs/TRANSPORT_RESEARCH_DATA_MAP.md`: where the active transport outputs actually live.
 - `docs/APPLICATION_PRIORITIES_2026-04-24.md`: near-deadline application plan.
 - `docs/transport_graph_lab.md`: quick start for the transport graph lab.
 - `reports/famb_msc_transport_proposal/famb_msc_transport_proposal.pdf`: current MSc proposal.
@@ -40,6 +41,18 @@ Build/report scripts:
 - `reports/transport_graph_collection_report/`
 - `reports/open_quantum_transport_tutorial/`
 - `reports/apostila_transporte_quantico_ptbr/`
+
+## Transport Output Source Of Truth
+
+Do not navigate `outputs/transport_networks/` blindly.
+
+Start from:
+
+- `outputs/transport_networks/lab_registry/latest/`
+- `outputs/transport_networks/mcp_index/latest/`
+- `outputs/transport_networks/README.md`
+
+Then go to the specific campaign subtree only if needed.
 
 ## Temporary Files
 

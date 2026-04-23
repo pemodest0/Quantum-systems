@@ -3,6 +3,20 @@
 This guide explains how to work with the repository without reopening the old
 documentation sprawl.
 
+This repository has two active tracks:
+
+- control / NMR / tomography / noise spectroscopy;
+- transport on finite open quantum networks.
+
+If you are working on transport, also read:
+
+```text
+docs/PROJECT_OVERVIEW.md
+docs/REPOSITORY_ORGANIZATION.md
+docs/TRANSPORT_RESEARCH_DATA_MAP.md
+outputs/transport_networks/lab_registry/latest/transport_lab_memory.md
+```
+
 ## 1. Environment
 
 Use Python 3.10 or newer.
@@ -30,6 +44,13 @@ python -m pytest -q
 The tests check spin-3/2 operators, Hamiltonians, Liouvillian consistency,
 spectra, tomography, relaxation models, noise filtering, noise spectroscopy,
 QPT, GST, process tensors, GRAPE control, and research-memory generation.
+
+Transport-side quick checks:
+
+```powershell
+python scripts\analyze_transport_parameter_space.py
+python scripts\run_transport_lab_mcp_server.py --check
+```
 
 ## 3. Run A Paper Reproduction
 
@@ -117,6 +138,16 @@ Full review report:
 ```text
 reports/review_article/open_quantum_control_review.pdf
 reports/review_article/open_quantum_control_review.tex
+```
+
+Transport-side research entry points:
+
+```text
+docs/TRANSPORT_RESEARCH_DATA_MAP.md
+docs/handoffs/transport_research_scope_ptbr.md
+docs/handoffs/transport_professor_conversation_ptbr.md
+outputs/transport_networks/master_scientific_report/latest/master_report.md
+outputs/transport_networks/paper_reproduction_suite/latest/paper_reproduction_report.md
 ```
 
 Rebuild the report:
