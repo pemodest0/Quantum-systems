@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-04-23T05:25:42.452927+00:00",
+  "generated_at_utc": "2026-04-23T14:33:56.670536+00:00",
   "schema_version": 1,
   "role": "read_only_research_hub_index",
   "root": "C:\\Users\\Pedro Henrique\\Downloads\\Assyntrax-main\\repos\\Quantum-systems",
   "registry_dir": "outputs/transport_networks/lab_registry/latest",
   "source_of_truth": "outputs/transport_networks/lab_registry/latest",
   "master_metrics": {
-    "generated_at_utc": "2026-04-23T05:25:05.347003+00:00",
+    "generated_at_utc": "2026-04-23T14:33:15.535734+00:00",
     "campaign_count": 8,
     "master_result_count": 8328,
     "master_uncertainty_count": 389,

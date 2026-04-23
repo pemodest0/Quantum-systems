@@ -10,6 +10,8 @@ Before doing anything substantial, read these files in this order:
 2. `configs/transport_intense_campaign_plan.md`
 3. `outputs/transport_networks/parameter_space_analysis/latest/parameter_space_report.md`
 4. `outputs/transport_networks/paper_reproduction_suite/latest/paper_reproduction_report.md`
+5. `docs/handoffs/transport_lab_mac_handoff.md`
+6. `docs/handoffs/workspace_repo_map.md`
 
 ## Ground rules
 
@@ -33,6 +35,14 @@ If the machine has around 4 GB of RAM:
 2. Run only light checks.
 3. Summarize current lab state from the files above.
 4. Propose the safest next chunk instead of starting a heavy campaign automatically.
+
+## Mac handoff helpers
+
+If the repository is opened on the Mac:
+
+- use `bash scripts/mac_transport_bootstrap.sh` for lightweight setup;
+- use `bash scripts/mac_transport_long_run.sh pilot` for the first real intense chunk;
+- use `bash scripts/mac_transport_long_run.sh finalize` after any long run.
 
 ## Optional MCP usage
 
