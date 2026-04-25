@@ -1,21 +1,23 @@
 {
-  "profile": "smoke",
-  "record_count": 24,
-  "family_count": 3,
+  "profile": "strong",
+  "record_count": 14800,
+  "family_count": 10,
   "n_sites_values": [
-    6
+    8,
+    10,
+    12
   ],
-  "max_trace_deviation": 2.220446049250313e-15,
-  "max_population_closure_error": 2.220446049250313e-15,
-  "max_classical_population_closure_error": 1.7763568394002505e-15,
-  "min_state_eigenvalue": -7.261547448709225e-16,
-  "mean_best_arrival": 0.3531199569713237,
-  "mean_dephasing_gain": 0.016440964851303575,
-  "mean_quantum_minus_classical": 0.09102018585520522,
+  "max_trace_deviation": 1.2656542480726785e-14,
+  "max_population_closure_error": 1.2656542480726785e-14,
+  "max_classical_population_closure_error": 8.881784197001252e-15,
+  "min_state_eigenvalue": -3.4331193949596555e-15,
+  "mean_best_arrival": 0.45399758431090964,
+  "mean_dephasing_gain": 0.0950310595762956,
+  "mean_quantum_minus_classical": 0.0905083029263699,
   "qc_case_counts": {
-    "classical_higher": 11,
-    "quantum_higher": 12,
-    "classical_explains": 1
+    "classical_higher": 3046,
+    "classical_explains": 2996,
+    "quantum_higher": 8758
   },
   "numerics_pass": true
 }

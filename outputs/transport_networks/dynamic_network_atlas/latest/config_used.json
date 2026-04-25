@@ -1,38 +1,64 @@
 {
-  "profile": "smoke",
+  "profile": "strong",
   "families": [
-    "chain",
-    "ring",
     "random_geometric"
   ],
   "n_sites_values": [
-    6
+    8,
+    10,
+    12
   ],
-  "graph_realizations": 1,
+  "graph_realizations": 12,
   "deterministic_graph_realizations": 1,
   "disorder_seeds": [
     3,
-    5
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59
   ],
-  "graph_seed_base": 9100,
+  "graph_seed_base": 9200,
   "disorder_strength_over_coupling": [
     0.0,
-    0.6
+    0.3,
+    0.6,
+    0.9,
+    1.2
   ],
   "dephasing_over_coupling": [
     0.0,
-    0.2
+    0.03,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8,
+    1.2
   ],
   "target_styles": [
     "near",
-    "far"
+    "far",
+    "high_centrality",
+    "low_centrality"
   ],
-  "t_final": 5.0,
-  "n_time_samples": 48,
+  "t_final": 16.0,
+  "n_time_samples": 180,
   "coupling_hz": 1.0,
   "sink_rate_hz": 0.65,
   "loss_rate_hz": 0.02,
   "sink_hit_threshold": 0.1,
   "transfer_threshold": 0.5,
-  "checkpoint_every": 25
+  "checkpoint_every": 250,
+  "resume": true
 }

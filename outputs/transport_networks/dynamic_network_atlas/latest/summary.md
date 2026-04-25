@@ -13,24 +13,28 @@ This atlas compares finite network families through open quantum transport signa
 
 ## Numerical status
 
-- Records: 24
-- Families: 3
-- Maximum trace deviation: 2.220e-15
-- Maximum population closure error: 2.220e-15
-- Minimum state eigenvalue: -7.262e-16
+- Records: 14800
+- Families: 10
+- Maximum trace deviation: 1.266e-14
+- Maximum population closure error: 1.266e-14
+- Minimum state eigenvalue: -3.433e-15
 - Numerics pass: True
 
 ## Highest mean target arrival
 
-- chain: 0.417
-- ring: 0.408
-- random_geometric: 0.234
+- ring: 0.534
+- bottleneck: 0.524
+- clustered: 0.524
+- chain: 0.520
+- square_lattice_2d: 0.481
 
 ## Highest mean quantum-minus-classical arrival
 
-- ring: 0.172
-- chain: 0.112
-- random_geometric: -0.011
+- chain: 0.181
+- ring: 0.167
+- clustered: 0.163
+- bottleneck: 0.150
+- sierpinski_carpet_like: 0.111
 
 ## Scientific caution
 
